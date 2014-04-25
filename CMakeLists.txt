@@ -61,4 +61,4 @@ add_subdirectory( kcm_hotkeys )
 # kdedmodule and standalone demon for hotkeys
 add_subdirectory( data )
 # add_subdirectory( test )
-
+add_subdirectory( doc )
