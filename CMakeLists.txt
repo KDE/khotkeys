@@ -29,7 +29,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(ECMPackageConfigHelpers)
 
-find_package(KF5 CONFIG REQUIRED COMPONENTS
+find_package(KF5 REQUIRED COMPONENTS
     GlobalAccel
     I18n
     KIO
