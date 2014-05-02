@@ -3,11 +3,13 @@ DataCount=1
 
 [Data_1]
 Comment=This group contains actions that are set up by default.
+Comment[nl]=Deze groep bevat handelingen die standaard zijn ingesteld.
 Comment[uk]=Ця група містить дії, які типово налаштовано.
 Comment[x-test]=xxThis group contains actions that are set up by default.xx
 DataCount=1
 Enabled=true
 Name=Preset Actions
+Name[nl]=Voorgedefinieerde handelingen
 Name[uk]=Заздалегідь визначені дії
 Name[x-test]=xxPreset Actionsxx
 SystemGroup=0
@@ -20,10 +22,12 @@ ConditionsCount=0
 
 [Data_1_1]
 Comment=Launches KSnapShot when PrintScrn is pressed.
+Comment[nl]=KSnapShot starten wanneer PrintScreen wordt ingedrukt.
 Comment[uk]=Запускає KSnapShot при натисканні PrintScrn.
 Comment[x-test]=xxLaunches KSnapShot when PrintScrn is pressed.xx
 Enabled=true
 Name=PrintScreen
+Name[nl]=PrintScreen
 Name[uk]=PrintScreen
 Name[x-test]=xxPrintScreenxx
 Type=COMMAND_URL_SHORTCUT_ACTION_DATA
@@ -41,6 +45,7 @@ ConditionsCount=0
 
 [Data_1_1Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1

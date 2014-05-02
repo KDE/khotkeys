@@ -3,11 +3,13 @@ DataCount=1
 
 [Data_1]
 Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
+Comment[nl]=Deze groep bevat diverse voorbeelden die de meeste functies van KHotkeys demonstreren. (Opmerking: deze groep en alle bijhorende acties zijn standaard uitgeschakeld)
 Comment[uk]=Ця група містить різні приклади більшості можливостей KHotkeys. (Типово, цю групу і всі її дії вимкнено.)
 Comment[x-test]=xxThis group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)xx
 DataCount=8
 Enabled=false
 Name=Examples
+Name[nl]=Voorbeelden
 Name[uk]=Приклади
 Name[x-test]=xxExamplesxx
 SystemGroup=0
@@ -19,10 +21,12 @@ ConditionsCount=0
 
 [Data_1_1]
 Comment=After pressing Ctrl+Alt+I, the KSIRC window will be activated, if it exists. Simple.
+Comment[nl]=Na het indrukken van Ctrl+Alt+I krijgt het KSIRC-venster de focus als deze is bestaat. Eenvoudig.
 Comment[uk]=Після натискання Ctrl+Alt+I буде активовано вікно KSIRC, якщо воно існує. Просто.
 Comment[x-test]=xxAfter pressing Ctrl+Alt+I, the KSIRC window will be activated, if it exists. Simple.xx
 Enabled=false
 Name=Activate KSIRC Window
+Name[nl]=KSIRC-venster activeren
 Name[uk]=Активувати вікно KSIRC
 Name[x-test]=xxActivate KSIRC Windowxx
 Type=ACTIVATE_WINDOW_SHORTCUT_ACTION_DATA
@@ -35,6 +39,7 @@ Type=ACTIVATE_WINDOW
 
 [Data_1_1Actions0Window]
 Comment=KSIRC window
+Comment[nl]=KSIRC-venster
 Comment[uk]=Вікно KSIRC
 Comment[x-test]=xxKSIRC windowxx
 WindowsCount=1
@@ -43,6 +48,7 @@ WindowsCount=1
 Class=ksirc
 ClassType=1
 Comment=KSIRC
+Comment[nl]=KSIRC
 Comment[uk]=KSIRC
 Comment[x-test]=xxKSIRCxx
 Role=
@@ -58,6 +64,7 @@ ConditionsCount=0
 
 [Data_1_1Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1
@@ -68,10 +75,12 @@ Type=SHORTCUT
 
 [Data_1_2]
 Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
+Comment[nl]=Wanneer u op Ctrl+Alt+H drukt zal de invoer "Hallo" gesimuleerd worden alsof u het getypt hebt. Handig wanneer u te lui bent om dingen als 'unsigned' te typen. Iedere toetsaanslag bij de invoer dient gescheiden te worden met een dubbele punt ':'. Merk op dat een toetsaanslag letterlijk genomen dient te worden, dus iedere toets die u indrukt dient opgeschreven te worden. In de onderstaande tabel bevat de linkerkolom de invoer en rechts wat u dient in te typen.\n\n"enter" (nieuwe regel)         Enter of Return\na (kleine a)                             A\nA (hoofdletter a)                   Shift+A\n: (dubbele punt)                    Shift+;\n' ' (spatie)                               Spatie
 Comment[uk]=Після натискання Alt+Ctrl+H, відбудеться імітація введення вами з клавіатури слова «Hello». Це дуже корисно, якщо ви достатньо ліниві, щоб самостійно набирати слова на зразок «unsigned». Кожне натискання клавіші у вводі слід відокремлювати двокрапкою («:»). Зауважте, що під «натисканням» ми маємо на увазі саме справжні натискання клавіш, отже, вам слід написати саме те, що ви бажаєте набрати на клавіатурі. У таблиці, наведеній нижче, у лівому стовпчику записано те, що ви побачите на екрані, а у правому — те, що вам для цього слід набрати.\n\n«enter» (тобто, «новий рядок»)                Enter або Return\na (тобто, мала літера «a»)                        A\nA (тобто, прописна «a»)                          Shift+A\n: (двокрапка)                                       Shift+;\n« »  (пробіл)                                     Пробіл
 Comment[x-test]=xxAfter pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Spacexx
 Enabled=false
 Name=Type 'Hello'
+Name[nl]='Hallo' typen
 Name[uk]=Написати «Hello»
 Name[x-test]=xxType 'Hello'xx
 Type=KEYBOARD_INPUT_SHORTCUT_ACTION_DATA
@@ -90,6 +99,7 @@ ConditionsCount=0
 
 [Data_1_2Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1
@@ -100,10 +110,12 @@ Type=SHORTCUT
 
 [Data_1_3]
 Comment=This action runs Konsole, after pressing Ctrl+Alt+T.
+Comment[nl]=Deze handeling start Konsole op, nadat op Ctrl+Alt+T is gedrukt.
 Comment[uk]=Ця дія запускає Konsole після натискання Ctrl+Alt+T.
 Comment[x-test]=xxThis action runs Konsole, after pressing Ctrl+Alt+T.xx
 Enabled=false
 Name=Run Konsole
+Name[nl]=Konsole starten
 Name[uk]=Запустити Konsole
 Name[x-test]=xxRun Konsolexx
 Type=COMMAND_URL_SHORTCUT_ACTION_DATA
@@ -121,6 +133,7 @@ ConditionsCount=0
 
 [Data_1_3Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1
@@ -131,10 +144,12 @@ Type=SHORTCUT
 
 [Data_1_4]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.
+Comment[nl]=Lees de opmerking over de actie "Hallo typen" eerst.\n\nQt Designer gebruikt Ctrl+F4 om vensters te sluiten. Maar in KDE betekent Ctrl+4 het gaan naar het virtuele bureaublad 4, waardoor de sneltoets niet werkt in Qt Designer. Voorts wordt Ctrl+W, de standaard sluittoets binnen KDE, niet gebruikt.\n\nU kunt dit probleem oplossen door Ctrl+W naar Ctrl+F4 te laten verwijzen wanneer het actieve venster Qt Designer is. Wanneer Qt Designer actief is, zal iedere keer dat Ctrl+W wordt ingedrukt het signaal Ctrl+F4 naar Qt Designer gestuurd worden. Ctrl+W blijft in andere programma's ongewijzigd.\n\nEr dienen drie gegevens ingevuld te worden: de sneltoets zelf, de verzonden sneltoets en de voorwaarde dat het actieve venster Qt Designer moet zijn.\nQt Designer heeft altijd de titel 'Qt Designer by Trolltech', dus de voorwaarde zal eerst controleren of het venster die titel heeft.
 Comment[uk]=Спочатку прочитайте коментар до дії ««Написати «Hello»».\n\nQt Designer використовує сполучення Ctrl+F4 для закриття вікон. Але Ctrl+F4 у KDE означає «перейти до віртуальної стільниці 4», отже, ця комбінація не працюватиме у Qt Designer, з іншого боку, Qt Designer не використовує стандартне для KDE сполучення Ctrl+W для закриття вікон.\n\nЦю проблему можна вирішити переспрямуванням викликів Ctrl+W у Ctrl+F4, коли активним вікном є вікно Qt Designer. Коли активним буде вікно Qt Designer, кожного разу, коли ви натискатимете Ctrl+W, Qt Designer отримуватиме замість нього Ctrl+F4. У інших програмах, звичайно, Ctrl+W працюватиме як і раніше.\n\nТепер нам слід вказати три речі: нове клавіатурне скорочення, що відповідатиме «Ctrl+W», нову дію з вводу — надсилання Ctrl+F4, і нову умову щодо активного вікна — Qt Designer.\nЗдається, Qt Designer завжди має заголовок «Qt Designer by Trolltech», отже, умова буде перевіряти, чи має активне вікно цей заголовок.
 Comment[x-test]=xxRead the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.xx
 Enabled=false
 Name=Remap Ctrl+W to Ctrl+F4 in Qt Designer
+Name[nl]=Ctrl+W omzetten naar Ctrl+F4 in Qt Designer
 Name[uk]=Перепризначити Ctrl+W в Qt Designer на Ctrl+F4
 Name[x-test]=xxRemap Ctrl+W to Ctrl+F4 in Qt Designerxx
 Type=GENERIC_ACTION_DATA
@@ -156,6 +171,7 @@ Type=ACTIVE_WINDOW
 
 [Data_1_4Conditions0Window]
 Comment=Qt Designer
+Comment[nl]=Qt Designer
 Comment[uk]=Qt Designer
 Comment[x-test]=xxQt Designerxx
 WindowsCount=1
@@ -181,10 +197,12 @@ Type=SHORTCUT
 
 [Data_1_5]
 Comment=By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.
+Comment[nl]=Door Alt+Ctrl+W in te drukken zal er een D-Bus-aanroep uitgevoerd worden die het venster "Commando uitvoeren" opent. U kunt iedere andere D-Bus-aanroep gebruiken, net zoals met de commandoregelvariant 'qdbus'.
 Comment[uk]=Після натискання Alt+Ctrl+W буде виконано виклик D-Bus, який покаже minicli. Ви можете використовувати будь-який спосіб виклику D-Bus, так само, як це робиться у інструменті командного рядка «qdbus».
 Comment[x-test]=xxBy pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.xx
 Enabled=false
 Name=Perform D-Bus call 'qdbus org.kde.krunner /App display'
+Name[nl]=Voer de D-Bus oproep 'qdbus org.kde.krunner /App display' uit
 Name[uk]=Виконання виклику D-Bus «qdbus org.kde.krunner /App display»
 Name[x-test]=xxPerform D-Bus call 'qdbus org.kde.krunner /App display'xx
 Type=DCOP_SHORTCUT_ACTION_DATA
@@ -205,6 +223,7 @@ ConditionsCount=0
 
 [Data_1_5Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1
@@ -215,10 +234,12 @@ Type=SHORTCUT
 
 [Data_1_6]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').
+Comment[nl]=Lees eerst de toelichting bij handeling "Hallo typen".\n\nNet als "Hallo typen" simuleert deze een toetsenbordinvoer. In dit geval wordt na het indrukken van de toetsencombinatie Ctrl+Alt+B,  de 'B' gestuurt naar XMMS (B in XMMS gaat naar de volgende track). Als het keuzevakje 'Naar specifiek venster sturen' is geselecteerd en een venster met de klasse 'XMMS_Player' is opgegeven zal deze toetsenbordinvoer altijd naar het XMMS-venster worden gestuurd. Op die manier kunt u XMMS ook bedienen terwijl u bijvoorbeeld op een ander virtueel bureaublad aan het werk bent. \n\n (Voer 'xprop' uit, klik op het XMMS-venster en zoek naar WM-CLASS om 'XMMS_Player' te zien).
 Comment[uk]=Спочатку прочитайте коментар до дії «Написати «Hello»».\n\nТочно так само, які і дія «Написати «Hello»», ця дія імітує ввід з клавіатури, зокрема, після натискання Ctrl+Alt+B, вона надсилає код «B» до XMMS («B» у XMMS означає «перейти до наступної пісні»). Пункт «Надіслати визначеному вікну» позначено і вказано клас вікон з «XMMS_Player» у назві; це призведе до правильного спрямування введеної інформації саме до цього типу вікон. Таким чином, ви можете керувати XMMS, навіть якщо його, наприклад, запущено у іншій віртуальній стільниці.\n\n(Виконайте команду «xprop» і клацніть по вікну XMMS, знайдіть WM_CLASS, щоб переконатися, що це «XMMS_Player»).
 Comment[x-test]=xxRead the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').xx
 Enabled=false
 Name=Next in XMMS
+Name[nl]=Volgende in XMMS
 Name[uk]=Далі в XMMS
 Name[x-test]=xxNext in XMMSxx
 Type=KEYBOARD_INPUT_SHORTCUT_ACTION_DATA
@@ -233,6 +254,7 @@ Type=KEYBOARD_INPUT
 
 [Data_1_6Actions0DestinationWindow]
 Comment=XMMS window
+Comment[nl]=XMMS-venster
 Comment[uk]=Вікно XMMS
 Comment[x-test]=xxXMMS windowxx
 WindowsCount=1
@@ -241,6 +263,7 @@ WindowsCount=1
 Class=XMMS_Player
 ClassType=1
 Comment=XMMS Player window
+Comment[nl]=XMMS-afspelervenster
 Comment[uk]=Вікно програвача XMMS
 Comment[x-test]=xxXMMS Player windowxx
 Role=
@@ -256,6 +279,7 @@ ConditionsCount=0
 
 [Data_1_6Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1
@@ -266,11 +290,13 @@ Type=SHORTCUT
 
 [Data_1_7]
 Comment=Konqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle anticlockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').
+Comment[nl]=Konqueror in KDE3.1 heeft tabbladen en nu kunt u ook gebaren gebruiken. \n\nHoud eenvoudigweg de middelste muisknop ingedrukt en begin met het tekenen van één van de gebaren en laat als u klaar bent de middelste muisknop weer los. Als u alleen een selectie wilt plakken dan werkt dit ook. Klik gewoon met de middelste muisknop. (U kunt de te gebruiken muisknop wijzigen in de globale instellingen).\n\nMomenteel zijn de volgende gebaren beschikbaar:\nbeweeg naar rechts en dan terug naar links - Vooruit (Alt + Pijl rechts)\nbeweeg naar links en dan terug naar rechts - Terug (Alt + Pijl links)\nbeweeg omhoog en dan terug naar beneden - Omhoog (Alt + Pijl omhoog)\ndraai de muis rechtsom in een cirkel - Herladen (F5)\n\nDe gebaarvormen kunnen worden ingevoerd door ze te tekenen in de configuratiedialoog. U kunt ook naar uw numerieke toetsenbord kijken om u te helpen. Gebaren worden herkend als een raster van 3 bij 3 velden, genummerd van 1 tot 9.\n\nOpmerking: u moet de gebaar exact uitvoeren om de gewenste handeling te activeren. Daarom is het mogelijk om meerdere gebaren aan een handeling toe te wijzen. Probeer complexe bewegingen, waarbij de richting van de muis meerdere malen wordt veranderd, te vermijden. Bijv. de beweging 45654 of 74123 is eenvoudig uit te voeren terwijl 1236987 al vrij moeilijk kan zijn.\n\nDe condities voor alle gebaren zijn gedefinieerd in deze groep. Alle gebaren worden alleen geactiveerd als een venster van Konqueror de focus heeft (vensterklasse bevat 'konqueror').
 Comment[uk]=Гаразд, Konqueror з часу KDE3.1 мав вкладки, тепер у ньому є і жести.\n\nПросто натисніть середню кнопку миші і накресліть один з жестів, тільки-но ви завершите, відпустіть кнопку. Якщо ви просто бажаєте вставити вибране раніше за допомогою миші, ця дія також працює — просто клацніть середньою кнопкою миші. (Ви можете змінити кнопку миші, що використовується у загальних параметрах).\n\nЗараз ви маєте доступ до таких жестів:\nпересунути праворуч і назад ліворуч — Вперед (Alt+Стрілка праворуч)\nпересунути ліворуч і назад праворуч — Назад (Alt+Стрілка ліворуч)\nпересунути вгору і назад вниз — Вгору структурою (Alt+Стрілка вгору)\nколо проти годинникової стрілки — Перезавантажити (F5)\n\nФорми жестів можна просто ввести кресленням цих форм у діалозі налаштування. Також у цьому вам має допомогти цифрова панель клавіатури, жести задаються нею у вигляді поля напрямків 3x3, з номерами напрямків від 1 до 9.\n\nЗауважте, що жест слід відтворити точно, щоб увімкнути відповідну дію. Через це можна вводити по декілька жестів для однієї дії. Намагайтеся уникати складних жестів, у яких ви змінюєте напрям руху вказівника миші декілька разів (тобто, наприклад, жести 45654 або 74123 можна накреслити просто, а ось 1236987 — доволі складно).\n\nУмова для всіх жестів визначається у цій групі. Всі жести буде задіяно, лише якщо активним є саме вікно Konqueror (клас вікна містить слово «konqueror»).
 Comment[x-test]=xxKonqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle anticlockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').xx
 DataCount=4
 Enabled=false
 Name=Konqi Gestures
+Name[nl]=Konqueror-gebaren
 Name[uk]=Жести Konqi
 Name[x-test]=xxKonqi Gesturesxx
 SystemGroup=0
@@ -278,6 +304,7 @@ Type=ACTION_DATA_GROUP
 
 [Data_1_7Conditions]
 Comment=Konqueror window
+Comment[nl]=Konqueror-venster
 Comment[uk]=Вікно Konqueror
 Comment[x-test]=xxKonqueror windowxx
 ConditionsCount=1
@@ -287,6 +314,7 @@ Type=ACTIVE_WINDOW
 
 [Data_1_7Conditions0Window]
 Comment=Konqueror
+Comment[nl]=Konqueror
 Comment[uk]=Konqueror
 Comment[x-test]=xxKonquerorxx
 WindowsCount=1
@@ -295,6 +323,7 @@ WindowsCount=1
 Class=konqueror
 ClassType=1
 Comment=Konqueror
+Comment[nl]=Konqueror
 Comment[uk]=Konqueror
 Comment[x-test]=xxKonquerorxx
 Role=
@@ -308,6 +337,7 @@ WindowTypes=33
 Comment=
 Enabled=false
 Name=Back
+Name[nl]=Terug
 Name[uk]=Назад
 Name[x-test]=xxBackxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -326,6 +356,7 @@ ConditionsCount=0
 
 [Data_1_7_1Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=3
@@ -346,6 +377,7 @@ Type=GESTURE
 Comment=
 Enabled=false
 Name=Forward
+Name[nl]=Vooruit
 Name[uk]=Вперед
 Name[x-test]=xxForwardxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -364,6 +396,7 @@ ConditionsCount=0
 
 [Data_1_7_2Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=3
@@ -384,6 +417,7 @@ Type=GESTURE
 Comment=
 Enabled=false
 Name=Up
+Name[nl]=Omhoog
 Name[uk]=Вгору
 Name[x-test]=xxUpxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -402,6 +436,7 @@ ConditionsCount=0
 
 [Data_1_7_3Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=3
@@ -422,6 +457,7 @@ Type=GESTURE
 Comment=
 Enabled=false
 Name=Reload
+Name[nl]=Herladen
 Name[uk]=Перезавантажити
 Name[x-test]=xxReloadxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -440,6 +476,7 @@ ConditionsCount=0
 
 [Data_1_7_4Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=3
@@ -458,10 +495,12 @@ Type=GESTURE
 
 [Data_1_8]
 Comment=After pressing Win+E (Tux+E) a WWW browser will be launched, and it will open http://www.kde.org . You may run all kind of commands you can run in minicli (Alt+F2).
+Comment[nl]=Wanneer u Win+E (Tux+E) indrukt, zal de webbrowser gestart worden met de pagina http://www.kde.org. U kunt alle commando's uitvoeren die u ook in het venster "Commando uitvoeren" (Alt+F2) kunt aanroepen.
 Comment[uk]=Після натискання Win+E (Tux+E) буде запущено вебнавігатор і в ньому відкриється http://www.kde.org . В ньому можна виконувати будь-які команди як і в minicli (Alt+F2).
 Comment[x-test]=xxAfter pressing Win+E (Tux+E) a WWW browser will be launched, and it will open http://www.kde.org . You may run all kind of commands you can run in minicli (Alt+F2).xx
 Enabled=false
 Name=Go to KDE Website
+Name[nl]=Ga naar KDE-website
 Name[uk]=Перейти до вебсторінки KDE
 Name[x-test]=xxGo to KDE Websitexx
 Type=COMMAND_URL_SHORTCUT_ACTION_DATA
@@ -479,6 +518,7 @@ ConditionsCount=0
 
 [Data_1_8Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1

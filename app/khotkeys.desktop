@@ -1,8 +1,10 @@
 [Desktop Entry]
 Name=Input Actions
+Name[nl]=Invoeracties
 Name[uk]=Ввід
 Name[x-test]=xxInput Actionsxx
 Comment=Input Actions service performing configured actions on key presses
+Comment[nl]=Service voor invoeracties die ingestelde acties uitvoert bij toetsen indrukken
 Comment[uk]=Служба «Ввід» виконує вказані дії у відповідь на натискання певних клавіш
 Comment[x-test]=xxInput Actions service performing configured actions on key pressesxx
 Type=Service

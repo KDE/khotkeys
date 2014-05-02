@@ -9,15 +9,18 @@ X-KDE-ParentApp=kcontrol
 X-DocPath=kcontrol/khotkeys/index.html
 
 Name=Custom Shortcuts
+Name[nl]=Aangepaste snelkoppelingen
 Name[uk]=Нетипові скорочення
 Name[x-test]=xxCustom Shortcutsxx
 
 Comment=Configure Input Actions settings
+Comment[nl]=Invoeractieinstellingen configureren 
 Comment[uk]=Налаштування параметрів дій з вводу
 Comment[x-test]=xxConfigure Input Actions settingsxx
 Categories=Qt;KDE;X-KDE-settings-accessibility;
 
 X-KDE-Keywords=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch
+X-KDE-Keywords[nl]=globaal,toetsenbordsneltoets,hot-keys,hotkeys,KHotKeys,invoeracties,muisbeweging,acties,triggers,opstarten
 X-KDE-Keywords[uk]=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch,загальні,глобальні,клавіатура,клавіатурні скорочення,введення,жести,жести мишею,дії,вмикання,запуск
 X-KDE-Keywords[x-test]=xxglobal,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launchxx
 

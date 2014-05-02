@@ -3,11 +3,13 @@ DataCount=1
 
 [Data_1]
 Comment=Comment
+Comment[nl]=Toelichting
 Comment[uk]=Коментар
 Comment[x-test]=xxCommentxx
 DataCount=1
 Enabled=true
 Name=KMenuEdit
+Name[nl]=KMenuEdit
 Name[uk]=KMenuEdit
 Name[x-test]=xxKMenuEditxx
 SystemGroup=1
@@ -19,10 +21,12 @@ ConditionsCount=0
 
 [Data_1_1]
 Comment=Comment
+Comment[nl]=Toelichting
 Comment[uk]=Коментар
 Comment[x-test]=xxCommentxx
 Enabled=true
 Name=Search
+Name[nl]=Zoeken
 Name[uk]=Пошук
 Name[x-test]=xxSearchxx
 Type=SIMPLE_ACTION_DATA
@@ -40,6 +44,7 @@ ConditionsCount=0
 
 [Data_1_1Triggers]
 Comment=Simple_action
+Comment[nl]=Eenvoudige_handeling
 Comment[uk]=Simple_action
 Comment[x-test]=xxSimple_actionxx
 TriggersCount=1

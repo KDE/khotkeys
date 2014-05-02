@@ -3,11 +3,13 @@ DataCount=1
 
 [Data_1]
 Comment=Basic Konqueror gestures.
+Comment[nl]=Basis Konqueror-gebaren.
 Comment[uk]=Прості жести Konqueror.
 Comment[x-test]=xxBasic Konqueror gestures.xx
 DataCount=14
 Enabled=true
 Name=Konqueror Gestures
+Name[nl]=Konqueror-gebaren
 Name[uk]=Жести Konqueror
 Name[x-test]=xxKonqueror Gesturesxx
 SystemGroup=0
@@ -15,6 +17,7 @@ Type=ACTION_DATA_GROUP
 
 [Data_1Conditions]
 Comment=Konqueror window
+Comment[nl]=Konqueror-venster
 Comment[uk]=Вікно Konqueror
 Comment[x-test]=xxKonqueror windowxx
 ConditionsCount=1
@@ -24,6 +27,7 @@ Type=ACTIVE_WINDOW
 
 [Data_1Conditions0Window]
 Comment=Konqueror
+Comment[nl]=Konqueror
 Comment[uk]=Konqueror
 Comment[x-test]=xxKonquerorxx
 WindowsCount=1
@@ -32,6 +36,7 @@ WindowsCount=1
 Class=^konqueror\s
 ClassType=3
 Comment=Konqueror
+Comment[nl]=Konqueror
 Comment[uk]=Konqueror
 Comment[x-test]=xxKonquerorxx
 Role=konqueror-mainwindow#1
@@ -43,20 +48,24 @@ WindowTypes=1
 
 [Data_1_1]
 Comment=Press, move left, release.
+Comment[nl]=Indrukken, naar links bewegen, loslaten.
 Comment[uk]=Натиснути, посунути ліворуч, відпустити.
 Comment[x-test]=xxPress, move left, release.xx
 Enabled=true
 Name=Back
+Name[nl]=Terug
 Name[uk]=Назад
 Name[x-test]=xxBackxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
 [Data_1_10]
 Comment=Opera-style: Press, move up, release.\nNOTE: Conflicts with 'New Tab', and as such is disabled by default.
+Comment[nl]=Opera-stijl: indrukken, omhoog bewegen, loslaten.\nOpmerking: botst met 'Nieuw tabblad', en is standaard uitgeschakeld.
 Comment[uk]=У стилі Opera: Натиснути, пересунути вгору, відпустити.\nЗАУВАЖЕННЯ: Конфліктує з жестом «Нова вкладка», тому цей жест типово вимкнено.
 Comment[x-test]=xxOpera-style: Press, move up, release.\nNOTE: Conflicts with 'New Tab', and as such is disabled by default.xx
 Enabled=false
 Name=Stop Loading
+Name[nl]=Laden stoppen
 Name[uk]=Зупинити завантаження
 Name[x-test]=xxStop Loadingxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -75,6 +84,7 @@ ConditionsCount=0
 
 [Data_1_10Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -85,10 +95,12 @@ Type=GESTURE
 
 [Data_1_11]
 Comment=Going up in URL/directory structure.\nMozilla-style: Press, move up, move left, move up, release.
+Comment[nl]=Omhoog gaan in de URL- of mappenstructuur.\nMozilla-stijl: indrukken, omhoog bewegen, naar links bewegen, omhoog bewegen, loslaten.
 Comment[uk]=Піднятися вгору структурою URL/каталогів.\nУ стилі Mozilla: Натиснути, пересунути вгору, пересунути ліворуч, пересунути вгору, відпустити.
 Comment[x-test]=xxGoing up in URL/directory structure.\nMozilla-style: Press, move up, move left, move up, release.xx
 Enabled=true
 Name=Up
+Name[nl]=Omhoog
 Name[uk]=Вгору
 Name[x-test]=xxUpxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -107,6 +119,7 @@ ConditionsCount=0
 
 [Data_1_11Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -117,10 +130,12 @@ Type=GESTURE
 
 [Data_1_12]
 Comment=Going up in URL/directory structure.\nOpera-style: Press, move up, move left, move up, release.\nNOTE: Conflicts with  "Activate Previous Tab", and as such is disabled by default.
+Comment[nl]=Omhoog gaan in de URL- of mappenstructuur.\nOpera-stijl: indrukken, omhoog bewegen, naar links bewegen, omhoog bewegen,loslaten.\Opmerking: Botst met "Vorige tabblad activeren", en is daarom standaard uitgeschakeld.
 Comment[uk]=Піднятися вгору структурою URL/каталогів.\nУ стилі Opera: Натиснути, пересунути вгору, пересунути ліворуч, відпустити.\nЗАУВАЖЕННЯ: Конфліктує з дією «Активувати попередню вкладку», тому цей жест типово вимкнено.
 Comment[x-test]=xxGoing up in URL/directory structure.\nOpera-style: Press, move up, move left, move up, release.\nNOTE: Conflicts with  "Activate Previous Tab", and as such is disabled by default.xx
 Enabled=false
 Name=Up #2
+Name[nl]=Omhoog #2
 Name[uk]=Вгору 2
 Name[x-test]=xxUp #2xx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -139,6 +154,7 @@ ConditionsCount=0
 
 [Data_1_12Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -149,10 +165,12 @@ Type=GESTURE
 
 [Data_1_13]
 Comment=Press, move up, move right, release.
+Comment[nl]=Indrukken, omhoog bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вгору, посунути праворуч, відпустити.
 Comment[x-test]=xxPress, move up, move right, release.xx
 Enabled=true
 Name=Activate Next Tab
+Name[nl]=Volgend tabblad activeren
 Name[uk]=Активувати наступну вкладку
 Name[x-test]=xxActivate Next Tabxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -171,6 +189,7 @@ ConditionsCount=0
 
 [Data_1_13Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -181,10 +200,12 @@ Type=GESTURE
 
 [Data_1_14]
 Comment=Press, move up, move left, release.
+Comment[nl]=Indrukken, omhoog bewegen, naar links bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вгору, посунути ліворуч, відпустити.
 Comment[x-test]=xxPress, move up, move left, release.xx
 Enabled=true
 Name=Activate Previous Tab
+Name[nl]=Vorig tabblad activeren
 Name[uk]=Активувати попередню вкладку
 Name[x-test]=xxActivate Previous Tabxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -203,6 +224,7 @@ ConditionsCount=0
 
 [Data_1_14Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -225,6 +247,7 @@ ConditionsCount=0
 
 [Data_1_1Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -235,10 +258,12 @@ Type=GESTURE
 
 [Data_1_2]
 Comment=Press, move down, move up, move down, release.
+Comment[nl]=Indrukken, naar beneden bewegen, naar boven bewegen, naar beneden bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вниз, посунути вгору, відпустити.
 Comment[x-test]=xxPress, move down, move up, move down, release.xx
 Enabled=true
 Name=Duplicate Tab
+Name[nl]=Tabblad dupliceren
 Name[uk]=Створити дублікат вкладки
 Name[x-test]=xxDuplicate Tabxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -257,6 +282,7 @@ ConditionsCount=0
 
 [Data_1_2Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -267,10 +293,12 @@ Type=GESTURE
 
 [Data_1_3]
 Comment=Press, move down, move up, release.
+Comment[nl]=Indrukken, naar beneden bewegen, naar boven bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вниз, посунути вгору, відпустити.
 Comment[x-test]=xxPress, move down, move up, release.xx
 Enabled=true
 Name=Duplicate Window
+Name[nl]=Venster dupliceren
 Name[uk]=Створити дублікат вікна
 Name[x-test]=xxDuplicate Windowxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -289,6 +317,7 @@ ConditionsCount=0
 
 [Data_1_3Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -299,10 +328,12 @@ Type=GESTURE
 
 [Data_1_4]
 Comment=Press, move right, release.
+Comment[nl]=Indrukken, naar rechts bewegen, loslaten.
 Comment[uk]=Натиснути, посунути праворуч, відпустити.
 Comment[x-test]=xxPress, move right, release.xx
 Enabled=true
 Name=Forward
+Name[nl]=Vooruit
 Name[uk]=Вперед
 Name[x-test]=xxForwardxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -321,6 +352,7 @@ ConditionsCount=0
 
 [Data_1_4Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -331,10 +363,12 @@ Type=GESTURE
 
 [Data_1_5]
 Comment=Press, move down, move half up, move right, move down, release.\n(Drawing a lowercase 'h'.)
+Comment[nl]=Indrukken, naar beneden bewegen, half naar boven bewegen, naar rechts bewegen, naar beneden bewegen, loslaten.\n(tekent een kleine 'h'.)
 Comment[uk]=Натиснути, посунути вниз, посунути наполовину вгору, посунути праворуч, посунути вниз, відпустити.\n(Малювання малої букви «h».)
 Comment[x-test]=xxPress, move down, move half up, move right, move down, release.\n(Drawing a lowercase 'h'.)xx
 Enabled=true
 Name=Home
+Name[nl]=Home
 Name[uk]=Домівка
 Name[x-test]=xxHomexx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -353,6 +387,7 @@ ConditionsCount=0
 
 [Data_1_5Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=2
@@ -367,10 +402,12 @@ Type=GESTURE
 
 [Data_1_6]
 Comment=Press, move right, move down, move right, release.\nMozilla-style: Press, move down, move right, release.
+Comment[nl]=Indrukken, naar rechts bewegen, naar beneden bewegen, naar rechts bewegen, loslaten.\nAls in Mozilla: indrukken, naar beneden bewegen, naar rechts bewegen, loslaten.
 Comment[uk]=Натиснути, посунути праворуч, посунути вниз, посунути праворуч, відпустити.\nВ стилі Mozilla: Натиснути, посунути вниз, посунути праворуч, відпустити.
 Comment[x-test]=xxPress, move right, move down, move right, release.\nMozilla-style: Press, move down, move right, release.xx
 Enabled=true
 Name=Close Tab
+Name[nl]=Tabblad sluiten
 Name[uk]=Закрити вкладку
 Name[x-test]=xxClose Tabxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -389,6 +426,7 @@ ConditionsCount=0
 
 [Data_1_6Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=2
@@ -403,10 +441,12 @@ Type=GESTURE
 
 [Data_1_7]
 Comment=Press, move up, release.\nConflicts with Opera-style 'Up #2', which is disabled by default.
+Comment[nl]=Indrukken, naar boven bewegen, loslaten.\nBotst met de tweede handeling omhoog gaan in Opera, staat daarom standaard uit.
 Comment[uk]=Натиснути, посунути вгору, відпустити.\n Конфліктує з жестом з Opera «Up #2», який типово вимкнено.
 Comment[x-test]=xxPress, move up, release.\nConflicts with Opera-style 'Up #2', which is disabled by default.xx
 Enabled=true
 Name=New Tab
+Name[nl]=Nieuw tabblad
 Name[uk]=Створити вкладку
 Name[x-test]=xxNew Tabxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -425,6 +465,7 @@ ConditionsCount=0
 
 [Data_1_7Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -435,10 +476,12 @@ Type=GESTURE
 
 [Data_1_8]
 Comment=Press, move down, release.
+Comment[nl]=Indrukken, naar beneden bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вниз, відпустити.
 Comment[x-test]=xxPress, move down, release.xx
 Enabled=true
 Name=New Window
+Name[nl]=Nieuw venster
 Name[uk]=Нове вікно
 Name[x-test]=xxNew Windowxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -457,6 +500,7 @@ ConditionsCount=0
 
 [Data_1_8Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
@@ -467,10 +511,12 @@ Type=GESTURE
 
 [Data_1_9]
 Comment=Press, move up, move down, release.
+Comment[nl]=Indrukken, omhoog bewegen, omlaag bewegen, loslaten.
 Comment[uk]=Натиснути, посунути вгору, відпустити.
 Comment[x-test]=xxPress, move up, move down, release.xx
 Enabled=true
 Name=Reload
+Name[nl]=Herladen
 Name[uk]=Перезавантажити
 Name[x-test]=xxReloadxx
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
@@ -489,6 +535,7 @@ ConditionsCount=0
 
 [Data_1_9Triggers]
 Comment=Gesture_triggers
+Comment[nl]=Gebaarstarters
 Comment[uk]=Gesture_triggers
 Comment[x-test]=xxGesture_triggersxx
 TriggersCount=1
