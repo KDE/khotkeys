@@ -93,11 +93,10 @@ KCMHotkeys::KCMHotkeys( QWidget *parent, const QVariantList & /* args */ )
     // Add the about data
     KAboutData *about = new KAboutData(
         "khotkeys",
-        QString(),
         i18n("KDE Hotkeys Configuration Module"),
         KHOTKEYS_STRING_VERSION,
         QString(),
-        KAboutData::License_GPL,
+        KAboutLicense::GPL,
         i18n("Copyright 2008 (c) Michael Jansen")
         );
     about->addAuthor(
