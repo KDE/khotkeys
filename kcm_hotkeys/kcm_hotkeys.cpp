@@ -94,7 +94,7 @@ KCMHotkeys::KCMHotkeys( QWidget *parent, const QVariantList & /* args */ )
     KAboutData *about = new KAboutData(
         "khotkeys",
         i18n("KDE Hotkeys Configuration Module"),
-        KHOTKEYS_STRING_VERSION,
+        PROJECT_VERSION,
         QString(),
         KAboutLicense::GPL,
         i18n("Copyright 2008 (c) Michael Jansen")

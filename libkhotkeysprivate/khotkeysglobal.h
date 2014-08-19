@@ -11,7 +11,6 @@
 #ifndef _KHOTKEYSGLOBAL_H_
 #define _KHOTKEYSGLOBAL_H_
 
-#define KHOTKEYS_VERSION "2.1"
 #define KHOTKEYS_CONFIG_FILE "khotkeysrc"
 
 #include <KLocalizedString>

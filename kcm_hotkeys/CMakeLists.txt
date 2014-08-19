@@ -83,7 +83,7 @@ add_library(
     ${kcm_hotkeys_PART_SRCS}
     )
 
-target_compile_definitions(kcm_hotkeys PRIVATE -DKHOTKEYS_STRING_VERSION="${KHOTKEYS_STRING_VERSION}")
+target_compile_definitions(kcm_hotkeys PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
 add_dependencies(kcm_hotkeys kded_khotkeys)
 

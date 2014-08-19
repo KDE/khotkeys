@@ -84,5 +84,5 @@ target_link_libraries(khotkeysprivate PUBLIC
 if(X11_XTest_FOUND)
     target_link_libraries(khotkeysprivate PUBLIC ${X11_XTest_LIB})
 endif()
-set_target_properties(khotkeysprivate PROPERTIES VERSION ${KHOTKEYS_VERSION_STRING} SOVERSION ${KHOTKEYS_VERSION_SOVERSION})
+set_target_properties(khotkeysprivate PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
 install(TARGETS khotkeysprivate ${INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
