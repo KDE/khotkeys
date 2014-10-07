@@ -95,7 +95,7 @@ target_link_libraries(
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::TextWidgets
-    KF5::KDE4Support
+    KF5::KDELibs4Support
     Qt5::Gui
     ${X11_X11_LIB}
     )

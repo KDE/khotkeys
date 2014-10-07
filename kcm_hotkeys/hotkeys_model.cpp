@@ -28,7 +28,7 @@
 #include <QMimeData>
 
 #include <KDebug>
-#include <KIcon>
+#include <QIcon>
 
 
 static KHotKeys::ActionDataBase *findElement(
@@ -201,7 +201,7 @@ QVariant KHotkeysModel::data( const QModelIndex &index, int role ) const
             // regardless of the content it has
             case 0:
                 return dynamic_cast<KHotKeys::ActionDataGroup*>(action)
-                    ? KIcon("folder")
+                    ? QIcon::fromTheme("folder")
                     : QVariant();
 
             default:

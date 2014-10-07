@@ -11,7 +11,7 @@ include_directories(
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-find_package(ECM 0.0.11 REQUIRED NO_MODULE)
+find_package(ECM 1.1.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 include(KDEInstallDirs)
@@ -24,7 +24,7 @@ find_package(KF5 REQUIRED COMPONENTS
     I18n
     KIO
     XmlGui
-    KDE4Support
+    KDELibs4Support
     DBusAddons
     KCMUtils
     Plasma
