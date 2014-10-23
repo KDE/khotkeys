@@ -12,7 +12,7 @@
 
 #include "khotkeysglobal.h"
 
-#include <kdebug.h>
+#include <QDebug>
 #include <kstandarddirs.h>
 #include <KGlobal>
 

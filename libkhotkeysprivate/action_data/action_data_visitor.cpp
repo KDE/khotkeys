@@ -21,7 +21,7 @@
 
 #include "action_data/action_data_base.h"
 
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -35,7 +35,7 @@ ActionDataVisitor::~ActionDataVisitor()
 
 void ActionDataVisitor::visitActionDataBase(ActionDataBase *action)
     {
-    kDebug() << action->name();
+    qDebug() << action->name();
     Q_ASSERT(false);
     }
 
@@ -51,7 +51,7 @@ ActionDataConstVisitor::~ActionDataConstVisitor()
 
 void ActionDataConstVisitor::visitActionDataBase(const ActionDataBase *action)
     {
-    kDebug() << action->name();
+    qDebug() << action->name();
     Q_ASSERT(false);
     }
 

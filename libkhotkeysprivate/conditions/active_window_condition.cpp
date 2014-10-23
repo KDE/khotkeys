@@ -25,7 +25,7 @@
 
 #include <KConfig>
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -72,7 +72,7 @@ void Active_window_condition::cfg_write( KConfigGroup& cfg_P ) const
 
 Active_window_condition* Active_window_condition::copy() const
     {
-    kDebug();
+    qDebug();
     return new Active_window_condition(window()->copy());
     }
 

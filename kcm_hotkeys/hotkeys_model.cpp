@@ -27,7 +27,7 @@
 
 #include <QMimeData>
 
-#include <KDebug>
+#include <QDebug>
 #include <QIcon>
 
 
@@ -256,7 +256,7 @@ bool KHotkeysModel::dropMimeData(
     if ( (action!=Qt::CopyAction)
             || !data->hasFormat("application/x-pointer"))
         {
-        kDebug() << "Drop not supported " << data->formats();
+        qDebug() << "Drop not supported " << data->formats();
         return false;
         }
 
@@ -426,7 +426,7 @@ void KHotkeysModel::importInputActions(const QModelIndex &index, KConfigBase con
 
     if (settings()->importFrom(group, config, KHotKeys::ImportAsk, KHotKeys::Retain))
         {
-        kDebug();
+        qDebug();
         reset();
         save();
         }
@@ -525,7 +525,7 @@ bool KHotkeysModel::moveElement(
     do  {
         if (tmp == element)
             {
-            kDebug() << "Forbidden move" << tmp->name();
+            qDebug() << "Forbidden move" << tmp->name();
             return false;
             }
         }

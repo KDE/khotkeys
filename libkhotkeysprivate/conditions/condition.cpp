@@ -24,7 +24,7 @@
 #include "conditions/conditions_visitor.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -75,7 +75,7 @@ Condition* Condition::create_cfg_read( KConfigGroup& cfg_P, Condition_list_base*
         return new And_condition( cfg_P, parent_P );
     if( type == "OR" )
         return new Or_condition( cfg_P, parent_P );
-    kWarning() << "Unknown Condition type read from cfg file\n";
+    qWarning() << "Unknown Condition type read from cfg file\n";
     return NULL;
     }
 

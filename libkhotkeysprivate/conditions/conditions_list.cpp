@@ -24,7 +24,7 @@
 #include "khotkeysglobal.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -56,7 +56,7 @@ const QString& Condition_list::comment() const
 
 Condition_list* Condition_list::copy() const
     {
-    kDebug() << count();
+    qDebug() << count();
 
     Condition_list* ret = new Condition_list(comment());
     for( ConstIterator it = begin();

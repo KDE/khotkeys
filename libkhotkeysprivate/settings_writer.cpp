@@ -34,7 +34,7 @@
 
 #include <KConfig>
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -150,7 +150,7 @@ void SettingsWriter::visitActionDataBase(const ActionDataBase *base)
         }
     else
         {
-        kDebug() << "No conditions";
+        qDebug() << "No conditions";
         }
     }
 

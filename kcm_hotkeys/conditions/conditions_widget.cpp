@@ -33,7 +33,7 @@
 
 #include <QtCore/QStack>
 
-#include <KDebug>
+#include <QDebug>
 
 class BuildTree : public KHotKeys::ConditionsVisitor
     {
@@ -152,8 +152,8 @@ void ConditionsWidget::copyFromObject()
     _working = _conditions_list->copy();
     Q_ASSERT(_working->count() == _conditions_list->count());
 
-    kDebug() << _working->count();
-    kDebug() << _conditions_list->count();
+    qDebug() << _working->count();
+    qDebug() << _conditions_list->count();
 
     // Build the tree
     BuildTree builder(ui.tree);
@@ -166,7 +166,7 @@ void ConditionsWidget::copyFromObject()
 
 void ConditionsWidget::copyToObject()
     {
-    kDebug();
+    qDebug();
 
     Q_ASSERT(_conditions_list);
     if (!_conditions_list) return;
@@ -181,7 +181,7 @@ void ConditionsWidget::copyToObject()
             it != _working->end();
             ++it)
         {
-        kDebug();
+        qDebug();
         _conditions_list->append((*it)->copy());
         }
 

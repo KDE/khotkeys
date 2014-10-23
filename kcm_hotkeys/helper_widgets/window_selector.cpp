@@ -12,7 +12,7 @@
 
 #include "helper_widgets/window_selector.h"
 
-#include <kdebug.h>
+#include <QDebug>
 #include <kapplication.h>
 
 #include <QDesktopWidget>

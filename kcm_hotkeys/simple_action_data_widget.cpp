@@ -27,7 +27,7 @@
 #include "triggers/window_trigger_widget.h"
 #include "triggers/gesture_trigger_widget.h"
 
-#include <KDebug>
+#include <QDebug>
 
 
 SimpleActionDataWidget::SimpleActionDataWidget( QWidget *parent )
@@ -97,22 +97,22 @@ void SimpleActionDataWidget::setActionData( KHotKeys::SimpleActionData* pData )
         switch ( trg->type() )
             {
             case KHotKeys::Trigger::ShortcutTriggerType:
-                kDebug() << "1";
+                qDebug() << "1";
                 currentTrigger = new ShortcutTriggerWidget( static_cast<KHotKeys::ShortcutTrigger*>(trg) );
                 break;
 
             case KHotKeys::Trigger::WindowTriggerType:
-                kDebug() << "2";
+                qDebug() << "2";
                 currentTrigger = new WindowTriggerWidget( static_cast<KHotKeys::WindowTrigger*>(trg) );
                 break;
 
             case KHotKeys::Trigger::GestureTriggerType:
-                kDebug() << "3";
+                qDebug() << "3";
                 currentTrigger = new GestureTriggerWidget( static_cast<KHotKeys::GestureTrigger*>(trg) );
                 break;
 
             default:
-                kDebug() << "Unknown trigger type";
+                qDebug() << "Unknown trigger type";
             };
         }
 
@@ -148,7 +148,7 @@ void SimpleActionDataWidget::setActionData( KHotKeys::SimpleActionData* pData )
                 break;
 
             default:
-                kDebug() << "Unknown action type";
+                qDebug() << "Unknown action type";
             };
         }
 

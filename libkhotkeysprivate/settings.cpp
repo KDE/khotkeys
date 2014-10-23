@@ -25,7 +25,7 @@
 #include "windows_helper/window_selection_list.h"
 
 #include <KConfig>
-#include <KDebug>
+#include <QDebug>
 #include <KGlobal>
 #include <KMessageBox>
 #include <KStandardDirs>
@@ -145,13 +145,13 @@ bool Settings::loadDefaults()
     KConfig file(installPath + "khotkeys/defaults.khotkeys");
     if (read_settings(m_actions, file, true, Enabled))
         {
-        kDebug() << "Loaded defaults from" << file.name();
+        qDebug() << "Loaded defaults from" << file.name();
         already_imported.append("defaults");
         return true;
         }
     else
         {
-        kDebug() << "Failed to load defaults from" << file.name();
+        qDebug() << "Failed to load defaults from" << file.name();
         return false;
         }
 
@@ -255,16 +255,16 @@ bool Settings::isConfigFileValid(KConfigBase const &config, ImportType ask)
                 break;
 
             case 1:         // Version 1 files no longer supported
-                kDebug() << "Version 1 file encountered.";
+                qDebug() << "Version 1 file encountered.";
                 break;
 
             case -1234576:  // No Version entry -> invalid file
-                kDebug() << "No version specified in file:";
+                qDebug() << "No version specified in file:";
                 valid = false;
                 break;
 
             default:
-                kDebug() << "Invalid Version found:" << version;
+                qDebug() << "Invalid Version found:" << version;
                 valid = false;
                 break;
             }
@@ -483,7 +483,7 @@ bool Settings::read_settings(ActionDataGroup *root, KConfigBase const &config, b
         {
         case 2:
                 {
-                kDebug() << "Version 2 File!";
+                qDebug() << "Version 2 File!";
                 SettingsReaderV2 reader(this, include_disabled, stateStrategy, import_id);
                 reader.read(config, root);
                 }
@@ -511,7 +511,7 @@ bool Settings::update()
         KConfig file(path);
         if (import(file, ImportSilent, Retain))
             {
-            kDebug() << "Imported file" << path;
+            qDebug() << "Imported file" << path;
             imported = true;
             }
         }

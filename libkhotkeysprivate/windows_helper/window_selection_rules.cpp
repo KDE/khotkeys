@@ -19,7 +19,7 @@
 #include "windows_helper/window_selection_rules.h"
 
 #include <KLocalizedString>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -123,7 +123,7 @@ bool Windowdef_simple::match( const Window_data& window_P )
         return false;
     if( !is_substr_match( window_P.role, role(), _role_match_type ))
         return false;
-    kDebug() << "window match:" << window_P.title << ":OK";
+    qDebug() << "window match:" << window_P.title << ":OK";
     return true;
     }
 

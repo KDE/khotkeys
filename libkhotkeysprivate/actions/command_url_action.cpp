@@ -22,7 +22,7 @@
 
 #include <KAuthorized>
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <KRun>
 #include <KService>
 #include <KUriFilter>
@@ -56,7 +56,7 @@ void CommandUrlAction::accept(ActionVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
@@ -83,7 +83,7 @@ const QString CommandUrlAction::description() const
 
 void CommandUrlAction::execute()
     {
-    kDebug();
+    qDebug();
     if( command_url().isEmpty())
         return;
     KUriFilterData uri;

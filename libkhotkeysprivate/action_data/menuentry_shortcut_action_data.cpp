@@ -24,7 +24,7 @@
 #include "conditions/conditions.h"
 
 #include <kconfiggroup.h>
-#include <kdebug.h>
+#include <QDebug>
 
 namespace KHotKeys {
 

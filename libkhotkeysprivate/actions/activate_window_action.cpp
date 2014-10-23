@@ -22,7 +22,7 @@
 
 #include <KConfigGroup>
 #include <KSharedConfig>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 
@@ -46,7 +46,7 @@ void ActivateWindowAction::accept(ActionVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 

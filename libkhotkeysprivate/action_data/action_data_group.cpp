@@ -14,7 +14,7 @@
 #include "actions/actions.h"
 
 #include <kconfiggroup.h>
-#include <kdebug.h>
+#include <QDebug>
 
 
 namespace KHotKeys

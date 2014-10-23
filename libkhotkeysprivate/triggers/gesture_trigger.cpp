@@ -45,7 +45,7 @@
 #include <QFile>
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <kstandarddirs.h>
 
 namespace KHotKeys {
@@ -75,7 +75,7 @@ void GestureTrigger::accept(TriggerVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
@@ -116,7 +116,7 @@ void GestureTrigger::cfg_write( KConfigGroup& cfg_P ) const
 
 Trigger* GestureTrigger::copy( ActionData* data_P ) const
     {
-    kDebug() << "GestureTrigger::copy()";
+    qDebug() << "GestureTrigger::copy()";
     return new GestureTrigger( data_P ? data_P : data, pointData());
     }
 

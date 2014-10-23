@@ -19,7 +19,7 @@
 
 #include "menuentry_action_widget.h"
 
-#include <KDebug>
+#include <QDebug>
 #include <KOpenWithDialog>
 
 

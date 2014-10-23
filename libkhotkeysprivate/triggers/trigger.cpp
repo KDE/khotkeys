@@ -20,7 +20,7 @@
 #include "triggers.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys
     {

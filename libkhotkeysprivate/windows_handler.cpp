@@ -19,7 +19,7 @@
 
 #include <kconfig.h>
 #include <kconfiggroup.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kwindowsystem.h>
 #include <klocale.h>
 

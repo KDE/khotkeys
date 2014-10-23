@@ -20,7 +20,7 @@
 
 #include "soundrecorder.h"
 
-#include <kdebug.h>
+#include <QDebug>
 #include <klocale.h>
 #include <QtCore/QTimer>
 #include <klibrary.h>
@@ -38,7 +38,7 @@ bool SoundRecorder::init( KLibrary* lib )
     if( create_fun == NULL && lib != NULL )
         create_fun = (create_ptr) lib->symbol( "khotkeys_soundrecorder_create" );
 #endif
-//    kDebug() << "soundrecorder:" << create_fun << ":" << lib;
+//    qDebug() << "soundrecorder:" << create_fun << ":" << lib;
     return create_fun != NULL;
 }
 

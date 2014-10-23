@@ -48,7 +48,7 @@ static QDBusInterface* Kded()
         QDBusError err = iface->lastError();
         if (err.isValid())
             {
-            kError() << "Failed to contact kded [" << err.name() << "]:" << err.message();
+            qCritical() << "Failed to contact kded [" << err.name() << "]:" << err.message();
             }
         }
     return iface;
@@ -91,7 +91,7 @@ bool reload()
         QDBusError err = iface.lastError();
         if (err.isValid())
             {
-            kError() << err.name() << ":" << err.message();
+            qCritical() << err.name() << ":" << err.message();
             }
         return start();
         }
@@ -100,7 +100,7 @@ bool reload()
     QDBusError err = iface.lastError();
     if (err.isValid())
         {
-        kError() << err.name() << ":" << err.message();
+        qCritical() << err.name() << ":" << err.message();
         return false;
         }
 
@@ -120,7 +120,7 @@ bool start()
 
     if (err.isValid())
         {
-        kError() << "Unable to start server org.kde.khotkeys (kded module) [" 
+        qCritical() << "Unable to start server org.kde.khotkeys (kded module) [" 
                  << err.name() << "]:" << err.message();
         return false;
         }
@@ -133,7 +133,7 @@ bool start()
         }
     else
         {
-        kError() << "Unable to start server org.kde.khotkeys (kded module)";
+        qCritical() << "Unable to start server org.kde.khotkeys (kded module)";
         return false;
         }
     }
@@ -158,7 +158,7 @@ bool stop()
     if (err.isValid())
         {
 
-        kError() << "Error when stopping khotkeys kded module [" << err.name() << "]:" << err.message();
+        qCritical() << "Error when stopping khotkeys kded module [" << err.name() << "]:" << err.message();
         return false;
         }
 
@@ -170,7 +170,7 @@ bool stop()
         }
     else
         {
-        kError() << "Failed to stop server org.kde.khotkeys (kded module)";
+        qCritical() << "Failed to stop server org.kde.khotkeys (kded module)";
         return false;
         }
     }

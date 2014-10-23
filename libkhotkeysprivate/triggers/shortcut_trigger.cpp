@@ -22,7 +22,7 @@
 #include "windows_handler.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <KGlobalAccel>
 
 #include <QAction>
@@ -61,7 +61,7 @@ void ShortcutTrigger::accept(TriggerVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
@@ -75,7 +75,7 @@ void ShortcutTrigger::aboutToBeErased()
 void ShortcutTrigger::activate( bool newState )
     {
 #ifdef KHOTKEYS_TRACE
-    kDebug() << "new:" << newState << "old:" << _active;
+    qDebug() << "new:" << newState << "old:" << _active;
 #endif
     // If there is no change in state just return.
     if (newState == _active)

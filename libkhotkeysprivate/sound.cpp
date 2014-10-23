@@ -21,7 +21,7 @@
 #include "sound.h"
 #include <QtCore/QFile>
 #include <QtCore/QDataStream>
-#include <kdebug.h>
+#include <QDebug>
 
 
 
@@ -41,7 +41,7 @@ Sound::~Sound()
    stream >> magic;  \
    if( magic != ( (CH)[0] | (CH)[1]<<8 | (CH)[2]<< 16 | (CH)[3] << 24 ) ) \
    {  \
-      kWarning() << "bad format " << magic << " != " << CH "\n";\
+      qWarning() << "bad format " << magic << " != " << CH "\n";\
       return;\
    } }   
 
@@ -49,12 +49,12 @@ Sound::~Sound()
 
 void Sound::load(const QString& filename)
 {
-	kDebug() << filename;
+	qDebug() << filename;
 	data=QVector<Q_INT32>();
 	QFile file(filename);
 	if(!file.open(IO_ReadOnly))
 	{
-		kWarning() <<"unable to open file" ;
+		qWarning() <<"unable to open file" ;
 		return;
 	}
 	QDataStream stream(&file);
@@ -85,7 +85,7 @@ void Sound::load(const QString& filename)
 
 	data.resize(NumberOfSamples);
 
-//	kDebug() << NumberOfSamples << " samples";
+//	qDebug() << NumberOfSamples << " samples";
 
 	max=0;
 	for(unsigned long int f=0;f<NumberOfSamples;f++)
@@ -114,11 +114,11 @@ void Sound::load(const QString& filename)
 
 void Sound::save(const QString& filename) const
 {
-	kDebug() << filename << " - " << data.size() <<  endl;
+	qDebug() << filename << " - " << data.size() <<  endl;
 	QFile file(filename);
 	if(!file.open(IO_WriteOnly))
 	{
-		kWarning() <<"unable to open file" ;
+		qWarning() <<"unable to open file" ;
 		return;
 	}
 	QDataStream stream(&file);
@@ -133,7 +133,7 @@ void Sound::save(const QString& filename) const
         SoundData[ (uint)(2*f) ]=   val & 0x00FF;
         SoundData[(uint)(2*f+1)]=  (val & 0xFF00) >> 8;
 		
-//		kDebug() << data.at(f) << " / " << max << " = " << val << "  |  " <<   SoundData[ 2*f ] << " "<< SoundData[ 2*f+1 ] <<  endl;
+//		qDebug() << data.at(f) << " / " << max << " = " << val << "  |  " <<   SoundData[ 2*f ] << " "<< SoundData[ 2*f+1 ] <<  endl;
 	}
 
 	Q_UINT16 NumberOfChannels=2;

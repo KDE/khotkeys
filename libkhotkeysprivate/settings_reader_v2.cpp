@@ -36,7 +36,7 @@
 #include <KConfig>
 #include <KConfigBase>
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 
 SettingsReaderV2::SettingsReaderV2(
@@ -50,7 +50,7 @@ SettingsReaderV2::SettingsReaderV2(
         _importId(importId)
     {
 #ifdef KHOTKEYS_TRACE
-    kDebug() << "Created SettingsReader with disableActions(" << _stateStrategy << ")";
+    qDebug() << "Created SettingsReader with disableActions(" << _stateStrategy << ")";
 #endif
     }
 
@@ -84,7 +84,7 @@ KHotKeys::ActionDataGroup *SettingsReaderV2::readGroup(
         KHotKeys::ActionDataGroup *parent)
     {
 #ifdef KHOTKEYS_TRACE
-    kDebug() << "Reading group" << config.readEntry( "Name" );
+    qDebug() << "Reading group" << config.readEntry( "Name" );
 #endif
     KHotKeys::ActionDataGroup *group = NULL;
 
@@ -154,7 +154,7 @@ KHotKeys::ActionDataGroup *SettingsReaderV2::readGroup(
             break;
 
         default:
-            kWarning() << "Unkown stateStrategy";
+            qWarning() << "Unkown stateStrategy";
             Q_ASSERT(false);
             break;
         };
@@ -197,7 +197,7 @@ KHotKeys::ActionDataBase *SettingsReaderV2::readActionData(
         }
     else
         {
-        kWarning() << "Unknown ActionDataBase type read from cfg file\n";
+        qWarning() << "Unknown ActionDataBase type read from cfg file\n";
         return NULL;
         }
 
@@ -228,13 +228,13 @@ KHotKeys::ActionDataBase *SettingsReaderV2::readActionData(
             break;
 
         default:
-            kWarning() << "Unkown stateStrategy";
+            qWarning() << "Unkown stateStrategy";
             Q_ASSERT(false);
             break;
         };
 
 #ifdef KHOTKEYS_TRACE
-    kDebug() << newObject->name() << "loaded into" << newObject->isEnabled(KHotKeys::ActionDataBase::Ignore) << "state";
+    qDebug() << newObject->name() << "loaded into" << newObject->isEnabled(KHotKeys::ActionDataBase::Ignore) << "state";
 #endif
 
     return newObject;
@@ -268,7 +268,7 @@ KHotKeys::ActionList *SettingsReaderV2::readActionList(
             action = new KHotKeys::ActivateWindowAction(parent);
         else
             {
-            kWarning() << "Unknown Action type read from cfg file\n";
+            qWarning() << "Unknown Action type read from cfg file\n";
             return NULL;
             }
 
@@ -313,7 +313,7 @@ KHotKeys::Trigger_list *SettingsReaderV2::readTriggerList(
             trigger = new KHotKeys::GestureTrigger(parent);
         else
             {
-            kWarning() << "khotkeys: Unknown trigger type" << type;
+            qWarning() << "khotkeys: Unknown trigger type" << type;
             return NULL;
             }
 

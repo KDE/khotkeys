@@ -15,7 +15,7 @@
 #include "triggers/triggers.h"
 
 #include <kconfiggroup.h>
-#include <kdebug.h>
+#include <QDebug>
 
 
 namespace KHotKeys

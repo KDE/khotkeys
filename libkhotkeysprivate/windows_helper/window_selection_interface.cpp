@@ -17,7 +17,7 @@
 
 #include "window_selection_rules.h"
 
-#include <KDebug>
+#include <QDebug>
 
 
 namespace KHotKeys {
@@ -57,7 +57,7 @@ Windowdef* Windowdef::create_cfg_read( KConfigGroup& cfg_P )
     QString type = cfg_P.readEntry( "Type" );
     if( type == "SIMPLE" )
         return new Windowdef_simple( cfg_P );
-    kWarning() << "Unknown Windowdef type read from cfg file\n";
+    qWarning() << "Unknown Windowdef type read from cfg file\n";
     return NULL;
     }
 

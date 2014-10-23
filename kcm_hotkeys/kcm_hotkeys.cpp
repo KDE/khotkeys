@@ -42,7 +42,7 @@
 #include <QtDBus/QtDBus>
 
 #include <KAboutData>
-#include <KDebug>
+#include <QDebug>
 #include <KMessageBox>
 #include <KPluginLoader>
 
@@ -200,7 +200,7 @@ void KCMHotkeys::currentChanged( const QModelIndex &pCurrent, const QModelIndex 
         default:
             {
             const std::type_info &ti = typeid(*item);
-            kDebug() << "##### Unknown ActionDataType " << ti.name();
+            qDebug() << "##### Unknown ActionDataType " << ti.name();
             }
 
         } // switch
@@ -218,7 +218,7 @@ KCMHotkeys::~KCMHotkeys()
 
 void KCMHotkeys::defaults()
     {
-    kWarning() << "not yet implemented!";
+    qWarning() << "not yet implemented!";
     }
 
 
@@ -322,7 +322,7 @@ void KCMHotkeysPrivate::load()
 
 bool KCMHotkeysPrivate::maybeShowWidget(const QModelIndex &nextIndex)
     {
-    kDebug();
+    qDebug();
 
     // If the current widget is changed, ask user if switch is ok
     if (current && (currentIndex != nextIndex) && current->isChanged())
@@ -383,7 +383,7 @@ void KCMHotkeysPrivate::save()
         err = iface->lastError();
         if (err.isValid())
             {
-            kError() << err.name() << ":" << err.message();
+            qCritical() << err.name() << ":" << err.message();
             }
         KMessageBox::error(
             q,

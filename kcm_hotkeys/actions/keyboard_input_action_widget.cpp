@@ -18,7 +18,7 @@
 
 #include "keyboard_input_action_widget.h"
 
-#include <KDebug>
+#include <QDebug>
 
 KeyboardInputActionWidget::KeyboardInputActionWidget(
         KHotKeys::KeyboardInputAction *action,

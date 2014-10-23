@@ -29,7 +29,7 @@
 #define PI (2.0 * asin(1.0))
 
 
-#include <kdebug.h>
+#include <QDebug>
 #include <QtCore/QDate>
 
 #undef Complex
@@ -185,7 +185,7 @@ static QVector<double> fft(const Sound& sound, unsigned int start, unsigned int 
 			samples[indice1]=a+W*b;
 			samples[indice2]=a-W*b;
 
-//			kDebug() << "PAPILLON   s_" << indice1 << " s_" << indice2 <<  "     W_" << (2<<level) << "^" << coefW;
+//			qDebug() << "PAPILLON   s_" << indice1 << " s_" << indice2 <<  "     W_" << (2<<level) << "^" << coefW;
 		}
 	}
 
@@ -283,7 +283,7 @@ VoiceSignature::VoiceSignature(const Sound& sound)
 	unsigned int start , stop;
 	if(!window(sound,&start,&stop))
 	{
-		kWarning() << "No voice found in the sound" 	;
+		qWarning() << "No voice found in the sound" 	;
 		return;
 	}
 	
@@ -328,7 +328,7 @@ VoiceSignature::VoiceSignature(const Sound& sound)
 
 	}
 	
-//	kDebug() << "wind: "<< temp_wind << "  - fft: " << temp_fft << "  - moy: " << temp_moy;
+//	qDebug() << "wind: "<< temp_wind << "  - fft: " << temp_fft << "  - moy: " << temp_moy;
 }
 
 

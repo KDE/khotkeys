@@ -20,7 +20,7 @@
 #include "actions.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 namespace KHotKeys {
 

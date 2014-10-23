@@ -26,7 +26,7 @@
 
 #include <KConfigGroup>
 #include <KSharedConfig>
-#include <KDebug>
+#include <QDebug>
 
 // #include <X11/X.h>
 #include <X11/Xlib.h>
@@ -72,7 +72,7 @@ void KeyboardInputAction::accept(ActionVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
@@ -140,11 +140,11 @@ void KeyboardInputAction::cfg_write( KConfigGroup& cfg_P ) const
 
 void KeyboardInputAction::execute()
     {
-    kDebug();
+    qDebug();
 
     if( input().isEmpty())
         {
-        kDebug() << "Input is empty";
+        qDebug() << "Input is empty";
         return;
         }
 

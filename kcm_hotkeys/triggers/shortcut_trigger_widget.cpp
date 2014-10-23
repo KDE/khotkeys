@@ -24,7 +24,7 @@
 
 #include <QtGui/QKeySequence>
 
-#include <KDebug>
+#include <QDebug>
 
 
 ShortcutTriggerWidget::ShortcutTriggerWidget( KHotKeys::ShortcutTrigger *trigger, QWidget *parent )

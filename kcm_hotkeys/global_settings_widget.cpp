@@ -23,7 +23,7 @@
 #include "settings.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <KDesktopFile>
 #include <KGlobal>
 #include <KStandardDirs>

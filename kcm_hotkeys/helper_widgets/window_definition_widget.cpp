@@ -23,7 +23,7 @@
 #include "helper_widgets/window_selector.h"
 #include "windows_helper/window_selection_rules.h"
 
-#include <KDebug>
+#include <QDebug>
 
 
 WindowDefinitionWidget::WindowDefinitionWidget(KHotKeys::Windowdef_simple *windowdef, QWidget *parent)
@@ -152,7 +152,7 @@ bool WindowDefinitionWidget::isChanged() const
             types |= KHotKeys::Windowdef_simple::WINDOW_TYPE_DOCK;
     if (ui->type_normal->isChecked())
             types |= KHotKeys::Windowdef_simple::WINDOW_TYPE_NORMAL;
-    kDebug() << _windowdef->window_types() << types;
+    qDebug() << _windowdef->window_types() << types;
     return _windowdef->window_types() != types;
     }
 

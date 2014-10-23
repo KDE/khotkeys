@@ -20,7 +20,7 @@
 #include "actions.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <KProcess>
 
 namespace KHotKeys {
@@ -44,7 +44,7 @@ void DBusAction::accept(ActionVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
@@ -131,7 +131,7 @@ void DBusAction::execute()
             args_str = nxt_pos >= 0 ? args_str.mid( nxt_pos ) : "";
             }
         }
-    kDebug() << "D-Bus call:" << _application << ":" << _object << ":" << _function << ":" << args_list;
+    qDebug() << "D-Bus call:" << _application << ":" << _object << ":" << _function << ":" << args_list;
     KProcess proc;
     proc << "qdbus" << _application << _object << _function << args_list;
     proc.startDetached();

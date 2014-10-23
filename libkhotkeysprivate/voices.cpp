@@ -22,7 +22,7 @@
 
 
 #include <kapplication.h>
-#include <kdebug.h>
+#include <QDebug>
 #include <kxerrorhandler.h>
 #include <QtCore/QTimer>
 
@@ -46,13 +46,13 @@ Voice::Voice( bool enabled_P, QObject* parent_P )
 	_kga=0L;
 	_timer=0L;
 
-	kDebug() ;
+	qDebug() ;
 
     }
 
 Voice::~Voice()
     {
-    kDebug() ;
+    qDebug() ;
     enable( false );
     voice_handler = NULL;
     }
@@ -83,7 +83,7 @@ void Voice::unregister_handler( Voice_trigger *trigger_P )
 
 void Voice::record_start()
 {
-	kDebug() ;
+	qDebug() ;
 	if(!_recorder)
 	{
 		_recorder= SoundRecorder::create(this);
@@ -99,7 +99,7 @@ void Voice::record_stop()
 	if(!_recording)
 		return;
 
-	kDebug() ;
+	qDebug() ;
 	delete _timer;
 	_timer=0L;
 	_recording=false;
@@ -136,15 +136,15 @@ void Voice::slot_sound_recorded(const Sound &sound_P)
 			}
 			if( diff < REJECT_FACTOR_DIFF )
 				got_count++;
-			kDebug() << ( (diff < REJECT_FACTOR_DIFF) ? "+++" : "---" )  <<t->voicecode() << ech << " : " << diff;
+			qDebug() << ( (diff < REJECT_FACTOR_DIFF) ? "+++" : "---" )  <<t->voicecode() << ech << " : " << diff;
 		}
 	}
 //	double ecart_relatif=(second_minimum-minimum)/minimum;
 
-//	kDebug() <<  ecart_relatif;
+//	qDebug() <<  ecart_relatif;
 
 	if(trig)
-		kDebug() << "**** " << trig->voicecode() << " : " << minimum;
+		qDebug() << "**** " << trig->voicecode() << " : " << minimum;
 
 
 //	if(trig && ecart_relatif > REJECT_FACTOR_ECART_REL)
@@ -166,7 +166,7 @@ void Voice::slot_sound_recorded(const Sound &sound_P)
 
 	KKeyNative keyNative( pEvent );
 
-	//kDebug() << keyNative.key().toString();
+	//qDebug() << keyNative.key().toString();
 
 	if(_shortcut.contains(keyNative))
 	{
@@ -261,12 +261,12 @@ QString Voice::isNewSoundFarEnough(const VoiceSignature& signature, const QStrin
 			}
 			if( diff < REJECT_FACTOR_DIFF )
 				got_count++;
-			kDebug() << ( (diff < REJECT_FACTOR_DIFF) ? "+++" : "---" )  <<t->voicecode() << ech << " : " << diff;
+			qDebug() << ( (diff < REJECT_FACTOR_DIFF) ? "+++" : "---" )  <<t->voicecode() << ech << " : " << diff;
 		}
 	}
 
 	if(trig)
-		kDebug() << "**** " << trig->voicecode() << " : " << minimum;
+		qDebug() << "**** " << trig->voicecode() << " : " << minimum;
 
 	bool selected=trig &&  ((got_count==1 && minimum < REJECT_FACTOR_DIFF*0.7 ) || ( minimum < REJECT_FACTOR_DIFF   &&  trig==sec_trig  ) );
 	return selected ? trig->voicecode() : QString();

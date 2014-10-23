@@ -23,7 +23,7 @@
 #include "windows_helper/window_selection_list.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 
 #include <X11/X.h>
 
@@ -57,7 +57,7 @@ WindowTrigger::WindowTrigger(
 
 WindowTrigger::~WindowTrigger()
     {
-//    kDebug() << "~WindowTrigger :" << this;
+//    qDebug() << "~WindowTrigger :" << this;
     disconnect( windows_handler, NULL, this, NULL );
     delete _windows;
     }
@@ -71,14 +71,14 @@ void WindowTrigger::accept(TriggerVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 
 
 void WindowTrigger::init()
     {
-    kDebug() << "WindowTrigger::init()";
+    qDebug() << "WindowTrigger::init()";
     connect( windows_handler, SIGNAL(window_added(WId)), this, SLOT(window_added(WId)));
     connect( windows_handler, SIGNAL(window_removed(WId)), this, SLOT(window_removed(WId)));
     if( window_actions & ( WINDOW_ACTIVATES | WINDOW_DEACTIVATES /*| WINDOW_DISAPPEARS*/ ))
@@ -123,7 +123,7 @@ void WindowTrigger::active_window_changed( WId window_P )
 
     if (existing_windows[window_P] && ( window_actions & WINDOW_ACTIVATES))
         {
-        kDebug() << "Executing data";
+        qDebug() << "Executing data";
         windows_handler->set_action_window( window_P );
         data->execute();
         }

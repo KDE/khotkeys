@@ -16,7 +16,7 @@
 #include "conditions/conditions_list.h"
 
 #include <kconfiggroup.h>
-#include <kdebug.h>
+#include <QDebug>
 
 
 namespace KHotKeys

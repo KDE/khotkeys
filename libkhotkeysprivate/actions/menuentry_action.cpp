@@ -21,7 +21,7 @@
 #include "action_data/action_data.h"
 
 #include <KConfigGroup>
-#include <KDebug>
+#include <QDebug>
 #include <KMessageBox>
 #include <KUrl>
 #include <KRun>
@@ -46,7 +46,7 @@ void MenuEntryAction::accept(ActionVisitor& visitor)
         }
     else
         {
-        kDebug() << "Visitor error";
+        qDebug() << "Visitor error";
         }
     }
 

@@ -27,7 +27,7 @@
 #include "action_data/action_data_group.h"
 #include "action_data/simple_action_data.h"
 
-#include <KDebug>
+#include <QDebug>
 #include <KUrl>
 
 #include <QtCore/QSignalMapper>

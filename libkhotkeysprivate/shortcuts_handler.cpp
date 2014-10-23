@@ -30,7 +30,7 @@
 #include <QX11Info>
 #include <fixx11h.h>
 
-#include <KDebug>
+#include <QDebug>
 #include <KGlobalAccel>
 #include <KShortcut>
 
@@ -63,7 +63,7 @@ QAction *ShortcutsHandler::addAction(
         const KShortcut &shortcut )
     {
 #ifdef KHOTKEYS_TRACE
-    kDebug() << id << text << shortcut;
+    qDebug() << id << text << shortcut;
 #endif
     QString realId(id);
     // HACK: Do this correctly. Remove uuid on importing / exporting
@@ -93,7 +93,7 @@ QAction *ShortcutsHandler::addAction(
     // Enable global shortcut. If that fails there is no sense in proceeding
     if (!KGlobalAccel::self()->hasShortcut(newAction))
         {
-        kWarning() << "Failed to enable global shortcut for '" 
+        qWarning() << "Failed to enable global shortcut for '" 
                    << text << "' " << id;
         _actions->removeAction(newAction);
         return 0;
@@ -150,7 +150,7 @@ static bool xtest()
 
 bool ShortcutsHandler::send_macro_key( const QKeySequence &key, Window window_P )
     {
-    kDebug() << key << key.count() << window_P;
+    qDebug() << key << key.count() << window_P;
 
     if (key.isEmpty())
         return false;
