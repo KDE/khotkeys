@@ -4,10 +4,7 @@ include_directories(../app)
 
 set(khotkeys_standalone_PART_SRCS
         main.cpp
-        ../app/kded.cpp
-        ${CMAKE_CURRENT_BINARY_DIR}/../app/org.kde.khotkeys.xml)
-
-# qt5_generate_dbus_interface(../app/kded.h ../app/org.kde.khotkeys.xml )
+        ../app/kded.cpp)
 
 add_executable(khotkeys_standalone ${khotkeys_standalone_PART_SRCS})
 target_link_libraries(khotkeys_standalone
