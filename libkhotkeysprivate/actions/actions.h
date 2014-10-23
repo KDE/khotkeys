@@ -12,10 +12,10 @@
 #define _ACTIONS_H_
 
 
-#include <QtCore/QList>
-#include <QtCore/QTimer>
+#include <QList>
+#include <QTimer>
 
-#include <kservice.h>
+#include <KService>
 
 class KConfig;
 class KConfigGroup;
