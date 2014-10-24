@@ -89,7 +89,7 @@ QAction *ShortcutsHandler::addAction(
         newAction->setProperty("isConfigurationAction", QVariant(true));
         }
     newAction->setText(text);
-    KGlobalAccel::self()->setDefaultShortcut(newAction, QList<QKeySequence>() << shortcut.primary());
+    KGlobalAccel::self()->setShortcut(newAction, QList<QKeySequence>() << shortcut.primary());
     // Enable global shortcut. If that fails there is no sense in proceeding
     if (!KGlobalAccel::self()->hasShortcut(newAction))
         {
