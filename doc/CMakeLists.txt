@@ -1,1 +1,1 @@
-add_subdirectory( kcm )
+ecm_optional_add_subdirectory( kcm )
