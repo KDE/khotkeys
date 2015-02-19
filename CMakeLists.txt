@@ -18,6 +18,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings)
 include(ECMPackageConfigHelpers)
+include(ECMOptionalAddSubdirectory)
 
 find_package(KF5 REQUIRED COMPONENTS
     GlobalAccel
