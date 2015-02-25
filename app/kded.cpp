@@ -149,6 +149,8 @@ QString KHotKeysModule::get_menuentry_shortcut(const QString &storageId)
     Q_ASSERT(shortcutTrigger);
     if (shortcutTrigger == NULL) return "";
 
+    qDebug() << shortcutTrigger->primaryShortcut();
+
     return shortcutTrigger->primaryShortcut();
     }
 
