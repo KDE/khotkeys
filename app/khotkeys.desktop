@@ -2,7 +2,6 @@
 Name=Input Actions
 Name[af]=Inset Aksies
 Name[ar]=إجراءات الإدخال
-Name[ast]=Aiciones d'entrada
 Name[be]=Дзеянні уводу
 Name[be@latin]=Uvodnyja aperacyi
 Name[bg]=Входни действия
@@ -87,7 +86,6 @@ Name[zh_CN]=输入动作
 Name[zh_TW]=輸入動作
 Comment=Input Actions service performing configured actions on key presses
 Comment[ar]=خدمة إجراءات الإدخال تنفذ الإجراءات المضبوطة عند ضغط المفاتيح
-Comment[ast]=El serviciu d'Aiciones d'Entrada faciendo les aiciones configuraes según les tecles calcaes
 Comment[bg]=Услугата за входни действия изпълнява зададени действия при натискане на клавиши комбинации
 Comment[bs]=Servis radnji unosa, izvršava podešene radnje na pritiske tastera
 Comment[ca]=Servei d'accions d'entrada que porta a terme accions configurades en prémer tecles
