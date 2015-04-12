@@ -3,7 +3,7 @@ DataCount=1
 
 [Data_1]
 Comment=This group contains actions that are set up by default.
-Comment[ar]=المجموعة تحتوي إعدادات مبدئية
+Comment[ar]=هذه المجموعة تحوي إجراءات معيّنة افتراضيًّا.
 Comment[be@latin]=Hety hurt źmiaščaje zmoŭčana ŭklučanyja aperacyi.
 Comment[bg]=Тази група съдържа действия, които са зададени по подразбирани.
 Comment[bs]=Ova grupa sadrži podrazumijevano postavljene radnje.
@@ -82,7 +82,7 @@ DataCount=1
 Enabled=true
 Name=Preset Actions
 Name[af]=Voorafgestelde aksies
-Name[ar]=الإجراءات مسبقة التعيين
+Name[ar]=إجراءات معيّنة مسبقًا
 Name[be]=Існуючыя дзеянні
 Name[bg]=Фиксирани действия
 Name[bn]=পূর্বনির্ধারিত অ্যাকশন
@@ -170,7 +170,7 @@ ConditionsCount=0
 
 [Data_1_1]
 Comment=Launches KSnapShot when PrintScrn is pressed.
-Comment[ar]=يطلق مصور الشاشة كيدي عند الضغط على زر PrintScrn
+Comment[ar]=يطلق «لقطة شاشتك» عند ضغط PrintScrn.
 Comment[be@latin]=Uklučaje prahramu „KSnapShot” pa nacisku klavišy „PrintScrn”.
 Comment[bg]=Стартиране на KSnapShot при натискане на клавиша "PrintScrn"
 Comment[bn_IN]=PrintScrn টেপা হলে KSnapShot আরম্ভ করা হবে
@@ -248,7 +248,7 @@ Comment[zh_TW]=按下 PrintScreen 鍵時叫出 KSnapShot。
 Enabled=true
 Name=PrintScreen
 Name[af]=Vang skermbeeld
-Name[ar]=اطبع الشاشة
+Name[ar]=اطبع الشّاشة
 Name[as]=PrintScreen
 Name[be]=PrintScreen
 Name[be@latin]=PrintScreen

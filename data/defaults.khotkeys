@@ -3,7 +3,7 @@ DataCount=1
 
 [Data_1]
 Comment=Comment
-Comment[ar]=التعليق
+Comment[ar]=تعليق
 Comment[bg]=Коментар
 Comment[bn]=মন্তব্য
 Comment[bs]=Komentar
@@ -153,7 +153,7 @@ ConditionsCount=0
 
 [Data_1_1]
 Comment=Comment
-Comment[ar]=التعليق
+Comment[ar]=تعليق
 Comment[bg]=Коментар
 Comment[bn]=মন্তব্য
 Comment[bs]=Komentar
