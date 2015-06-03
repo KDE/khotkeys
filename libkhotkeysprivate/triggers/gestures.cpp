@@ -89,6 +89,10 @@ void Gesture::update_grab()
     //qDebug() << "Handler:" << handlers.count();
     //qDebug() << "Exclude:" << exclude << " Match? " << (exclude && exclude->match( Window_data( windows_handler->active_window())));
 
+    if (!QX11Info::isPlatformX11()) {
+        return;
+    }
+
     if( _enabled && handlers.count() > 0
         && ( exclude == NULL || !exclude->match( Window_data( windows_handler->active_window()))))
         {
