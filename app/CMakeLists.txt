@@ -7,6 +7,9 @@ set(kded_khotkeys_PART_SRCS
 qt5_generate_dbus_interface(kded.h org.kde.khotkeys.xml )
 
 add_library(kded_khotkeys MODULE ${kded_khotkeys_PART_SRCS})
+set_target_properties(kded_khotkeys PROPERTIES OUTPUT_NAME khotkeys)
+kcoreaddons_desktop_to_json(kded_khotkeys khotkeys.desktop)
+
 target_link_libraries(kded_khotkeys
     khotkeysprivate
     PW::KWorkspace
@@ -28,9 +31,7 @@ ecm_configure_package_config_file(KHotKeysDBusInterfaceConfig.cmake.in
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/KHotKeysDBusInterfaceConfig.cmake
     DESTINATION ${CMAKECONFIG_INSTALL_DIR})
 
-install(TARGETS kded_khotkeys  DESTINATION ${PLUGIN_INSTALL_DIR})
-
-install(FILES khotkeys.desktop DESTINATION  ${SERVICES_INSTALL_DIR}/kded)
+install(TARGETS kded_khotkeys DESTINATION ${PLUGIN_INSTALL_DIR}/kf5/kded)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.khotkeys.xml
         DESTINATION ${DBUS_INTERFACES_INSTALL_DIR})

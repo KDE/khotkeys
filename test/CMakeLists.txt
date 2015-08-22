@@ -1,6 +1,7 @@
 ########### next target ###############
 
-include_directories(../app)
+include_directories(../app
+                    ${CMAKE_CURRENT_BINARY_DIR}/../app)
 
 set(khotkeys_standalone_PART_SRCS
         main.cpp

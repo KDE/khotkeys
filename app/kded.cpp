@@ -28,10 +28,9 @@
 
 #define COMPONENT_NAME "khotkeys"
 
-K_PLUGIN_FACTORY(KHotKeysModuleFactory,
-                 registerPlugin<KHotKeysModule>();
-    )
-K_EXPORT_PLUGIN(KHotKeysModuleFactory(COMPONENT_NAME))
+K_PLUGIN_FACTORY_WITH_JSON(KHotKeysModuleFactory,
+                           "khotkeys.json",
+                           registerPlugin<KHotKeysModule>();)
 
 using namespace KHotKeys;
 
