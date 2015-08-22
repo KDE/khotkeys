@@ -79,6 +79,7 @@ void WindowTrigger::accept(TriggerVisitor& visitor)
 void WindowTrigger::init()
     {
     qDebug() << "WindowTrigger::init()";
+    disconnect(windows_handler, 0, this, 0);
     connect( windows_handler, SIGNAL(window_added(WId)), this, SLOT(window_added(WId)));
     connect( windows_handler, SIGNAL(window_removed(WId)), this, SLOT(window_removed(WId)));
     if( window_actions & ( WINDOW_ACTIVATES | WINDOW_DEACTIVATES /*| WINDOW_DISAPPEARS*/ ))
@@ -154,6 +155,7 @@ const QString WindowTrigger::description() const
 void WindowTrigger::setOnWindowEvents(WindowEvents events)
     {
     window_actions = events;
+    init();
     }
 
 
