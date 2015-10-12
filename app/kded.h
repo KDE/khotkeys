@@ -62,6 +62,7 @@ class KHotKeysModule
     private Q_SLOTS:
 
         //! Save
+        void scheduleSave();
         void save();
 
         //! Initialize the module. Delayed initialization.
@@ -79,6 +80,7 @@ class KHotKeysModule
 
         //! The current settings
         KHotKeys::Settings _settings;
+        bool _settingsDirty;
 
         //! Is the module initialized
         bool _initialized;

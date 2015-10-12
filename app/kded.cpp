@@ -39,6 +39,7 @@ using namespace KHotKeys;
 KHotKeysModule::KHotKeysModule(QObject* parent, const QList<QVariant>&)
     : KDEDModule(parent)
     , actions_root(NULL)
+    , _settingsDirty(false)
     , _settings()
     ,_initialized(false)
     {
@@ -64,7 +65,7 @@ void KHotKeysModule::initialize()
     // If a shortcut was changed (global shortcuts kcm), save
     connect(
             keyboard_handler.data(), SIGNAL(shortcutChanged()),
-            this, SLOT(save()));
+            this, SLOT(scheduleSave()));
 
     // Read the configuration from file khotkeysrc
     reread_configuration();
@@ -239,9 +240,18 @@ void KHotKeysModule::quit()
     deleteLater();
     }
 
+void KHotKeysModule::scheduleSave()
+    {
+    if (!_settingsDirty)
+        {
+        _settingsDirty = true;
+        QMetaObject::invokeMethod(this, "save", Qt::QueuedConnection);
+        }
+    }
 
 void KHotKeysModule::save()
     {
+    _settingsDirty = false;
     KHotKeys::khotkeys_set_active( false );
     _settings.write();
     KHotKeys::khotkeys_set_active( true );
