@@ -36,6 +36,7 @@ namespace KHotKeys
 {
 
 // Settings
+bool Settings::thisIsTheDaemon = false;
 
 Settings::Settings()
     : m_actions( NULL ),
@@ -496,6 +497,8 @@ bool Settings::read_settings(ActionDataGroup *root, KConfigBase const &config, b
             return false;
         }
 
+    if (thisIsTheDaemon)
+        mainGroup.deleteEntry("ConfigUpdated");
     return true;
     }
 
@@ -527,6 +530,15 @@ bool Settings::update()
 void Settings::write()
     {
     KConfig cfg( KHOTKEYS_CONFIG_FILE );
+    if (thisIsTheDaemon && KConfigGroup(&cfg, "Main").readEntry("ConfigUpdated", false))
+        return; // the kcm wrote after we read it and we're trying to write because
+                // we got an update from kglobalaccel - ie. it's pointless and our
+                // info is dated. The kcm should next ask us to read settings
+    if (!thisIsTheDaemon)
+        {
+        KConfigGroup(&cfg, "Main").writeEntry("ConfigUpdated", true);
+        cfg.sync();
+        }
     SettingsWriter writer(this, Retain);
     writer.writeTo(cfg);
     }

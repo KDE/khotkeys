@@ -181,6 +181,8 @@ public:
      */
     bool isConfigFileValid(KConfigBase const &config, ImportType ask);
 
+    static bool thisIsTheDaemon;
+
 protected:
 
     /**
