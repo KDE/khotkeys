@@ -94,4 +94,14 @@ HotkeysTreeView::setModel( QAbstractItemModel *model )
     resizeColumnToContents(KHotkeysModel::NameColumn);
     }
 
+void
+HotkeysTreeView::mouseReleaseEvent(QMouseEvent *me)
+    {
+    if (me->button() == Qt::LeftButton && !indexAt(me->pos()).isValid()) {
+        clearSelection();
+        setCurrentIndex(QModelIndex());
+    }
+    QTreeView::mouseReleaseEvent(me);
+    }
+
 #include "moc_hotkeys_tree_view.cpp"

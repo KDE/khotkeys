@@ -62,6 +62,9 @@ public:
     void setModel( QAbstractItemModel *model );
     KHotkeysModel *model();
 
+protected:
+    void mouseReleaseEvent(QMouseEvent *me);
+
 private Q_SLOTS:
 
     void modelReset();
