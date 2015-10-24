@@ -45,7 +45,6 @@ KHotKeysModule::KHotKeysModule(QObject* parent, const QList<QVariant>&)
     {
     // initialize
     qDebug() << "Installing the delayed initialization callback.";
-    Settings::thisIsTheDaemon = true;
     QMetaObject::invokeMethod( this, "initialize", Qt::QueuedConnection);
     }
 
@@ -256,6 +255,11 @@ void KHotKeysModule::save()
     KHotKeys::khotkeys_set_active( false );
     _settings.write();
     KHotKeys::khotkeys_set_active( true );
+    }
+
+void KHotKeysModule::declareConfigOutdated()
+    {
+    Settings::isOutdated = true;
     }
 
 #include "kded.moc"

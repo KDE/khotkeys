@@ -345,15 +345,18 @@ bool KCMHotkeysPrivate::maybeShowWidget(const QModelIndex &nextIndex)
 
 void KCMHotkeysPrivate::save()
     {
-    if (current)
-        applyCurrentItem();
-
-    // Write the settings
-    model->save();
 
     if (!KHotKeys::Daemon::isRunning())
         {
-        if (!KHotKeys::Daemon::start())
+
+        // the deamon is not running (yet), we can just write the config and
+        // try to start it
+        if (current)
+            applyCurrentItem();
+        // Write the settings
+        model->save();
+
+        if (KHotKeys::Daemon::start())
             {
             // On startup the demon does the updating stuff, therefore reload
             // the actions.
@@ -361,15 +364,13 @@ void KCMHotkeysPrivate::save()
             }
         else
             {
-            KMessageBox::error(
-                q,
-                "<qt>" + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + "</qt>" );
+            KMessageBox::error(q, "<qt>" +
+                    i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + "</qt>" );
             }
-
         return;
         }
 
-    // Inform kdedkhotkeys demon to reload settings
+    bool daemonFailed = false;
     QDBusConnection bus = QDBusConnection::sessionBus();
     QPointer<OrgKdeKhotkeysInterface> iface = new OrgKdeKhotkeysInterface(
         "org.kde.kded5",
@@ -385,14 +386,35 @@ void KCMHotkeysPrivate::save()
             {
             qCritical() << err.name() << ":" << err.message();
             }
-        KMessageBox::error(
-            q,
-            "<qt>" + i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + "</qt>" );
-        return;
+        daemonFailed = true;
+        }
+
+    // prevent the daemon from writing dated information
+    if (!daemonFailed)
+        iface->declareConfigOutdated(); // mutex on
+
+    if (current)
+        applyCurrentItem();
+
+    // Write the settings
+    model->save();
+
+    if(!iface->isValid())
+        {
+        err = iface->lastError();
+        if (err.isValid())
+            {
+            qCritical() << err.name() << ":" << err.message();
+            }
+        daemonFailed = true;
         }
 
     // Reread the configuration. We have no possibility to check if it worked.
-    iface->reread_configuration();
+    if (daemonFailed)
+        KMessageBox::error(q, "<qt>" +
+                           i18n("Unable to contact khotkeys. Your changes are saved, but they could not be activated.") + "</qt>" );
+    else
+        iface->reread_configuration(); // mutex off
     }
 
 

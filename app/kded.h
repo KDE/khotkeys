@@ -59,6 +59,11 @@ class KHotKeysModule
          */
         Q_SCRIPTABLE QString get_menuentry_shortcut(const QString &storageId);
 
+        /**
+         * declare daemon settings outdated, do not write back until re-read has been triggered
+         */
+        Q_SCRIPTABLE Q_NOREPLY void declareConfigOutdated();
+
     private Q_SLOTS:
 
         //! Save
