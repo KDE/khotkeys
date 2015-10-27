@@ -64,6 +64,7 @@ class Q_DECL_EXPORT WindowsHandler : public QObject
     private:
         bool signals_enabled;
         WId _action_window;
+        bool m_isX11;
     };
 
 

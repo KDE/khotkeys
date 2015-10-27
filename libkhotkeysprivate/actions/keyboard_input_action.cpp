@@ -180,7 +180,8 @@ void KeyboardInputAction::execute()
     // and the last one
     QString key = input().mid( start, input().length()).trimmed();
     keyboard_handler->send_macro_key( key, w ); // the rest
-    XFlush( QX11Info::display());
+    if (QX11Info::isPlatformX11())
+        XFlush( QX11Info::display());
     }
 
 

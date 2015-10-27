@@ -36,7 +36,8 @@ namespace KHotKeys
 
 WindowsHandler::WindowsHandler( bool enable_signal_P, QObject* parent_P )
     : QObject( parent_P ), signals_enabled( enable_signal_P ),
-        _action_window( 0 )
+        _action_window( 0 ),
+        m_isX11(QX11Info::isPlatformX11())
     {
     if( signals_enabled )
         {
@@ -93,6 +94,9 @@ QString WindowsHandler::get_window_role( WId id_P )
 
 QString WindowsHandler::get_window_class( WId id_P )
     {
+    if (!m_isX11) {
+        return QString();
+    }
     XClassHint hints_ret;
     if( XGetClassHint( QX11Info::display(), id_P, &hints_ret ) == 0 ) // 0 means error
 	return "";
@@ -135,6 +139,9 @@ WId WindowsHandler::find_window( const Windowdef_list* window_P )
 
 WId WindowsHandler::window_at_position( int x, int y )
     {
+    if (!QX11Info::isPlatformX11()) {
+        return 0;
+    }
     Window child, dummy;
     Window parent = QX11Info::appRootWindow();
     Atom wm_state = XInternAtom( QX11Info::display(), "WM_STATE", False );
