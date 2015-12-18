@@ -14,7 +14,7 @@
 #include <QTimer>
 #include <QMap>
 #include <QPointer>
-#include <QWidget>
+#include <QAbstractNativeEventFilter>
 #include <qwindowdefs.h>
 
 #include "windows_handler.h"
@@ -90,7 +90,8 @@ class Q_DECL_EXPORT Stroke
  */
 
 class Q_DECL_EXPORT Gesture
-    : public QWidget // not QObject because of x11EventFilter()
+    : public QObject
+    , public QAbstractNativeEventFilter
     {
     Q_OBJECT
     public:
@@ -102,11 +103,10 @@ class Q_DECL_EXPORT Gesture
         void set_exclude( Windowdef_list* windows_P );
         void register_handler( QObject* receiver_P, const char* slot_P );
         void unregister_handler( QObject* receiver_P, const char* slot_P );
-#warning needs porting to QAbstractNativeEventFilter to replace x11Event filtering
-#if 0
+
     protected:
-        virtual bool x11Event( XEvent* ev_P );
-#endif
+        virtual bool nativeEventFilter( const QByteArray & eventType, void * message, long * );
+
     private Q_SLOTS:
         void stroke_timeout();
         void active_window_changed( WId window_P );
@@ -134,19 +134,6 @@ class Q_DECL_EXPORT Gesture
         QMap< QObject*, bool > handlers; // bool is just a dummy
     };
 
-// Gesture class must be QWidget derived because of x11Event()
-// but it should be QObject owned -> use a QObject proxy that will delete it
-class DeleteObject
-    : public QObject
-    {
-    Q_OBJECT
-    public:
-        DeleteObject( QWidget* widget_P, QObject* parent_P )
-            : QObject( parent_P ), widget( widget_P ) {}
-        virtual ~DeleteObject() { delete widget; }
-    private:
-        QWidget* widget;
-    };
 
 
 } // namespace KHotKeys

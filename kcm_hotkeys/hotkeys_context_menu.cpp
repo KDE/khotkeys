@@ -180,7 +180,6 @@ void HotkeysTreeViewContextMenu::createTriggerMenus(
             this, SLOT(newWindowTriggerActionAction(int)) );
         }
 
-        /* - disable the UI for adding mouse gestures as they don't work and haven't since 5.0
     if (triggerTypes & KHotKeys::Trigger::GestureTriggerType)
         {
         QSignalMapper *mapper = new QSignalMapper(this);
@@ -192,7 +191,7 @@ void HotkeysTreeViewContextMenu::createTriggerMenus(
         connect(
             mapper, SIGNAL(mapped(int)),
             this, SLOT(newMouseGestureTriggerActionAction(int)) );
-        }*/
+        }
 
     addMenu(newMenu);
     }

@@ -41,14 +41,13 @@ namespace KHotKeys
 QPointer<Gesture> gesture_handler = NULL;
 
 Gesture::Gesture( bool enabled_P, QObject* parent_P )
-        : QWidget(NULL)
+        : QObject(parent_P)
         , _enabled( false )
         , recording( false )
         , button( 0 )
         , exclude( NULL )
     {
     //qDebug() << enabled_P;
-    (void) new DeleteObject( this, parent_P );
     nostroke_timer.setSingleShot( true );
     connect( &nostroke_timer, SIGNAL(timeout()), SLOT(stroke_timeout()));
     connect( windows_handler, SIGNAL(active_window_changed(WId)),
@@ -96,15 +95,15 @@ void Gesture::update_grab()
     if( _enabled && handlers.count() > 0
         && ( exclude == NULL || !exclude->match( Window_data( windows_handler->active_window()))))
         {
-        kapp->removeX11EventFilter( this ); // avoid being installed twice
-        kapp->installX11EventFilter( this );
+        kapp->removeNativeEventFilter( this ); // avoid being installed twice
+        kapp->installNativeEventFilter( this );
         // CHECKME grab only when there's at least one gesture?
         grab_mouse( true );
         }
     else
         {
         grab_mouse( false );
-        kapp->removeX11EventFilter( this );
+        kapp->removeNativeEventFilter( this );
         }
     }
 
@@ -158,34 +157,45 @@ void Gesture::unregister_handler( QObject* receiver_P, const char* slot_P )
         update_grab();
     }
 
-#if 0
-bool Gesture::x11Event( XEvent* ev_P )
+bool Gesture::nativeEventFilter( const QByteArray & eventType, void * message, long * )
     {
-/*      qDebug() << "   ( type = " << ev_P->type << " )" << KeyRelease << " " << KeyPress ;
-        if( ev_P->type == XKeyPress || ev_P->type == XKeyRelease )
-        {
-            return voice_handler->x11Event( ev_P );
-    }*/
 
-    if( ev_P->type == ButtonPress && ev_P->xbutton.button == button )
+     if (eventType != "xcb_generic_event_t")
+         {
+         return false;
+         }
+
+     xcb_generic_event_t* generic_event = static_cast<xcb_generic_event_t*>(message);
+     const uint8_t type = generic_event->response_type & ~0x80;
+
+    if( type == XCB_BUTTON_PRESS )
         {
+        xcb_button_press_event_t* event = static_cast<xcb_button_press_event_t*>(message);
+
+        if( event->detail != button )
+                return false;
+
         qDebug() << "GESTURE: mouse press";
         stroke.reset();
-        stroke.record( ev_P->xbutton.x, ev_P->xbutton.y );
+        stroke.record( event->event_x, event->event_y );
         nostroke_timer.start( timeout );
         recording = true;
-        start_x = ev_P->xbutton.x_root;
-        start_y = ev_P->xbutton.y_root;
+        start_x = event->event_x;
+        start_y = event->event_y;
         return true;
         }
     // if stroke is finished... postprocess the data and send a signal.
     // then wait for incoming matching scores and execute the best fit.
-    else if( ev_P->type == ButtonRelease && ev_P->xbutton.button == button
-        && recording )
+    else if( type == XCB_BUTTON_RELEASE && recording )
         {
+        xcb_button_release_event_t* event = static_cast<xcb_button_release_event_t*>(message);
+
+        if( event->detail != button )
+            return false;
+
         recording = false;
         nostroke_timer.stop();
-        stroke.record( ev_P->xbutton.x, ev_P->xbutton.y );
+        stroke.record( event->event_x, event->event_y );
         StrokePoints gesture( stroke.processData() );
         if( gesture.isEmpty() )
             {
@@ -216,20 +226,22 @@ bool Gesture::x11Event( XEvent* ev_P )
 
         return true;
         }
-    else if( ev_P->type == MotionNotify && recording )
-        { // ignore small initial movement
+    else if( type == XCB_MOTION_NOTIFY && recording )
+        {
+        xcb_motion_notify_event_t* event = static_cast<xcb_motion_notify_event_t*>(message);
+
+        // ignore small initial movement
         if( nostroke_timer.isActive()
-            && abs( start_x - ev_P->xmotion.x_root ) < 10
-            && abs( start_y - ev_P->xmotion.y_root ) < 10
+            && abs( start_x - event->event_x ) < 10
+            && abs( start_y - event->event_y ) < 10
         )
             return true;
         nostroke_timer.stop();
 
-        stroke.record( ev_P->xmotion.x, ev_P->xmotion.y );
+        stroke.record( event->event_x, event->event_y );
         }
     return false;
     }
-#endif
 
 
 void Gesture::stroke_timeout()
