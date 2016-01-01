@@ -87,7 +87,7 @@ void ShortcutTriggerWidget::doCopyToObject()
 bool ShortcutTriggerWidget::isChanged() const
     {
     Q_ASSERT(trigger());
-    return trigger()->primaryShortcut() != shortcut_trigger_ui.shortcut->keySequence();
+    return QKeySequence(trigger()->primaryShortcut(), QKeySequence::PortableText) != shortcut_trigger_ui.shortcut->keySequence();
     }
 
 
