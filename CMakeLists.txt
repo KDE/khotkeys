@@ -36,6 +36,7 @@ find_package(LibKWorkspace CONFIG REQUIRED)
 
 if(X11_FOUND)
     find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS X11Extras )
+    set(HAVE_XTEST ${X11_XTest_FOUND})
 endif()
 
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
