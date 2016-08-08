@@ -190,18 +190,14 @@ void ShortcutTrigger::enable()
 void ShortcutTrigger::set_key_sequence( const QKeySequence &seq )
     {
 
-        qDebug() << "SHO" << seq;
-
     // Get the action from the keyboard handler
     QAction *action = keyboard_handler->getAction( _uuid.toString() );
-    qDebug() << "SHO" << action;
     if (!action)
         {
         _shortcut.setPrimary(seq);
         }
     else
         {
-            qDebug() << "SHO" << "setting shortcut";
         KGlobalAccel::self()->setShortcut(action,
                                           QList<QKeySequence>() << seq,
                                           KGlobalAccel::KGlobalAccel::NoAutoloading);
