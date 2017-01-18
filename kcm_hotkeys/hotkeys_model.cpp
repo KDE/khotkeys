@@ -486,7 +486,7 @@ QMimeData *KHotkeysModel::mimeData(const QModelIndexList &indexes) const
 
     Q_FOREACH (const QModelIndex &index, indexes)
         {
-        if (index.isValid() and index.column() == 0)
+        if (index.isValid() && index.column() == 0)
             {
             KHotKeys::ActionDataBase *element = indexToActionDataBase(index);
             // We use the pointer as id.
