@@ -83,7 +83,7 @@ Trigger::TriggerTypes ActionDataGroup::allowedTriggerTypes() const
 
 bool ActionDataGroup::is_system_group() const
     {
-    return _system_group != SYSTEM_NONE and _system_group != SYSTEM_ROOT;
+    return _system_group != SYSTEM_NONE && _system_group != SYSTEM_ROOT;
     }
 
 
