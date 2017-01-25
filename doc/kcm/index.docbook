@@ -24,8 +24,8 @@
 </copyright>
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2015-04-08</date>
-<releaseinfo>Plasma 5.3</releaseinfo>
+<date>2017-01-22</date>
+<releaseinfo>Plasma 5.8</releaseinfo>
 
 <keywordset>
 <keyword>KDE</keyword>
@@ -178,7 +178,8 @@ imported file.  When disabled, the module will refuse to import the file.
 <varlistentry id="manage-filename">
 <term><guilabel>Filename</guilabel></term>
 <listitem><para>Here you may enter the filename you wish to export the
-shortcut to.  You may also select the <guibutton>Browse</guibutton> button to
+shortcut to.  You may also select the <inlinemediaobject><imageobject><imagedata
+fileref="document-open.png" format="PNG"/></imageobject></inlinemediaobject> button to
 the right of the text box to open the File dialog and select a file from there.
 </para>
 
@@ -271,8 +272,12 @@ more information, see <xref linkend="windows"/>.</para>
 into groups. These groups can be expanded by clicking the arrow beside them to
 reveal the shortcuts.</para>
 
-<para>The <guilabel>Preset Actions</guilabel> group, when expanded, reveals a
-shortcut configuration named <guilabel>PrintScreen</guilabel> which, when
+<para>By default the groups <guilabel>KMenuEdit</guilabel>, <guilabel>Konqueror
+Gestures</guilabel> and <guilabel>Examples</guilabel> are installed.
+Applications can provide additional shortcuts, &eg; &spectacle; adds a group
+<guilabel>Screenshots</guilabel>.
+This group, when expanded, reveals several shortcut configurations like
+<guilabel>Start Screenshot Tool</guilabel> which, when
 selected, reveals section on the right side, with three tabs:</para>
 
 <sect2 id="shortcuts-comment">
@@ -291,7 +296,7 @@ which depends on the type of trigger specified:</para>
 <variablelist>
 
 <varlistentry id="shortcuts-trigger-keyboard">
-<term>Global (Keyboard) Shortcut</term>
+<term>Global Shortcut</term>
 <listitem>
 
 <para>To modify a keyboard shortcut, click on the button that contains a wrench,
@@ -416,6 +421,15 @@ local or a remote system.</para>
 <term>&DBus; Command</term>
 <listitem>
 
+<screenshot id="screenshot-shortcuts-action-dbus">
+<screeninfo>Modifying a &DBus; Action</screeninfo>
+<mediaobject>
+<imageobject><imagedata fileref="shortcuts-action-dbus.png" format="PNG"/></imageobject>
+<textobject><phrase>The Action tab for a &DBus; command.</phrase></textobject>
+<caption><para>Modifying a &DBus; action.</para></caption>
+</mediaobject>
+</screenshot>
+
 <para>The following options are provided that allow you to specify a &DBus;
 method to be performed:</para>
 
@@ -424,21 +438,39 @@ method to be performed:</para>
 <varlistentry id="shortcuts-action-dbus-application">
 <term><guilabel>Remote application</guilabel></term>
 <listitem><para>The service name of the remote application the method is to
-be performed on, for instance <userinput>org.kde.kate</userinput> if you wanted
-to perform it on the &kate; Advanced Text Editor.</para></listitem>
+be performed on, for instance <userinput>org.kde.spectacle</userinput> if you wanted
+to perform it on the &spectacle; screenshots utility.</para></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-object">
 <term><guilabel>Remote object</guilabel></term>
 <listitem><para>The path to the remote object the method is to be performed on,
-for instance <userinput>/Document/1</userinput>, if you wanted to perform it on
+for instance <userinput>/</userinput> for screenshot actions using &spectacle;
+or <userinput>/Document/1</userinput>, if you wanted to perform it on
 the first document opened in &kate;.</para></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-function">
 <term><guilabel>Function</guilabel></term>
 <listitem><para>The name of the &DBus; method to be called, for instance
+<userinput>Fullscreen</userinput> if you wanted to take a fullscreen screenshot or
 <userinput>print</userinput> if you wanted to print the document.</para></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-arguments">
+<term><guilabel>Arguments</guilabel></term>
+<listitem><para>Enter additional arguments for the &DBus; method to be called.</para></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-call">
+<term><guilabel>Call</guilabel></term>
+<listitem><para>Use this button to verify that the action works as expected.</para></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-launch-dbus-browser">
+<term><guilabel>Launch D-Bus Browser</guilabel></term>
+<listitem><para>Launch the application <application>QDBusViewer</application>
+so browse the &DBus; methods and arguments for a running application.</para></listitem>
 </varlistentry>
 
 </variablelist>
