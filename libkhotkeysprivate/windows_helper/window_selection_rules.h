@@ -78,12 +78,12 @@ class Q_DECL_EXPORT Windowdef_simple : public Windowdef
         /**
          * Match agains window @p window_P
          */
-        virtual bool match( const Window_data& window_P );
+        bool match( const Window_data& window_P ) Q_DECL_OVERRIDE;
 
         /**
          * Write to configuration file @p cfg_P
          */
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
 
         /**
          * The string to compare with the window title
@@ -139,14 +139,14 @@ class Q_DECL_EXPORT Windowdef_simple : public Windowdef
         /**
          * Create a copy
          */
-        virtual Windowdef_simple* copy( /*ActionDataBase* data_P*/ ) const;
+        Windowdef_simple* copy( /*ActionDataBase* data_P*/ ) const Q_DECL_OVERRIDE;
 
         /**
          * The description of this rule.
          *
          * @todo: Move to base class?
          */
-        virtual const QString description() const;
+        const QString description() const Q_DECL_OVERRIDE;
 
     protected:
 

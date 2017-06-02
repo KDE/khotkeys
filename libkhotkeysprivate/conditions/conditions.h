@@ -30,12 +30,12 @@ class Q_DECL_EXPORT Not_condition
     public:
         Not_condition( Condition_list_base* parent = NULL );
         Not_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
-        virtual bool match() const;
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual Not_condition* copy() const;
-        virtual const QString description() const;
+        bool match() const Q_DECL_OVERRIDE;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        Not_condition* copy() const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
         const Condition* condition() const;
-        virtual bool accepts_children() const;
+        bool accepts_children() const Q_DECL_OVERRIDE;
     };
 
 class Q_DECL_EXPORT And_condition
@@ -45,10 +45,10 @@ class Q_DECL_EXPORT And_condition
     public:
         And_condition( Condition_list_base* parent = NULL );
         And_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
-        virtual bool match() const;
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual And_condition* copy() const;
-        virtual const QString description() const;
+        bool match() const Q_DECL_OVERRIDE;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        And_condition* copy() const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
     };
 
 class Q_DECL_EXPORT Or_condition
@@ -58,10 +58,10 @@ class Q_DECL_EXPORT Or_condition
     public:
         Or_condition( Condition_list_base* parent = NULL );
         Or_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
-        virtual bool match() const;
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual Or_condition* copy() const;
-        virtual const QString description() const;
+        bool match() const Q_DECL_OVERRIDE;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        Or_condition* copy() const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
     };
 
 

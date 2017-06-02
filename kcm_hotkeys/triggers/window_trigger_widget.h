@@ -47,11 +47,11 @@ public:
      */
     virtual ~WindowTriggerWidget();
 
-    KHotKeys::WindowTrigger *trigger();
-    const KHotKeys::WindowTrigger *trigger() const;
+    KHotKeys::WindowTrigger *trigger() Q_DECL_OVERRIDE;
+    const KHotKeys::WindowTrigger *trigger() const Q_DECL_OVERRIDE;
 
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
 
@@ -59,8 +59,8 @@ private Q_SLOTS:
 
 private:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::WindowTriggerWidget window_trigger_ui;
 

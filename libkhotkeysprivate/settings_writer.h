@@ -51,17 +51,17 @@ public:
 
     void writeTo(KConfigBase &cfg);
 
-    virtual void visitActionDataBase(const ActionDataBase *base);
+    void visitActionDataBase(const ActionDataBase *base) Q_DECL_OVERRIDE;
 
-    virtual void visitActionData(const ActionData *group);
+    void visitActionData(const ActionData *group) Q_DECL_OVERRIDE;
 
-    virtual void visitActionDataGroup(const ActionDataGroup *group);
+    void visitActionDataGroup(const ActionDataGroup *group) Q_DECL_OVERRIDE;
 
-    virtual void visitGenericActionData(const Generic_action_data *data);
+    void visitGenericActionData(const Generic_action_data *data) Q_DECL_OVERRIDE;
 
-    virtual void visitMenuentryShortcutActionData(const MenuEntryShortcutActionData *data);
+    void visitMenuentryShortcutActionData(const MenuEntryShortcutActionData *data) Q_DECL_OVERRIDE;
 
-    virtual void visitSimpleActionData(const SimpleActionData *data);
+    void visitSimpleActionData(const SimpleActionData *data) Q_DECL_OVERRIDE;
 
 private:
 

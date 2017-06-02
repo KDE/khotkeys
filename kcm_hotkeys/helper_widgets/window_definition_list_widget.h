@@ -52,7 +52,7 @@ public:
 
     void setWindowDefinitions(KHotKeys::Windowdef_list *windowdef_list);
 
-    bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 private:
 
@@ -67,8 +67,8 @@ private Q_SLOTS:
 
 protected:
 
-    void doCopyFromObject();
-    void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
 private:
 
@@ -108,7 +108,7 @@ public:
         }
 
 
-    virtual void accept()
+    void accept() Q_DECL_OVERRIDE
         {
         def->copyToObject();
         KDialog::accept();

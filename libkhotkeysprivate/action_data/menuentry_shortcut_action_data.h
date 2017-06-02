@@ -49,8 +49,8 @@ class Q_DECL_EXPORT MenuEntryShortcutActionData
          * Visitor pattern
          * @reimp
          */
-        virtual void accept(ActionDataVisitor *visitor);
-        virtual void accept(ActionDataConstVisitor *visitor) const;
+        void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
+        void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
 
     };
 

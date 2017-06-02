@@ -68,10 +68,10 @@ class Q_DECL_EXPORT ActionDataGroup
         /**
          * Visitor pattern
          */
-        virtual void accept(ActionDataVisitor *visitor);
-        virtual void accept(ActionDataConstVisitor *visitor) const;
+        void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
+        void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
 
-        virtual void update_triggers();
+        void update_triggers() Q_DECL_OVERRIDE;
 
         /**
          * What kind of actions are allowed for this group?
@@ -96,7 +96,7 @@ class Q_DECL_EXPORT ActionDataGroup
         /**
          * @reimp
          */
-        void aboutToBeErased();
+        void aboutToBeErased() Q_DECL_OVERRIDE;
 
         /**
          * Is this a system group?
@@ -132,9 +132,9 @@ class Q_DECL_EXPORT ActionDataGroup
         //! System group type
         system_group_t _system_group; // e.g. menuedit entries, can't be deleted or renamed
 
-        virtual void doEnable();
+        void doEnable() Q_DECL_OVERRIDE;
 
-        virtual void doDisable();
+        void doDisable() Q_DECL_OVERRIDE;
 
     };
 

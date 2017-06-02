@@ -52,7 +52,7 @@ class KHotkeysProxyModel : public QSortFilterProxyModel
          * Returns true if the item in column @a column should be included in
          * the model.
          */
-        bool filterAcceptsRow( int source_column, const QModelIndex &source_parent ) const;
+        bool filterAcceptsRow( int source_column, const QModelIndex &source_parent ) const Q_DECL_OVERRIDE;
 
         /**
          * Get the KHotKeys::ActionDataBase behind the index.

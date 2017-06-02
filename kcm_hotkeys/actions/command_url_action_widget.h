@@ -44,15 +44,15 @@ public:
      */
     virtual ~CommandUrlActionWidget();
 
-    KHotKeys::CommandUrlAction *action();
-    const KHotKeys::CommandUrlAction *action() const;
+    KHotKeys::CommandUrlAction *action() Q_DECL_OVERRIDE;
+    const KHotKeys::CommandUrlAction *action() const Q_DECL_OVERRIDE;
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::CommandUrlActionWidget ui;
 

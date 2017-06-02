@@ -105,7 +105,7 @@ class Q_DECL_EXPORT Gesture
         void unregister_handler( QObject* receiver_P, const char* slot_P );
 
     protected:
-        virtual bool nativeEventFilter( const QByteArray & eventType, void * message, long * );
+        bool nativeEventFilter( const QByteArray & eventType, void * message, long * ) Q_DECL_OVERRIDE;
 
     private Q_SLOTS:
         void stroke_timeout();

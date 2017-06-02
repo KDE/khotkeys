@@ -53,12 +53,12 @@ public:
      */
     virtual ~WindowDefinitionWidget();
 
-    bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
 
-    void doCopyFromObject();
-    void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
 
@@ -99,7 +99,7 @@ public:
         }
 
 
-    virtual void accept()
+    void accept() Q_DECL_OVERRIDE
         {
         def->copyToObject();
         KDialog::accept();

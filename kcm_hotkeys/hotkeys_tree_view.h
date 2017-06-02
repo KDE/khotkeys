@@ -54,16 +54,16 @@ public:
     /**
      * The user requested a context menu
      */
-    void contextMenuEvent( QContextMenuEvent *event );
+    void contextMenuEvent( QContextMenuEvent *event ) Q_DECL_OVERRIDE;
 
     /**
      * Set a new model
      */
-    void setModel( QAbstractItemModel *model );
+    void setModel( QAbstractItemModel *model ) Q_DECL_OVERRIDE;
     KHotkeysModel *model();
 
 protected:
-    void mouseReleaseEvent(QMouseEvent *me);
+    void mouseReleaseEvent(QMouseEvent *me) Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
 

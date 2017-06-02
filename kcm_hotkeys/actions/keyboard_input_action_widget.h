@@ -46,15 +46,15 @@ public:
      */
     virtual ~KeyboardInputActionWidget();
 
-    KHotKeys::KeyboardInputAction *action();
-    const KHotKeys::KeyboardInputAction *action() const;
+    KHotKeys::KeyboardInputAction *action() Q_DECL_OVERRIDE;
+    const KHotKeys::KeyboardInputAction *action() const Q_DECL_OVERRIDE;
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::KeyboardInputActionWidget ui;
 

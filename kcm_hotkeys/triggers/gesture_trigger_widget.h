@@ -48,15 +48,15 @@ public:
      */
     virtual ~GestureTriggerWidget();
 
-    KHotKeys::GestureTrigger *trigger();
-    const KHotKeys::GestureTrigger *trigger() const;
+    KHotKeys::GestureTrigger *trigger() Q_DECL_OVERRIDE;
+    const KHotKeys::GestureTrigger *trigger() const Q_DECL_OVERRIDE;
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 private:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::GestureTriggerWidget ui;
 

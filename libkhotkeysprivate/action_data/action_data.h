@@ -45,17 +45,17 @@ class Q_DECL_EXPORT ActionData
          * Visitor pattern
          * @reimp
          */
-        virtual void accept(ActionDataVisitor *visitor);
-        virtual void accept(ActionDataConstVisitor *visitor) const;
+        void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
+        void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
 
-        virtual void update_triggers();
+        void update_triggers() Q_DECL_OVERRIDE;
 
         virtual void execute();
 
         /**
          * @reimp
          */
-        void aboutToBeErased();
+        void aboutToBeErased() Q_DECL_OVERRIDE;
 
         const Trigger_list* triggers() const;
         Trigger_list* triggers();
@@ -82,8 +82,8 @@ class Q_DECL_EXPORT ActionData
         Trigger_list* _triggers;
         ActionList* _actions;
 
-        virtual void doEnable();
-        virtual void doDisable();
+        void doEnable() Q_DECL_OVERRIDE;
+        void doDisable() Q_DECL_OVERRIDE;
     };
 
 

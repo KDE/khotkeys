@@ -40,10 +40,10 @@ class GestureDrawer : public QFrame
         KHotKeys::StrokePoints pointData() const;
 
 
-        virtual QSize sizeHint() const { return QSize(30, 30); }
+        QSize sizeHint() const Q_DECL_OVERRIDE { return QSize(30, 30); }
 
     protected:
-        void paintEvent(QPaintEvent *ev);
+        void paintEvent(QPaintEvent *ev) Q_DECL_OVERRIDE;
 
     private:
         KHotKeys::StrokePoints _data;

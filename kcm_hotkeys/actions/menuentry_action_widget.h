@@ -46,10 +46,10 @@ public:
      */
     virtual ~MenuentryActionWidget();
 
-    KHotKeys::MenuEntryAction *action();
-    const KHotKeys::MenuEntryAction *action() const;
+    KHotKeys::MenuEntryAction *action() Q_DECL_OVERRIDE;
+    const KHotKeys::MenuEntryAction *action() const Q_DECL_OVERRIDE;
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 public Q_SLOTS:
 
@@ -57,8 +57,8 @@ public Q_SLOTS:
 
 protected:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     QString storage_id;
 

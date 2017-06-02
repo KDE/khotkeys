@@ -51,7 +51,7 @@ class Q_DECL_EXPORT Condition_list_base : public Condition, private QList < Cond
 
         virtual ~Condition_list_base();
 
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
         virtual bool accepts_children() const;
 
         typedef QList< Condition* >::iterator Iterator;
@@ -74,7 +74,7 @@ class Q_DECL_EXPORT Condition_list_base : public Condition, private QList < Cond
 
         void clear();
 
-        virtual void visit( ConditionsVisitor *visitor );
+        void visit( ConditionsVisitor *visitor ) Q_DECL_OVERRIDE;
 
 protected:
 

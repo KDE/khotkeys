@@ -39,8 +39,8 @@ class Q_DECL_EXPORT Generic_action_data
          * Visitor pattern
          * @reimp
          */
-        virtual void accept(ActionDataVisitor *visitor);
-        virtual void accept(ActionDataConstVisitor *visitor) const;
+        void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
+        void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
 
         // CHECKME: Why this?
         using ActionDataBase::set_conditions; // make public

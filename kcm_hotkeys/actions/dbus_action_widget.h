@@ -46,10 +46,10 @@ public:
      */
     virtual ~DbusActionWidget();
 
-    KHotKeys::DBusAction *action();
-    const KHotKeys::DBusAction *action() const;
+    KHotKeys::DBusAction *action() Q_DECL_OVERRIDE;
+    const KHotKeys::DBusAction *action() const Q_DECL_OVERRIDE;
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 public Q_SLOTS:
 
@@ -58,8 +58,8 @@ public Q_SLOTS:
 
 protected:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::DbusActionWidget ui;
 

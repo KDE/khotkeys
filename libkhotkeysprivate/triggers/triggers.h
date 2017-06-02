@@ -157,31 +157,31 @@ class Q_DECL_EXPORT ShortcutTrigger
             const QUuid &uuid = QUuid::createUuid() );
 
         virtual ~ShortcutTrigger();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual ShortcutTrigger* copy( ActionData* data_P ) const;
-        virtual const QString description() const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        ShortcutTrigger* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
         QList<QKeySequence> shortcut() const;
-        virtual void activate( bool activate_P );
+        void activate( bool activate_P ) Q_DECL_OVERRIDE;
 
         void set_key_sequence( const QKeySequence &seq );
 
-        virtual TriggerType type() const { return ShortcutTriggerType; }
+        TriggerType type() const Q_DECL_OVERRIDE { return ShortcutTriggerType; }
 
         /**
          * @reimp
          */
-        void aboutToBeErased();
+        void aboutToBeErased() Q_DECL_OVERRIDE;
 
         //! Disable the trigger
-        virtual void disable();
+        void disable() Q_DECL_OVERRIDE;
 
         //! Enable the trigger
-        virtual void enable();
+        void enable() Q_DECL_OVERRIDE;
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(TriggerVisitor&);
+        void accept(TriggerVisitor&) Q_DECL_OVERRIDE;
 
         QString primaryShortcut() const;
 
@@ -250,23 +250,23 @@ class Q_DECL_EXPORT WindowTrigger : public QObject, public Trigger
         void setOnWindowEvents(WindowEvents events);
 
         virtual ~WindowTrigger();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual WindowTrigger* copy( ActionData* data_P ) const;
-        virtual const QString description() const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        WindowTrigger* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
         const Windowdef_list* windows() const;
         void set_window_rules(Windowdef_list *list);
         Windowdef_list* windows();
         bool triggers_on( window_action_t w_action_P ) const;
-        virtual void activate( bool activate_P );
+        void activate( bool activate_P ) Q_DECL_OVERRIDE;
 
-        virtual TriggerType type() const { return WindowTriggerType; }
+        TriggerType type() const Q_DECL_OVERRIDE { return WindowTriggerType; }
 
 
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(TriggerVisitor&);
+        void accept(TriggerVisitor&) Q_DECL_OVERRIDE;
 
     protected Q_SLOTS:
         void window_added( WId window_P );
@@ -319,9 +319,9 @@ class Q_DECL_EXPORT GestureTrigger
         GestureTrigger( ActionData* data, const StrokePoints& pointdata_P = StrokePoints() );
 
         virtual ~GestureTrigger();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual Trigger* copy( ActionData* data_P ) const;
-        virtual const QString description() const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        Trigger* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
         const StrokePoints& pointData() const;
 
         //! Set the point data of the gesture
@@ -329,14 +329,14 @@ class Q_DECL_EXPORT GestureTrigger
         void setPointData(const QStringList &strings);
         void setKDE3Gesture(const QString &gestureCode);
 
-        virtual void activate( bool activate_P );
+        void activate( bool activate_P ) Q_DECL_OVERRIDE;
 
-        virtual TriggerType type() const { return GestureTriggerType; }
+        TriggerType type() const Q_DECL_OVERRIDE { return GestureTriggerType; }
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(TriggerVisitor&);
+        void accept(TriggerVisitor&) Q_DECL_OVERRIDE;
 
     protected Q_SLOTS:
         void handle_gesture( const StrokePoints& gesture_P );

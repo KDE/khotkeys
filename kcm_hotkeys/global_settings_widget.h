@@ -55,12 +55,12 @@ public:
 
 private Q_SLOTS:
 
-    bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
 private:
 

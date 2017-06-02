@@ -163,21 +163,21 @@ class Q_DECL_EXPORT CommandUrlAction
     typedef Action base;
     public:
         CommandUrlAction( ActionData* data_P, const QString& command_url_P = QString() );
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual void execute();
-        virtual const QString description() const;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        void execute() Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
 
         //! The command url to trigger
         void set_command_url( const QString &command_url );
         QString command_url() const;
 
-        virtual ActionType type() { return CommandUrlActionType; }
-        virtual Action* copy( ActionData* data_P ) const;
+        ActionType type() Q_DECL_OVERRIDE { return CommandUrlActionType; }
+        Action* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(ActionVisitor&);
+        void accept(ActionVisitor&) Q_DECL_OVERRIDE;
 
     private:
         QString _command_url;
@@ -199,21 +199,21 @@ class Q_DECL_EXPORT MenuEntryAction
     typedef CommandUrlAction base;
     public:
         MenuEntryAction( ActionData* data_P, const QString& menuentry_P = QString() );
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual void execute();
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        void execute() Q_DECL_OVERRIDE;
 
         // The service we trigger
         KService::Ptr service() const;
         void set_service( KService::Ptr );
 
-        virtual const QString description() const;
-        virtual Action* copy( ActionData* data_P ) const;
-        virtual ActionType type() { return Action::MenuEntryActionType; }
+        const QString description() const Q_DECL_OVERRIDE;
+        Action* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        ActionType type() Q_DECL_OVERRIDE { return Action::MenuEntryActionType; }
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(ActionVisitor&);
+        void accept(ActionVisitor&) Q_DECL_OVERRIDE;
 
     private:
         KService::Ptr _service;
@@ -240,8 +240,8 @@ class Q_DECL_EXPORT DBusAction
             const QString& call_P= QString(),
             const QString& args_P= QString() );
 
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual void execute();
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        void execute() Q_DECL_OVERRIDE;
         const QString remote_application() const;
         const QString remote_object() const;
         const QString called_function() const;
@@ -252,14 +252,14 @@ class Q_DECL_EXPORT DBusAction
         void set_called_function( const QString &function );
         void set_arguments( const QString &args );
 
-        virtual const QString description() const;
-        virtual Action* copy( ActionData* data_P ) const;
-        virtual ActionType type() { return DBusActionType; }
+        const QString description() const Q_DECL_OVERRIDE;
+        Action* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        ActionType type() Q_DECL_OVERRIDE { return DBusActionType; }
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(ActionVisitor&);
+        void accept(ActionVisitor&) Q_DECL_OVERRIDE;
 
     private:
         QString _application; // CHECKME QCString ?
@@ -300,8 +300,8 @@ class Q_DECL_EXPORT KeyboardInputAction
                 bool active_window_P = true);
 
         virtual ~KeyboardInputAction();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual void execute();
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        void execute() Q_DECL_OVERRIDE;
 
 
         const QString& input() const;
@@ -320,14 +320,14 @@ class Q_DECL_EXPORT KeyboardInputAction
         void setDestinationWindowRules(Windowdef_list *list);
 
         bool activeWindow() const;
-        virtual const QString description() const;
-        virtual Action* copy( ActionData* data_P ) const;
-        virtual ActionType type() { return KeyboardInputActionType; }
+        const QString description() const Q_DECL_OVERRIDE;
+        Action* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        ActionType type() Q_DECL_OVERRIDE { return KeyboardInputActionType; }
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(ActionVisitor&);
+        void accept(ActionVisitor&) Q_DECL_OVERRIDE;
 
     private:
         QString _input;
@@ -357,20 +357,20 @@ class Q_DECL_EXPORT ActivateWindowAction
                 const Windowdef_list* window = NULL);
 
         virtual ~ActivateWindowAction();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual void execute();
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
+        void execute() Q_DECL_OVERRIDE;
 
         const Windowdef_list* window() const;
         void set_window_list(Windowdef_list *list);
 
-        virtual const QString description() const;
-        virtual Action* copy( ActionData* data_P ) const;
-        virtual ActionType type() { return ActivateWindowActionType; }
+        const QString description() const Q_DECL_OVERRIDE;
+        Action* copy( ActionData* data_P ) const Q_DECL_OVERRIDE;
+        ActionType type() Q_DECL_OVERRIDE { return ActivateWindowActionType; }
 
         /**
          * Acyclic visitor pattern
          */
-        virtual void accept(ActionVisitor&);
+        void accept(ActionVisitor&) Q_DECL_OVERRIDE;
 
     private:
         const Windowdef_list* _window;

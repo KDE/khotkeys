@@ -72,27 +72,27 @@ public:
 
     KHotKeys::ActionList *readActionList(const KConfigGroup &config, KHotKeys::ActionData *parent);
 
-    virtual void visitActionDataBase(KHotKeys::ActionDataBase *base);
+    void visitActionDataBase(KHotKeys::ActionDataBase *base) Q_DECL_OVERRIDE;
 
-    virtual void visitActionData(KHotKeys::ActionData *group);
+    void visitActionData(KHotKeys::ActionData *group) Q_DECL_OVERRIDE;
 
-    virtual void visitActionDataGroup(KHotKeys::ActionDataGroup *group);
+    void visitActionDataGroup(KHotKeys::ActionDataGroup *group) Q_DECL_OVERRIDE;
 
-    virtual void visitGenericActionData(KHotKeys::Generic_action_data *data);
+    void visitGenericActionData(KHotKeys::Generic_action_data *data) Q_DECL_OVERRIDE;
 
-    virtual void visitMenuentryShortcutActionData(KHotKeys::MenuEntryShortcutActionData *data);
+    void visitMenuentryShortcutActionData(KHotKeys::MenuEntryShortcutActionData *data) Q_DECL_OVERRIDE;
 
-    virtual void visitSimpleActionData(KHotKeys::SimpleActionData *data);
+    void visitSimpleActionData(KHotKeys::SimpleActionData *data) Q_DECL_OVERRIDE;
 
-    virtual void visit(KHotKeys::ActivateWindowAction&);
-    virtual void visit(KHotKeys::CommandUrlAction&);
-    virtual void visit(KHotKeys::DBusAction&);
-    virtual void visit(KHotKeys::KeyboardInputAction&);
-    virtual void visit(KHotKeys::MenuEntryAction&);
+    void visit(KHotKeys::ActivateWindowAction&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::CommandUrlAction&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::DBusAction&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::KeyboardInputAction&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::MenuEntryAction&) Q_DECL_OVERRIDE;
 
-    virtual void visit(KHotKeys::GestureTrigger&);
-    virtual void visit(KHotKeys::ShortcutTrigger&);
-    virtual void visit(KHotKeys::WindowTrigger&);
+    void visit(KHotKeys::GestureTrigger&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::ShortcutTrigger&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::WindowTrigger&) Q_DECL_OVERRIDE;
 private:
 
     const KConfigGroup *_config;

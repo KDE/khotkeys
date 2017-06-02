@@ -43,9 +43,9 @@ public:
 
     void build();
 
-    virtual void visitConditionsListBase(KHotKeys::Condition_list_base *list);
-    virtual void visitConditionsList(KHotKeys::Condition_list *list);
-    virtual void visitCondition( KHotKeys::Condition *condition );
+    void visitConditionsListBase(KHotKeys::Condition_list_base *list) Q_DECL_OVERRIDE;
+    void visitConditionsList(KHotKeys::Condition_list *list) Q_DECL_OVERRIDE;
+    void visitCondition( KHotKeys::Condition *condition ) Q_DECL_OVERRIDE;
 
     QMap<QTreeWidgetItem*, KHotKeys::Condition*> _items;
 private:

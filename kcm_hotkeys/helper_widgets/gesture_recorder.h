@@ -37,9 +37,9 @@ class GestureRecorder : public QFrame
 
     protected:
 
-        void mousePressEvent(QMouseEvent *);
-        void mouseReleaseEvent(QMouseEvent *);
-        void mouseMoveEvent(QMouseEvent *);
+        void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+        void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+        void mouseMoveEvent(QMouseEvent *) Q_DECL_OVERRIDE;
 
     Q_SIGNALS:
 

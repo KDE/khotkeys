@@ -56,17 +56,17 @@ public:
     /**
      * Set all settings back to defaults.
      */
-    void defaults();
+    void defaults() Q_DECL_OVERRIDE;
 
     /**
      * Load all settings. 
      */
-    void load();
+    void load() Q_DECL_OVERRIDE;
 
     /**
      * Save the settings
      */
-    void save();
+    void save() Q_DECL_OVERRIDE;
 
 
 

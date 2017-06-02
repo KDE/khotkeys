@@ -45,11 +45,11 @@ public:
      */
     virtual ~ShortcutTriggerWidget();
 
-    KHotKeys::ShortcutTrigger *trigger();
-    const KHotKeys::ShortcutTrigger *trigger() const;
+    KHotKeys::ShortcutTrigger *trigger() Q_DECL_OVERRIDE;
+    const KHotKeys::ShortcutTrigger *trigger() const Q_DECL_OVERRIDE;
 
 
-    virtual bool isChanged() const;
+    bool isChanged() const Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
 
@@ -59,8 +59,8 @@ private Q_SLOTS:
 
 private:
 
-    virtual void doCopyFromObject();
-    virtual void doCopyToObject();
+    void doCopyFromObject() Q_DECL_OVERRIDE;
+    void doCopyToObject() Q_DECL_OVERRIDE;
 
 
     Ui::ShortcutTriggerWidget shortcut_trigger_ui;

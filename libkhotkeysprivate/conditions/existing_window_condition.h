@@ -55,12 +55,12 @@ class Q_DECL_EXPORT Existing_window_condition
         Existing_window_condition( Windowdef_list* window_P, Condition_list_base* parent = NULL );
         Existing_window_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
         virtual ~Existing_window_condition();
-        virtual bool match() const;
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
+        bool match() const Q_DECL_OVERRIDE;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
         const Windowdef_list* window() const;
         Windowdef_list* window();
-        virtual Existing_window_condition* copy() const;
-        virtual const QString description() const;
+        Existing_window_condition* copy() const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
     public Q_SLOTS:
         void window_added( WId w_P );
         void window_removed( WId w_P );

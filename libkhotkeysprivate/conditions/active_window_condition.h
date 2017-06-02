@@ -44,12 +44,12 @@ class Q_DECL_EXPORT Active_window_condition
         Active_window_condition(Windowdef_list* window_P, Condition_list_base* parent_P = NULL);
         Active_window_condition(KConfigGroup& cfg_P, Condition_list_base* parent_P);
         virtual ~Active_window_condition();
-        virtual bool match() const;
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
+        bool match() const Q_DECL_OVERRIDE;
+        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
         const Windowdef_list* window() const;
         Windowdef_list* window();
-        virtual Active_window_condition* copy() const;
-        virtual const QString description() const;
+        Active_window_condition* copy() const Q_DECL_OVERRIDE;
+        const QString description() const Q_DECL_OVERRIDE;
     public Q_SLOTS:
         void active_window_changed( WId );
     private:
