@@ -82,6 +82,7 @@ add_library(
     MODULE
     ${kcm_hotkeys_PART_SRCS}
     )
+add_dependencies(kcm_hotkeys khotkeysdbusinterface)
 
 target_compile_definitions(kcm_hotkeys PRIVATE -DPROJECT_VERSION="${PROJECT_VERSION}")
 
