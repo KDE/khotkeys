@@ -1,10 +1,14 @@
 ########### next target ###############
 
+set(dbus_interface_name org.kde.khotkeys.xml)
 set(kded_khotkeys_PART_SRCS 
         kded.cpp
-        ${CMAKE_CURRENT_BINARY_DIR}/org.kde.khotkeys.xml)
+        ${CMAKE_CURRENT_BINARY_DIR}/${dbus_interface_name})
 
-qt5_generate_dbus_interface(kded.h org.kde.khotkeys.xml )
+qt5_generate_dbus_interface(kded.h ${dbus_interface_name})
+set(dbus_interface_xml ${CMAKE_CURRENT_BINARY_DIR}/${dbus_interface_name})
+
+add_custom_target(khotkeysdbusinterface ALL DEPENDS ${dbus_interface_name})
 
 add_library(kded_khotkeys MODULE ${kded_khotkeys_PART_SRCS})
 set_target_properties(kded_khotkeys PROPERTIES OUTPUT_NAME khotkeys)
