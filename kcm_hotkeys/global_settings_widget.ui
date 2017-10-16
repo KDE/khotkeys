@@ -67,7 +67,7 @@
       <item row="0" column="1">
        <widget class="KIntSpinBox" name="gestures_timeout">
         <property name="suffix">
-         <string>ms</string>
+         <string> ms</string>
         </property>
         <property name="minimum">
          <number>100</number>
