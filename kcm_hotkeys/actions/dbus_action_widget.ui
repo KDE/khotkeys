@@ -89,7 +89,7 @@
        <item>
         <widget class="QPushButton" name="launchButton">
          <property name="text">
-          <string>Launch  D-Bus Browser</string>
+          <string>Launch D-Bus Browser</string>
          </property>
         </widget>
        </item>
