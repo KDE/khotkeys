@@ -29,7 +29,7 @@
 
 #include <QDebug>
 #include <QIcon>
-
+#include <QPalette>
 
 static KHotKeys::ActionDataBase *findElement(
         void *ptr
