@@ -327,18 +327,30 @@ bool KCMHotkeysPrivate::maybeShowWidget(const QModelIndex &nextIndex)
     // If the current widget is changed, ask user if switch is ok
     if (current && (currentIndex != nextIndex) && current->isChanged())
         {
-        int choice = KMessageBox::warningContinueCancel(
-             q,
-             i18n("The current action has unsaved changes. If you continue these changes will be lost."),
-             i18n("Save changes") );
-        if (choice != KMessageBox::Continue)
-            {
+        const int choice = KMessageBox::warningYesNoCancel(
+            q,
+            i18n("The current action has unsaved changes.\n"
+                 "Do you want to apply the changes or discard them?"),
+            i18n("Save changes"),
+            KStandardGuiItem::apply(),
+            KStandardGuiItem::discard(),
+            KStandardGuiItem::cancel()
+        );
+
+        switch (choice) {
+        case KMessageBox::Yes:
+            applyCurrentItem();
+            save();
+            return true;
+        case KMessageBox::No:
+            return true;
+        case KMessageBox::Cancel:
             return false;
-            }
-        // Apply the changes from the current item
-        //applyCurrentItem();
-        //save();
+        default:
+            Q_UNREACHABLE();
+            return false;
         }
+    }
     return true;
     }
 
