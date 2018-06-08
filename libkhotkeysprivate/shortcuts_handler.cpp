@@ -150,8 +150,6 @@ static bool xtest()
 
 bool ShortcutsHandler::send_macro_key( const QKeySequence &key, Window window_P )
     {
-    qDebug() << key << key.count() << window_P;
-
     if (key.isEmpty())
         return false;
 
