@@ -147,6 +147,5 @@ Comment[zh_TW]=輸入動作服務，在按下按鍵時執行設定好的動作�
 Type=Service
 X-KDE-ServiceTypes=KDEDModule
 X-KDE-Library=khotkeys
-X-KDE-DBus-ModuleName=khotkeys
 X-KDE-Kded-autoload=true
 OnlyShowIn=KDE;
