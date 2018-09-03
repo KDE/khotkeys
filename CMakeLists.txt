@@ -3,7 +3,7 @@ set(PROJECT_VERSION "5.13.80")
 set(PROJECT_VERSION_MAJOR 5)
 
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
-set(QT_MIN_VERSION "5.4.0")
+set(QT_MIN_VERSION "5.11.0")
 
 include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/libkhotkeysprivate
