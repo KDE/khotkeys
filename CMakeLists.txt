@@ -44,7 +44,6 @@ endif()
 
 configure_file(config-X11.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-X11.h)
 
-remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_FROM_BYTEARRAY)
 
 # Set KI18n translation domain
 add_definitions(-DTRANSLATION_DOMAIN=\"khotkeys\")
