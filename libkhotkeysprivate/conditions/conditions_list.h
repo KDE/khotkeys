@@ -37,7 +37,7 @@ class Q_DECL_EXPORT Condition_list
     {
     typedef Condition_list_base base;
     public:
-        Condition_list( const QString& comment_P, ActionDataBase* parent = NULL );
+        Condition_list( const QString& comment_P, ActionDataBase* parent = nullptr );
         Condition_list( KConfigGroup& cfg_P, ActionDataBase* data_P );
         void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
         Condition_list* copy() const Q_DECL_OVERRIDE;

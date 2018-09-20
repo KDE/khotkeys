@@ -41,7 +41,7 @@ class Q_DECL_EXPORT Condition_list_base : public Condition, private QList < Cond
 
     public:
 
-        Condition_list_base( Condition_list_base* parent = NULL );
+        Condition_list_base( Condition_list_base* parent = nullptr );
 
         Condition_list_base(
                 const QList< Condition* >& children_P,

@@ -86,7 +86,7 @@ KHotKeys::ActionDataGroup *SettingsReaderV2::readGroup(
 #ifdef KHOTKEYS_TRACE
     qDebug() << "Reading group" << config.readEntry( "Name" );
 #endif
-    KHotKeys::ActionDataGroup *group = NULL;
+    KHotKeys::ActionDataGroup *group = nullptr;
 
     // Check if it is allowed to merge the group. If yes check for a group
     // with the desired name
@@ -174,7 +174,7 @@ KHotKeys::ActionDataBase *SettingsReaderV2::readActionData(
         return readGroup(config, parent);
         }
 
-    KHotKeys::ActionData *newObject = NULL;
+    KHotKeys::ActionData *newObject = nullptr;
 
     if (type == "GENERIC_ACTION_DATA")
         {
@@ -198,7 +198,7 @@ KHotKeys::ActionDataBase *SettingsReaderV2::readActionData(
     else
         {
         qWarning() << "Unknown ActionDataBase type read from cfg file\n";
-        return NULL;
+        return nullptr;
         }
 
     _config = &config;
@@ -269,7 +269,7 @@ KHotKeys::ActionList *SettingsReaderV2::readActionList(
         else
             {
             qWarning() << "Unknown Action type read from cfg file\n";
-            return NULL;
+            return nullptr;
             }
 
         _config = &group;
@@ -278,7 +278,7 @@ KHotKeys::ActionList *SettingsReaderV2::readActionList(
         parent->add_action( action );
         }
 
-    return NULL;
+    return nullptr;
     }
 
 
@@ -294,7 +294,7 @@ KHotKeys::Trigger_list *SettingsReaderV2::readTriggerList(
 
     list->set_comment(triggersGroup.readEntry("Comment"));
 
-    KHotKeys::Trigger *trigger = NULL;
+    KHotKeys::Trigger *trigger = nullptr;
 
     int cnt = triggersGroup.readEntry( "TriggersCount", 0 );
     for (int i = 0; i < cnt; ++i)
@@ -314,7 +314,7 @@ KHotKeys::Trigger_list *SettingsReaderV2::readTriggerList(
         else
             {
             qWarning() << "khotkeys: Unknown trigger type" << type;
-            return NULL;
+            return nullptr;
             }
 
         _config = & triggerConfig;
@@ -362,7 +362,7 @@ void SettingsReaderV2::visit(KHotKeys::KeyboardInputAction& action)
     {
     action.setInput(_config->readEntry("Input"));
 
-    KHotKeys::Windowdef_list *window_list = NULL;
+    KHotKeys::Windowdef_list *window_list = nullptr;
     KHotKeys::KeyboardInputAction::DestinationWindow destWindow;
 
     // Try the new format with DestinationWindow

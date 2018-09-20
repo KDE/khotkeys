@@ -120,7 +120,7 @@ public:
      * Set the actions. 
      *
      * \note Ownership is taken. The current action list will be deleted. If
-     * \@a actions is NULL the method will create a new ActionDataGroup
+     * \@a actions is nullptr the method will create a new ActionDataGroup
      */
     void setActions( ActionDataGroup *actions );
 

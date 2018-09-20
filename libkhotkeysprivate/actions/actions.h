@@ -296,7 +296,7 @@ class Q_DECL_EXPORT KeyboardInputAction
         KeyboardInputAction(
                 ActionData* data_P,
                 const QString& input_P = QString(),
-                Windowdef_list* dest_window_P = NULL,
+                Windowdef_list* dest_window_P = nullptr,
                 bool active_window_P = true);
 
         virtual ~KeyboardInputAction();
@@ -307,9 +307,9 @@ class Q_DECL_EXPORT KeyboardInputAction
         const QString& input() const;
         void setInput(const QString &input);
 
-        // send to specific window: dest_window != NULL
-        // send to active window: dest_window == NULL && activeWindow() == true
-        // send to action window: dest_window == NULL && activeWindow() == false
+        // send to specific window: dest_window != nullptr
+        // send to active window: dest_window == nullptr && activeWindow() == true
+        // send to action window: dest_window == nullptr && activeWindow() == false
         //
 
         DestinationWindow destination() const;
@@ -354,7 +354,7 @@ class Q_DECL_EXPORT ActivateWindowAction
     public:
         ActivateWindowAction(
                 ActionData* data_P,
-                const Windowdef_list* window = NULL);
+                const Windowdef_list* window = nullptr);
 
         virtual ~ActivateWindowAction();
         void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;

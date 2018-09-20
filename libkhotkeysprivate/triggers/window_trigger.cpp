@@ -58,7 +58,7 @@ WindowTrigger::WindowTrigger(
 WindowTrigger::~WindowTrigger()
     {
 //    qDebug() << "~WindowTrigger :" << this;
-    disconnect( windows_handler, NULL, this, NULL );
+    disconnect( windows_handler, nullptr, this, nullptr );
     delete _windows;
     }
 

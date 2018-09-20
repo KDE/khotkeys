@@ -40,7 +40,7 @@ public:
     /**
      * Default constructor
      */
-    WindowTriggerWidget( KHotKeys::WindowTrigger *trigger, QWidget *parent = 0 );
+    WindowTriggerWidget( KHotKeys::WindowTrigger *trigger, QWidget *parent = nullptr );
 
     /**
      * Destructor

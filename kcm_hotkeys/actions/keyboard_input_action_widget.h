@@ -39,7 +39,7 @@ public:
      */
     KeyboardInputActionWidget(
             KHotKeys::KeyboardInputAction *action,
-            QWidget *parent = NULL);
+            QWidget *parent = nullptr);
 
     /**
      * Destructor

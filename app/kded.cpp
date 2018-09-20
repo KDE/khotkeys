@@ -38,7 +38,7 @@ using namespace KHotKeys;
 
 KHotKeysModule::KHotKeysModule(QObject* parent, const QList<QVariant>&)
     : KDEDModule(parent)
-    , actions_root(NULL)
+    , actions_root(nullptr)
     , _settingsDirty(false)
     , _settings()
     ,_initialized(false)
@@ -83,7 +83,7 @@ void KHotKeysModule::initialize()
 KHotKeysModule::~KHotKeysModule()
     {
     // actions_root belongs to _settings.
-    actions_root = NULL;
+    actions_root = nullptr;
     }
 
 
@@ -92,7 +92,7 @@ void KHotKeysModule::reread_configuration()
     qDebug() << "Reloading the khotkeys configuration";
 
     // Stop listening
-    actions_root = NULL; // Disables the dbus interface effectively
+    actions_root = nullptr; // Disables the dbus interface effectively
     KHotKeys::khotkeys_set_active( false );
 
     // Load the settings
@@ -132,7 +132,7 @@ SimpleActionData* KHotKeysModule::menuentry_action(const QString &storageId)
             }
         }
 
-    return NULL;
+    return nullptr;
     }
 
 
@@ -141,13 +141,13 @@ QString KHotKeysModule::get_menuentry_shortcut(const QString &storageId)
     SimpleActionData* actionData = menuentry_action(storageId);
 
     // No action found
-    if (actionData == NULL) return "";
+    if (actionData == nullptr) return "";
 
     // The action must have a shortcut trigger. but don't assume to much
     ShortcutTrigger* shortcutTrigger = dynamic_cast<ShortcutTrigger*>(actionData->trigger());
 
     Q_ASSERT(shortcutTrigger);
-    if (shortcutTrigger == NULL) return "";
+    if (shortcutTrigger == nullptr) return "";
 
     qDebug() << shortcutTrigger->primaryShortcut();
 
@@ -174,7 +174,7 @@ QString KHotKeysModule::register_menuentry_shortcut(
     SimpleActionData* actionData = menuentry_action(storageId);
 
     // No action found. Create on if sequence is != ""
-    if (actionData == NULL)
+    if (actionData == nullptr)
         {
         qDebug() << "No action found";
 
@@ -219,7 +219,7 @@ QString KHotKeysModule::register_menuentry_shortcut(
             ShortcutTrigger* shortcutTrigger =
                     dynamic_cast<ShortcutTrigger*>(actionData->trigger());
             Q_ASSERT(shortcutTrigger);
-            if (shortcutTrigger == NULL) return "";
+            if (shortcutTrigger == nullptr) return "";
 
             // Change the actionData
             shortcutTrigger->set_key_sequence(sequence);

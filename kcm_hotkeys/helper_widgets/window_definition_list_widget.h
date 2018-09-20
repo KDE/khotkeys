@@ -41,7 +41,7 @@ public:
      */
     WindowDefinitionListWidget(
             KHotKeys::Windowdef_list *windowdef_list,
-            QWidget *parent = NULL);
+            QWidget *parent = nullptr);
 
     WindowDefinitionListWidget(QWidget *parent);
 
@@ -92,9 +92,9 @@ public:
 
     WindowDefinitionListDialog(
             KHotKeys::Windowdef_list *list,
-            QWidget *parent=NULL)
+            QWidget *parent=nullptr)
         :   KDialog(parent)
-            ,def(NULL)
+            ,def(nullptr)
         {
         def = new WindowDefinitionListWidget(list, this);
         setMainWidget(def);
@@ -104,7 +104,7 @@ public:
 
     ~WindowDefinitionListDialog()
         {
-        def = NULL;
+        def = nullptr;
         }
 
 

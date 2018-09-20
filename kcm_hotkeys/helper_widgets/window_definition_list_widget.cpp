@@ -24,8 +24,8 @@
 
 WindowDefinitionListWidget::WindowDefinitionListWidget(QWidget *parent)
     :   HotkeysWidgetIFace(parent)
-        ,_windowdefs(NULL)
-        ,_working(NULL)
+        ,_windowdefs(nullptr)
+        ,_working(nullptr)
         ,_changed(false)
     {
     ui.setupUi(this);
@@ -50,8 +50,8 @@ WindowDefinitionListWidget::WindowDefinitionListWidget(QWidget *parent)
 
 WindowDefinitionListWidget::WindowDefinitionListWidget(KHotKeys::Windowdef_list *windowdef, QWidget *parent)
     :   HotkeysWidgetIFace(parent)
-        ,_windowdefs(NULL)
-        ,_working(NULL)
+        ,_windowdefs(nullptr)
+        ,_working(nullptr)
         ,_changed(false)
     {
     ui.setupUi(this);

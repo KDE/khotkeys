@@ -29,9 +29,9 @@ class Q_DECL_EXPORT Generic_action_data
                 ActionDataGroup* parent_P,
                 const QString& name_P = QString(),
                 const QString& comment_P = QString(),
-                Trigger_list* triggers_P = NULL,
-                Condition_list* conditions_P = NULL,
-                ActionList* actions_P = NULL);
+                Trigger_list* triggers_P = nullptr,
+                Condition_list* conditions_P = nullptr,
+                ActionList* actions_P = nullptr);
 
         ~Generic_action_data();
 

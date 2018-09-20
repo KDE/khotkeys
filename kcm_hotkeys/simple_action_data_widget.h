@@ -40,7 +40,7 @@ public:
     /**
      * Default constructor
      */
-    SimpleActionDataWidget( QWidget *parent = 0 );
+    SimpleActionDataWidget( QWidget *parent = nullptr );
 
 
     /**

@@ -39,7 +39,7 @@ class Q_DECL_EXPORT Condition
     Q_DISABLE_COPY( Condition )
 
     public:
-        Condition( Condition_list_base* parent_P = NULL );
+        Condition( Condition_list_base* parent_P = nullptr );
         Condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
         virtual ~Condition();
         virtual bool match() const = 0;

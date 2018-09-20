@@ -39,7 +39,7 @@ public:
     /**
      * Default constructor
      */
-    DbusActionWidget( KHotKeys::DBusAction *action, QWidget *parent = 0 );
+    DbusActionWidget( KHotKeys::DBusAction *action, QWidget *parent = nullptr );
 
     /**
      * Destructor

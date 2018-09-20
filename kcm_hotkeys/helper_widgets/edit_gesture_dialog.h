@@ -40,7 +40,7 @@ public:
     /**
      * Default constructor
      */
-    EditGestureDialog(const KHotKeys::StrokePoints &pointData, QWidget *parent=NULL);
+    EditGestureDialog(const KHotKeys::StrokePoints &pointData, QWidget *parent=nullptr);
 
     /**
      * Destructor

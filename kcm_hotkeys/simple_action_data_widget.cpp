@@ -32,8 +32,8 @@
 
 SimpleActionDataWidget::SimpleActionDataWidget( QWidget *parent )
         : HotkeysWidgetBase( parent )
-         ,currentTrigger(NULL)
-         ,currentAction(NULL)
+         ,currentTrigger(nullptr)
+         ,currentAction(nullptr)
     {}
 
 
@@ -90,7 +90,7 @@ void SimpleActionDataWidget::setActionData( KHotKeys::SimpleActionData* pData )
     _data = pData;
 
     // Now go and work on the trigger
-    delete currentTrigger; currentTrigger = NULL;
+    delete currentTrigger; currentTrigger = nullptr;
 
     if ( KHotKeys::Trigger *trg = data()->trigger() )
         {
@@ -125,7 +125,7 @@ void SimpleActionDataWidget::setActionData( KHotKeys::SimpleActionData* pData )
         }
 
     // Now go and work on the action
-    delete currentAction; currentAction = NULL;
+    delete currentAction; currentAction = nullptr;
 
     if ( KHotKeys::Action *act = data()->action() )
         {

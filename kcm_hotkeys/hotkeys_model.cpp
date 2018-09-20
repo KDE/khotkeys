@@ -36,9 +36,9 @@ static KHotKeys::ActionDataBase *findElement(
         ,KHotKeys::ActionDataGroup *root)
     {
     Q_ASSERT(root);
-    if (!root) return NULL;
+    if (!root) return nullptr;
 
-    KHotKeys::ActionDataBase *match = NULL;
+    KHotKeys::ActionDataBase *match = nullptr;
 
     Q_FOREACH( KHotKeys::ActionDataBase *element, root->children())
         {

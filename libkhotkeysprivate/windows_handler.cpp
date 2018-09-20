@@ -166,7 +166,7 @@ WId WindowsHandler::window_at_position( int x, int y )
         if( XGetWindowProperty( QX11Info::display(), child, wm_state, 0, 0, False, AnyPropertyType,
 	    &type, &format, &nitems, &after, &prop ) == Success )
             {
-	    if( prop != NULL )
+	    if( prop != nullptr )
 	        XFree( prop );
 	    if( type != None )
 	        return child;

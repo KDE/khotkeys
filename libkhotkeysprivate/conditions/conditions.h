@@ -28,7 +28,7 @@ class Q_DECL_EXPORT Not_condition
     {
     typedef Condition_list_base base;
     public:
-        Not_condition( Condition_list_base* parent = NULL );
+        Not_condition( Condition_list_base* parent = nullptr );
         Not_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
         bool match() const Q_DECL_OVERRIDE;
         void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
@@ -43,7 +43,7 @@ class Q_DECL_EXPORT And_condition
     {
     typedef Condition_list_base base;
     public:
-        And_condition( Condition_list_base* parent = NULL );
+        And_condition( Condition_list_base* parent = nullptr );
         And_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
         bool match() const Q_DECL_OVERRIDE;
         void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
@@ -56,7 +56,7 @@ class Q_DECL_EXPORT Or_condition
     {
     typedef Condition_list_base base;
     public:
-        Or_condition( Condition_list_base* parent = NULL );
+        Or_condition( Condition_list_base* parent = nullptr );
         Or_condition( KConfigGroup& cfg_P, Condition_list_base* parent_P );
         bool match() const Q_DECL_OVERRIDE;
         void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;

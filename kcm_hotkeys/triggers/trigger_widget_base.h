@@ -48,7 +48,7 @@ public:
 
 protected:
 
-    TriggerWidgetBase( KHotKeys::Trigger *trigger, QWidget *parent = 0 );
+    TriggerWidgetBase( KHotKeys::Trigger *trigger, QWidget *parent = nullptr );
 
     KHotKeys::Trigger *_trigger;
 

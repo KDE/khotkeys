@@ -260,7 +260,7 @@ void SettingsWriter::writeTo(KConfigBase &config)
     gesturesConfig.writeEntry( "Disabled", _settings->areGesturesDisabled() );
     gesturesConfig.writeEntry( "MouseButton", _settings->gestureMouseButton() );
     gesturesConfig.writeEntry( "Timeout", _settings->gestureTimeOut() );
-    if( _settings->gesturesExclude() != NULL )
+    if( _settings->gesturesExclude() != nullptr )
         {
         KConfigGroup gesturesExcludeConfig( &config, "GesturesExclude" );
         _settings->gesturesExclude()->cfg_write( gesturesExcludeConfig );

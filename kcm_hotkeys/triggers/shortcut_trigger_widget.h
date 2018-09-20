@@ -38,7 +38,7 @@ public:
     /**
      * Default constructor
      */
-    ShortcutTriggerWidget(KHotKeys::ShortcutTrigger *trigger, QWidget *parent = NULL);
+    ShortcutTriggerWidget(KHotKeys::ShortcutTrigger *trigger, QWidget *parent = nullptr);
 
     /**
      * Destructor

@@ -110,7 +110,7 @@ Action* SimpleActionData::action()
 const Trigger* SimpleActionData::trigger() const
     {
     if( triggers() == 0 || triggers()->isEmpty() )
-        return NULL;
+        return nullptr;
 
     return triggers()->first();
     }
@@ -119,7 +119,7 @@ const Trigger* SimpleActionData::trigger() const
 Trigger* SimpleActionData::trigger()
     {
     if( triggers() == 0 || triggers()->isEmpty() )
-        return NULL;
+        return nullptr;
 
     return triggers()->first();
     }

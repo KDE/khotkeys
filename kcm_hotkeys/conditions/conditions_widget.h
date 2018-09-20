@@ -45,7 +45,7 @@ public:
     /**
      * Default constructor
      */
-    ConditionsWidget(QWidget *parent = NULL);
+    ConditionsWidget(QWidget *parent = nullptr);
 
     /**
      * Destructor

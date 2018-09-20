@@ -44,7 +44,7 @@ public:
 
 protected:
 
-    ActionWidgetBase( KHotKeys::Action *action, QWidget *parent = 0 );
+    ActionWidgetBase( KHotKeys::Action *action, QWidget *parent = nullptr );
 
     KHotKeys::Action *_action;
 

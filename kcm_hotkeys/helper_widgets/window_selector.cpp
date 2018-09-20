@@ -74,7 +74,7 @@ WId WindowSelector::findRealWindow( WId w, int depth )
     if( XGetWindowProperty( QX11Info::display(), w, wm_state, 0, 0, False, AnyPropertyType,
         &type, &format, &nitems, &after, &prop ) == Success )
         {
-        if( prop != NULL )
+        if( prop != nullptr )
             XFree( prop );
         if( type != None )
             return w;
@@ -89,7 +89,7 @@ WId WindowSelector::findRealWindow( WId w, int depth )
              i < nchildren && ret == None;
              ++i )
             ret = findRealWindow( children[ i ], depth + 1 );
-        if( children != NULL )
+        if( children != nullptr )
             XFree( children );
         }
     return ret;

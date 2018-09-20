@@ -29,7 +29,7 @@
 namespace KHotKeys {
 
 Condition::Condition( Condition_list_base* parent )
-    : _parent(NULL)
+    : _parent(nullptr)
     {
     if (parent)
         {
@@ -40,7 +40,7 @@ Condition::Condition( Condition_list_base* parent )
 
 
 Condition::Condition( KConfigGroup&, Condition_list_base* parent )
-    : _parent(NULL)
+    : _parent(nullptr)
     {
     if (parent)
         {
@@ -76,7 +76,7 @@ Condition* Condition::create_cfg_read( KConfigGroup& cfg_P, Condition_list_base*
     if( type == "OR" )
         return new Or_condition( cfg_P, parent_P );
     qWarning() << "Unknown Condition type read from cfg file\n";
-    return NULL;
+    return nullptr;
     }
 
 

@@ -44,7 +44,7 @@ public:
     /**
      * Default constructor
      */
-    HotkeysTreeView( QWidget *parent = 0 );
+    HotkeysTreeView( QWidget *parent = nullptr );
 
     /**
      * Destructor

@@ -41,7 +41,7 @@ public:
     /**
      * Default constructor
      */
-    HotkeysWidgetBase( QWidget *parent = 0 );
+    HotkeysWidgetBase( QWidget *parent = nullptr );
 
     /**
      * Destructor

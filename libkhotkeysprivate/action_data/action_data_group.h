@@ -60,7 +60,7 @@ class Q_DECL_EXPORT ActionDataGroup
             ActionDataGroup* parent_P,
             const QString& name_P = QString(),
             const QString& comment_P = QString(),
-            Condition_list* conditions_P = NULL,
+            Condition_list* conditions_P = nullptr,
             system_group_t system_group_P = SYSTEM_NONE);
 
         virtual ~ActionDataGroup();

@@ -29,14 +29,14 @@
 namespace KHotKeys {
 
 Condition_list::Condition_list( KConfigGroup& cfg_P, ActionDataBase* data_P )
-    : Condition_list_base( cfg_P, NULL ), data( data_P )
+    : Condition_list_base( cfg_P, nullptr ), data( data_P )
     {
     _comment = cfg_P.readEntry( "Comment" );
     }
 
 
 Condition_list::Condition_list( const QString& comment_P, ActionDataBase* data_P )
-    : Condition_list_base( NULL ), _comment( comment_P ), data( data_P )
+    : Condition_list_base( nullptr ), _comment( comment_P ), data( data_P )
     {
     }
 
@@ -90,7 +90,7 @@ bool Condition_list::match() const
 
 void Condition_list::set_data( ActionDataBase* data_P )
     {
-    Q_ASSERT( data == NULL || data == data_P );
+    Q_ASSERT( data == nullptr || data == data_P );
     data = data_P;
     }
 

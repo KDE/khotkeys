@@ -29,7 +29,7 @@
 
 WindowTriggerWidget::WindowTriggerWidget( KHotKeys::WindowTrigger *trigger, QWidget *parent )
     :   TriggerWidgetBase(trigger, parent)
-        ,_windowdef_widget(NULL)
+        ,_windowdef_widget(nullptr)
     {
     window_trigger_ui.setupUi(this);
 

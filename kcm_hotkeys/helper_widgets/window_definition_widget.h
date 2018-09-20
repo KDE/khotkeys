@@ -46,7 +46,7 @@ public:
     /**
      * Default constructor
      */
-    WindowDefinitionWidget(KHotKeys::Windowdef_simple *windowdef, QWidget *parent = NULL);
+    WindowDefinitionWidget(KHotKeys::Windowdef_simple *windowdef, QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -83,9 +83,9 @@ class WindowDefinitionDialog : public KDialog
 
 public:
 
-    WindowDefinitionDialog( KHotKeys::Windowdef_simple *windowdef, QWidget *parent=NULL)
+    WindowDefinitionDialog( KHotKeys::Windowdef_simple *windowdef, QWidget *parent=nullptr)
         :   KDialog(parent)
-            ,def(NULL)
+            ,def(nullptr)
         {
         def = new WindowDefinitionWidget(windowdef, this);
         setMainWidget(def);
@@ -95,7 +95,7 @@ public:
 
     ~WindowDefinitionDialog()
         {
-        def = NULL;
+        def = nullptr;
         }
 
 

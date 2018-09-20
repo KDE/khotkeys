@@ -169,7 +169,7 @@ void ActionDataGroup::doEnable()
 
 void ActionDataGroup::remove_child( ActionDataBase* child_P )
     {
-    child_P->_parent = NULL;
+    child_P->_parent = nullptr;
     _list.removeAll( child_P ); // is not auto-delete
     }
 

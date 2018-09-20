@@ -41,7 +41,7 @@ public:
     /**
      * Default constructor
      */
-    GlobalSettingsWidget(QWidget *parent = NULL);
+    GlobalSettingsWidget(QWidget *parent = nullptr);
 
     /**
      * Destructor

@@ -39,7 +39,7 @@ public:
     /**
      * Default constructor
      */
-    ActionGroupWidget( QWidget *parent = 0 );
+    ActionGroupWidget( QWidget *parent = nullptr );
 
     /**
      * Destructor

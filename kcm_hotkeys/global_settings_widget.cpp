@@ -33,7 +33,7 @@
 
 GlobalSettingsWidget::GlobalSettingsWidget( QWidget *parent )
     :   HotkeysWidgetIFace( parent )
-        ,_model(NULL)
+        ,_model(nullptr)
     {
     ui.setupUi(this);
 

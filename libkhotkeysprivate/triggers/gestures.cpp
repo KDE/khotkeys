@@ -38,14 +38,14 @@
 namespace KHotKeys
 {
 
-QPointer<Gesture> gesture_handler = NULL;
+QPointer<Gesture> gesture_handler = nullptr;
 
 Gesture::Gesture( bool enabled_P, QObject* parent_P )
         : QObject(parent_P)
         , _enabled( false )
         , recording( false )
         , button( 0 )
-        , exclude( NULL )
+        , exclude( nullptr )
     {
     //qDebug() << enabled_P;
     nostroke_timer.setSingleShot( true );
@@ -75,10 +75,10 @@ void Gesture::set_exclude( Windowdef_list* windows_P )
     delete exclude;
     // check for count() > 0 - empty exclude list means no window is excluded,
     // but empty Windowdef_list matches everything
-    if( windows_P != NULL && windows_P->count() > 0 )
+    if( windows_P != nullptr && windows_P->count() > 0 )
         exclude = windows_P->copy();
     else
-        exclude = NULL;
+        exclude = nullptr;
     update_grab();
     }
 
@@ -93,7 +93,7 @@ void Gesture::update_grab()
     }
 
     if( _enabled && handlers.count() > 0
-        && ( exclude == NULL || !exclude->match( Window_data( windows_handler->active_window()))))
+        && ( exclude == nullptr || !exclude->match( Window_data( windows_handler->active_window()))))
         {
         kapp->removeNativeEventFilter( this ); // avoid being installed twice
         kapp->installNativeEventFilter( this );
@@ -208,14 +208,14 @@ bool Gesture::nativeEventFilter( const QByteArray & eventType, void * message, l
 
         // prepare for the incoming scores from different triggers
         maxScore = 0.0;
-        bestFit = NULL;
+        bestFit = nullptr;
 
         emit handle_gesture( gesture );
         // the signal is emitted directly, so we get all trigger scores before
         // the next lines are executed. bestFit should now contain
         // a pointer to the ActionData with the best-matching gesture.
 
-        if( bestFit != NULL )
+        if( bestFit != nullptr )
             {
             // set up the windows_handler
             WId window = windows_handler->window_at_position( start_x, start_y );

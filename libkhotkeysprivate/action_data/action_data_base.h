@@ -161,7 +161,7 @@ class Q_DECL_EXPORT ActionDataBase : public QObject
 
         friend class ActionDataGroup;
 
-        //! The parent or NULL
+        //! The parent or nullptr
         ActionDataGroup* _parent;
 
         //! List of conditions for this element

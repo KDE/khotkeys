@@ -39,8 +39,8 @@ namespace KHotKeys
 bool Settings::isOutdated = false;
 
 Settings::Settings()
-    : m_actions( NULL ),
-      gestures_exclude(NULL)
+    : m_actions( nullptr ),
+      gestures_exclude(nullptr)
     {
     reinitialize();
     }
@@ -162,12 +162,12 @@ bool Settings::loadDefaults()
 void Settings::reinitialize()
     {
     // Rereading settings. First delete what we have
-    setActions(NULL);
+    setActions(nullptr);
 
     gestures_disabled = true;
     gesture_mouse_button = 2;
     gesture_timeout = 300;
-    gestures_exclude = NULL,
+    gestures_exclude = nullptr,
 
     daemon_disabled = false;
 
@@ -185,10 +185,10 @@ void Settings::setActions( ActionDataGroup *actions )
     m_actions = actions
         ? actions
         : new ActionDataGroup(
-                NULL,
+                nullptr,
                 "should never see",
                 "should never see",
-                NULL,
+                nullptr,
                 ActionDataGroup::SYSTEM_ROOT);
     m_actions->enable();
     }
@@ -316,7 +316,7 @@ bool Settings::importFrom(ActionDataGroup *element, KConfigBase const &config, I
                     // Ask the user?
                     if( ask == ImportSilent
                             || ( ask == ImportAsk && KMessageBox::warningContinueCancel(
-                                    NULL,
+                                    nullptr,
                                     i18n( "This \"actions\" file has already been imported before. "
                                           "Are you sure you want to import it again?" )) != KMessageBox::Continue ) )
                         {
@@ -344,7 +344,7 @@ bool Settings::importFrom(ActionDataGroup *element, KConfigBase const &config, I
             {
             case ImportAsk:
                 if (KMessageBox::warningContinueCancel(
-                                NULL,
+                                nullptr,
                                 i18n( "This \"actions\" file has no ImportId field and therefore it cannot be determined "
                                       "whether or not it has been imported already. Are you sure you want to import it?" ))
                         == KMessageBox::Cancel )
@@ -380,7 +380,7 @@ ActionDataGroup *Settings::get_system_group(ActionDataGroup::system_group_t grou
     Q_ASSERT(m_actions);
 
     // Search for the menuentries system group.
-    ActionDataGroup *system_group = NULL;
+    ActionDataGroup *system_group = nullptr;
 
     Q_FOREACH(KHotKeys::ActionDataBase* element, m_actions->children())
         {
@@ -394,7 +394,7 @@ ActionDataGroup *Settings::get_system_group(ActionDataGroup::system_group_t grou
         }
 
     // Check if we found the group
-    if (system_group==NULL)
+    if (system_group==nullptr)
         {
         switch (group_id)
             {
@@ -403,14 +403,14 @@ ActionDataGroup *Settings::get_system_group(ActionDataGroup::system_group_t grou
                         m_actions,
                         "KMenuEdit",
                         "KMenuEdit Global Shortcuts",
-                        NULL,
+                        nullptr,
                         ActionDataGroup::SYSTEM_MENUENTRIES);
                 system_group->enable();
                 break;
 
             default:
                 Q_ASSERT(false);
-                return NULL;
+                return nullptr;
             }
         }
 

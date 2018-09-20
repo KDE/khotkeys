@@ -35,7 +35,7 @@ ActionGroupWidget::ActionGroupWidget( QWidget *parent )
 
 ActionGroupWidget::~ActionGroupWidget()
     {
-    _conditions = NULL;
+    _conditions = nullptr;
     }
 
 

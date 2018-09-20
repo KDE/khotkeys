@@ -38,7 +38,7 @@ public:
     /**
      * Default constructor
      */
-    GestureWidget(QWidget *parent = NULL);
+    GestureWidget(QWidget *parent = nullptr);
 
     /**
      * Destructor

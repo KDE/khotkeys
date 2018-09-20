@@ -39,7 +39,7 @@ public:
     /**
      * Default constructor
      */
-    MenuentryActionWidget( KHotKeys::MenuEntryAction *action, QWidget *parent = 0 );
+    MenuentryActionWidget( KHotKeys::MenuEntryAction *action, QWidget *parent = nullptr );
 
     /**
      * Destructor

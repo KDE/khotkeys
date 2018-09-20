@@ -38,7 +38,7 @@ public:
     /**
      * Default constructor
      */
-    HotkeysWidgetIFace( QWidget *parent = 0 );
+    HotkeysWidgetIFace( QWidget *parent = nullptr );
 
     /**
      * Destructor

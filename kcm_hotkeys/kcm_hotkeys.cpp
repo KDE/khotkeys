@@ -265,9 +265,9 @@ void KCMHotkeys::save()
 
 KCMHotkeysPrivate::KCMHotkeysPrivate( KCMHotkeys *host )
     : Ui::KCMHotkeysWidget()
-     ,model(NULL)
+     ,model(nullptr)
      ,q(host)
-     ,current(NULL)
+     ,current(nullptr)
     {
     setupUi(q);
 

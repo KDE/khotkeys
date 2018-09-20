@@ -37,7 +37,7 @@ public:
     /**
      * Default constructor
      */
-    CommandUrlActionWidget( KHotKeys::CommandUrlAction *action, QWidget *parent = 0 );
+    CommandUrlActionWidget( KHotKeys::CommandUrlAction *action, QWidget *parent = nullptr );
 
     /**
      * Destructor

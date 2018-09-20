@@ -49,8 +49,8 @@ void ActionData::accept(ActionDataConstVisitor *visitor) const
 
 ActionData::~ActionData()
     {
-    delete _triggers; _triggers = NULL;
-    delete _actions; _actions = NULL;
+    delete _triggers; _triggers = nullptr;
+    delete _actions; _actions = nullptr;
     }
 
 

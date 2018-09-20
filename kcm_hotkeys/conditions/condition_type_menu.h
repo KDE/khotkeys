@@ -34,7 +34,7 @@ public:
     /**
      * Default constructor
      */
-    ConditionTypeMenu(QWidget *parent = NULL);
+    ConditionTypeMenu(QWidget *parent = nullptr);
 
     /**
      * Destructor

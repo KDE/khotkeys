@@ -41,7 +41,7 @@ public:
     /**
      * Default constructor
      */
-    GestureTriggerWidget(KHotKeys::GestureTrigger *trigger, QWidget *parent = NULL);
+    GestureTriggerWidget(KHotKeys::GestureTrigger *trigger, QWidget *parent = nullptr);
 
     /**
      * Destructor

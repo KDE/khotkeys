@@ -69,7 +69,7 @@ HotkeysTreeViewContextMenu::createActionFromType(
         KHotKeys::SimpleActionData* data
         ) const
     {
-    KHotKeys::Action *action = NULL;
+    KHotKeys::Action *action = nullptr;
     switch (actionType)
         {
         case KHotKeys::Action::CommandUrlActionType:
@@ -90,7 +90,7 @@ HotkeysTreeViewContextMenu::createActionFromType(
 
         default:
             Q_ASSERT(false);
-            return NULL;
+            return nullptr;
         }
 
     data->set_action(action);

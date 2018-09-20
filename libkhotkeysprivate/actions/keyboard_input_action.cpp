@@ -130,7 +130,7 @@ void KeyboardInputAction::cfg_write( KConfigGroup& cfg_P ) const
 
     cfg_P.writeEntry( "DestinationWindow", int(_destination) );
 
-    if( _destination == SpecificWindow && dest_window() != NULL )
+    if( _destination == SpecificWindow && dest_window() != nullptr )
         {
         KConfigGroup windowGroup( cfg_P.config(), cfg_P.name() + "DestinationWindow" );
         dest_window()->cfg_write( windowGroup );
@@ -199,7 +199,7 @@ Action* KeyboardInputAction::copy( ActionData* data_P ) const
     return new KeyboardInputAction(
             data_P,
             input(),
-            dest_window() ? dest_window()->copy() : NULL,
+            dest_window() ? dest_window()->copy() : nullptr,
             _destination == ActiveWindow);
     }
 

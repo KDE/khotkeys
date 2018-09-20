@@ -58,7 +58,7 @@ Windowdef* Windowdef::create_cfg_read( KConfigGroup& cfg_P )
     if( type == "SIMPLE" )
         return new Windowdef_simple( cfg_P );
     qWarning() << "Unknown Windowdef type read from cfg file\n";
-    return NULL;
+    return nullptr;
     }
 
 

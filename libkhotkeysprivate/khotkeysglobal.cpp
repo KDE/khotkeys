@@ -29,8 +29,8 @@
 namespace KHotKeys
 {
 
-QPointer<ShortcutsHandler> keyboard_handler = NULL;
-QPointer<WindowsHandler> windows_handler = NULL;
+QPointer<ShortcutsHandler> keyboard_handler = nullptr;
+QPointer<WindowsHandler> windows_handler = nullptr;
 
 static bool _khotkeys_active = false;
 

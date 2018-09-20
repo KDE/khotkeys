@@ -47,7 +47,7 @@ Existing_window_condition::Existing_window_condition( Windowdef_list* window_P,
 
 Existing_window_condition::~Existing_window_condition()
     {
-    disconnect( windows_handler, NULL, this, NULL );
+    disconnect( windows_handler, nullptr, this, nullptr );
     delete _window;
     }
 

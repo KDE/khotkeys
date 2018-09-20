@@ -117,7 +117,7 @@ void BuildTree::visitConditionsListBase(KHotKeys::Condition_list_base *list)
 
 ConditionsWidget::ConditionsWidget(QWidget *parent)
     :   QWidget(parent)
-        ,_working(NULL)
+        ,_working(nullptr)
         ,_changed(false)
     {
     ui.setupUi(this);
@@ -136,7 +136,7 @@ ConditionsWidget::ConditionsWidget(QWidget *parent)
 
 ConditionsWidget::~ConditionsWidget()
     {
-    delete _working; _working = NULL;
+    delete _working; _working = nullptr;
     }
 
 
