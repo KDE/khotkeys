@@ -21,7 +21,7 @@
 #define SOUND_H
 
 #include <QVector>
-#include <QtCore/QCharRef>
+#include <QCharRef>
 #include <kdemacros.h>
 
 /**

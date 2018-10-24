@@ -31,7 +31,7 @@
 
 #include "condition_type_menu.h"
 
-#include <QtCore/QStack>
+#include <QStack>
 
 #include <QDebug>
 

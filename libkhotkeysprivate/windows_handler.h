@@ -19,8 +19,8 @@
 
 #include <kdemacros.h>
 
-#include <QtCore/QObject>
-#include <QtGui/qwindowdefs.h>
+#include <QObject>
+#include <QWindowList>
 
 #include <netwm.h>
 
@@ -35,7 +35,6 @@ const NET::WindowTypes SUPPORTED_WINDOW_TYPES_MASK = NET::NormalMask | NET::Desk
 class Windowdef_list;
 
 class Q_DECL_EXPORT WindowsHandler : public QObject
-                                  #include <QtGui/qwindowdefs.h>
     {
     Q_OBJECT
     public:

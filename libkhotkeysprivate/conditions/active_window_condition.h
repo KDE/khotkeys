@@ -20,9 +20,9 @@
 
 #include "conditions/condition.h"
 
-#include <QtCore/QObject>
+#include <QObject>
 
-#include <QtGui/qwindowdefs.h>
+#include <QWindowList>
 
 
 class KConfigGroup;

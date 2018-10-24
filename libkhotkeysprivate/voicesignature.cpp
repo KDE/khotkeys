@@ -30,7 +30,7 @@
 
 
 #include <QDebug>
-#include <QtCore/QDate>
+#include <QDate>
 
 #undef Complex
 

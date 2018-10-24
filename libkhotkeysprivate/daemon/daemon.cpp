@@ -22,7 +22,11 @@
 
 #include "khotkeysglobal.h"
 
-#include <QtDBus/QtDBus>
+#include <QDBusConnection>
+#include <QDBusError>
+#include <QDBusInterface>
+#include <QDBusMessage>
+#include <QDBusReply>
 
 #include <KConfigGroup>
 #include <KConfig>

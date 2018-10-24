@@ -16,7 +16,7 @@
 #include <KLocalizedString>
 #include <kdemacros.h>
 
-#include <QtCore/QPointer>
+#include <QPointer>
 
 class QObject;
 

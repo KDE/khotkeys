@@ -20,7 +20,7 @@
 #ifndef RECORDER_H
 #define RECORDER_H
 
-#include <QtCore/QObject>
+#include <QObject>
 #include "sound.h"
 #include <kdemacros.h>
 

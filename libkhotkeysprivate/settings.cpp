@@ -453,7 +453,7 @@ bool Settings::reread_settings(bool include_disabled)
     gesture_mouse_button = qBound( 2, gesture_mouse_button, 9 );
     gesture_timeout = gesturesConfig.readEntry( "Timeout", gesture_timeout );
 
-    // Somhow gesture_timeout found it's way into my config file. Fix it for
+    // Somehow gesture_timeout found it's way into my config file. Fix it for
     // everyone else too.
     if (gesture_timeout < 100) gesture_timeout = 300;
 

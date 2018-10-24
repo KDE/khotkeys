@@ -76,7 +76,7 @@ class Q_DECL_EXPORT Windowdef_simple : public Windowdef
         Windowdef_simple( KConfigGroup& cfg_P );
 
         /**
-         * Match agains window @p window_P
+         * Match against window @p window_P
          */
         bool match( const Window_data& window_P ) Q_DECL_OVERRIDE;
 

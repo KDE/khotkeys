@@ -22,7 +22,7 @@
 #include "action_data/action_data.h"
 #include "triggers/triggers.h"
 
-#include <QtGui/QKeySequence>
+#include <QKeySequence>
 
 #include <QDebug>
 

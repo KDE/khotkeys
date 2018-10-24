@@ -24,7 +24,7 @@
 #include <kapplication.h>
 #include <QDebug>
 #include <kxerrorhandler.h>
-#include <QtCore/QTimer>
+#include <QTimer>
 
 
 #include <X11/Xlib.h>

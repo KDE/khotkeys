@@ -21,7 +21,7 @@
 
 #include "conditions/conditions_list_base.h"
 
-#include <QtCore/QString>
+#include <QString>
 
 class KConfigGroup;
 

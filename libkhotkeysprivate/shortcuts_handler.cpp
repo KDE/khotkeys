@@ -35,7 +35,7 @@
 #include <KShortcut>
 
 #include <QAction>
-#include <QtCore/QUuid>
+#include <QUuid>
 #include <kkeyserver.h>
 
 namespace KHotKeys {

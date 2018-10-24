@@ -22,7 +22,7 @@
 
 #include <QDebug>
 #include <klocale.h>
-#include <QtCore/QTimer>
+#include <QTimer>
 #include <klibrary.h>
 
 #include "khotkeysglobal.h"

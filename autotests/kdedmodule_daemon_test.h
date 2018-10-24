@@ -1,7 +1,7 @@
 #ifndef LIBKHOTKEYS_TEST_H
 #define LIBKHOTKEYS_TEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 
 class Test : public QObject
     {

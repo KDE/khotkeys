@@ -18,11 +18,11 @@
 */
 
 
-#include <QtCore/QString>
+#include <QString>
 
 #include "KConfigGroup"
 
-#include <QtGui/qwindowdefs.h>
+#include <QWindowList>
 
 #include <netwm_def.h>
 #include <kdemacros.h>

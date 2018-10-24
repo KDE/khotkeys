@@ -13,8 +13,8 @@
 
 #include "kdemacros.h"
 
-#include <QtCore/QObject>
-#include <QtCore/QString>
+#include <QObject>
+#include <QString>
 
 
 class KConfigGroup;
@@ -180,7 +180,7 @@ class Q_DECL_EXPORT ActionDataBase : public QObject
         QString _importId;
 
         //! Is it allowed to merge this directory with others. Used when
-        //exporting and importig the directory
+        //exporting and importing the directory
         bool _allowMerging;
 
     };

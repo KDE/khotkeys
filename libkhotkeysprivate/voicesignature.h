@@ -22,7 +22,7 @@
 
 
 #include <QVector>
-#include <QtCore/QMap>
+#include <QMap>
 #include <kdemacros.h>
 #include <KConfig>
 

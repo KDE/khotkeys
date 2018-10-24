@@ -22,7 +22,7 @@
 #include "libkhotkeysfwd.h"
 #include "settings.h"
 
-#include <QtCore/QAbstractItemModel>
+#include <QAbstractItemModel>
 
 
 /**

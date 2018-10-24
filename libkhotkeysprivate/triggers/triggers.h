@@ -20,9 +20,9 @@
 #ifndef _TRIGGERS_H_
 #define _TRIGGERS_H_
 
-#include <QtCore/QList>
-#include <QtCore/QMap>
-#include <QtCore/QUuid>
+#include <QList>
+#include <QMap>
+#include <QUuid>
 
 #include <KShortcut>
 

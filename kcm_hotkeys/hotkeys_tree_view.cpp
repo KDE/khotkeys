@@ -29,7 +29,7 @@
 #include "KDE/KLocale"
 #include "KDE/KDebug"
 
-#include <QtGui/QContextMenuEvent>
+#include <QContextMenuEvent>
 
 
 HotkeysTreeView::HotkeysTreeView( QWidget *parent )

@@ -664,7 +664,7 @@ bool KHotkeysModel::setData( const QModelIndex &index, const QVariant &value, in
                     : action->disable();
 
                 // If this is a group we have to inform the view that all our
-                // childs have changed. They are all disabled now
+                // children have changed. They are all disabled now
                 KHotKeys::ActionDataGroup *actionGroup = indexToActionDataGroup(index);
                 if (actionGroup && actionGroup->size())
                     {

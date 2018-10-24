@@ -154,7 +154,7 @@ KHotKeys::ActionDataGroup *SettingsReaderV2::readGroup(
             break;
 
         default:
-            qWarning() << "Unkown stateStrategy";
+            qWarning() << "Unknown stateStrategy";
             Q_ASSERT(false);
             break;
         };
@@ -228,7 +228,7 @@ KHotKeys::ActionDataBase *SettingsReaderV2::readActionData(
             break;
 
         default:
-            qWarning() << "Unkown stateStrategy";
+            qWarning() << "Unknown stateStrategy";
             Q_ASSERT(false);
             break;
         };

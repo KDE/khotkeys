@@ -24,7 +24,7 @@
 
 #include <qtest_kde.h>
 
-#include <QtDBus/QtDBus>
+#include <QDBusInterface>
 
 
 void Test::initTestCase()

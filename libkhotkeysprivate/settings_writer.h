@@ -21,7 +21,7 @@
 
 #include "action_data/action_data_visitor.h"
 
-#include <QtCore/QStack>
+#include <QStack>
 
 #include "settings.h"
 

@@ -111,7 +111,7 @@ public:
     /**
      * Take the actions. 
      *
-     * \note Ownership is transfered to you. Subsequent calls to action() will
+     * \note Ownership is transferred to you. Subsequent calls to action() will
      * return 0
      */
     ActionDataGroup *takeActions();

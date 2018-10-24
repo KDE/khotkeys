@@ -20,9 +20,9 @@
 
 #include "conditions/condition.h"
 
-#include <QtCore/QObject>
-#include <QtCore/QString>
-#include <QtGui/qwindowdefs.h>
+#include <QObject>
+#include <QString>
+#include <QWindowList>
 
 #include <KConfig>      // Needed because of some Qt Status redefinitions
 #include <KConfigGroup>      // Needed because of some Qt Status redefinitions

@@ -59,7 +59,7 @@ public:
         return static_cast<const KHotKeys::ActionDataBase*>( _data );
         }
 
-    //! Are there uncommited changes?
+    //! Are there uncommitted changes?
     bool isChanged() const Q_DECL_OVERRIDE;
 
     void setActionData( KHotKeys::ActionDataGroup *group );

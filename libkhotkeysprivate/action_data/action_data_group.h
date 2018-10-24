@@ -89,7 +89,7 @@ class Q_DECL_EXPORT ActionDataGroup
         const QList<ActionDataBase*> children() const;
 
         /**
-         * Number of childrens.
+         * Number of children.
          */
         int size() const;
 

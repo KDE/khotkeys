@@ -16,7 +16,6 @@
 */
 
 #include "windows_helper/window_selection_rules.h"
-#include "windows_helper/window_selection_rules.h"
 
 #include <KLocalizedString>
 #include <QDebug>

@@ -39,7 +39,8 @@
 #include "hotkeys_tree_view.h"
 #include "khotkeysglobal.h"
 
-#include <QtDBus/QtDBus>
+#include <QDBusConnection>
+#include <QDBusError>
 
 #include <KAboutData>
 #include <QDebug>

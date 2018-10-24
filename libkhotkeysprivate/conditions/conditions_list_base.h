@@ -23,7 +23,7 @@
 
 #include "kdemacros.h"
 
-#include <QtCore/QList>
+#include <QList>
 
 
 class KConfigGroup;

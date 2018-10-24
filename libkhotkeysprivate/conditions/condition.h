@@ -18,8 +18,8 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include <QtCore/QObject>
-#include <QtCore/QString>
+#include <QObject>
+#include <QString>
 
 #include "kdemacros.h"
 

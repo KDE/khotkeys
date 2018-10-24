@@ -30,8 +30,8 @@
 #include <QDebug>
 #include <KUrl>
 
-#include <QtCore/QSignalMapper>
-#include <QtGui/QContextMenuEvent>
+#include <QSignalMapper>
+#include <QContextMenuEvent>
 #include <QFileDialog>
 
 
@@ -237,7 +237,7 @@ void HotkeysTreeViewContextMenu::exportAction()
                 break;
 
             default:
-                // Unknown value alled to our ui file. Use disabled as a
+                // Unknown value fallen to our ui file. Use disabled as a
                 // default.
                 Q_ASSERT(false);
                 state = KHotKeys::Disabled;

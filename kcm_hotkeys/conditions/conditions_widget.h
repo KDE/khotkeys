@@ -57,7 +57,7 @@ public:
 
     void setConditionsList(KHotKeys::Condition_list *list);
 
-    //! Are there uncommited changes?
+    //! Are there uncommitted changes?
     bool hasChanges() const;
 
 Q_SIGNALS:

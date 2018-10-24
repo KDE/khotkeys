@@ -14,9 +14,9 @@
 #include <kdedmodule.h>
 #include "settings.h"
 
-#include <QtCore/QObject>
-#include <QtDBus/QtDBus>
-#include <QtGui/QKeySequence>
+#include <QObject>
+#include <QtDBus>
+#include <QKeySequence>
 
 #include <KService>
 

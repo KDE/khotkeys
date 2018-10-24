@@ -19,7 +19,7 @@
 
 #include "windows_helper/window_selection_interface.h"
 
-#include <QtCore/QList>
+#include <QList>
 
 namespace KHotKeys {
 
