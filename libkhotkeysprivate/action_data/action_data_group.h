@@ -15,7 +15,7 @@
 #include "actions/actions.h"
 #include "triggers/triggers.h"
 
-#include "QtCore/QList"
+#include "QList"
 
 #include "kdemacros.h"
 
