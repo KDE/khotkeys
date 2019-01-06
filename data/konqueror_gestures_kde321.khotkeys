@@ -601,7 +601,7 @@ Name[uz@cyrillic]=Орқага
 Name[vi]=Lùi
 Name[wa]=En erî
 Name[x-test]=xxBackxx
-Name[zh_CN]=后退
+Name[zh_CN]=背面
 Name[zh_TW]=返回
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -1006,7 +1006,7 @@ Name[uz@cyrillic]=Юқорига
 Name[vi]=Lên
 Name[wa]=Monter
 Name[x-test]=xxUpxx
-Name[zh_CN]=向上
+Name[zh_CN]=上箭头
 Name[zh_TW]=上一層
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -1495,7 +1495,7 @@ Name[uz@cyrillic]=Кейинги табни активлаштириш
 Name[vi]=Kích hoạt thẻ sau
 Name[wa]=Mete en alaedje li linwete shuvante
 Name[x-test]=xxActivate Next Tabxx
-Name[zh_CN]=激活下一个标签页
+Name[zh_CN]=激活下一标签页
 Name[zh_TW]=跳到下一個分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -1749,7 +1749,7 @@ Name[uk]=Активувати попередню вкладку
 Name[vi]=Kích hoạt thẻ trước
 Name[wa]=Mete en alaedje li linwete di dvant
 Name[x-test]=xxActivate Previous Tabxx
-Name[zh_CN]=激活上一个标签页
+Name[zh_CN]=激活上一标签页
 Name[zh_TW]=跳到前一個分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2089,7 +2089,7 @@ Name[uz@cyrillic]=Табнинг нусхасини яратиш
 Name[vi]=Nhân đôi thẻ
 Name[wa]=Dobler l' linwete
 Name[x-test]=xxDuplicate Tabxx
-Name[zh_CN]=复制标签页
+Name[zh_CN]=复制标签
 Name[zh_TW]=複製分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2596,7 +2596,7 @@ Name[uz@cyrillic]=Олдинга
 Name[vi]=Tiếp
 Name[wa]=En avant
 Name[x-test]=xxForwardxx
-Name[zh_CN]=前进
+Name[zh_CN]=转发
 Name[zh_TW]=往前
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2852,7 +2852,7 @@ Name[vi]=Nhà
 Name[wa]=Måjhon
 Name[xh]=Ikhaya
 Name[x-test]=xxHomexx
-Name[zh_CN]=主文件夹
+Name[zh_CN]=Home
 Name[zh_TW]=家目錄
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -3615,7 +3615,7 @@ Name[vi]=Cửa sổ mới
 Name[wa]=Novele finiesse
 Name[xh]=Window Entsha
 Name[x-test]=xxNew Windowxx
-Name[zh_CN]=新建窗口
+Name[zh_CN]=新窗口
 Name[zh_TW]=新視窗
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -3871,7 +3871,7 @@ Name[uz@cyrillic]=Қайтадан юклаш
 Name[vi]=Nạp lại
 Name[wa]=Ritcherdjî
 Name[x-test]=xxReloadxx
-Name[zh_CN]=重新加载
+Name[zh_CN]=重新载入
 Name[zh_TW]=重新載入
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 

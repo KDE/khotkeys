@@ -158,7 +158,7 @@ Name[uz@cyrillic]=Мисоллар
 Name[vi]=Ví dụ
 Name[wa]=Egzimpes
 Name[x-test]=xxExamplesxx
-Name[zh_CN]=实例
+Name[zh_CN]=示例
 Name[zh_TW]=範例
 SystemGroup=0
 Type=ACTION_DATA_GROUP
@@ -593,7 +593,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
@@ -833,7 +833,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
@@ -1090,7 +1090,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
@@ -1555,7 +1555,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
@@ -1971,7 +1971,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
@@ -2479,7 +2479,7 @@ Name[uz@cyrillic]=Орқага
 Name[vi]=Lùi
 Name[wa]=En erî
 Name[x-test]=xxBackxx
-Name[zh_CN]=后退
+Name[zh_CN]=背面
 Name[zh_TW]=返回
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2667,7 +2667,7 @@ Name[uz@cyrillic]=Олдинга
 Name[vi]=Tiếp
 Name[wa]=En avant
 Name[x-test]=xxForwardxx
-Name[zh_CN]=前进
+Name[zh_CN]=转发
 Name[zh_TW]=往前
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2855,7 +2855,7 @@ Name[uz@cyrillic]=Юқорига
 Name[vi]=Lên
 Name[wa]=Monter
 Name[x-test]=xxUpxx
-Name[zh_CN]=向上
+Name[zh_CN]=上箭头
 Name[zh_TW]=上一層
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -3043,7 +3043,7 @@ Name[uz@cyrillic]=Қайтадан юклаш
 Name[vi]=Nạp lại
 Name[wa]=Ritcherdjî
 Name[x-test]=xxReloadxx
-Name[zh_CN]=重新加载
+Name[zh_CN]=重新载入
 Name[zh_TW]=重新載入
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -3379,7 +3379,7 @@ Comment[uk]=Simple_action
 Comment[vi]=Hành động đơn giản
 Comment[wa]=Simpe_accion
 Comment[x-test]=xxSimple_actionxx
-Comment[zh_CN]=简易_动作
+Comment[zh_CN]=简单动作
 Comment[zh_TW]=簡易動作
 TriggersCount=1
 
