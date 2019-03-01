@@ -230,7 +230,7 @@ QVariant KHotkeysModel::data( const QModelIndex &index, int role ) const
             case NameColumn:
                 if (!action->isEnabled())
                     {
-                    return pal.color(QPalette::Disabled, QPalette::Foreground);
+                    return pal.color(QPalette::Disabled, QPalette::WindowText);
                     }
 
             default:
