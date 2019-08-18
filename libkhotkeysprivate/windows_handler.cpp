@@ -89,7 +89,7 @@ void WindowsHandler::window_changed_slot( WId window_P, unsigned int flags_P )
 QString WindowsHandler::get_window_role( WId id_P )
     {
     // TODO this is probably just a hack
-    return KWindowSystem::windowInfo( id_P, 0, NET::WM2WindowRole ).windowRole();
+    return KWindowInfo( id_P, 0, NET::WM2WindowRole ).windowRole();
     }
 
 QString WindowsHandler::get_window_class( WId id_P )
