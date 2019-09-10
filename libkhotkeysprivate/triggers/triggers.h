@@ -26,7 +26,6 @@
 
 #include <KShortcut>
 
-#include <kdemacros.h>
 #include "khotkeysglobal.h"
 #include "voicesignature.h"
 

@@ -14,7 +14,6 @@
 #define KHOTKEYS_CONFIG_FILE "khotkeysrc"
 
 #include <KLocalizedString>
-#include <kdemacros.h>
 
 #include <QPointer>
 

@@ -23,7 +23,6 @@
 
 #include <QVector>
 #include <QMap>
-#include <kdemacros.h>
 #include <KConfig>
 
 class Sound;

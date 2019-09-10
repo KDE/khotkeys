@@ -11,8 +11,6 @@
 #ifndef ACTION_DATA_BASE_H
 #define ACTION_DATA_BASE_H
 
-#include "kdemacros.h"
-
 #include <QObject>
 #include <QString>
 

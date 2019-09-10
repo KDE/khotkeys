@@ -18,7 +18,7 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "kdemacros.h"
+#include <qglobal.h>
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>

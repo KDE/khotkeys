@@ -17,8 +17,6 @@
 #ifndef WINDOWS_HANDLER_H
 #define WINDOWS_HANDLER_H
 
-#include <kdemacros.h>
-
 #include <QObject>
 #include <QWindowList>
 

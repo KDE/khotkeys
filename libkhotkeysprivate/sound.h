@@ -22,7 +22,6 @@
 
 #include <QVector>
 #include <QCharRef>
-#include <kdemacros.h>
 
 /**
 @author Olivier Goffart

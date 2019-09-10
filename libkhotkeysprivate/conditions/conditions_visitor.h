@@ -18,7 +18,7 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "kdemacros.h"
+#include <qglobal.h>
 
 namespace KHotKeys {
     class Condition_list_base;

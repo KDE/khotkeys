@@ -25,7 +25,6 @@
 #include <QWindowList>
 
 #include <netwm_def.h>
-#include <kdemacros.h>
 
 namespace KHotKeys {
 

@@ -17,8 +17,6 @@
 
 #include "QList"
 
-#include "kdemacros.h"
-
 
 class KHotkeysModel;
 

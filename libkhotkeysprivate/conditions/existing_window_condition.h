@@ -27,7 +27,6 @@
 #include <KConfig>      // Needed because of some Qt Status redefinitions
 #include <KConfigGroup>      // Needed because of some Qt Status redefinitions
 #include <config-X11.h>
-#include <kdemacros.h>
 
 #if HAVE_X11
 #include <X11/Xlib.h>

@@ -21,8 +21,6 @@
 #include <QObject>
 #include <QString>
 
-#include "kdemacros.h"
-
 class KConfigGroup;
 
 

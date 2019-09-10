@@ -21,8 +21,6 @@
 
 #include "conditions/condition.h"
 
-#include "kdemacros.h"
-
 #include <QList>
 
 

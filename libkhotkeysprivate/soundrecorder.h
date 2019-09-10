@@ -22,7 +22,6 @@
 
 #include <QObject>
 #include "sound.h"
-#include <kdemacros.h>
 
 class KLibrary;
 
