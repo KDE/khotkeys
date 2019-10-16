@@ -16,8 +16,8 @@
    the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
    Boston, MA 02110-1301, USA.
 */
-#ifndef SHORTCUTACTIONS_H
-#define SHORTCUTACTIONS_H
+#ifndef SHORTCUTSHANDLER_H
+#define SHORTCUTSHANDLER_H
 
 
 #include <KActionCollection>
@@ -117,4 +117,4 @@ private:
 
 } // namespace KHotKeys
 
-#endif /* #ifndef SHORTCUTACTIONS_H */
+#endif /* #ifndef SHORTCUTSHANDLER_H */

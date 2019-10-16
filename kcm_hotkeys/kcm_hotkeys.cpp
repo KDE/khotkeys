@@ -362,7 +362,7 @@ void KCMHotkeysPrivate::save()
     if (!KHotKeys::Daemon::isRunning())
         {
 
-        // the deamon is not running (yet), we can just write the config and
+        // the daemon is not running (yet), we can just write the config and
         // try to start it
         if (current)
             applyCurrentItem();

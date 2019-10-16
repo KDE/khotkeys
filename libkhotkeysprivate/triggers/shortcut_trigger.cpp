@@ -26,7 +26,6 @@
 #include <KGlobalAccel>
 
 #include <QAction>
-#include <QDebug>
 
 #include "shortcuts_handler.h"
 

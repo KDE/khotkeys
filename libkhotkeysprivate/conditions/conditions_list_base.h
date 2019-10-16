@@ -1,5 +1,5 @@
-#ifndef CONDITION_LIST_BASE_H
-#define CONDITION_LIST_BASE_H
+#ifndef CONDITIONS_LIST_BASE_H
+#define CONDITIONS_LIST_BASE_H
 /* Copyright (C) 2009 Michael Jansen <kde@michael-jansen.biz>
    Copyright (C) 1999-2001 Lubos Lunak <l.lunak@kde.org>
 
@@ -84,4 +84,4 @@ protected:
 
 } // namespace KHotKeys
 
-#endif /* #ifndef CONDITION_LIST_BASE_H */
+#endif /* #ifndef CONDITIONS_LIST_BASE_H */
