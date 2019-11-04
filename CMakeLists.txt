@@ -22,6 +22,7 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMPackageConfigHelpers)
 include(ECMOptionalAddSubdirectory)
+include(KDEClangFormat)
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     GlobalAccel
@@ -59,4 +60,9 @@ add_subdirectory( kcm_hotkeys )
 add_subdirectory( data )
 add_subdirectory( test )
 add_subdirectory( doc )
+
+# add clang-format target for all our real source files
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
+
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
