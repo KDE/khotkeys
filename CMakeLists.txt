@@ -35,7 +35,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     Plasma
 )
 
-find_package(X11 REQUIRED)
+find_package(X11 REQUIRED OPTIONAL_COMPONENTS Xtst)
 find_package(LibKWorkspace CONFIG REQUIRED)
 
 if(X11_FOUND)
