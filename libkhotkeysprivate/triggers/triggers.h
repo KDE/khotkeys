@@ -244,7 +244,7 @@ class Q_DECL_EXPORT WindowTrigger : public QObject, public Trigger
         WindowTrigger(
                 ActionData* data,
                 Windowdef_list* windowslist = nullptr,
-                WindowEvents window_actions = 0 );
+                WindowEvents window_actions = NONE );
 
         void setOnWindowEvents(WindowEvents events);
 

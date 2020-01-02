@@ -200,7 +200,7 @@ void GestureTrigger::setKDE3Gesture(const QString &gestureCode)
 
     for(int i=0; i < gestureCode.length(); i++)
         {
-        switch(gestureCode[i].toAscii())
+        switch(gestureCode[i].toLatin1())
             {
             case '1':
                 newx = 0;
