@@ -22,13 +22,16 @@
 
 #include <KAuthorized>
 #include <KConfigGroup>
-#include <QDebug>
+#include <KDialogJobUiDelegate>
+#include <KIO/ApplicationLauncherJob>
+#include <KIO/CommandLauncherJob>
 #include <KRun>
 #include <KService>
 #include <KUriFilter>
-#include <KUrl>
 #include <kworkspace.h>
 
+#include <QDebug>
+#include <QUrl>
 
 namespace KHotKeys {
 
@@ -123,7 +126,9 @@ void CommandUrlAction::execute()
                 KService::Ptr service = KService::serviceByDesktopName( cmd );
                 if( service )
                     {
-                    KRun::run( *service, KUrl::List(), nullptr );
+                    auto *job = new KIO::ApplicationLauncherJob(service);
+                    job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, nullptr));
+                    job->start();
                   break;
                     }
                 }
@@ -133,11 +138,12 @@ void CommandUrlAction::execute()
             {
             if (!KAuthorized::authorizeKAction("shell_access"))
                 return;
-            if( !KRun::runCommand(
-                cmd + ( uri.hasArgsAndOptions() ? uri.argsAndOptions() : "" ),
-                cmd, uri.iconName(), nullptr )) {
-                // CHECKME ?
-             }
+            const QString exec = cmd + ( uri.hasArgsAndOptions() ? uri.argsAndOptions() : QString() );
+            auto *job = new KIO::CommandLauncherJob(exec);
+            job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, nullptr));
+            job->setExecutable(cmd);
+            job->setIcon(uri.iconName());
+            job->start();
           break;
             }
         default: // error
