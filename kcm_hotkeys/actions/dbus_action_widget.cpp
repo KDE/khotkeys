@@ -18,8 +18,8 @@
 
 #include "dbus_action_widget.h"
 
-#include <KMessageBox>
-#include <KRun>
+#include <KDialogJobUiDelegate>
+#include <KIO/CommandLauncherJob>
 
 DbusActionWidget::DbusActionWidget(
     KHotKeys::DBusAction *action,
@@ -94,7 +94,7 @@ void DbusActionWidget::doCopyToObject()
 void DbusActionWidget::execCommand() const
     {
     KHotKeys::DBusAction action(
-        0,
+        nullptr,
         ui.application->text(),
         ui.object->text(),
         ui.function->text(),
@@ -117,10 +117,9 @@ bool DbusActionWidget::isChanged() const
 
 void DbusActionWidget::launchDbusBrowser() const
     {
-    if( KRun::runCommand( "qdbusviewer", window()) == 0 )
-        {
-        KMessageBox::sorry( window(), i18n( "Failed to run qdbusviewer" ));
-        }
+        auto *job = new KIO::CommandLauncherJob("qdbusviewer");
+        job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, window()));
+        job->start();
     }
 
 
