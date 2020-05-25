@@ -40,11 +40,11 @@ void GestureWidget::edit()
     EditGestureDialog dia(ui.gesture->pointData());
     switch (dia.exec())
         {
-        case KDialog::Accepted:
+        case QDialog::Accepted:
             setPointData(dia.pointData(), true);
             break;
 
-        case KDialog::Rejected:
+        case QDialog::Rejected:
             break;
 
         default:

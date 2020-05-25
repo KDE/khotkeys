@@ -22,7 +22,7 @@
 #include "triggers/gestures.h"
 
 
-#include <KDialog>
+#include <QDialog>
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
@@ -31,7 +31,7 @@
  * This dialog is what pops up after clicking the edit button. It contains
  * a GestureRecorder to enable the input of a new gesture.
  */
-class EditGestureDialog : public KDialog
+class EditGestureDialog : public QDialog
     {
     Q_OBJECT
 

@@ -22,15 +22,15 @@
 
 #include <QLabel>
 #include <QLayout>
+#include <QDialogButtonBox>
 
 
 EditGestureDialog::EditGestureDialog(const KHotKeys::StrokePoints &pointData, QWidget *parent)
-    :   KDialog(parent)
+    :   QDialog(parent)
         ,_recorder(this)
         ,_pointData(pointData)
     {
-    setCaption(i18n("Edit Gesture"));
-    setButtons(KDialog::Ok | KDialog::Cancel);
+    setWindowTitle(i18n("Edit Gesture"));
 
     QString message(i18n(
                     "Draw the gesture you would like to record below. Press "
@@ -44,11 +44,15 @@ EditGestureDialog::EditGestureDialog(const KHotKeys::StrokePoints &pointData, QW
     layout->addWidget(label);
     layout->addWidget(&_recorder);
 
-    QWidget *w = new QWidget;
-    w->setLayout(layout);
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+                                       | QDialogButtonBox::Cancel);
 
-    setMainWidget(w);
+    layout->addWidget(buttonBox);
 
+    setLayout(layout);
+
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
     connect(&_recorder, SIGNAL(recorded(KHotKeys::StrokePoints)),
             SLOT(recorded(KHotKeys::StrokePoints)));
     }
