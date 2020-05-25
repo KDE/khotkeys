@@ -24,7 +24,7 @@
 #include <QMap>
 #include <QUuid>
 
-#include <KShortcut>
+#include <QKeySequence>
 
 #include "khotkeysglobal.h"
 #include "voicesignature.h"
@@ -152,7 +152,7 @@ class Q_DECL_EXPORT ShortcutTrigger
     public:
         ShortcutTrigger(
             ActionData* data,
-            const KShortcut& shortcut = KShortcut(),
+            const QKeySequence& shortcut = QKeySequence(),
             const QUuid &uuid = QUuid::createUuid() );
 
         virtual ~ShortcutTrigger();
@@ -204,7 +204,7 @@ class Q_DECL_EXPORT ShortcutTrigger
          * ourselves. Beware of synchronizing saved state, global shortcuts
          * registry state and state of this var :-) .
          */
-        KShortcut    _shortcut;
+        QKeySequence    _shortcut;
 
 
 

@@ -40,7 +40,7 @@ class Q_DECL_EXPORT Voice  : public QObject
 		void unregister_handler( Voice_trigger* );
 //		bool x11Event( XEvent* e );
 		
-		void set_shortcut( const KShortcut &k);
+		void set_shortcut( const QKeySequence &k);
 		
 		/**
 		 * return QString() is a new signature is far enough from others signature
@@ -69,7 +69,7 @@ class Q_DECL_EXPORT Voice  : public QObject
 		QList<Voice_trigger *> _references;
 		SoundRecorder *_recorder;
 		
-		KShortcut _shortcut;
+		QKeySequence _shortcut;
 		KAction *_kga;
 		
 		QTimer *_timer;

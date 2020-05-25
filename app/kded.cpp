@@ -191,7 +191,7 @@ QString KHotKeysModule::register_menuentry_shortcut(
                 menuentries,
                 wantedService->name(),
                 storageId,
-                KShortcut(sequence),
+                QKeySequence(sequence),
                 storageId);
 
         newAction->enable();

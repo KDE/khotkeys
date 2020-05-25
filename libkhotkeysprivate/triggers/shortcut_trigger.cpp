@@ -37,7 +37,7 @@ ShortcutTriggerVisitor::~ShortcutTriggerVisitor()
 
 ShortcutTrigger::ShortcutTrigger(
         ActionData* data_P,
-        const KShortcut& shortcut,
+        const QKeySequence& shortcut,
         const QUuid &uuid )
     :   Trigger( data_P ),
         _uuid(uuid),
@@ -110,9 +110,9 @@ void ShortcutTrigger::activate( bool newState )
             // In case the shortcut was changed from the kcm.
             auto shortcuts = KGlobalAccel::self()->shortcut(action);
             if (!shortcuts.isEmpty()) {
-                _shortcut = KShortcut(shortcuts.first());
+                _shortcut = QKeySequence(shortcuts.first());
             } else {
-                _shortcut = KShortcut();
+                _shortcut = QKeySequence();
             }
             keyboard_handler->removeAction(_uuid.toString());
             }
@@ -143,7 +143,7 @@ void ShortcutTrigger::cfg_write( KConfigGroup& cfg_P ) const
 
 ShortcutTrigger* ShortcutTrigger::copy( ActionData* data_P ) const
     {
-    return new ShortcutTrigger( data_P ? data_P : data, shortcut(), QUuid::createUuid());
+    return new ShortcutTrigger( data_P ? data_P : data, shortcut().first(), QUuid::createUuid());
     }
 
 
@@ -164,9 +164,9 @@ void ShortcutTrigger::disable()
         // In case the shortcut was changed from the kcm.
         auto shortcuts = KGlobalAccel::self()->shortcut(action);
         if (!shortcuts.isEmpty()) {
-            _shortcut = KShortcut(shortcuts.first());
+            _shortcut = QKeySequence(shortcuts.first());
         } else {
-            _shortcut = KShortcut();
+            _shortcut = QKeySequence();
         }
 
 
@@ -193,7 +193,7 @@ void ShortcutTrigger::set_key_sequence( const QKeySequence &seq )
     QAction *action = keyboard_handler->getAction( _uuid.toString() );
     if (!action)
         {
-        _shortcut.setPrimary(seq);
+        _shortcut = seq;
         }
     else
         {
@@ -211,7 +211,7 @@ QList<QKeySequence> ShortcutTrigger::shortcut() const
     if (!action)
         {
         // Not active!
-        return _shortcut;
+        return {_shortcut};
         }
 
     return KGlobalAccel::self()->shortcut(action);

@@ -42,7 +42,7 @@ class Q_DECL_EXPORT MenuEntryShortcutActionData
                 ActionDataGroup* parent,
                 const QString& name,
                 const QString& comment,
-                const KShortcut& shortcut,
+                const QKeySequence& shortcut,
                 const QString& command_url);
 
         /**

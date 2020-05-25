@@ -32,7 +32,7 @@
 
 #include <QDebug>
 #include <KGlobalAccel>
-#include <KShortcut>
+#include <QKeySequence>
 
 #include <QAction>
 #include <QUuid>
@@ -60,7 +60,7 @@ ShortcutsHandler::~ShortcutsHandler()
 QAction *ShortcutsHandler::addAction(
         const QString &id,
         const QString &text,
-        const KShortcut &shortcut )
+        const QKeySequence &shortcut )
     {
 #ifdef KHOTKEYS_TRACE
     qDebug() << id << text << shortcut;
@@ -89,7 +89,7 @@ QAction *ShortcutsHandler::addAction(
         newAction->setProperty("isConfigurationAction", QVariant(true));
         }
     newAction->setText(text);
-    KGlobalAccel::self()->setShortcut(newAction, QList<QKeySequence>() << shortcut.primary());
+    KGlobalAccel::self()->setShortcut(newAction, QList<QKeySequence>() << shortcut);
     // Enable global shortcut. If that fails there is no sense in proceeding
     if (!KGlobalAccel::self()->hasShortcut(newAction))
         {

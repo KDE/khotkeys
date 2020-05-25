@@ -33,7 +33,7 @@ MenuEntryShortcutActionData::MenuEntryShortcutActionData(
         ActionDataGroup* parent,
         const QString& name,
         const QString& comment,
-        const KShortcut& shortcut,
+        const QKeySequence& shortcut,
         const QString& menuentry)
     :   base(parent, name, comment)
     {

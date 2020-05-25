@@ -306,7 +306,7 @@ KHotKeys::Trigger_list *SettingsReaderV2::readTriggerList(
             uuid = QUuid::createUuid();
 
         if (type == "SHORTCUT" || type == "SINGLE_SHORTCUT")
-            trigger = new KHotKeys::ShortcutTrigger(parent, KShortcut(), uuid);
+            trigger = new KHotKeys::ShortcutTrigger(parent, QKeySequence(), uuid);
         else if (type == "WINDOW")
             trigger = new KHotKeys::WindowTrigger(parent);
         else if (type == "GESTURE")

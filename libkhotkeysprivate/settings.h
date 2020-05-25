@@ -172,8 +172,8 @@ public:
      * @name Voice Commands
      */
     //@{
-    void setVoiceShortcut( const KShortcut &shortcut );
-    KShortcut voiceShortcut() const;
+    void setVoiceShortcut( const QKeySequence &shortcut );
+    QKeySequence voiceShortcut() const;
     //@}
 
     /**
@@ -247,7 +247,7 @@ private:
     /**
      * The shortcut that triggers a voice command
      */
-    KShortcut voice_shortcut;
+    QKeySequence voice_shortcut;
 
     /**
      * List of id's for all imported files.

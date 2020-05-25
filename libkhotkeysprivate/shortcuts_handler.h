@@ -27,7 +27,7 @@
 
 
 class KAction;
-class KShortcut;
+class QKeySequence;
 
 namespace KHotKeys {
 
@@ -73,7 +73,7 @@ public:
     QAction *addAction(
         const QString &id,
         const QString &text,
-        const KShortcut &shortcut );
+        const QKeySequence &shortcut );
 
     /**
      * Remove a action from the collection.
