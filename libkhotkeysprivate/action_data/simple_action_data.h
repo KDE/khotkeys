@@ -34,8 +34,8 @@ public:
      * Visitor pattern
      * @reimp
      */
-    virtual void accept(ActionDataVisitor *visitor);
-    virtual void accept(ActionDataConstVisitor *visitor) const;
+    void accept(ActionDataVisitor *visitor) override;
+    void accept(ActionDataConstVisitor *visitor) const override;
 
     //! The action associated with this hotkey
     virtual const Action* action() const;
@@ -76,12 +76,12 @@ class Q_DECL_EXPORT SimpleActionDataHelper
             {}
 
         //! The action associated with this hotkey
-        const A* action() const;
-        A* action();
+        const A* action() const override;
+        A* action() override;
 
         //! The trigger for this hotkey
-        const T* trigger() const;
-        T* trigger();
+        const T* trigger() const override;
+        T* trigger() override;
 
         void set_action( Action *action_P );
         void set_trigger( Trigger *trigger_P );
@@ -109,32 +109,32 @@ void SimpleActionDataHelper< T, A >::set_trigger( Trigger* trigger_P )
 template< typename T, typename A >
 const A* SimpleActionDataHelper< T, A >::action() const
     {
-    if( actions() == 0 || actions()->isEmpty() )
-        return 0;
+    if( actions() == nullptr || actions()->isEmpty() )
+        return nullptr;
     return dynamic_cast< const A* >( actions()->first());
     }
 
 template< typename T, typename A >
 A* SimpleActionDataHelper< T, A >::action()
     {
-    if( actions() == 0 || actions()->isEmpty() )
-        return 0;
+    if( actions() == nullptr || actions()->isEmpty() )
+        return nullptr;
     return dynamic_cast< A* >(actions()->first());
     }
 
 template< typename T, typename A >
 const T* SimpleActionDataHelper< T, A >::trigger() const
     {
-    if( triggers() == 0 || triggers()->isEmpty() )
-        return 0;
+    if( triggers() == nullptr || triggers()->isEmpty() )
+        return nullptr;
     return dynamic_cast< const T* >( triggers()->first());
     }
 
 template< typename T, typename A >
 T* SimpleActionDataHelper< T, A >::trigger()
     {
-    if( triggers() == 0 || triggers()->isEmpty() )
-        return 0;
+    if( triggers() == nullptr || triggers()->isEmpty() )
+        return nullptr;
     return dynamic_cast< T* >( triggers()->first());
     }
 

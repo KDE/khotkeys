@@ -37,9 +37,9 @@ SimpleActionData::SimpleActionData(
         parent_P,
         name_P,
         comment_P,
-        0,
+        nullptr,
         new Condition_list( "", this ),
-        0)
+        nullptr)
     {}
 
 
@@ -93,23 +93,23 @@ void SimpleActionData::set_trigger( Trigger* trigger_P )
 
 const Action* SimpleActionData::action() const
     {
-    if( actions() == 0 || actions()->isEmpty() )
-        return 0;
+    if( actions() == nullptr || actions()->isEmpty() )
+        return nullptr;
     return actions()->first();
     }
 
 
 Action* SimpleActionData::action()
     {
-    if( actions() == 0 || actions()->isEmpty() )
-        return 0;
+    if( actions() == nullptr || actions()->isEmpty() )
+        return nullptr;
     return actions()->first();
     }
 
 
 const Trigger* SimpleActionData::trigger() const
     {
-    if( triggers() == 0 || triggers()->isEmpty() )
+    if( triggers() == nullptr || triggers()->isEmpty() )
         return nullptr;
 
     return triggers()->first();
@@ -118,7 +118,7 @@ const Trigger* SimpleActionData::trigger() const
 
 Trigger* SimpleActionData::trigger()
     {
-    if( triggers() == 0 || triggers()->isEmpty() )
+    if( triggers() == nullptr || triggers()->isEmpty() )
         return nullptr;
 
     return triggers()->first();
