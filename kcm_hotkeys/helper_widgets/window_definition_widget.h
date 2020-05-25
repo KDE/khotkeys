@@ -22,7 +22,9 @@
 
 #include "qwindowdefs.h"
 #include <QWidget>
-#include <KDialog>
+#include <QDialog>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
 
 
 namespace Ui {
@@ -77,19 +79,31 @@ private:
 };
 
 
-class WindowDefinitionDialog : public KDialog
+class WindowDefinitionDialog : public QDialog
     {
     Q_OBJECT
 
 public:
 
     WindowDefinitionDialog( KHotKeys::Windowdef_simple *windowdef, QWidget *parent=nullptr)
-        :   KDialog(parent)
+        :   QDialog(parent)
             ,def(nullptr)
         {
+        setLayout(new QVBoxLayout);
+
         def = new WindowDefinitionWidget(windowdef, this);
-        setMainWidget(def);
         def->copyFromObject();
+
+        layout()->addWidget(def);
+
+        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+                | QDialogButtonBox::Cancel);
+
+        layout()->addWidget(buttonBox);
+
+
+        connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
+        connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
         }
 
 
@@ -102,7 +116,7 @@ public:
     void accept() Q_DECL_OVERRIDE
         {
         def->copyToObject();
-        KDialog::accept();
+        QDialog::accept();
         }
 
 private:
