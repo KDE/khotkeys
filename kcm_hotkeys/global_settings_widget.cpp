@@ -37,7 +37,7 @@ GlobalSettingsWidget::GlobalSettingsWidget( QWidget *parent )
     {
     ui.setupUi(this);
 
-    QString path = KGlobal::dirs()->findResource( "services", "kded/khotkeys.desktop");
+    QString path = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kde5/services/kded/khotkeys.desktop");
     if ( KDesktopFile::isDesktopFile(path) )
         {
         _config = KSharedConfig::openConfig(
