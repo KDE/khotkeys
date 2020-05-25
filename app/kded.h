@@ -84,8 +84,8 @@ class KHotKeysModule
         KHotKeys::ActionDataGroup* actions_root;
 
         //! The current settings
-        KHotKeys::Settings _settings;
         bool _settingsDirty;
+        KHotKeys::Settings _settings;
 
         //! Is the module initialized
         bool _initialized;

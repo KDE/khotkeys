@@ -79,7 +79,7 @@ QAction *ShortcutsHandler::addAction(
     QAction *newAction = _actions->addAction(realId);
     if (!newAction)
         {
-        return 0;
+        return nullptr;
         }
     // If our HandlerType is configuration we have to tell kdedglobalaccel
     // that this action is only for configuration purposes.
@@ -96,7 +96,7 @@ QAction *ShortcutsHandler::addAction(
         qWarning() << "Failed to enable global shortcut for '" 
                    << text << "' " << id;
         _actions->removeAction(newAction);
-        return 0;
+        return nullptr;
         }
     Q_ASSERT(newAction->isEnabled());
 

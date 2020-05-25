@@ -25,7 +25,7 @@
     </widget>
    </item>
    <item>
-    <widget class="KPushButton" name="applicationButton" >
+    <widget class="QPushButton" name="applicationButton" >
      <property name="text" >
       <string>Select Application ...</string>
      </property>
@@ -38,11 +38,6 @@
    <class>KLineEdit</class>
    <extends>QLineEdit</extends>
    <header>klineedit.h</header>
-  </customwidget>
-  <customwidget>
-   <class>KPushButton</class>
-   <extends>QPushButton</extends>
-   <header>kpushbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -65,7 +65,7 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="KIntSpinBox" name="gestures_timeout">
+       <widget class="QSpinBox" name="gestures_timeout">
         <property name="suffix">
          <string> ms</string>
         </property>
@@ -117,7 +117,7 @@
        </spacer>
       </item>
       <item row="1" column="1">
-       <widget class="KIntSpinBox" name="gestures_button">
+       <widget class="QSpinBox" name="gestures_button">
         <property name="minimum">
          <number>2</number>
         </property>
@@ -134,13 +134,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>KIntSpinBox</class>
-   <extends>QSpinBox</extends>
-   <header>knuminput.h</header>
-  </customwidget>
- </customwidgets>
  <tabstops>
   <tabstop>enabled</tabstop>
   <tabstop>gestures_group</tabstop>

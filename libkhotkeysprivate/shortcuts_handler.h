@@ -49,7 +49,7 @@ public:
      *
      * \param Should 
      */
-    ShortcutsHandler( HandlerType type = Active, QObject *parent = 0 );
+    ShortcutsHandler( HandlerType type = Active, QObject *parent = nullptr );
 
     /**
      * Destructor

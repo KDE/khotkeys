@@ -213,7 +213,7 @@ void KCMHotkeys::currentChanged( const QModelIndex &pCurrent, const QModelIndex 
 
 KCMHotkeys::~KCMHotkeys()
     {
-    delete d; d=0;
+    delete d; d=nullptr;
     }
 
 
