@@ -19,6 +19,8 @@
 
 #include "hotkeys_export_widget.h"
 
+#include <QDialogButtonBox>
+
 KHotkeysExportWidget::KHotkeysExportWidget(QWidget *parent)
     : QWidget(parent)
     {
@@ -32,13 +34,23 @@ KHotkeysExportWidget::~KHotkeysExportWidget()
 
 
 KHotkeysExportDialog::KHotkeysExportDialog(QWidget *parent)
-    : KDialog(parent)
+    : QDialog(parent)
     {
-    setCaption(i18n("Export Group"));
-    setButtons(KDialog::Ok | KDialog::Cancel);
+    setWindowTitle(i18n("Export Group"));
+    setLayout(new QVBoxLayout);
+
 
     w = new KHotkeysExportWidget(this);
-    setMainWidget(w);
+    layout()->addWidget(w);
+
+    QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+            | QDialogButtonBox::Cancel);
+
+    layout()->addWidget(buttonBox);
+
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
+
     }
 
 

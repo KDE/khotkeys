@@ -21,7 +21,7 @@
 
 #include "ui_hotkeys_export_widget.h"
 
-#include "kdialog.h"
+#include <QDialog>
 #include <QUrl>
 
 #include <QWidget>
@@ -47,7 +47,7 @@ public:
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
-class KHotkeysExportDialog : public KDialog
+class KHotkeysExportDialog : public QDialog
     {
 public:
     KHotkeysExportDialog(QWidget*);
