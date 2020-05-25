@@ -23,7 +23,9 @@
 
 #include "ui_window_definition_list_widget.h"
 #include "windows_helper/window_selection_list.h"
-#include <KDialog>
+#include <QDialog>
+#include <QDialogButtonBox>
+#include <QVBoxLayout>
 
 
 
@@ -84,7 +86,7 @@ private:
 };
 
 
-class WindowDefinitionListDialog : public KDialog
+class WindowDefinitionListDialog : public QDialog
     {
     Q_OBJECT
 
@@ -93,12 +95,24 @@ public:
     WindowDefinitionListDialog(
             KHotKeys::Windowdef_list *list,
             QWidget *parent=nullptr)
-        :   KDialog(parent)
+        :   QDialog(parent)
             ,def(nullptr)
         {
+        setLayout(new QVBoxLayout);
+
         def = new WindowDefinitionListWidget(list, this);
-        setMainWidget(def);
         def->copyFromObject();
+
+        layout()->addWidget(def);
+
+        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
+                | QDialogButtonBox::Cancel);
+
+        layout()->addWidget(buttonBox);
+
+
+        connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
+        connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
         }
 
 
@@ -111,7 +125,7 @@ public:
     void accept() Q_DECL_OVERRIDE
         {
         def->copyToObject();
-        KDialog::accept();
+        QDialog::accept();
         }
 
 private:
