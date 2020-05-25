@@ -50,9 +50,9 @@ public:
 
 protected:
 
-    void doEnable();
+    void doEnable() override;
 
-    void doDisable();
+    void doDisable() override;
 
     }; // class SimpleActionData
 

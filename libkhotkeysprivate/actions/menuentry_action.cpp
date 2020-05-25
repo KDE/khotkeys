@@ -93,7 +93,7 @@ void MenuEntryAction::execute()
         return;
         }
 
-    if (!KRun::run( *service(), KUrl::List(), 0 ))
+    if (!KRun::run( *service(), KUrl::List(), nullptr ))
         {
         KMessageBox::sorry(
                 nullptr,

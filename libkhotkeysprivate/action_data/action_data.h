@@ -70,10 +70,10 @@ class Q_DECL_EXPORT ActionData
 
         virtual void set_triggers( Trigger_list* triggers_P );
 
-        virtual void add_action( Action* action_P, Action* after_P = 0 );
+        virtual void add_action( Action* action_P, Action* after_P = nullptr );
 
         virtual void add_actions( ActionList* actions_P,
-            Action* after_P = 0 ); // ActionList will be deleted
+            Action* after_P = nullptr ); // ActionList will be deleted
 
         virtual void set_actions( ActionList* actions_P );
 
