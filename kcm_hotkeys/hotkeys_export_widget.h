@@ -22,7 +22,7 @@
 #include "ui_hotkeys_export_widget.h"
 
 #include "kdialog.h"
-#include "kurl.h"
+#include <QUrl>
 
 #include <QWidget>
 
@@ -59,7 +59,7 @@ public:
     void setAllowMerging(bool);
     void setImportId(const QString &id);
     int state() const;
-    KUrl url() const;
+    QUrl url() const;
 
 private:
 

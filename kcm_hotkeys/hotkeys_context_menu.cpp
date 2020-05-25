@@ -28,7 +28,6 @@
 #include "action_data/simple_action_data.h"
 
 #include <QDebug>
-#include <KUrl>
 
 #include <QSignalMapper>
 #include <QContextMenuEvent>
@@ -245,7 +244,7 @@ void HotkeysTreeViewContextMenu::exportAction()
             }
 
         QString id = widget->importId();
-        KUrl url   = widget->url();
+        QUrl url   = widget->url();
         bool allowMerging = widget->allowMerging();
         if (!url.isEmpty())
             {

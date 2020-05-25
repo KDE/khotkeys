@@ -81,7 +81,7 @@ KHotkeysExportDialog::state() const
     }
 
 
-KUrl
+QUrl
 KHotkeysExportDialog::url() const
     {
     return w->ui.filename->url();

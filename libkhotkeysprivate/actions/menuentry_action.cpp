@@ -23,7 +23,7 @@
 #include <KConfigGroup>
 #include <QDebug>
 #include <KMessageBox>
-#include <KUrl>
+#include <QUrl>
 #include <KRun>
 
 namespace KHotKeys {
@@ -93,7 +93,7 @@ void MenuEntryAction::execute()
         return;
         }
 
-    if (!KRun::run( *service(), KUrl::List(), nullptr ))
+    if (!KRun::run( *service(), {}, nullptr ))
         {
         KMessageBox::sorry(
                 nullptr,
