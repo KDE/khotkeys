@@ -40,8 +40,8 @@ class HotkeysTreeViewContextMenu : public QMenu
 
 public:
 
-    HotkeysTreeViewContextMenu( const QModelIndex &index, HotkeysTreeView *parent = 0 );
-    HotkeysTreeViewContextMenu( HotkeysTreeView *parent = 0 );
+    HotkeysTreeViewContextMenu( const QModelIndex &index, HotkeysTreeView *parent = nullptr );
+    HotkeysTreeViewContextMenu( HotkeysTreeView *parent = nullptr );
 
     virtual ~HotkeysTreeViewContextMenu();
 

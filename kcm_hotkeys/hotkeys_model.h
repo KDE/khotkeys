@@ -50,7 +50,7 @@ class KHotkeysModel : public QAbstractItemModel
      *
      * @param 
      */
-    KHotkeysModel( QObject *parent = 0 );
+    KHotkeysModel( QObject *parent = nullptr );
 
     /**
      * Destructor
