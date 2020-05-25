@@ -25,6 +25,7 @@
 #include <QKeySequence>
 
 #include <QDebug>
+#include <KGlobalAccel>
 
 
 ShortcutTriggerWidget::ShortcutTriggerWidget( KHotKeys::ShortcutTrigger *trigger, QWidget *parent )
@@ -48,8 +49,8 @@ ShortcutTriggerWidget::ShortcutTriggerWidget( KHotKeys::ShortcutTrigger *trigger
     // new key sequencence. It doesn't matter if the user changed the sequence
     // here.
     connect(
-        trigger, SIGNAL(globalShortcutChanged(QKeySequence)),
-        this, SLOT(_k_globalShortcutChanged(QKeySequence)) );
+        KGlobalAccel::self(), &KGlobalAccel::globalShortcutChanged,
+        this, &ShortcutTriggerWidget::_k_globalShortcutChanged);
     }
 
 
@@ -91,7 +92,7 @@ bool ShortcutTriggerWidget::isChanged() const
     }
 
 
-void ShortcutTriggerWidget::_k_globalShortcutChanged(const QKeySequence &seq)
+void ShortcutTriggerWidget::_k_globalShortcutChanged(QAction *action, const QKeySequence &seq)
     {
     shortcut_trigger_ui.shortcut->setKeySequence(seq);
     }

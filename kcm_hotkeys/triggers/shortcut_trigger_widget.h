@@ -19,6 +19,8 @@
    Boston, MA 02110-1301, USA.
 */
 
+#include <QAction>
+
 #include "trigger_widget_base.h"
 #include "ui_shortcut_trigger_widget.h"
 
@@ -55,7 +57,7 @@ private Q_SLOTS:
 
     //! Invoked if the global shortcut is changed for the corresponding
     //  shortcut trigger
-    void _k_globalShortcutChanged(const QKeySequence &);
+    void _k_globalShortcutChanged(QAction *action, const QKeySequence &seq);
 
 private:
 
