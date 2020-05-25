@@ -79,7 +79,7 @@ void WindowTrigger::accept(TriggerVisitor& visitor)
 void WindowTrigger::init()
     {
     qDebug() << "WindowTrigger::init()";
-    disconnect(windows_handler, 0, this, 0);
+    disconnect(windows_handler, nullptr, this, nullptr);
     connect( windows_handler, SIGNAL(window_added(WId)), this, SLOT(window_added(WId)));
     connect( windows_handler, SIGNAL(window_removed(WId)), this, SLOT(window_removed(WId)));
     if( window_actions & ( WINDOW_ACTIVATES | WINDOW_DEACTIVATES /*| WINDOW_DISAPPEARS*/ ))

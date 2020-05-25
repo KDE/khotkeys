@@ -51,8 +51,8 @@ EditGestureDialog::EditGestureDialog(const KHotKeys::StrokePoints &pointData, QW
 
     setLayout(layout);
 
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
     connect(&_recorder, SIGNAL(recorded(KHotKeys::StrokePoints)),
             SLOT(recorded(KHotKeys::StrokePoints)));
     }

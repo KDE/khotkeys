@@ -31,6 +31,7 @@
 #include <KStandardDirs>
 
 #include <QApplication>
+#include <QStandardPaths>
 
 namespace KHotKeys
 {
@@ -504,7 +505,7 @@ bool Settings::read_settings(ActionDataGroup *root, KConfigBase const &config, b
 
 bool Settings::update()
     {
-    QStringList updates(KGlobal::dirs()->findAllResources("data", "khotkeys/*.khotkeys"));
+    QStringList updates(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "khotkeys/*.khotkeys"));
     bool imported(false);
 
     Q_FOREACH (const QString &path, updates)

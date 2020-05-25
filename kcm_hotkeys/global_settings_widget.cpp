@@ -26,9 +26,10 @@
 #include <QDebug>
 #include <KDesktopFile>
 #include <KGlobal>
-#include <KStandardDirs>
+
 
 #include <QStandardPaths>
+#include <KSharedConfig>
 
 
 GlobalSettingsWidget::GlobalSettingsWidget( QWidget *parent )

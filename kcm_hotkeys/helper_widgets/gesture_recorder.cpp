@@ -60,7 +60,6 @@ void GestureRecorder::mouseReleaseEvent(QMouseEvent *ev)
         }
     }
 
-
 void GestureRecorder::mouseMoveEvent(QMouseEvent *ev)
     {
     if (_mouseButtonDown)
@@ -70,5 +69,8 @@ void GestureRecorder::mouseMoveEvent(QMouseEvent *ev)
         }
     }
 
+void GestureRecorder::paintEvent(QPaintEvent *ev)
+{
+}
 
 #include "moc_gesture_recorder.cpp"

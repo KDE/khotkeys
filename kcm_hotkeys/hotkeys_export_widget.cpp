@@ -48,8 +48,8 @@ KHotkeysExportDialog::KHotkeysExportDialog(QWidget *parent)
 
     layout()->addWidget(buttonBox);
 
-    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accepted);
-    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::rejected);
+    connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 
     }
 

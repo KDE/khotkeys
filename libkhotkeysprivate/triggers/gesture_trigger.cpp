@@ -46,7 +46,7 @@
 
 #include <KConfigGroup>
 #include <QDebug>
-#include <kstandarddirs.h>
+
 
 namespace KHotKeys {
 
