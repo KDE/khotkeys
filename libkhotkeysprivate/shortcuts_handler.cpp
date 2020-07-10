@@ -32,6 +32,7 @@
 
 #include <QDebug>
 #include <KGlobalAccel>
+#include <KLocalizedString>
 #include <QKeySequence>
 
 #include <QAction>
@@ -46,6 +47,7 @@ ShortcutsHandler::ShortcutsHandler( HandlerType type, QObject *parent )
          ,_type(type)
          ,_actions(new KActionCollection(this, QStringLiteral("khotkeys")))
     {
+    _actions->setComponentDisplayName(i18n("Custom Shortcuts Service"));
     connect(KGlobalAccel::self(), &KGlobalAccel::globalShortcutChanged, this, &ShortcutsHandler::shortcutChanged);
     }
 
