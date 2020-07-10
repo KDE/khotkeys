@@ -133,6 +133,36 @@ static bool xtest()
         ( XTestQueryExtension( QX11Info::display(), &dummy1, &dummy2, &dummy3, &dummy4 ) == True );
     return xtest_available;
     }
+
+static void get_modifier_change(int x_mod_needed, QVector<int> &to_press, QVector<int> &to_release)
+{
+    // Get state of all keys
+    char keymap[32];
+    XQueryKeymap(QX11Info::display(), keymap);
+
+    // From KKeyServer's initializeMods()
+    XModifierKeymap *xmk = XGetModifierMapping( QX11Info::display() );
+
+    for (int modidx = 0; modidx < 8; ++modidx) {
+        bool mod_needed = x_mod_needed & (1 << modidx);
+        for (int kcidx = 0; kcidx < xmk->max_keypermod; ++kcidx) {
+            int keycode = xmk->modifiermap[modidx * xmk->max_keypermod + kcidx];
+            if(!keycode)
+                continue;
+
+            bool mod_pressed = keymap[keycode / 8] & (1 << (keycode % 8));
+            if(mod_needed) {
+                mod_needed = false;
+                if(!mod_pressed)
+                    to_press.push_back(keycode);
+            } else if(mod_pressed)
+                to_release.push_back(keycode);
+        }
+    }
+
+    XFreeModifiermap(xmk);
+}
+
 #endif
 
 bool ShortcutsHandler::send_macro_key( const QKeySequence &key, Window window_P )
@@ -151,9 +181,24 @@ bool ShortcutsHandler::send_macro_key( const QKeySequence &key, Window window_P 
 #ifdef HAVE_XTEST
     if( xtest() && window_P == None )
         {
-        // CHECKME tohle jeste potrebuje modifikatory
+        QVector<int> keycodes_to_press, keycodes_to_release;
+        get_modifier_change(x_mod, keycodes_to_press, keycodes_to_release);
+
+        for(int kc : qAsConst(keycodes_to_release))
+            XTestFakeKeyEvent( QX11Info::display(), kc, False, CurrentTime );
+
+        for(int kc : qAsConst(keycodes_to_press))
+            XTestFakeKeyEvent( QX11Info::display(), kc, True, CurrentTime );
+
         bool ret = XTestFakeKeyEvent( QX11Info::display(), x_keycode, True, CurrentTime );
         ret = ret && XTestFakeKeyEvent( QX11Info::display(), x_keycode, False, CurrentTime );
+
+        for(int kc : qAsConst(keycodes_to_press))
+            XTestFakeKeyEvent( QX11Info::display(), kc, False, CurrentTime );
+
+        for(int kc : qAsConst(keycodes_to_release))
+            XTestFakeKeyEvent( QX11Info::display(), kc, True, CurrentTime );
+
         return ret;
         }
 #endif
