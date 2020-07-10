@@ -173,13 +173,14 @@ bool ShortcutsHandler::send_macro_key( const QKeySequence &key, Window window_P 
     unsigned int keysym = key[0];
     int x_keycode;
     KKeyServer::keyQtToCodeX(keysym, &x_keycode);
+
     if( x_keycode == NoSymbol )
         return false;
 
     unsigned int x_mod;
     KKeyServer::keyQtToModX(keysym, &x_mod );
 #ifdef HAVE_XTEST
-    if( xtest() && window_P == None )
+    if( xtest() && (window_P == None || window_P == InputFocus) )
         {
         QVector<int> keycodes_to_press, keycodes_to_release;
         get_modifier_change(x_mod, keycodes_to_press, keycodes_to_release);
