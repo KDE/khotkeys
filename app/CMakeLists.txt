@@ -16,6 +16,7 @@ kcoreaddons_desktop_to_json(kded_khotkeys khotkeys.desktop)
 
 target_link_libraries(kded_khotkeys
     khotkeysprivate
+    PW::KWorkspace
     KF5::DBusAddons
     KF5::KDELibs4Support)
 

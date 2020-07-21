@@ -72,6 +72,7 @@ set(khotkeysprivate_SRCS
 add_library(khotkeysprivate SHARED ${khotkeysprivate_SRCS})
 # Not exported, so just make all links PUBLIC
 target_link_libraries(khotkeysprivate PUBLIC
+    PW::KWorkspace
     Qt5::X11Extras
     KF5::GlobalAccel
     KF5::I18n

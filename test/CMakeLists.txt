@@ -11,6 +11,7 @@ add_executable(khotkeys_standalone ${khotkeys_standalone_PART_SRCS})
 add_dependencies(khotkeys_standalone kded_khotkeys)
 target_link_libraries(khotkeys_standalone
     khotkeysprivate
+    PW::KWorkspace
     KF5::DBusAddons
     KF5::KDELibs4Support)
 

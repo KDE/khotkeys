@@ -32,9 +32,11 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     KDELibs4Support
     DBusAddons
     KCMUtils
+    Plasma
 )
 
 find_package(X11 REQUIRED OPTIONAL_COMPONENTS Xtst)
+find_package(LibKWorkspace CONFIG REQUIRED)
 
 if(X11_FOUND)
     find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS X11Extras )
