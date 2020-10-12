@@ -101,17 +101,17 @@ you to select an action type.  The following types are available:</para>
 <variablelist>
 
 <varlistentry id="manage-add-shortcut-command">
-<term><guimenuitem>Command/&URL;</guimenuitem></term>
+<term><guimenuitem>Command/URL</guimenuitem></term>
 <listitem><para>This action will launch a command or open a &URL; when the
 shortcut is triggered.</para></listitem>
 </varlistentry>
 
 <varlistentry id="manage-add-shortcut-dbus">
-<term><guimenuitem>&DBus; Command</guimenuitem></term>
+<term><guimenuitem>D-Bus Command</guimenuitem></term>
 <listitem><para>This action will call a &DBus; method in a running application or
-system daemon.  For more information on &DBus;, see the
-<ulink url="http://techbase.kde.org/Development/Tutorials/D-Bus/Introduction">&DBus;
-Introduction on &kde; TechBase</ulink>.</para></listitem>
+system daemon.  For more information, see the
+<ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/">Introduction
+to &DBus; on &kde; developer platform</ulink>.</para></listitem>
 </varlistentry>
 
 <varlistentry id="manage-add-shortcut-keyboard-input">
@@ -183,7 +183,7 @@ fileref="document-open.png" format="PNG"/></imageobject></inlinemediaobject> but
 the right of the text box to open the File dialog and select a file from there.
 </para>
 
-<tip><para>Exported files use the extension <literal>.khotkeys</literal> by
+<tip><para>Exported files use the extension <literal role="extension">.khotkeys</literal> by
 default.</para></tip>
 </listitem>
 </varlistentry>
@@ -205,7 +205,7 @@ default.</para></tip>
 <title>Importing Groups</title>
 
 <para>To import a group, click the <guibutton>Edit</guibutton> button below the
-left pane and select <guilabel>Import...</guilabel>.  A file selection dialog
+left pane and select <guimenuitem>Import...</guimenuitem>.  A file selection dialog
 opens that permits you to locate a file previously created using the Export
 function.</para>
 
@@ -401,9 +401,10 @@ actions that have different configuration options:</para>
 
 <para>When using a Command or &URL; is a trigger, a text box is provided where
 you may enter the command to run or &URL; to open when the shortcut is triggered.
-You may also click the <guibutton>Browse</guibutton> button to the right of the
-text box to open a file selection dialog in which you can select a file on your
-local or a remote system.</para>
+You may also click the <inlinemediaobject><imageobject><imagedata
+fileref="document-open.png" format="PNG"/></imageobject></inlinemediaobject> button
+to the right of the text box to open a file selection dialog in which you can select
+a file on your local or a remote system.</para>
 
 <screenshot id="screenshot-shortcuts-action-command">
 <screeninfo>Modifying a Command Action</screeninfo>
@@ -436,14 +437,14 @@ method to be performed:</para>
 <variablelist>
 
 <varlistentry id="shortcuts-action-dbus-application">
-<term><guilabel>Remote application</guilabel></term>
+<term><guilabel>Remote application:</guilabel></term>
 <listitem><para>The service name of the remote application the method is to
 be performed on, for instance <userinput>org.kde.spectacle</userinput> if you wanted
 to perform it on the &spectacle; screenshots utility.</para></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-object">
-<term><guilabel>Remote object</guilabel></term>
+<term><guilabel>Remote object:</guilabel></term>
 <listitem><para>The path to the remote object the method is to be performed on,
 for instance <userinput>/</userinput> for screenshot actions using &spectacle;
 or <userinput>/Document/1</userinput>, if you wanted to perform it on
@@ -451,14 +452,14 @@ the first document opened in &kate;.</para></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-function">
-<term><guilabel>Function</guilabel></term>
+<term><guilabel>Function:</guilabel></term>
 <listitem><para>The name of the &DBus; method to be called, for instance
 <userinput>Fullscreen</userinput> if you wanted to take a fullscreen screenshot or
 <userinput>print</userinput> if you wanted to print the document.</para></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-arguments">
-<term><guilabel>Arguments</guilabel></term>
+<term><guilabel>Arguments:</guilabel></term>
 <listitem><para>Enter additional arguments for the &DBus; method to be called.</para></listitem>
 </varlistentry>
 
@@ -475,9 +476,9 @@ so browse the &DBus; methods and arguments for a running application.</para></li
 
 </variablelist>
 
-<para>For more information on &DBus;, see the
-<ulink url="http://techbase.kde.org/Development/Tutorials/D-Bus/Introduction">&DBus;
-Introduction on &kde; TechBase</ulink>.</para>
+<para>For more information, see the
+<ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/">Introduction
+to &DBus; on &kde; developer platform</ulink>.</para>
 
 </listitem>
 </varlistentry>
@@ -568,7 +569,7 @@ all use the same interface, which contains the following options:</para>
 <variablelist>
 
 <varlistentry id="windows-comment">
-<term><guilabel>Comment</guilabel></term>
+<term><guilabel>Comment:</guilabel></term>
 <listitem><para>This is merely an informational text box you can use to explain
 what the trigger applies to or save other useful information.  It is not
 actually used by the system for anything.</para></listitem>
@@ -597,20 +598,20 @@ following options:</para>
 
 <para>This is where you describe the window the trigger should apply to.</para>
 
-<para>At the top, there is a <guilabel>Comment</guilabel> field, which is
+<para>At the top, there is a <guilabel>Comment:</guilabel> field, which is
 informational just like the one in the main <guilabel>Trigger</guilabel> tab.</para>
 
 <para>Three window characteristics are available:</para>
 
 <itemizedlist>
 
-<listitem><para><guilabel>Window title</guilabel> -
+<listitem><para><guilabel>Window title:</guilabel> -
 The title that appears at the top of the window.</para></listitem>
 
-<listitem><para><guilabel>Window class</guilabel> -
+<listitem><para><guilabel>Window class:</guilabel> -
 Usually the name of the application.</para></listitem>
 
-<listitem><para><guilabel>Window role</guilabel> -
+<listitem><para><guilabel>Window role:</guilabel> -
 Usually the name of the &Qt; class that makes up the window.</para></listitem>
 
 </itemizedlist>
@@ -716,14 +717,14 @@ actions.  It is enabled by default.</para></listitem>
 <variablelist>
 
 <varlistentry id="settings-gestures-timeout">
-<term><guilabel>Timeout</guilabel></term>
+<term><guilabel>Timeout:</guilabel></term>
 <listitem><para>This specifies the maximum time interval during which the mouse
 gesture will be monitored and recognized by the system, in milliseconds.
 </para></listitem>
 </varlistentry>
 
 <varlistentry id="settings-gestures-mouse-button">
-<term><guilabel>Mouse Button</guilabel></term>
+<term><guilabel>Mouse button:</guilabel></term>
 <listitem><para>This specifies the mouse button to be used for mouse gestures.
 Usually, <userinput>1</userinput> is the &LMB;, <userinput>2</userinput> is the
 &RMB;, and <userinput>3</userinput> is the middle or wheel button.  If your
