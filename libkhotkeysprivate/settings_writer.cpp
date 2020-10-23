@@ -28,7 +28,6 @@
 
 #include "conditions/conditions_list.h"
 
-#include "settings.h"
 #include "windows_helper/window_selection_list.h"
 
 

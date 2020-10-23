@@ -11,7 +11,6 @@
 #include "action_data_group.h"
 
 #include "action_data/action_data_visitor.h"
-#include "actions/actions.h"
 
 #include <kconfiggroup.h>
 #include <QDebug>

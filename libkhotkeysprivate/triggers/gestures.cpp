@@ -23,7 +23,6 @@
 #include <kxerrorhandler.h>
 #include <kkeyserver.h>
 #include "input.h"
-#include "windows_handler.h"
 #include "action_data/action_data.h"
 
 #include "windows_helper/window_selection_list.h"

@@ -11,7 +11,6 @@
 
 #include <QEvent>
 #include <QColor>
-#include <QFrame>
 #include <QMouseEvent>
 
 #include "gesture_recorder.h"

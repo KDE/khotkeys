@@ -12,7 +12,6 @@
 
 #include <QColor>
 #include <QPainter>
-#include <QFrame>
 #include <QPaintEvent>
 #include <QGradient>
 

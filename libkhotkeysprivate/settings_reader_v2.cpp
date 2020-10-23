@@ -26,12 +26,10 @@
 
 #include "conditions/conditions_list.h"
 
-#include "triggers/triggers.h"
 
 #include "windows_helper/window_selection_list.h"
 
 
-#include "settings.h"
 
 #include <KConfig>
 #include <KConfigBase>

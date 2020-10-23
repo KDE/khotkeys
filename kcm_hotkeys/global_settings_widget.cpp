@@ -29,7 +29,6 @@
 
 
 #include <QStandardPaths>
-#include <KSharedConfig>
 
 
 GlobalSettingsWidget::GlobalSettingsWidget( QWidget *parent )
