@@ -1,14 +1,9 @@
-/****************************************************************************
-
- KHotKeys
-
- Copyright (C) 2003 Mike Pilone <mpilone@slac.com>
- Copyright (C) 2003 Lubos Lunak <l.lunak@kde.org>
- Copyright (C) 2009 Michael Jansen <kde@michael-jansen.biz>
-
- Distributed under the terms of the GNU General Public License version 2.
-
-****************************************************************************/
+/*
+    SPDX-License-Identifier: GPL-2.0-only
+    SPDX-FileCopyrightText: 2003 Mike Pilone <mpilone@slac.com>
+    SPDX-FileCopyrightText: 2003 Lubos Lunak <l.lunak@kde.org>
+    SPDX-FileCopyrightText: 2009 Michael Jansen <kde@michael-jansen.biz>
+ */
 
 #include <QColor>
 #include <QPainter>

@@ -1,12 +1,7 @@
-/****************************************************************************
-
- KHotKeys
-
- Copyright (C) 1999-2001 Lubos Lunak <l.lunak@kde.org>
-
- Distributed under the terms of the GNU General Public License version 2.
-
-****************************************************************************/
+/*
+    SPDX-License-Identifier: GPL-2.0-only
+    SPDX-FileCopyrightText: 1999-2001 Lubos Lunak <l.lunak@kde.org>
+ */
 
 #ifndef ACTION_DATA_GROUP_H
 #define ACTION_DATA_GROUP_H

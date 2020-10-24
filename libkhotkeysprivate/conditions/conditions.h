@@ -1,12 +1,8 @@
-/****************************************************************************
+/*
+    SPDX-License-Identifier: GPL-2.0-only
+    SPDX-FileCopyrightText: 1999-2001 Lubos Lunak <l.lunak@kde.org>
+ */
 
- KHotKeys
-
- Copyright (C) 1999-2001 Lubos Lunak <l.lunak@kde.org>
-
- Distributed under the terms of the GNU General Public License version 2.
-
-****************************************************************************/
 
 #ifndef CONDITIONS_H
 #define CONDITIONS_H

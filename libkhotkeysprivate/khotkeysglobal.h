@@ -1,12 +1,7 @@
-/****************************************************************************
-
- KHotKeys
-
- Copyright (C) 1999-2001 Lubos Lunak <l.lunak@kde.org>
-
- Distributed under the terms of the GNU General Public License version 2.
-
-****************************************************************************/
+/*
+    SPDX-License-Identifier: GPL-2.0-only
+    SPDX-FileCopyrightText: 1999-2001 Lubos Lunak <l.lunak@kde.org>
+ */
 
 #ifndef _KHOTKEYSGLOBAL_H_
 #define _KHOTKEYSGLOBAL_H_

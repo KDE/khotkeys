@@ -1,12 +1,7 @@
-/****************************************************************************
-
- KHotKeys
- 
- Copyright (C) 2005 Olivier Goffart  <ogoffart @ kde.org>
-
- Distributed under the terms of the GNU General Public License version 2.
- 
-****************************************************************************/
+/*
+    SPDX-License-Identifier: GPL-2.0-only
+    SPDX-FileCopyrightText: 2005 Olivier Goffart <ogoffart @ kde.org>
+ */
 
 #ifndef VOICES_H_
 #define VOICES_H_
