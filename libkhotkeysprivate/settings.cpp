@@ -31,6 +31,7 @@
 #include <KStandardDirs>
 
 #include <QApplication>
+#include <QDir>
 #include <QStandardPaths>
 
 namespace KHotKeys
@@ -505,7 +506,15 @@ bool Settings::read_settings(ActionDataGroup *root, KConfigBase const &config, b
 
 bool Settings::update()
     {
-    QStringList updates(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "khotkeys/*.khotkeys"));
+    const QStringList khotkeysDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "khotkeys", QStandardPaths::LocateDirectory);
+    QStringList updates;
+    for (const auto &dir : khotkeysDirs) {
+        const QStringList fileNames = QDir(dir).entryList(QStringList{QStringLiteral("*.khotkeys")});
+        std::transform(fileNames.begin(), fileNames.end(), std::back_inserter(updates), [&dir] (const QString &file) {
+            return QStringLiteral("%1/%2").arg(dir, file);
+        });
+    }
+
     bool imported(false);
 
     Q_FOREACH (const QString &path, updates)
