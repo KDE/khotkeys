@@ -32,7 +32,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     KDELibs4Support
     DBusAddons
     KCMUtils
-    Plasma
 )
 
 find_package(X11 REQUIRED OPTIONAL_COMPONENTS Xtst)
