@@ -4,7 +4,7 @@
    SPDX-FileCopyrightText: 2008 Michael Jansen <kde@michael-jansen.biz>
 
    SPDX-License-Identifier: GPL-2.0-only
-
+*/
 
 #include <QString>
 

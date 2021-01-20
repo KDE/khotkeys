@@ -1,6 +1,7 @@
 /* SPDX-FileCopyrightText: 1999-2001 Lubos Lunak <l.lunak@kde.org>
 
    SPDX-License-Identifier: GPL-2.0-only
+*/
 
 #ifndef WINDOWS_HANDLER_H
 #define WINDOWS_HANDLER_H
