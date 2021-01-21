@@ -1,1 +1,4 @@
-.clang-format
+/.clang-format
+cmake-build-debug*
+.idea
+/build*/
