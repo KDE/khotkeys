@@ -125,7 +125,7 @@ class Q_DECL_EXPORT ActionDataBase : public QObject
         enum IgnoreParent
             {
             Ignore,
-            DontIgnore
+            DontIgnore,
             };
         bool isEnabled(IgnoreParent ip = DontIgnore) const;
 

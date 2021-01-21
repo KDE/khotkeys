@@ -35,7 +35,7 @@ class Q_DECL_EXPORT ActionDataGroup
             SYSTEM_NONE,             //!< TODO
             SYSTEM_MENUENTRIES,      //!< Shortcuts for menu entries.
             SYSTEM_ROOT,             //!< TODO
-            /* last one*/ SYSTEM_MAX //!< End of enum marker
+            /* last one*/ SYSTEM_MAX, //!< End of enum marker
             }; // don't remove entries
 
         /**

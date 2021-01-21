@@ -30,7 +30,7 @@ class KHotkeysModel : public QAbstractItemModel
         NameColumn,
         EnabledColumn,
         IsGroupColumn,
-        TypeColumn };
+        TypeColumn, };
 
     /**
      * Default constructor

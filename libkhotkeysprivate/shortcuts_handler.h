@@ -29,7 +29,7 @@ public:
 
     enum HandlerType {
         Active,             //!< Create real actions
-        Configuration };    //!< Create configuration actions ( not active )
+        Configuration, };    //!< Create configuration actions ( not active )
 
     /**
      * Default constructor

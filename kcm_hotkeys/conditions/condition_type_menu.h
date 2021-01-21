@@ -33,7 +33,7 @@ public:
             EXISTING_WINDOW,
             AND,
             OR,
-            NOT};
+            NOT,};
 
 };
 

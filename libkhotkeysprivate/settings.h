@@ -24,14 +24,14 @@ enum ImportType
     {
     ImportNone,  //!< no import is done
     ImportAsk,   //!< if already imported before, ask (called from GUI)
-    ImportSilent //!< if already imported before, ignore (called from the update script)
+    ImportSilent, //!< if already imported before, ignore (called from the update script)
     };
 
 enum ActionState
     {
     Retain,      //!< Keep the current state
     Enabled,     //!< Enable all actions
-    Disabled     //!< Disable all actions
+    Disabled,     //!< Disable all actions
     };
 
 

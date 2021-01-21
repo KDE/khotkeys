@@ -54,7 +54,7 @@ class Q_DECL_EXPORT Stroke
     {
     public:
         // largest number of points allowed to be sampled
-        enum { MAX_POINTS = 5000 };
+        enum { MAX_POINTS = 5000, };
 
         Stroke();
         ~Stroke();

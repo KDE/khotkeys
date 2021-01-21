@@ -48,7 +48,7 @@ class Q_DECL_EXPORT Trigger
             ShortcutTriggerType = 0x02, //!< @see ShortcutTrigger
             WindowTriggerType   = 0x04, //!< @see WindowTrigger
             TriggerListType     = 0x08, //!< @see Trigger_list
-            AllTypes            = 0xFF  //!< All types. For convenience.
+            AllTypes            = 0xFF,  //!< All types. For convenience.
             };
 
         Q_DECLARE_FLAGS(TriggerTypes, TriggerType)
@@ -224,7 +224,7 @@ class Q_DECL_EXPORT WindowTrigger : public QObject, public Trigger
             WINDOW_APPEARS         = ( 1 << 0 ),        //!< The window is opened
             WINDOW_DISAPPEARS      = ( 1 << 1 ),        //!< The window is closed
             WINDOW_ACTIVATES       = ( 1 << 2 ),        //!< The window gets the focus
-            WINDOW_DEACTIVATES     = ( 1 << 3 )         //!< The window loses the focus
+            WINDOW_DEACTIVATES     = ( 1 << 3 ),         //!< The window loses the focus
             };
 
         Q_DECLARE_FLAGS(WindowEvents, window_action_t)

@@ -32,7 +32,7 @@ class Q_DECL_EXPORT Windowdef_simple : public Windowdef
             REGEXP,
             CONTAINS_NOT,
             IS_NOT,
-            REGEXP_NOT
+            REGEXP_NOT,
             };
 
         /**
@@ -43,7 +43,7 @@ class Q_DECL_EXPORT Windowdef_simple : public Windowdef
             WINDOW_TYPE_NORMAL     = ( 1 << NET::Normal ),
             WINDOW_TYPE_DESKTOP    = ( 1 << NET::Desktop ),
             WINDOW_TYPE_DOCK       = ( 1 << NET::Dock ),
-            WINDOW_TYPE_DIALOG     = ( 1 << NET::Dialog )
+            WINDOW_TYPE_DIALOG     = ( 1 << NET::Dialog ),
             };
 
         /**
