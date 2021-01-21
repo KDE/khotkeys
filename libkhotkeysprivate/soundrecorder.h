@@ -5,24 +5,21 @@
 #ifndef RECORDER_H
 #define RECORDER_H
 
-#include <QObject>
 #include "sound.h"
+#include <QObject>
 
 class KLibrary;
 
 namespace KHotKeys
 {
-
-
-
 /**
 @author Olivier Goffart
 */
 class Q_DECL_EXPORT SoundRecorder : public QObject
 {
-Q_OBJECT
+    Q_OBJECT
 public:
-    static SoundRecorder* create( QObject* parent = 0 );
+    static SoundRecorder *create(QObject *parent = 0);
     virtual ~SoundRecorder();
 
     virtual void start();
@@ -30,13 +27,14 @@ public:
     virtual void abort();
     virtual Sound sound();
 
-    static bool init( KLibrary* );
+    static bool init(KLibrary *);
 signals:
-    void recorded(const Sound&);
+    void recorded(const Sound &);
 
 protected:
     SoundRecorder(QObject *parent = 0);
-    typedef SoundRecorder* (*create_ptr)( QObject*, const char* );
+    typedef SoundRecorder *(*create_ptr)(QObject *, const char *);
+
 private:
     static create_ptr create_fun;
 };

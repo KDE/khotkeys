@@ -10,34 +10,29 @@
 #include <KConfigGroup>
 #include <QDebug>
 
-namespace KHotKeys {
-
-
+namespace KHotKeys
+{
 ActionVisitor::~ActionVisitor()
-    {}
+{
+}
 
-
-Action::Action( ActionData* data_P )
-    : data( data_P )
-    {
-    }
-
+Action::Action(ActionData *data_P)
+    : data(data_P)
+{
+}
 
 Action::~Action()
-    {
-    }
-
+{
+}
 
 void Action::aboutToBeErased()
-    {
+{
     // Nothing to do yet.
-    }
+}
 
-void Action::cfg_write( KConfigGroup& cfg_P ) const
-    {
-    cfg_P.writeEntry( "Type", "ERROR" ); // derived classes should call with their type
-    }
-
+void Action::cfg_write(KConfigGroup &cfg_P) const
+{
+    cfg_P.writeEntry("Type", "ERROR"); // derived classes should call with their type
+}
 
 } // namespace KHotKeys
-

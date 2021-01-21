@@ -8,7 +8,6 @@
 #include "trigger_widget_base.h"
 #include "ui_gesture_trigger_widget.h"
 
-
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
@@ -18,13 +17,12 @@
  */
 
 class GestureTriggerWidget : public TriggerWidgetBase
-    {
+{
     Q_OBJECT
 
     typedef TriggerWidgetBase Base;
 
 public:
-
     /**
      * Default constructor
      */
@@ -41,7 +39,6 @@ public:
     bool isChanged() const Q_DECL_OVERRIDE;
 
 private:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
@@ -52,7 +49,6 @@ private:
 private Q_SLOTS:
 
     void slotGestureHasChanged();
-    };
-
+};
 
 #endif /* #ifndef GESTURE_TRIGGER_WIDGET_H */

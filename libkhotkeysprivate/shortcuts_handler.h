@@ -6,37 +6,35 @@
 #ifndef SHORTCUTSHANDLER_H
 #define SHORTCUTSHANDLER_H
 
-
 #include <KActionCollection>
 
 #include <X11/X.h>
 #include <fixx11h.h>
 
-
 class KAction;
 class QKeySequence;
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ShortcutsHandler : public QObject
-    {
+{
     Q_OBJECT
 
 public:
-
     enum HandlerType {
-        Active,             //!< Create real actions
-        Configuration, };    //!< Create configuration actions ( not active )
+        Active, //!< Create real actions
+        Configuration,
+    }; //!< Create configuration actions ( not active )
 
     /**
      * Default constructor
      *
-     * \param Should 
+     * \param Should
      */
-    ShortcutsHandler( HandlerType type = Active, QObject *parent = nullptr );
+    ShortcutsHandler(HandlerType type = Active, QObject *parent = nullptr);
 
     /**
      * Destructor
@@ -57,10 +55,7 @@ public:
      *
      * \see KAction::registerGlobalShortcut()
      */
-    QAction *addAction(
-        const QString &id,
-        const QString &text,
-        const QKeySequence &shortcut );
+    QAction *addAction(const QString &id, const QString &text, const QKeySequence &shortcut);
 
     /**
      * Remove a action from the collection.
@@ -69,7 +64,7 @@ public:
      *
      * \return The action or 0 if not found.
      */
-    QAction *getAction( const QString &id );
+    QAction *getAction(const QString &id);
 
     /**
      * Remove a action from the collection.
@@ -78,14 +73,14 @@ public:
      *
      * \return true if the action was removed.
      */
-    bool removeAction( const QString &id );
+    bool removeAction(const QString &id);
 
     /**
      * From Kbd.
      *
      * \warning Does nothing, returns false
      */
-    bool send_macro_key( const QKeySequence &key, Window window_P );
+    bool send_macro_key(const QKeySequence &key, Window window_P);
 
 Q_SIGNALS:
 
@@ -95,11 +90,9 @@ Q_SIGNALS:
     void shortcutChanged() const;
 
 private:
-
     HandlerType _type;
 
     KActionCollection *_actions;
-
 };
 
 } // namespace KHotKeys

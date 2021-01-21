@@ -5,64 +5,59 @@
     SPDX-FileCopyrightText: 2009 Michael Jansen <kde@michael-jansen.biz>
  */
 
-#include <QEvent>
 #include <QColor>
+#include <QEvent>
 #include <QMouseEvent>
 
 #include "gesture_recorder.h"
 
 GestureRecorder::GestureRecorder(QWidget *parent, const char *name)
-  : QFrame(parent), _mouseButtonDown(false)
-    {
+    : QFrame(parent)
+    , _mouseButtonDown(false)
+{
     setObjectName(name);
     QPalette p;
-    p.setColor( backgroundRole(), palette().color( QPalette::Base ) );
-    setPalette( p );
+    p.setColor(backgroundRole(), palette().color(QPalette::Base));
+    setPalette(p);
     setFrameStyle(QFrame::Sunken | QFrame::Panel);
     setLineWidth(2);
     setMidLineWidth(0);
-    setMinimumSize(200,200);
-    }
-
+    setMinimumSize(200, 200);
+}
 
 GestureRecorder::~GestureRecorder()
-    {
-    }
-
+{
+}
 
 void GestureRecorder::mousePressEvent(QMouseEvent *ev)
-    {
-    if (ev->button() == Qt::LeftButton)
-        {
+{
+    if (ev->button() == Qt::LeftButton) {
         _mouseButtonDown = true;
         stroke.reset();
         QPoint pos = ev->pos();
         stroke.record(pos.x(), pos.y());
-        }
     }
-
+}
 
 void GestureRecorder::mouseReleaseEvent(QMouseEvent *ev)
-    {
-    if ((ev->button() == Qt::LeftButton) && (_mouseButtonDown))
-        {
+{
+    if ((ev->button() == Qt::LeftButton) && (_mouseButtonDown)) {
         QPoint pos = ev->pos();
         stroke.record(pos.x(), pos.y());
-        KHotKeys::StrokePoints data( stroke.processData() );
+        KHotKeys::StrokePoints data(stroke.processData());
 
-        if( !data.isEmpty())
+        if (!data.isEmpty())
             emit recorded(data);
-        }
     }
+}
 
 void GestureRecorder::mouseMoveEvent(QMouseEvent *ev)
-    {
-    if (_mouseButtonDown)
-        {
+{
+    if (_mouseButtonDown) {
         QPoint pos = ev->pos();
         stroke.record(pos.x(), pos.y());
-        }
     }
+}
 
 void GestureRecorder::paintEvent(QPaintEvent *ev)
 {

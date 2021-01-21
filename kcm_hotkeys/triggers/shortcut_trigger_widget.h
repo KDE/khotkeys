@@ -17,13 +17,12 @@ class QKeySequence;
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ShortcutTriggerWidget : public TriggerWidgetBase
-    {
+{
     Q_OBJECT
 
     typedef TriggerWidgetBase Base;
 
 public:
-
     /**
      * Default constructor
      */
@@ -37,7 +36,6 @@ public:
     KHotKeys::ShortcutTrigger *trigger() Q_DECL_OVERRIDE;
     const KHotKeys::ShortcutTrigger *trigger() const Q_DECL_OVERRIDE;
 
-
     bool isChanged() const Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
@@ -47,13 +45,10 @@ private Q_SLOTS:
     void _k_globalShortcutChanged(QAction *action, const QKeySequence &seq);
 
 private:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
-
     Ui::ShortcutTriggerWidget shortcut_trigger_ui;
-
 };
 
 #endif /* #ifndef SHORTCUT_TRIGGER_WIDGET_H */

@@ -8,12 +8,11 @@
 
 namespace KHotKeys
 {
-
 class Mouse
-    {
-    public:
-        static bool send_mouse_button( int button_P, bool release_P );
-    };
+{
+public:
+    static bool send_mouse_button(int button_P, bool release_P);
+};
 
 } // namespace KHotKeys
 

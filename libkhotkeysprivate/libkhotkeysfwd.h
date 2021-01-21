@@ -7,19 +7,18 @@
 #define LIBKHOTKEYSFWD_H
 
 namespace KHotKeys
-    {
-    class Action;
-    class ActionDataBase;
-    class ActionDataGroup;
-    class ActionList;
-    class CommandUrlAction;
-    class DBusAction;
-    class MenuEntryAction;
-    class MenuEntryShortcutActionData;
-    class ShortcutTrigger;
-    class SimpleActionData;
-    class Trigger;
-    }
-
+{
+class Action;
+class ActionDataBase;
+class ActionDataGroup;
+class ActionList;
+class CommandUrlAction;
+class DBusAction;
+class MenuEntryAction;
+class MenuEntryShortcutActionData;
+class ShortcutTrigger;
+class SimpleActionData;
+class Trigger;
+}
 
 #endif /* #ifndef LIBKHOTKEYSFWD_H */

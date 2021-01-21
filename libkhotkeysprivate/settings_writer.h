@@ -16,26 +16,17 @@
 class KConfigBase;
 class KConfigGroup;
 
-namespace KHotKeys {
-
-
+namespace KHotKeys
+{
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class SettingsWriter : public ActionDataConstVisitor
-    {
-
+{
 public:
+    SettingsWriter(const Settings *settings, ActionState state, const QString &id = QString(), bool allowMerging = false);
 
-    SettingsWriter(
-            const Settings *settings,
-            ActionState state,
-            const QString &id = QString(),
-            bool allowMerging = false);
-
-    void exportTo(
-            const ActionDataBase *element,
-            KConfigBase &config);
+    void exportTo(const ActionDataBase *element, KConfigBase &config);
 
     void writeTo(KConfigBase &cfg);
 
@@ -52,10 +43,9 @@ public:
     void visitSimpleActionData(const SimpleActionData *data) Q_DECL_OVERRIDE;
 
 private:
-
     const Settings *_settings;
 
-    QStack<KConfigGroup*> _stack;
+    QStack<KConfigGroup *> _stack;
 
     ActionState _state;
 
@@ -66,13 +56,11 @@ private:
     bool _export;
 
     // Disable copying
-    SettingsWriter(const SettingsWriter&);
-    SettingsWriter& operator=(const SettingsWriter&);
+    SettingsWriter(const SettingsWriter &);
+    SettingsWriter &operator=(const SettingsWriter &);
 
-    }; //SettingsWriter
+}; // SettingsWriter
 
 } // namespace KHotKeys
 
-
 #endif /* SETTINGS_WRITER_H */
-

@@ -4,7 +4,7 @@
 #include <QObject>
 
 class Test : public QObject
-    {
+{
     Q_OBJECT
 
 private Q_SLOTS:
@@ -15,9 +15,8 @@ private Q_SLOTS:
     void testLoading();
 
 private:
-
     bool daemonActive;
 
-    }; // class Test
+}; // class Test
 
 #endif

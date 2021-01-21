@@ -10,105 +10,81 @@
 #include "kdebug.h"
 
 WindowDefinitionListWidget::WindowDefinitionListWidget(QWidget *parent)
-    :   HotkeysWidgetIFace(parent)
-        ,_windowdefs(nullptr)
-        ,_working(nullptr)
-        ,_changed(false)
-    {
+    : HotkeysWidgetIFace(parent)
+    , _windowdefs(nullptr)
+    , _working(nullptr)
+    , _changed(false)
+{
     ui.setupUi(this);
 
-    connect(
-            ui.edit_button, SIGNAL(clicked(bool)),
-            SLOT(slotEdit(bool)));
+    connect(ui.edit_button, SIGNAL(clicked(bool)), SLOT(slotEdit(bool)));
 
-    connect(
-            ui.delete_button, SIGNAL(clicked(bool)),
-            SLOT(slotDelete(bool)));
+    connect(ui.delete_button, SIGNAL(clicked(bool)), SLOT(slotDelete(bool)));
 
-    connect(
-            ui.duplicate_button, SIGNAL(clicked(bool)),
-            SLOT(slotDuplicate(bool)));
+    connect(ui.duplicate_button, SIGNAL(clicked(bool)), SLOT(slotDuplicate(bool)));
 
-    connect(
-            ui.new_button, SIGNAL(clicked(bool)),
-            SLOT(slotNew(bool)));
-    }
-
+    connect(ui.new_button, SIGNAL(clicked(bool)), SLOT(slotNew(bool)));
+}
 
 WindowDefinitionListWidget::WindowDefinitionListWidget(KHotKeys::Windowdef_list *windowdef, QWidget *parent)
-    :   HotkeysWidgetIFace(parent)
-        ,_windowdefs(nullptr)
-        ,_working(nullptr)
-        ,_changed(false)
-    {
+    : HotkeysWidgetIFace(parent)
+    , _windowdefs(nullptr)
+    , _working(nullptr)
+    , _changed(false)
+{
     ui.setupUi(this);
 
     setWindowDefinitions(windowdef);
 
-    connect(
-            ui.edit_button, SIGNAL(clicked(bool)),
-            SLOT(slotEdit(bool)));
+    connect(ui.edit_button, SIGNAL(clicked(bool)), SLOT(slotEdit(bool)));
 
-    connect(
-            ui.delete_button, SIGNAL(clicked(bool)),
-            SLOT(slotDelete(bool)));
+    connect(ui.delete_button, SIGNAL(clicked(bool)), SLOT(slotDelete(bool)));
 
-    connect(
-            ui.duplicate_button, SIGNAL(clicked(bool)),
-            SLOT(slotDuplicate(bool)));
+    connect(ui.duplicate_button, SIGNAL(clicked(bool)), SLOT(slotDuplicate(bool)));
 
-    connect(
-            ui.new_button, SIGNAL(clicked(bool)),
-            SLOT(slotNew(bool)));
-    }
-
+    connect(ui.new_button, SIGNAL(clicked(bool)), SLOT(slotNew(bool)));
+}
 
 WindowDefinitionListWidget::~WindowDefinitionListWidget()
-    {
+{
     delete _working;
-    }
-
+}
 
 void WindowDefinitionListWidget::doCopyFromObject()
-    {
+{
     // We are asked to copy again from object. Recreate our working copy
-    if (_working) delete _working;
+    if (_working)
+        delete _working;
     _working = _windowdefs->copy();
 
     ui.comment->setText(_working->comment());
 
-    for ( KHotKeys::Windowdef_list::ConstIterator it(_working->constBegin());
-            it != _working->constEnd();
-            ++it)
-        {
+    for (KHotKeys::Windowdef_list::ConstIterator it(_working->constBegin()); it != _working->constEnd(); ++it) {
         new QListWidgetItem((*it)->description(), ui.list);
-        }
-
-    emitChanged(false);
     }
 
+    emitChanged(false);
+}
 
 void WindowDefinitionListWidget::doCopyToObject()
-    {
+{
     // Delete the old content
     qDeleteAll(*_windowdefs);
     _windowdefs->clear();
 
     _windowdefs->set_comment(ui.comment->text());
 
-    for (int i=0; i<_working->size(); ++i)
-        {
+    for (int i = 0; i < _working->size(); ++i) {
         _windowdefs->append(_working->at(i)->copy());
-        }
+    }
 
     // Reset our _changed state
     _changed = false;
     emitChanged(false);
-    }
+}
 
-
-void WindowDefinitionListWidget::emitChanged( bool chgd )
-    {
+void WindowDefinitionListWidget::emitChanged(bool chgd)
+{
     if (_changed == chgd)
         return;
 
@@ -118,18 +94,15 @@ void WindowDefinitionListWidget::emitChanged( bool chgd )
     _changed = chgd || _changed;
 
     emit changed(_changed);
-    }
-
-
+}
 
 bool WindowDefinitionListWidget::isChanged() const
-    {
+{
     return _changed;
-    }
-
+}
 
 void WindowDefinitionListWidget::slotDelete(bool)
-    {
+{
     // TODO: Deactivate buttons if nothing is selected
     if (ui.list->currentRow() == -1)
         return;
@@ -137,7 +110,7 @@ void WindowDefinitionListWidget::slotDelete(bool)
     Q_ASSERT(ui.list->currentRow() < _working->count());
 
     KHotKeys::Windowdef *def = _working->at(ui.list->currentRow());
-    KHotKeys::Windowdef_simple *sim = dynamic_cast<KHotKeys::Windowdef_simple*>(def);
+    KHotKeys::Windowdef_simple *sim = dynamic_cast<KHotKeys::Windowdef_simple *>(def);
     Q_ASSERT(sim);
 
     // Remove it from the list
@@ -150,11 +123,10 @@ void WindowDefinitionListWidget::slotDelete(bool)
     emitChanged(true);
 
     return;
-    }
-
+}
 
 void WindowDefinitionListWidget::slotDuplicate(bool)
-    {
+{
     // TODO: Deactivate buttons if nothing is selected
     if (ui.list->currentRow() == -1)
         return;
@@ -163,7 +135,7 @@ void WindowDefinitionListWidget::slotDuplicate(bool)
 
     // Get the template
     KHotKeys::Windowdef *def = _working->at(ui.list->currentRow());
-    KHotKeys::Windowdef_simple *orig = dynamic_cast<KHotKeys::Windowdef_simple*>(def);
+    KHotKeys::Windowdef_simple *orig = dynamic_cast<KHotKeys::Windowdef_simple *>(def);
     Q_ASSERT(orig);
 
     // Create a copy
@@ -171,29 +143,27 @@ void WindowDefinitionListWidget::slotDuplicate(bool)
     Q_ASSERT(sim);
 
     WindowDefinitionDialog dialog(sim, this);
-    switch (dialog.exec())
-        {
-        case QDialog::Accepted:
-            // Update our list if necessary
-            new QListWidgetItem(sim->description(), ui.list);
-            _working->append(sim);
-            emitChanged(true);
-            break;
+    switch (dialog.exec()) {
+    case QDialog::Accepted:
+        // Update our list if necessary
+        new QListWidgetItem(sim->description(), ui.list);
+        _working->append(sim);
+        emitChanged(true);
+        break;
 
-        case QDialog::Rejected:
-            // Nothing to do
-            delete sim;
-            break;
+    case QDialog::Rejected:
+        // Nothing to do
+        delete sim;
+        break;
 
-        default:
-            Q_ASSERT(false);
-            delete sim;
-        }
+    default:
+        Q_ASSERT(false);
+        delete sim;
     }
-
+}
 
 void WindowDefinitionListWidget::slotEdit(bool)
-    {
+{
     // TODO: Deactivate buttons if nothing is selected
     if (ui.list->currentRow() == -1)
         return;
@@ -202,60 +172,57 @@ void WindowDefinitionListWidget::slotEdit(bool)
 
     QListWidgetItem *item = ui.list->currentItem();
     KHotKeys::Windowdef *def = _working->at(ui.list->currentRow());
-    KHotKeys::Windowdef_simple *sim = dynamic_cast<KHotKeys::Windowdef_simple*>(def);
+    KHotKeys::Windowdef_simple *sim = dynamic_cast<KHotKeys::Windowdef_simple *>(def);
 
     Q_ASSERT(sim);
-    if (!sim) return;
+    if (!sim)
+        return;
 
     WindowDefinitionDialog dialog(sim, this);
-    switch (dialog.exec())
-        {
-        case QDialog::Accepted:
-            // Update our list if necessary
-            item->setText(sim->description());
-            emitChanged(true);
-            break;
+    switch (dialog.exec()) {
+    case QDialog::Accepted:
+        // Update our list if necessary
+        item->setText(sim->description());
+        emitChanged(true);
+        break;
 
-        case QDialog::Rejected:
-            // Nothing to do
-            break;
+    case QDialog::Rejected:
+        // Nothing to do
+        break;
 
-        default:
-            Q_ASSERT(false);
-        }
+    default:
+        Q_ASSERT(false);
     }
-
+}
 
 void WindowDefinitionListWidget::slotNew(bool)
-    {
+{
     KHotKeys::Windowdef_simple *sim = new KHotKeys::Windowdef_simple();
 
     WindowDefinitionDialog dialog(sim, this);
-    switch (dialog.exec())
-        {
-        case QDialog::Accepted:
-            // Update our list if necessary
-            new QListWidgetItem(sim->description(), ui.list);
-            _working->append(sim);
-            emitChanged(true);
-            break;
+    switch (dialog.exec()) {
+    case QDialog::Accepted:
+        // Update our list if necessary
+        new QListWidgetItem(sim->description(), ui.list);
+        _working->append(sim);
+        emitChanged(true);
+        break;
 
-        case QDialog::Rejected:
-            // Nothing to do
-            delete sim;
-            break;
+    case QDialog::Rejected:
+        // Nothing to do
+        delete sim;
+        break;
 
-        default:
-            Q_ASSERT(false);
-            delete sim;
-        }
+    default:
+        Q_ASSERT(false);
+        delete sim;
     }
-
+}
 
 void WindowDefinitionListWidget::setWindowDefinitions(KHotKeys::Windowdef_list *list)
-    {
+{
     Q_ASSERT(list);
     _windowdefs = list;
-    }
+}
 
 #include "moc_window_definition_list_widget.cpp"

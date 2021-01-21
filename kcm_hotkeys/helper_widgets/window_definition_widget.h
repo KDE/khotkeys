@@ -8,30 +8,29 @@
 #include "hotkeys_widget_iface.h"
 
 #include "qwindowdefs.h"
-#include <QWidget>
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QVBoxLayout>
+#include <QWidget>
 
-
-namespace Ui {
-    class WindowDefinitionWidget;
+namespace Ui
+{
+class WindowDefinitionWidget;
 }
 
-namespace KHotKeys {
-    class Windowdef_simple;
+namespace KHotKeys
+{
+class Windowdef_simple;
 }
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class WindowDefinitionWidget : public HotkeysWidgetIFace
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
@@ -45,7 +44,6 @@ public:
     bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
@@ -59,23 +57,20 @@ private Q_SLOTS:
     void slotWindowSelected(WId);
 
 private:
-
     Ui::WindowDefinitionWidget *ui;
 
     KHotKeys::Windowdef_simple *_windowdef;
 };
 
-
 class WindowDefinitionDialog : public QDialog
-    {
+{
     Q_OBJECT
 
 public:
-
-    WindowDefinitionDialog( KHotKeys::Windowdef_simple *windowdef, QWidget *parent=nullptr)
-        :   QDialog(parent)
-            ,def(nullptr)
-        {
+    WindowDefinitionDialog(KHotKeys::Windowdef_simple *windowdef, QWidget *parent = nullptr)
+        : QDialog(parent)
+        , def(nullptr)
+    {
         setLayout(new QVBoxLayout);
 
         def = new WindowDefinitionWidget(windowdef, this);
@@ -83,33 +78,27 @@ public:
 
         layout()->addWidget(def);
 
-        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
-                | QDialogButtonBox::Cancel);
+        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
 
         layout()->addWidget(buttonBox);
 
-
         connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
         connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
-        }
-
+    }
 
     ~WindowDefinitionDialog()
-        {
+    {
         def = nullptr;
-        }
-
+    }
 
     void accept() Q_DECL_OVERRIDE
-        {
+    {
         def->copyToObject();
         QDialog::accept();
-        }
+    }
 
 private:
-
     WindowDefinitionWidget *def;
-    };
-
+};
 
 #endif /* #ifndef WINDOW_DEFINITION_H */

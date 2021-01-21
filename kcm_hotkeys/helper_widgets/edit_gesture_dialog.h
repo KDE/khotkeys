@@ -8,7 +8,6 @@
 #include "helper_widgets/gesture_recorder.h"
 #include "triggers/gestures.h"
 
-
 #include <QDialog>
 
 /**
@@ -19,15 +18,14 @@
  * a GestureRecorder to enable the input of a new gesture.
  */
 class EditGestureDialog : public QDialog
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
-    EditGestureDialog(const KHotKeys::StrokePoints &pointData, QWidget *parent=nullptr);
+    EditGestureDialog(const KHotKeys::StrokePoints &pointData, QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -41,11 +39,8 @@ private Q_SLOTS:
     void recorded(const KHotKeys::StrokePoints &data);
 
 private:
-
     GestureRecorder _recorder;
     KHotKeys::StrokePoints _pointData;
-
-    };
-
+};
 
 #endif /* #ifndef EDIT_GESTURE_DIALOG_H */

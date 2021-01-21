@@ -9,44 +9,41 @@
 
 #include "action_data/action_data_visitor.h"
 #include "actions/actions.h"
-#include "triggers/triggers.h"
 #include "settings.h"
+#include "triggers/triggers.h"
 
 class KConfigBase;
 class KConfigGroup;
 
-namespace KHotKeys {
-    class Settings;
-    class Trigger_list;
-    template< typename T, typename A > class SimpleActionDataHelper;
+namespace KHotKeys
+{
+class Settings;
+class Trigger_list;
+template<typename T, typename A> class SimpleActionDataHelper;
 }
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
-class SettingsReaderV2 :
-        public KHotKeys::ActionDataVisitor,
+class SettingsReaderV2 : public KHotKeys::ActionDataVisitor,
 
-        public KHotKeys::ActionVisitor,
-        public KHotKeys::ActivateWindowActionVisitor,
-        public KHotKeys::CommandUrlActionVisitor,
-        public KHotKeys::DBusActionVisitor,
-        public KHotKeys::KeyboardInputActionVisitor,
-        public KHotKeys::MenuEntryActionVisitor,
+                         public KHotKeys::ActionVisitor,
+                         public KHotKeys::ActivateWindowActionVisitor,
+                         public KHotKeys::CommandUrlActionVisitor,
+                         public KHotKeys::DBusActionVisitor,
+                         public KHotKeys::KeyboardInputActionVisitor,
+                         public KHotKeys::MenuEntryActionVisitor,
 
-        public KHotKeys::TriggerVisitor,
-        public KHotKeys::WindowTriggerVisitor,
-        public KHotKeys::ShortcutTriggerVisitor,
-        public KHotKeys::GestureTriggerVisitor
-    {
+                         public KHotKeys::TriggerVisitor,
+                         public KHotKeys::WindowTriggerVisitor,
+                         public KHotKeys::ShortcutTriggerVisitor,
+                         public KHotKeys::GestureTriggerVisitor
+{
 public:
-
-    SettingsReaderV2(
-            KHotKeys::Settings *settings,
-            bool loadAll = true,
-            KHotKeys::ActionState _stateStrategy = KHotKeys::Disabled,
-            const QString &importId = QString());
+    SettingsReaderV2(KHotKeys::Settings *settings,
+                     bool loadAll = true,
+                     KHotKeys::ActionState _stateStrategy = KHotKeys::Disabled,
+                     const QString &importId = QString());
 
     virtual ~SettingsReaderV2();
 
@@ -72,17 +69,17 @@ public:
 
     void visitSimpleActionData(KHotKeys::SimpleActionData *data) Q_DECL_OVERRIDE;
 
-    void visit(KHotKeys::ActivateWindowAction&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::CommandUrlAction&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::DBusAction&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::KeyboardInputAction&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::MenuEntryAction&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::ActivateWindowAction &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::CommandUrlAction &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::DBusAction &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::KeyboardInputAction &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::MenuEntryAction &) Q_DECL_OVERRIDE;
 
-    void visit(KHotKeys::GestureTrigger&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::ShortcutTrigger&) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::WindowTrigger&) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::GestureTrigger &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::ShortcutTrigger &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::WindowTrigger &) Q_DECL_OVERRIDE;
+
 private:
-
     const KConfigGroup *_config;
 
     KHotKeys::Settings *_settings;
@@ -93,8 +90,6 @@ private:
 
     QString _importId;
 
-    }; // SettingsReaderV2
-
+}; // SettingsReaderV2
 
 #endif /* SETTINGS_READER_V2_H */
-

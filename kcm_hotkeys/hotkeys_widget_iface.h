@@ -8,24 +8,21 @@
 
 #include "libkhotkeysfwd.h"
 
-
 #include <QSignalMapper>
 #include <QWidget>
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class HotkeysWidgetIFace : public QWidget
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
-    HotkeysWidgetIFace( QWidget *parent = nullptr );
+    HotkeysWidgetIFace(QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -44,17 +41,13 @@ Q_SIGNALS:
 
 public Q_SLOTS:
 
-    virtual void slotChanged(const QString &what = "Nothing" );
-
+    virtual void slotChanged(const QString &what = "Nothing");
 
 protected:
-
     QSignalMapper *_changedSignals;
 
     virtual void doCopyFromObject() = 0;
     virtual void doCopyToObject() = 0;
-
 };
 
 #endif /* #ifndef HOTKEYS_WIDGET_BASE_H */
-

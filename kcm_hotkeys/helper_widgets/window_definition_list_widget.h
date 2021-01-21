@@ -5,7 +5,6 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-
 #include "hotkeys_widget_iface.h"
 
 #include "ui_window_definition_list_widget.h"
@@ -14,23 +13,18 @@
 #include <QDialogButtonBox>
 #include <QVBoxLayout>
 
-
-
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class WindowDefinitionListWidget : public HotkeysWidgetIFace
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
-    WindowDefinitionListWidget(
-            KHotKeys::Windowdef_list *windowdef_list,
-            QWidget *parent = nullptr);
+    WindowDefinitionListWidget(KHotKeys::Windowdef_list *windowdef_list, QWidget *parent = nullptr);
 
     WindowDefinitionListWidget(QWidget *parent);
 
@@ -44,7 +38,6 @@ public:
     bool isChanged() const Q_DECL_OVERRIDE;
 
 private:
-
     void emitChanged(bool);
 
 private Q_SLOTS:
@@ -55,15 +48,13 @@ private Q_SLOTS:
     void slotNew(bool);
 
 protected:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
 private:
-
     // The Windowdefinition list
-    KHotKeys::Windowdef_list    *_windowdefs;
-    KHotKeys::Windowdef_list    *_working;
+    KHotKeys::Windowdef_list *_windowdefs;
+    KHotKeys::Windowdef_list *_working;
 
     // The User Interface
     Ui::WindowDefinitionListWidget ui;
@@ -72,19 +63,15 @@ private:
     bool _changed;
 };
 
-
 class WindowDefinitionListDialog : public QDialog
-    {
+{
     Q_OBJECT
 
 public:
-
-    WindowDefinitionListDialog(
-            KHotKeys::Windowdef_list *list,
-            QWidget *parent=nullptr)
-        :   QDialog(parent)
-            ,def(nullptr)
-        {
+    WindowDefinitionListDialog(KHotKeys::Windowdef_list *list, QWidget *parent = nullptr)
+        : QDialog(parent)
+        , def(nullptr)
+    {
         setLayout(new QVBoxLayout);
 
         def = new WindowDefinitionListWidget(list, this);
@@ -92,32 +79,27 @@ public:
 
         layout()->addWidget(def);
 
-        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok
-                | QDialogButtonBox::Cancel);
+        QDialogButtonBox *buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
 
         layout()->addWidget(buttonBox);
 
-
         connect(buttonBox, &QDialogButtonBox::accepted, this, &QDialog::accept);
         connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
-        }
-
+    }
 
     ~WindowDefinitionListDialog()
-        {
+    {
         def = nullptr;
-        }
-
+    }
 
     void accept() Q_DECL_OVERRIDE
-        {
+    {
         def->copyToObject();
         QDialog::accept();
-        }
+    }
 
 private:
-
     WindowDefinitionListWidget *def;
-    };
+};
 
 #endif /* #ifndef WINDOW_DEFINITION_LIST_WIDGET_H */

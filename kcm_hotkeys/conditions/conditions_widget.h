@@ -8,27 +8,25 @@
 #include <QMap>
 #include <QWidget>
 
-
 #include "ui_conditions_widget.h"
 
 class QAction;
 class QTreeWidgetItem;
 
-namespace KHotKeys {
-    class Condition_list;
-    class Condition;
+namespace KHotKeys
+{
+class Condition_list;
+class Condition;
 }
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ConditionsWidget : public QWidget
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
@@ -53,12 +51,11 @@ Q_SIGNALS:
 
 private Q_SLOTS:
 
-    void slotNew(QAction*);
+    void slotNew(QAction *);
     void slotEdit();
     void slotDelete();
 
 private:
-
     // Emit the changed(bool) signal if our changed status changes
     void emitChanged(bool);
 
@@ -75,9 +72,7 @@ private:
     bool _changed;
 
     //! Map between treewidgetitems and conditions
-    QMap<QTreeWidgetItem*, KHotKeys::Condition*> _items;
-
+    QMap<QTreeWidgetItem *, KHotKeys::Condition *> _items;
 };
-
 
 #endif /* #ifndef CONDITIONS_WIDGET_H */

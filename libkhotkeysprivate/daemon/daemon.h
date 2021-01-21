@@ -10,20 +10,20 @@
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
-namespace KHotKeys {
+namespace KHotKeys
+{
+namespace Daemon
+{
+Q_DECL_EXPORT bool isRunning();
+Q_DECL_EXPORT bool reload();
+Q_DECL_EXPORT bool start();
+Q_DECL_EXPORT bool stop();
 
-    namespace Daemon {
-
-    Q_DECL_EXPORT bool isRunning();
-    Q_DECL_EXPORT bool reload();
-    Q_DECL_EXPORT bool start();
-    Q_DECL_EXPORT bool stop();
-
-    /**
-     * Is the daemon enabled by the user?
-     */
-    Q_DECL_EXPORT bool isEnabled();
-    }
+/**
+ * Is the daemon enabled by the user?
+ */
+Q_DECL_EXPORT bool isEnabled();
+}
 
 } // namespace KHotKeys::Daemon
 

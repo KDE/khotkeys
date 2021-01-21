@@ -8,79 +8,71 @@
 
 #include "action_data_base.h"
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 class Action;
 class ActionDataGroup;
 class ActionList;
 class Trigger_list;
 class Trigger;
 
-
 // TODO : code documentation
-class Q_DECL_EXPORT ActionData
-    : public ActionDataBase
-    {
+class Q_DECL_EXPORT ActionData : public ActionDataBase
+{
+    typedef ActionDataBase base;
 
-        typedef ActionDataBase base;
+public:
+    ActionData(ActionDataGroup *parent_P,
+               const QString &name_P,
+               const QString &comment_P,
+               Trigger_list *triggers_P,
+               Condition_list *conditions_P,
+               ActionList *actions_P);
 
-    public:
+    virtual ~ActionData();
 
-        ActionData(
-                ActionDataGroup* parent_P,
-                const QString& name_P,
-                const QString& comment_P,
-                Trigger_list* triggers_P,
-                Condition_list* conditions_P,
-                ActionList* actions_P);
+    /**
+     * Visitor pattern
+     * @reimp
+     */
+    void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
+    void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
 
-        virtual ~ActionData();
+    void update_triggers() Q_DECL_OVERRIDE;
 
-        /**
-         * Visitor pattern
-         * @reimp
-         */
-        void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
-        void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
+    virtual void execute();
 
-        void update_triggers() Q_DECL_OVERRIDE;
+    /**
+     * @reimp
+     */
+    void aboutToBeErased() Q_DECL_OVERRIDE;
 
-        virtual void execute();
+    const Trigger_list *triggers() const;
+    Trigger_list *triggers();
 
-        /**
-         * @reimp
-         */
-        void aboutToBeErased() Q_DECL_OVERRIDE;
+    const ActionList *actions() const;
+    ActionList *actions();
 
-        const Trigger_list* triggers() const;
-        Trigger_list* triggers();
+    virtual void add_trigger(Trigger *trigger_P);
 
-        const ActionList* actions() const;
-        ActionList* actions();
+    virtual void add_triggers(Trigger_list *triggers_P); // Trigger_list instance will be deleted
 
-        virtual void add_trigger( Trigger* trigger_P );
+    virtual void set_triggers(Trigger_list *triggers_P);
 
-        virtual void add_triggers(
-            Trigger_list* triggers_P ); // Trigger_list instance will be deleted
+    virtual void add_action(Action *action_P, Action *after_P = nullptr);
 
-        virtual void set_triggers( Trigger_list* triggers_P );
+    virtual void add_actions(ActionList *actions_P,
+                             Action *after_P = nullptr); // ActionList will be deleted
 
-        virtual void add_action( Action* action_P, Action* after_P = nullptr );
+    virtual void set_actions(ActionList *actions_P);
 
-        virtual void add_actions( ActionList* actions_P,
-            Action* after_P = nullptr ); // ActionList will be deleted
+private:
+    Trigger_list *_triggers;
+    ActionList *_actions;
 
-        virtual void set_actions( ActionList* actions_P );
-
-    private:
-
-        Trigger_list* _triggers;
-        ActionList* _actions;
-
-        void doEnable() Q_DECL_OVERRIDE;
-        void doDisable() Q_DECL_OVERRIDE;
-    };
-
+    void doEnable() Q_DECL_OVERRIDE;
+    void doDisable() Q_DECL_OVERRIDE;
+};
 
 } // namespace KHotKeys
 

@@ -8,34 +8,30 @@
 
 #include <qglobal.h>
 
-namespace KHotKeys {
-    class Condition_list_base;
-    class Condition_list;
-    class Condition;
-
+namespace KHotKeys
+{
+class Condition_list_base;
+class Condition_list;
+class Condition;
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class Q_DECL_EXPORT ConditionsVisitor
-    {
+{
 public:
+    ConditionsVisitor(bool recurse = true);
+    virtual ~ConditionsVisitor();
 
-    ConditionsVisitor( bool recurse = true );
-    virtual ~ ConditionsVisitor();
-
-    virtual void visitCondition( Condition *condition ) = 0;
-    virtual void visitConditionsList( Condition_list *list) = 0;
-    virtual void visitConditionsListBase( Condition_list_base *list) = 0;
+    virtual void visitCondition(Condition *condition) = 0;
+    virtual void visitConditionsList(Condition_list *list) = 0;
+    virtual void visitConditionsListBase(Condition_list_base *list) = 0;
 
 private:
-
     bool _recurse;
 
-    }; // class ConditionsVisitor
-
+}; // class ConditionsVisitor
 
 } // namespace KHotKeys
-
 
 #endif /* #ifndef CONDITIONS_VISITOR_H */

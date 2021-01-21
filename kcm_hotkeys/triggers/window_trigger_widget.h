@@ -17,17 +17,16 @@ class WindowDefinitionListWidget;
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class WindowTriggerWidget : public TriggerWidgetBase
-    {
+{
     Q_OBJECT
 
     typedef TriggerWidgetBase Base;
 
 public:
-
     /**
      * Default constructor
      */
-    WindowTriggerWidget( KHotKeys::WindowTrigger *trigger, QWidget *parent = nullptr );
+    WindowTriggerWidget(KHotKeys::WindowTrigger *trigger, QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -37,7 +36,6 @@ public:
     KHotKeys::WindowTrigger *trigger() Q_DECL_OVERRIDE;
     const KHotKeys::WindowTrigger *trigger() const Q_DECL_OVERRIDE;
 
-
     bool isChanged() const Q_DECL_OVERRIDE;
 
 private Q_SLOTS:
@@ -45,15 +43,12 @@ private Q_SLOTS:
     void slotWindowSelectionChanged(bool) const;
 
 private:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
     Ui::WindowTriggerWidget window_trigger_ui;
 
     WindowDefinitionListWidget *_windowdef_widget;
-
 };
 
 #endif /* #ifndef WINDOW_TRIGGER_WIDGET_H */
-

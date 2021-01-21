@@ -7,15 +7,15 @@
 #include "conditions/conditions_visitor.h"
 #include "conditions/conditions_list_base.h"
 
-namespace KHotKeys {
-
-ConditionsVisitor::ConditionsVisitor( bool recurse )
-    :   _recurse(recurse)
-    {}
-
+namespace KHotKeys
+{
+ConditionsVisitor::ConditionsVisitor(bool recurse)
+    : _recurse(recurse)
+{
+}
 
 ConditionsVisitor::~ConditionsVisitor()
-    {}
-
+{
+}
 
 } // namespace KHotKeys

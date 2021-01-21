@@ -25,9 +25,9 @@
 
 #include <math.h>
 
-#include "triggers/triggers.h"
 #include "action_data/action_data.h"
 #include "triggers/gestures.h"
+#include "triggers/triggers.h"
 #include "windows_handler.h"
 
 #include <QFile>
@@ -35,113 +35,96 @@
 #include <KConfigGroup>
 #include <QDebug>
 
-
-namespace KHotKeys {
-
-
+namespace KHotKeys
+{
 GestureTriggerVisitor::~GestureTriggerVisitor()
-    {}
+{
+}
 
-
-GestureTrigger::GestureTrigger( ActionData* data_P, const StrokePoints &pointdata_P )
-    : Trigger( data_P ), _pointdata( pointdata_P )
-    {
-    }
-
+GestureTrigger::GestureTrigger(ActionData *data_P, const StrokePoints &pointdata_P)
+    : Trigger(data_P)
+    , _pointdata(pointdata_P)
+{
+}
 
 GestureTrigger::~GestureTrigger()
-    {
-    gesture_handler->unregister_handler( this, SLOT(handle_gesture(StrokePoints)));
-    }
+{
+    gesture_handler->unregister_handler(this, SLOT(handle_gesture(StrokePoints)));
+}
 
-
-void GestureTrigger::accept(TriggerVisitor& visitor)
-    {
-    if (GestureTriggerVisitor *v = dynamic_cast<GestureTriggerVisitor*>(&visitor))
-        {
+void GestureTrigger::accept(TriggerVisitor &visitor)
+{
+    if (GestureTriggerVisitor *v = dynamic_cast<GestureTriggerVisitor *>(&visitor)) {
         v->visit(*this);
-        }
-    else
-        {
+    } else {
         qDebug() << "Visitor error";
-        }
     }
+}
 
-
-void GestureTrigger::activate( bool activate_P )
-    {
-    if( activate_P )
-        gesture_handler->register_handler( this, SLOT(handle_gesture(StrokePoints)));
+void GestureTrigger::activate(bool activate_P)
+{
+    if (activate_P)
+        gesture_handler->register_handler(this, SLOT(handle_gesture(StrokePoints)));
     else
-        gesture_handler->unregister_handler( this, SLOT(handle_gesture(StrokePoints)));
-    }
+        gesture_handler->unregister_handler(this, SLOT(handle_gesture(StrokePoints)));
+}
 
-
-void GestureTrigger::cfg_write( KConfigGroup& cfg_P ) const
-    {
+void GestureTrigger::cfg_write(KConfigGroup &cfg_P) const
+{
     // we want to write using KConfig, so we'll need strings -
     // one for each attribute of each point.
     QStringList strings;
 
     int n = _pointdata.size();
 
-    for(int i=0; i<n; i++)
-        {
+    for (int i = 0; i < n; i++) {
         strings.append(QString::number(_pointdata[i].s));
         strings.append(QString::number(_pointdata[i].delta_s));
         strings.append(QString::number(_pointdata[i].angle));
         strings.append(QString::number(_pointdata[i].x));
         strings.append(QString::number(_pointdata[i].y));
-        }
-
-    base::cfg_write( cfg_P );
-    cfg_P.writeEntry( "GesturePointData", strings);
-    cfg_P.writeEntry( "Type", "GESTURE" ); // overwrites value set in base::cfg_write()
-
     }
 
+    base::cfg_write(cfg_P);
+    cfg_P.writeEntry("GesturePointData", strings);
+    cfg_P.writeEntry("Type", "GESTURE"); // overwrites value set in base::cfg_write()
+}
 
-
-Trigger* GestureTrigger::copy( ActionData* data_P ) const
-    {
+Trigger *GestureTrigger::copy(ActionData *data_P) const
+{
     qDebug() << "GestureTrigger::copy()";
-    return new GestureTrigger( data_P ? data_P : data, pointData());
-    }
-
+    return new GestureTrigger(data_P ? data_P : data, pointData());
+}
 
 const QString GestureTrigger::description() const
-    {
-    return i18n( "Gesture trigger" );
-    }
+{
+    return i18n("Gesture trigger");
+}
 
-
-const StrokePoints& GestureTrigger::pointData() const
-    {
+const StrokePoints &GestureTrigger::pointData() const
+{
     return _pointdata;
-    }
+}
 
-
-void GestureTrigger::setPointData( const StrokePoints &data )
-    {
+void GestureTrigger::setPointData(const StrokePoints &data)
+{
     _pointdata = data;
-    }
+}
 
-
-void GestureTrigger::setPointData( const QStringList &strings )
-    {
+void GestureTrigger::setPointData(const QStringList &strings)
+{
     // number of points that can be read
     // (each string is one of 5 coordinates)
-    int n = strings.length()/5;
+    int n = strings.length() / 5;
     _pointdata.resize(n);
 
-    for(int i=0; i<n; i++)
-        {
-        _pointdata[i].s = strings[i*5 + 0].toDouble();
-        _pointdata[i].delta_s = strings[i*5 + 1].toDouble();
-        _pointdata[i].angle = strings[i*5 + 2].toDouble();
-        _pointdata[i].x = strings[i*5 + 3].toDouble();
-        _pointdata[i].y = strings[i*5 + 4].toDouble();
-        }
+    for (int i = 0; i < n; i++) {
+        _pointdata[i].s = strings[i * 5 + 0].toDouble();
+        _pointdata[i].delta_s = strings[i * 5 + 1].toDouble();
+        _pointdata[i].angle = strings[i * 5 + 2].toDouble();
+        _pointdata[i].x = strings[i * 5 + 3].toDouble();
+        _pointdata[i].y = strings[i * 5 + 4].toDouble();
+    }
 
 #pragma CHECKME
 #if 0
@@ -151,30 +134,26 @@ void GestureTrigger::setPointData( const QStringList &strings )
         importKde3Gesture(*_config);
         }
 #endif
-    }
+}
 
-void GestureTrigger::handle_gesture( const StrokePoints &pointdata_P )
-    {
+void GestureTrigger::handle_gesture(const StrokePoints &pointdata_P)
+{
     qreal score;
     score = comparePointData(pointdata_P, _pointdata);
 
-    if( score > 0.7 )
-        {
+    if (score > 0.7) {
         emit gotScore(data, score);
-        }
     }
-
-
+}
 
 // try to import a gesture from KDE3 times which is composed of a string of
 // numbers
 void GestureTrigger::setKDE3Gesture(const QString &gestureCode)
-    {
-    if(gestureCode.isEmpty())
-        {
+{
+    if (gestureCode.isEmpty()) {
         _pointdata.clear();
         return;
-        }
+    }
 
     Stroke stroke;
 
@@ -186,75 +165,71 @@ void GestureTrigger::setKDE3Gesture(const QString &gestureCode)
     int newx = 0;
     int newy = 0;
 
-    for(int i=0; i < gestureCode.length(); i++)
-        {
-        switch(gestureCode[i].toLatin1())
-            {
-            case '1':
-                newx = 0;
-                newy = 2000;
-                break;
-            case '2':
-                newx = 1000;
-                newy = 2000;
-                break;
-            case '3':
-                newx = 2000;
-                newy = 2000;
-                break;
-            case '4':
-                newx = 0;
-                newy = 1000;
-                break;
-            case '5':
-                newx = 1000;
-                newy = 1000;
-                break;
-            case '6':
-                newx = 2000;
-                newy = 1000;
-                break;
-            case '7':
-                newx = 0;
-                newy = 0;
-                break;
-            case '8':
-                newx = 1000;
-                newy = 0;
-                break;
-            case '9':
-                newx = 2000;
-                newy = 0;
-                break;
+    for (int i = 0; i < gestureCode.length(); i++) {
+        switch (gestureCode[i].toLatin1()) {
+        case '1':
+            newx = 0;
+            newy = 2000;
+            break;
+        case '2':
+            newx = 1000;
+            newy = 2000;
+            break;
+        case '3':
+            newx = 2000;
+            newy = 2000;
+            break;
+        case '4':
+            newx = 0;
+            newy = 1000;
+            break;
+        case '5':
+            newx = 1000;
+            newy = 1000;
+            break;
+        case '6':
+            newx = 2000;
+            newy = 1000;
+            break;
+        case '7':
+            newx = 0;
+            newy = 0;
+            break;
+        case '8':
+            newx = 1000;
+            newy = 0;
+            break;
+        case '9':
+            newx = 2000;
+            newy = 0;
+            break;
 
-            default: return;
-            }
+        default:
+            return;
+        }
 
         // interpolate
-        if(oldx != -1)
-            {
-            stroke.record( oldx + 1 * (newx-oldx)/4.0 , oldy + 1 * (newy-oldy)/4.0 );
-            stroke.record( oldx + 2 * (newx-oldx)/4.0 , oldy + 2 * (newy-oldy)/4.0 );
-            stroke.record( oldx + 3 * (newx-oldx)/4.0 , oldy + 3 * (newy-oldy)/4.0 );
-            }
+        if (oldx != -1) {
+            stroke.record(oldx + 1 * (newx - oldx) / 4.0, oldy + 1 * (newy - oldy) / 4.0);
+            stroke.record(oldx + 2 * (newx - oldx) / 4.0, oldy + 2 * (newy - oldy) / 4.0);
+            stroke.record(oldx + 3 * (newx - oldx) / 4.0, oldy + 3 * (newy - oldy) / 4.0);
+        }
 
         // add the one point that is really known
         stroke.record(newx, newy);
 
         oldx = newx;
         oldy = newy;
-
-        }
+    }
 
     // the calculations for the new format chop off some points at the end.
     // that's usually no problem, but here we'll want to compensate
-    stroke.record(newx,  newy);
-    stroke.record(newx,  newy);
-    stroke.record(newx,  newy);
+    stroke.record(newx, newy);
+    stroke.record(newx, newy);
+    stroke.record(newx, newy);
 
     _pointdata = stroke.processData();
-    }
-
+}
 
 // Create a score for how well two strokes match.
 // Algorithm taken from EasyStroke 0.4.1, modified to work in C++ and commented
@@ -273,22 +248,22 @@ void GestureTrigger::setKDE3Gesture(const QString &gestureCode)
 // small mathematical tex-document that is distributed with EasyStroke.
 // Probably won't help much though.
 qreal GestureTrigger::comparePointData(const StrokePoints &a, const StrokePoints &b) const
-    {
+{
     // 0.2 will be a very large value in these computations
-    const qreal stroke_infinity=0.2;
+    const qreal stroke_infinity = 0.2;
 
     int m = a.size() - 1;
     int n = b.size() - 1;
 
     // if there's too little data: return score of 0
-    if(m < 1 || n < 1)
+    if (m < 1 || n < 1)
         return 0.0;
 
     // array "cost" to save results of the cost calculations.
     // set all cells of cost to infinity.
     // we use nested vectors instead of a real array because the array size is
     // determined at runtime.
-    QVector< QVector<qreal> > cost(m+1, QVector<qreal>(n+1, stroke_infinity));
+    QVector<QVector<qreal>> cost(m + 1, QVector<qreal>(n + 1, stroke_infinity));
 
     // we start at the beginnings of both strokes - with cost 0.
     cost[0][0] = 0.0;
@@ -297,17 +272,14 @@ qreal GestureTrigger::comparePointData(const StrokePoints &a, const StrokePoints
     // (last one would be aborted anyway)
     // Attention: We don' use absolute coordinates in this method! x and y are
     // the indices of the current row and column in the cost-matrix.
-    for (int x = 0; x < m; x++)
-        {
-        for (int y = 0; y < n; y++)
-            {
-
+    for (int x = 0; x < m; x++) {
+        for (int y = 0; y < n; y++) {
             // cost already too high -> forget this one, it won't get better
             if (cost[x][y] >= stroke_infinity)
                 continue;
 
-            qreal sx  = a[x].s;
-            qreal sy  = b[y].s;
+            qreal sx = a[x].s;
+            qreal sy = b[y].s;
 
             // these will get incremented later in the function.
             // they define how large the area is we'll jump around in to look
@@ -327,89 +299,71 @@ qreal GestureTrigger::comparePointData(const StrokePoints &a, const StrokePoints
 
             // jumpToEnd: make one last jump to cell m,n and end this
             bool jumpToEnd = false;
-            bool iterateOverX2=false, iterateOverY2=false;
+            bool iterateOverX2 = false, iterateOverY2 = false;
 
             // variables that give the position in the matrix we want to jump
             // to. we'll iterate over these.
             int x2, y2;
 
-
             // artificially limit the number of iterations. the changing of
             // max_x and max_y ensures we don't do the same all the time
-            while (k < 4)
-                {
+            while (k < 4) {
                 // first we set up our logic controllers
 
                 // if difference between s at max_x+1 and s at x is bigger
                 // than difference between s at max_y+1 and y...
-                if (a[max_x+1].s - sx > b[max_y+1].s - sy)
-                    {
+                if (a[max_x + 1].s - sx > b[max_y + 1].s - sy) {
                     // widen our search in y-direction
                     max_y++;
 
                     // if we're at the side of the matrix make the step to
                     // the end and break
-                    if (max_y == n)
-                        {
+                    if (max_y == n) {
                         jumpToEnd = true;
                         x2 = m;
                         y2 = n;
-                        }
-                    else // check the cells with the new max_y
-                        {
+                    } else // check the cells with the new max_y
+                    {
                         iterateOverX2 = true;
-                        x2 = x+1;
+                        x2 = x + 1;
                         y2 = max_y;
-                        }
-
                     }
+
+                }
 
                 // differences bigger or equal in y-direction
                 //  -> same thing with y and x switched
-                else
-                    {
+                else {
                     // widen our search in x-direction
                     max_x++;
 
                     // if we're at the side -> step to the end and break
-                    if (max_x == m)
-                        {
+                    if (max_x == m) {
                         jumpToEnd = true;
                         x2 = m;
                         y2 = n;
-                        }
-                    else // check the cells with the new max_x
-                        {
+                    } else // check the cells with the new max_x
+                    {
                         iterateOverY2 = true;
                         x2 = max_x;
-                        y2 = y+1;
-                        }
-
+                        y2 = y + 1;
                     }
+                }
 
                 // contained in this loop we have the code that
                 // performs the step from current x,y to x2,y2 and
                 // calculates the cost for it. if a new minimal cost for a cell
                 // is found this new cost is written to it.
-                while ( jumpToEnd
-                        || ( iterateOverX2 && x2 <= max_x )
-                        || ( iterateOverY2 && y2 <= max_y )
-                        )
-                    {
-
+                while (jumpToEnd || (iterateOverX2 && x2 <= max_x) || (iterateOverY2 && y2 <= max_y)) {
                     // very small value for s
                     const qreal epsilon = 0.000001;
 
                     qreal delta_sx = a[x2].s - a[x].s;
                     qreal delta_sy = b[y2].s - b[y].s;
 
-
                     // only consider doing this if the change of positions in x
                     // and y is comparable and not too small.
-                    if (delta_sx < delta_sy * 2.2 && delta_sy < delta_sx * 2.2
-                        && delta_sx >= epsilon && delta_sy >= epsilon)
-                        {
-
+                    if (delta_sx < delta_sy * 2.2 && delta_sy < delta_sx * 2.2 && delta_sx >= epsilon && delta_sy >= epsilon) {
                         k++;
 
                         // we compute the additional cost for this step
@@ -421,9 +375,9 @@ qreal GestureTrigger::comparePointData(const StrokePoints &a, const StrokePoints
                         // and adding similar values for all cells that need to
                         // be crossed to get to the step target (by traversing
                         // x and y separately)
-                        for (int ix = x+1; ix < x2; ix++)
+                        for (int ix = x + 1; ix < x2; ix++)
                             c += a[ix].delta_s * angleSquareDifference(a[ix].angle, b[y].angle);
-                        for (int iy = y+1; iy < y2; iy++)
+                        for (int iy = y + 1; iy < y2; iy++)
                             c += b[iy].delta_s * angleSquareDifference(a[x].angle, b[iy].angle);
 
                         // now add that to the cost of our starting point
@@ -433,49 +387,42 @@ qreal GestureTrigger::comparePointData(const StrokePoints &a, const StrokePoints
                         // before: save new minimal cost
                         if (new_cost < cost[x2][y2])
                             cost[x2][y2] = new_cost;
-
-                        }
+                    }
 
                     // control logic
 
-                    if(jumpToEnd)
+                    if (jumpToEnd)
                         break;
-                    if(iterateOverX2)
+                    if (iterateOverX2)
                         x2++;
-                    if(iterateOverY2)
+                    if (iterateOverY2)
                         y2++;
-                    }
+                }
 
                 // if we jumped to the end we're finished with this combination
                 // of x and y
-                if(jumpToEnd)
+                if (jumpToEnd)
                     break;
 
                 // reset the logic controllers
                 iterateOverX2 = false;
                 iterateOverY2 = false;
-
-
-                }
-
-
             }
         }
+    }
 
     // only task remaining is returning the results
 
     // target cell (m, n) now hopefully has minimal cost.
     // we compute our score from that.
-    qreal score = (1.0 - 5.0*cost[m][n]);
+    qreal score = (1.0 - 5.0 * cost[m][n]);
 
     return score;
-    }
-
-
+}
 
 // gives us the square of the difference of two angles
 inline qreal GestureTrigger::angleSquareDifference(qreal alpha, qreal beta) const
-    {
+{
     qreal d = alpha - beta;
 
     if (d < -1.0)
@@ -483,8 +430,7 @@ inline qreal GestureTrigger::angleSquareDifference(qreal alpha, qreal beta) cons
     else if (d > 1.0)
         d -= 2.0;
 
-    return (d*d);
-    }
+    return (d * d);
+}
 
 } // namespace KHotKeys
-

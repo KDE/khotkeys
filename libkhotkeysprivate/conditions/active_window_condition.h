@@ -12,40 +12,40 @@
 
 #include <QWindowList>
 
-
 class KConfigGroup;
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 class Condition_list_base;
 class Windowdef_list;
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
-class Q_DECL_EXPORT Active_window_condition
-    : public QObject, public Condition
-    {
+class Q_DECL_EXPORT Active_window_condition : public QObject, public Condition
+{
     Q_OBJECT
     typedef Condition base;
-    public:
-        Active_window_condition(Windowdef_list* window_P, Condition_list_base* parent_P = nullptr);
-        Active_window_condition(KConfigGroup& cfg_P, Condition_list_base* parent_P);
-        virtual ~Active_window_condition();
-        bool match() const Q_DECL_OVERRIDE;
-        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
-        const Windowdef_list* window() const;
-        Windowdef_list* window();
-        Active_window_condition* copy() const Q_DECL_OVERRIDE;
-        const QString description() const Q_DECL_OVERRIDE;
-    public Q_SLOTS:
-        void active_window_changed( WId );
-    private:
-        void init();
-        void set_match();
-        Windowdef_list* _window;
-        bool is_match;
-    };
+
+public:
+    Active_window_condition(Windowdef_list *window_P, Condition_list_base *parent_P = nullptr);
+    Active_window_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
+    virtual ~Active_window_condition();
+    bool match() const Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
+    const Windowdef_list *window() const;
+    Windowdef_list *window();
+    Active_window_condition *copy() const Q_DECL_OVERRIDE;
+    const QString description() const Q_DECL_OVERRIDE;
+public Q_SLOTS:
+    void active_window_changed(WId);
+
+private:
+    void init();
+    void set_match();
+    Windowdef_list *_window;
+    bool is_match;
+};
 
 } // namespace KHotKeys
 

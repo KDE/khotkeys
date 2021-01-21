@@ -10,37 +10,30 @@
 
 #include <kconfiggroup.h>
 
-
 namespace KHotKeys
 {
-
-
-Generic_action_data::Generic_action_data(
-        ActionDataGroup* parent,
-        const QString& name,
-        const QString& comment,
-        Trigger_list* triggers,
-        Condition_list* conditions,
-        ActionList* actions)
-    :   ActionData(parent, name, comment, triggers, conditions, actions)
-    {
-    }
-
+Generic_action_data::Generic_action_data(ActionDataGroup *parent,
+                                         const QString &name,
+                                         const QString &comment,
+                                         Trigger_list *triggers,
+                                         Condition_list *conditions,
+                                         ActionList *actions)
+    : ActionData(parent, name, comment, triggers, conditions, actions)
+{
+}
 
 Generic_action_data::~Generic_action_data()
-    {}
-
+{
+}
 
 void Generic_action_data::accept(ActionDataVisitor *visitor)
-    {
+{
     visitor->visitGenericActionData(this);
-    }
-
+}
 
 void Generic_action_data::accept(ActionDataConstVisitor *visitor) const
-    {
+{
     visitor->visitGenericActionData(this);
-    }
-
+}
 
 } // namespace KHotKeys

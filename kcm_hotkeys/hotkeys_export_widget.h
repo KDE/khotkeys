@@ -13,31 +13,29 @@
 
 #include <QWidget>
 
-
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class KHotkeysExportWidget : public QWidget
-    {
+{
     Q_OBJECT
 
 public:
-
     KHotkeysExportWidget(QWidget *parent);
     virtual ~KHotkeysExportWidget();
 
     // The layout
     Ui::KHotkeysExportWidget ui;
 
-    }; // KHotkeysExportWidget
+}; // KHotkeysExportWidget
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class KHotkeysExportDialog : public QDialog
-    {
+{
 public:
-    KHotkeysExportDialog(QWidget*);
+    KHotkeysExportDialog(QWidget *);
     virtual ~KHotkeysExportDialog();
 
     QString importId() const;
@@ -49,9 +47,7 @@ public:
     QUrl url() const;
 
 private:
-
     KHotkeysExportWidget *w;
-    }; // KHotkeysExportDialog
-
+}; // KHotkeysExportDialog
 
 #endif /* HOTKEYS_EXPORT_WIDGET_H */

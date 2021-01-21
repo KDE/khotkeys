@@ -8,34 +8,35 @@
 
 #include "hotkeys_widget_iface.h"
 
-#include "libkhotkeysfwd.h"
 #include "actions/actions.h"
-
+#include "libkhotkeysfwd.h"
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ActionWidgetBase : public HotkeysWidgetIFace
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Destructor
      */
     virtual ~ActionWidgetBase();
 
-    virtual KHotKeys::Action * action() { return _action; }
-    virtual const KHotKeys::Action * action() const { return _action; }
+    virtual KHotKeys::Action *action()
+    {
+        return _action;
+    }
+    virtual const KHotKeys::Action *action() const
+    {
+        return _action;
+    }
 
 protected:
-
-    ActionWidgetBase( KHotKeys::Action *action, QWidget *parent = nullptr );
+    ActionWidgetBase(KHotKeys::Action *action, QWidget *parent = nullptr);
 
     KHotKeys::Action *_action;
-
-    };
+};
 
 #endif /* #ifndef ACTION_WIDGET_BASE_H */
-

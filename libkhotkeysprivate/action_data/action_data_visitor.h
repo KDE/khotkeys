@@ -6,23 +6,22 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 class ActionData;
 class ActionDataBase;
 class ActionDataGroup;
 class Generic_action_data;
 class MenuEntryShortcutActionData;
 class SimpleActionData;
-template< typename T, typename A > class SimpleActionDataHelper;
+template<typename T, typename A> class SimpleActionDataHelper;
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ActionDataVisitor
-    {
+{
 public:
-
     ActionDataVisitor();
 
     virtual ~ActionDataVisitor();
@@ -39,16 +38,14 @@ public:
 
     virtual void visitSimpleActionData(SimpleActionData *data) = 0;
 
-    }; // ActionDataVisitor
-
+}; // ActionDataVisitor
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class ActionDataConstVisitor
-    {
+{
 public:
-
     ActionDataConstVisitor();
 
     virtual ~ActionDataConstVisitor();
@@ -65,14 +62,11 @@ public:
 
     virtual void visitSimpleActionData(const SimpleActionData *data) = 0;
 
-    template< typename T, typename A >
-    KHotKeys::ActionDataBase *visitSimpleActionDataHelper(const KHotKeys::SimpleActionDataHelper<T, A> *object);
+    template<typename T, typename A> KHotKeys::ActionDataBase *visitSimpleActionDataHelper(const KHotKeys::SimpleActionDataHelper<T, A> *object);
 
 private:
-
-    }; // ActionDataConstVisitor
+}; // ActionDataConstVisitor
 
 } // KHotKeys
 
 #endif /* ACTION_DATA_VISITOR_H */
-

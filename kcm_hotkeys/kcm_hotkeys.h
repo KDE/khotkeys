@@ -13,8 +13,9 @@
 class KCMHotkeysPrivate;
 class QWidget;
 
-namespace KHotKeys {
-    class ActionDataBase;
+namespace KHotKeys
+{
+class ActionDataBase;
 }
 
 /**
@@ -23,17 +24,16 @@ namespace KHotKeys {
  * @date 2008-03-07
  */
 class KCMHotkeys : public KCModule
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Create the module.
      *
      * @param parent Parent widget
      */
-    KCMHotkeys( QWidget *parent, const QVariantList &arg );
+    KCMHotkeys(QWidget *parent, const QVariantList &arg);
 
     /**
      * Destroy the module
@@ -46,7 +46,7 @@ public:
     void defaults() Q_DECL_OVERRIDE;
 
     /**
-     * Load all settings. 
+     * Load all settings.
      */
     void load() Q_DECL_OVERRIDE;
 
@@ -54,8 +54,6 @@ public:
      * Save the settings
      */
     void save() Q_DECL_OVERRIDE;
-
-
 
 public Q_SLOTS:
 
@@ -66,7 +64,7 @@ public Q_SLOTS:
     /**
      * Call when the current item has changed
      */
-    void currentChanged( const QModelIndex &current, const QModelIndex &previous );
+    void currentChanged(const QModelIndex &current, const QModelIndex &previous);
 
     /**
      * Show global settings dialog
@@ -74,7 +72,6 @@ public Q_SLOTS:
     void showGlobalSettings();
 
 private:
-
     KCMHotkeysPrivate *d;
 };
 

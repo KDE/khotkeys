@@ -14,9 +14,8 @@
 
 #include <QEvent>
 #include <QPoint>
-#include <QWidget>
 #include <QSize>
-
+#include <QWidget>
 
 /**
  * This widget provides the service of drawing the processed point data of the
@@ -24,25 +23,26 @@
  */
 
 class GestureDrawer : public QFrame
-    {
+{
     Q_OBJECT
 
-    public:
+public:
+    GestureDrawer(QWidget *parent, const char *name = nullptr);
+    ~GestureDrawer();
 
-        GestureDrawer(QWidget *parent, const char *name = nullptr);
-        ~GestureDrawer();
+    void setPointData(const KHotKeys::StrokePoints &data);
+    KHotKeys::StrokePoints pointData() const;
 
-        void setPointData(const KHotKeys::StrokePoints &data);
-        KHotKeys::StrokePoints pointData() const;
+    QSize sizeHint() const Q_DECL_OVERRIDE
+    {
+        return QSize(30, 30);
+    }
 
+protected:
+    void paintEvent(QPaintEvent *ev) Q_DECL_OVERRIDE;
 
-        QSize sizeHint() const Q_DECL_OVERRIDE { return QSize(30, 30); }
-
-    protected:
-        void paintEvent(QPaintEvent *ev) Q_DECL_OVERRIDE;
-
-    private:
-        KHotKeys::StrokePoints _data;
-    };
+private:
+    KHotKeys::StrokePoints _data;
+};
 
 #endif

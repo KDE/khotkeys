@@ -12,40 +12,35 @@
 
 #include <QWidget>
 
-
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class SimpleActionDataWidget : public HotkeysWidgetBase
-    {
+{
     Q_OBJECT
 
     typedef HotkeysWidgetBase Base;
 
 public:
-
     /**
      * Default constructor
      */
-    SimpleActionDataWidget( QWidget *parent = nullptr );
-
+    SimpleActionDataWidget(QWidget *parent = nullptr);
 
     /**
      * Edit \a action.
      */
-    void setActionData( KHotKeys::SimpleActionData *action );
-
+    void setActionData(KHotKeys::SimpleActionData *action);
 
     KHotKeys::SimpleActionData *data()
-        {
-        return static_cast<KHotKeys::SimpleActionData*>( _data );
-        }
+    {
+        return static_cast<KHotKeys::SimpleActionData *>(_data);
+    }
 
     const KHotKeys::SimpleActionData *data() const
-        {
-        return static_cast<const KHotKeys::SimpleActionData*>( _data );
-        }
-
+    {
+        return static_cast<const KHotKeys::SimpleActionData *>(_data);
+    }
 
     /**
      * Destructor
@@ -55,15 +50,12 @@ public:
     bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
 private:
-
     HotkeysWidgetIFace *currentTrigger;
     HotkeysWidgetIFace *currentAction;
-
 };
 
 #endif /* #ifndef SIMPLE_ACTION_DATA_WIDGET_H */

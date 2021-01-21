@@ -6,36 +6,31 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-#include "triggers/triggers.h"
 #include "actions/actions.h"
+#include "triggers/triggers.h"
 
 #include "libkhotkeysfwd.h"
 
 #include <QMenu>
 #include <QModelIndex>
 
-
 class HotkeysTreeView;
 
 class QModelIndex;
 class QSignalMapper;
 
-
 class HotkeysTreeViewContextMenu : public QMenu
-    {
+{
     Q_OBJECT
 
 public:
-
-    HotkeysTreeViewContextMenu( const QModelIndex &index, HotkeysTreeView *parent = nullptr );
-    HotkeysTreeViewContextMenu( HotkeysTreeView *parent = nullptr );
+    HotkeysTreeViewContextMenu(const QModelIndex &index, HotkeysTreeView *parent = nullptr);
+    HotkeysTreeViewContextMenu(HotkeysTreeView *parent = nullptr);
 
     virtual ~HotkeysTreeViewContextMenu();
 
     //! Create a submenu per allowed trigger type
-    void createTriggerMenus(
-        KHotKeys::Trigger::TriggerTypes triggerTypes,
-        KHotKeys::Action::ActionTypes actionTypes);
+    void createTriggerMenus(KHotKeys::Trigger::TriggerTypes triggerTypes, KHotKeys::Action::ActionTypes actionTypes);
 
     //! Populate a trigger menu
     void populateTriggerMenu(QMenu *menu, QSignalMapper *mapper, KHotKeys::Action::ActionTypes types);
@@ -55,16 +50,10 @@ private Q_SLOTS:
     void newGroupAction();
 
 private:
-
-    KHotKeys::Action* createActionFromType(
-            int type,
-            KHotKeys::SimpleActionData *data) const;
+    KHotKeys::Action *createActionFromType(int type, KHotKeys::SimpleActionData *data) const;
 
     QModelIndex _index;
     HotkeysTreeView *_view;
-    };
-
-
+};
 
 #endif /* HOTKEYS_CONTEXT_MENU_H */
-

@@ -8,27 +8,23 @@
 
 #include "ui_hotkeys_widget_base.h"
 
-
 #include "hotkeys_widget_iface.h"
 #include "libkhotkeysfwd.h"
 
-
 class HotkeysWidgetBasePrivate;
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class HotkeysWidgetBase : public HotkeysWidgetIFace
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
-    HotkeysWidgetBase( QWidget *parent = nullptr );
+    HotkeysWidgetBase(QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -41,14 +37,14 @@ public:
      * The associated action.
      */
     KHotKeys::ActionDataBase *data()
-        {
+    {
         return _data;
-        }
+    }
 
     const KHotKeys::ActionDataBase *data() const
-        {
+    {
         return _data;
-        }
+    }
 
     bool isChanged() const Q_DECL_OVERRIDE;
 
@@ -56,10 +52,9 @@ public:
 
 Q_SIGNALS:
 
-    void changed(KHotKeys::ActionDataBase*);
+    void changed(KHotKeys::ActionDataBase *);
 
 protected:
-
 #if 0
     /**
      * Append the QLayoutItems from QGridLayout \from to QGridLayout \to.
@@ -68,8 +63,7 @@ protected:
 #endif
 
 protected:
-
-    void extend(QWidget*, const QString &);
+    void extend(QWidget *, const QString &);
 
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;

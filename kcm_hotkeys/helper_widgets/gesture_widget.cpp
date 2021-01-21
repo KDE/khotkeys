@@ -6,53 +6,44 @@
 #include "gesture_widget.h"
 #include "helper_widgets/edit_gesture_dialog.h"
 
-
 GestureWidget::GestureWidget(QWidget *parent)
-    :   QWidget(parent)
-    {
+    : QWidget(parent)
+{
     ui.setupUi(this);
 
-    connect(ui.edit_button, SIGNAL(clicked(bool)),
-            SLOT(edit()));
-    }
-
+    connect(ui.edit_button, SIGNAL(clicked(bool)), SLOT(edit()));
+}
 
 GestureWidget::~GestureWidget()
-    {
-    }
-
+{
+}
 
 void GestureWidget::edit()
-    {
+{
     EditGestureDialog dia(ui.gesture->pointData());
-    switch (dia.exec())
-        {
-        case QDialog::Accepted:
-            setPointData(dia.pointData(), true);
-            break;
+    switch (dia.exec()) {
+    case QDialog::Accepted:
+        setPointData(dia.pointData(), true);
+        break;
 
-        case QDialog::Rejected:
-            break;
+    case QDialog::Rejected:
+        break;
 
-        default:
-            Q_ASSERT(false);
-        }
+    default:
+        Q_ASSERT(false);
     }
-
-
-
+}
 
 KHotKeys::StrokePoints GestureWidget::pointData() const
-    {
+{
     return ui.gesture->pointData();
-    }
+}
 
-
-void GestureWidget::setPointData(const KHotKeys::StrokePoints &data , bool emitSignal)
-    {
+void GestureWidget::setPointData(const KHotKeys::StrokePoints &data, bool emitSignal)
+{
     ui.gesture->setPointData(data);
-    if(emitSignal)
+    if (emitSignal)
         emit changed();
-    }
+}
 
 #include "moc_gesture_widget.cpp"

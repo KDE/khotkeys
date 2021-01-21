@@ -11,22 +11,20 @@
 
 #include "libkhotkeysfwd.h"
 
-
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class MenuentryActionWidget : public ActionWidgetBase
-    {
+{
     Q_OBJECT
 
     typedef ActionWidgetBase Base;
 
 public:
-
     /**
      * Default constructor
      */
-    MenuentryActionWidget( KHotKeys::MenuEntryAction *action, QWidget *parent = nullptr );
+    MenuentryActionWidget(KHotKeys::MenuEntryAction *action, QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -43,15 +41,12 @@ public Q_SLOTS:
     void selectApplicationClicked();
 
 protected:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
     QString storage_id;
 
     Ui::MenuentryActionWidget ui;
-
-
 };
 
 #endif /* #ifndef MENUENTRY_ACTION_WIDGET_H */

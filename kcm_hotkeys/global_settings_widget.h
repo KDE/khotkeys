@@ -12,19 +12,16 @@
 
 #include <KSharedConfig>
 
-
 class KHotkeysModel;
-
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class GlobalSettingsWidget : public HotkeysWidgetIFace
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
@@ -45,16 +42,13 @@ private Q_SLOTS:
     bool isChanged() const Q_DECL_OVERRIDE;
 
 protected:
-
     void doCopyFromObject() Q_DECL_OVERRIDE;
     void doCopyToObject() Q_DECL_OVERRIDE;
 
 private:
-
     KSharedConfigPtr _config;
     KHotkeysModel *_model;
     Ui::GlobalSettingsWidget ui;
-
 };
 
 #endif /* #ifndef GLOBAL_SETTINGS_WIDGET_H */

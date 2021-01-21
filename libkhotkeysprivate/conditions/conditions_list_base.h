@@ -6,69 +6,62 @@
    SPDX-License-Identifier: LGPL-2.0-only
 */
 
-
 #include "conditions/condition.h"
 
 #include <QList>
 
-
 class KConfigGroup;
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 class ConditionsVisitor;
 
 /**
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
-class Q_DECL_EXPORT Condition_list_base : public Condition, private QList < Condition* >
-    {
+class Q_DECL_EXPORT Condition_list_base : public Condition, private QList<Condition *>
+{
     typedef Condition base;
 
-    public:
+public:
+    Condition_list_base(Condition_list_base *parent = nullptr);
 
-        Condition_list_base( Condition_list_base* parent = nullptr );
+    Condition_list_base(const QList<Condition *> &children_P, Condition_list_base *parent_P);
 
-        Condition_list_base(
-                const QList< Condition* >& children_P,
-                Condition_list_base* parent_P );
+    Condition_list_base(KConfigGroup &cfg_P, Condition_list_base *parent_P);
 
-        Condition_list_base( KConfigGroup& cfg_P, Condition_list_base* parent_P );
+    virtual ~Condition_list_base();
 
-        virtual ~Condition_list_base();
+    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
+    virtual bool accepts_children() const;
 
-        void cfg_write( KConfigGroup& cfg_P ) const Q_DECL_OVERRIDE;
-        virtual bool accepts_children() const;
+    typedef QList<Condition *>::iterator Iterator;
+    typedef QList<Condition *>::const_iterator ConstIterator;
 
-        typedef QList< Condition* >::iterator Iterator;
-        typedef QList< Condition* >::const_iterator ConstIterator;
+    void append(Condition *);
 
-        void append(Condition*);
+    Iterator begin();
+    ConstIterator begin() const;
 
-        Iterator begin();
-        ConstIterator begin() const;
+    Iterator end();
+    ConstIterator end() const;
 
-        Iterator end();
-        ConstIterator end() const;
+    Condition *first();
+    Condition const *first() const;
 
-        Condition *first();
-        Condition const* first() const;
+    int count() const;
 
-        int count() const;
+    bool isEmpty() const;
 
-        bool isEmpty() const;
+    void clear();
 
-        void clear();
-
-        void visit( ConditionsVisitor *visitor ) Q_DECL_OVERRIDE;
+    void visit(ConditionsVisitor *visitor) Q_DECL_OVERRIDE;
 
 protected:
+    int removeAll(Condition *const &);
 
-        int removeAll(Condition *const &);
-
-        friend class Condition;
-    };
-
+    friend class Condition;
+};
 
 } // namespace KHotKeys
 

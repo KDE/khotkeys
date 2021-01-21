@@ -6,13 +6,14 @@
 
 #include "trigger_widget_base.h"
 
-
-TriggerWidgetBase::TriggerWidgetBase( KHotKeys::Trigger *trigger, QWidget *parent )
-        : HotkeysWidgetIFace(parent)
-         ,_trigger(trigger)
-    {}
+TriggerWidgetBase::TriggerWidgetBase(KHotKeys::Trigger *trigger, QWidget *parent)
+    : HotkeysWidgetIFace(parent)
+    , _trigger(trigger)
+{
+}
 
 TriggerWidgetBase::~TriggerWidgetBase()
-    {}
+{
+}
 
 #include "moc_trigger_widget_base.cpp"

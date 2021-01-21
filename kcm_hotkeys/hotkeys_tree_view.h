@@ -8,13 +8,11 @@
 
 #include "libkhotkeysfwd.h"
 
-#include "triggers/triggers.h"
 #include "actions/actions.h"
+#include "triggers/triggers.h"
 
 #include <QMenu>
 #include <QTreeView>
-
-
 
 class KHotkeysModel;
 
@@ -22,15 +20,14 @@ class KHotkeysModel;
  * @author Michael Jansen <kde@michael-jansen.biz>
  */
 class HotkeysTreeView : public QTreeView
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
-    HotkeysTreeView( QWidget *parent = nullptr );
+    HotkeysTreeView(QWidget *parent = nullptr);
 
     /**
      * Destructor
@@ -40,12 +37,12 @@ public:
     /**
      * The user requested a context menu
      */
-    void contextMenuEvent( QContextMenuEvent *event ) Q_DECL_OVERRIDE;
+    void contextMenuEvent(QContextMenuEvent *event) Q_DECL_OVERRIDE;
 
     /**
      * Set a new model
      */
-    void setModel( QAbstractItemModel *model ) Q_DECL_OVERRIDE;
+    void setModel(QAbstractItemModel *model) Q_DECL_OVERRIDE;
     KHotkeysModel *model();
 
 protected:
@@ -54,8 +51,6 @@ protected:
 private Q_SLOTS:
 
     void modelReset();
-
 };
-
 
 #endif /* #ifndef HOTKEYS_TREE_VIEW_H */

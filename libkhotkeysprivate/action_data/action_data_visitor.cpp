@@ -10,39 +10,34 @@
 
 #include <QDebug>
 
-namespace KHotKeys {
-
+namespace KHotKeys
+{
 ActionDataVisitor::ActionDataVisitor()
-    {}
-
+{
+}
 
 ActionDataVisitor::~ActionDataVisitor()
-    {}
-
+{
+}
 
 void ActionDataVisitor::visitActionDataBase(ActionDataBase *action)
-    {
+{
     qDebug() << action->name();
     Q_ASSERT(false);
-    }
-
-
+}
 
 ActionDataConstVisitor::ActionDataConstVisitor()
-    {}
-
+{
+}
 
 ActionDataConstVisitor::~ActionDataConstVisitor()
-    {}
-
+{
+}
 
 void ActionDataConstVisitor::visitActionDataBase(const ActionDataBase *action)
-    {
+{
     qDebug() << action->name();
     Q_ASSERT(false);
-    }
+}
 
 } // KHotKeys
-
-
-

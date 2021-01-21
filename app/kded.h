@@ -6,100 +6,96 @@
 #ifndef _KHOTKEYS_KDED_H_
 #define _KHOTKEYS_KDED_H_
 
-#include <kdedmodule.h>
 #include "settings.h"
+#include <kdedmodule.h>
 
+#include <QKeySequence>
 #include <QObject>
 #include <QtDBus>
-#include <QKeySequence>
 
 #include <KService>
 
 namespace KHotKeys
-    {
-    class ActionDataGroup;
-    class SimpleActionData;
-    }
+{
+class ActionDataGroup;
+class SimpleActionData;
+}
 
-class KHotKeysModule
-    : public KDEDModule
-    {
+class KHotKeysModule : public KDEDModule
+{
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.khotkeys")
 
-    public Q_SLOTS:
+public Q_SLOTS:
 
-        Q_SCRIPTABLE Q_NOREPLY void reread_configuration();
+    Q_SCRIPTABLE Q_NOREPLY void reread_configuration();
 
-        Q_SCRIPTABLE Q_NOREPLY void quit();
+    Q_SCRIPTABLE Q_NOREPLY void quit();
 
-        /**
-         * Register an shortcut for service @serviceStorageId with the key
-         * sequence @seq.
-         *
-         * @param serviceStorageId the KService::storageId of the service
-         * @param sequence         the key sequence to use
-         *
-         * @returns @c true if the key sequence was successfully set, @c if
-         * the sequence is not available.
-         */
-        Q_SCRIPTABLE QString register_menuentry_shortcut(const QString &storageId, const QString &sequence);
+    /**
+     * Register an shortcut for service @serviceStorageId with the key
+     * sequence @seq.
+     *
+     * @param serviceStorageId the KService::storageId of the service
+     * @param sequence         the key sequence to use
+     *
+     * @returns @c true if the key sequence was successfully set, @c if
+     * the sequence is not available.
+     */
+    Q_SCRIPTABLE QString register_menuentry_shortcut(const QString &storageId, const QString &sequence);
 
-        /**
-         * Get the currently active shortcut for service @p serviceStorageId.
-         *
-         * @param serviceStorageId the KService::storageId of the service
-         *
-         * @returns the active global shortcuts for that service
-         */
-        Q_SCRIPTABLE QString get_menuentry_shortcut(const QString &storageId);
+    /**
+     * Get the currently active shortcut for service @p serviceStorageId.
+     *
+     * @param serviceStorageId the KService::storageId of the service
+     *
+     * @returns the active global shortcuts for that service
+     */
+    Q_SCRIPTABLE QString get_menuentry_shortcut(const QString &storageId);
 
-        /**
-         * declare daemon settings outdated, do not write back until re-read has been triggered
-         */
-        Q_SCRIPTABLE Q_NOREPLY void declareConfigOutdated();
+    /**
+     * declare daemon settings outdated, do not write back until re-read has been triggered
+     */
+    Q_SCRIPTABLE Q_NOREPLY void declareConfigOutdated();
 
-    private Q_SLOTS:
+private Q_SLOTS:
 
-        //! Save
-        void scheduleSave();
-        void save();
+    //! Save
+    void scheduleSave();
+    void save();
 
-        //! Initialize the module. Delayed initialization.
-        void initialize();
+    //! Initialize the module. Delayed initialization.
+    void initialize();
 
-    public:
+public:
+    KHotKeysModule(QObject *parent, const QList<QVariant> &);
+    virtual ~KHotKeysModule();
 
-        KHotKeysModule(QObject* parent, const QList<QVariant>&);
-        virtual ~KHotKeysModule();
+private:
+    //! The action list from _settings for convenience
+    KHotKeys::ActionDataGroup *actions_root;
 
-    private:
+    //! The current settings
+    bool _settingsDirty;
+    KHotKeys::Settings _settings;
 
-        //! The action list from _settings for convenience
-        KHotKeys::ActionDataGroup* actions_root;
+    //! Is the module initialized
+    bool _initialized;
 
-        //! The current settings
-        bool _settingsDirty;
-        KHotKeys::Settings _settings;
+    /**
+     * @name Some method in need for a better home
+     */
+    //@{
+    //! Get the group for the menuentries. Will create it if needed
+    KHotKeys::ActionDataGroup *menuentries_group();
 
-        //! Is the module initialized
-        bool _initialized;
-
-        /** 
-         * @name Some method in need for a better home 
-         */
-        //@{
-            //! Get the group for the menuentries. Will create it if needed
-            KHotKeys::ActionDataGroup *menuentries_group();
-
-            //! Find a menuentry_action for the service with @storageId in group @group
-            KHotKeys::SimpleActionData *menuentry_action(const QString &storageId);
-        //@}
-    };
+    //! Find a menuentry_action for the service with @storageId in group @group
+    KHotKeys::SimpleActionData *menuentry_action(const QString &storageId);
+    //@}
+};
 
 //***************************************************************************
 // Inline
 //***************************************************************************
-
 
 #endif

@@ -11,33 +11,34 @@
 
 #include <QAbstractItemModel>
 
-
 /**
  */
 class KHotkeysModel : public QAbstractItemModel
-    {
+{
     Q_OBJECT
 
-    public:
-
+public:
     enum ItemType {
-        Other                          //!< Some unknown action type
-        ,ActionDataGroup               //!< A shortcut group
-        ,SimpleActionData
+        Other //!< Some unknown action type
+        ,
+        ActionDataGroup //!< A shortcut group
+        ,
+        SimpleActionData
     };
 
     enum Column {
         NameColumn,
         EnabledColumn,
         IsGroupColumn,
-        TypeColumn, };
+        TypeColumn,
+    };
 
     /**
      * Default constructor
      *
-     * @param 
+     * @param
      */
-    KHotkeysModel( QObject *parent = nullptr );
+    KHotkeysModel(QObject *parent = nullptr);
 
     /**
      * Destructor
@@ -48,26 +49,21 @@ class KHotkeysModel : public QAbstractItemModel
      * \group Qt Model/View Framework methods
      */
     //@{
-    QModelIndex index( int, int, const QModelIndex &parent = QModelIndex() ) const Q_DECL_OVERRIDE;
-    QModelIndex parent( const QModelIndex &index ) const Q_DECL_OVERRIDE;
-    int rowCount( const QModelIndex &index ) const Q_DECL_OVERRIDE;
-    int columnCount( const QModelIndex &index ) const Q_DECL_OVERRIDE;
-    QVariant headerData( int section, Qt::Orientation, int role = Qt::DisplayRole ) const Q_DECL_OVERRIDE;
-    QVariant data( const QModelIndex &index, int role = Qt::DisplayRole ) const Q_DECL_OVERRIDE;
-    bool setData( const QModelIndex &index, const QVariant &value, int role ) Q_DECL_OVERRIDE;
-    Qt::ItemFlags flags( const QModelIndex &index ) const Q_DECL_OVERRIDE;
+    QModelIndex index(int, int, const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
+    QModelIndex parent(const QModelIndex &index) const Q_DECL_OVERRIDE;
+    int rowCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
+    int columnCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
+    QVariant headerData(int section, Qt::Orientation, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
+    bool setData(const QModelIndex &index, const QVariant &value, int role) Q_DECL_OVERRIDE;
+    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
     //@}
 
     /**
      * \group Drag and Drop Support
      */
     //@{
-    bool dropMimeData(
-            const QMimeData *data
-            ,Qt::DropAction action
-            ,int row
-            ,int column
-            ,const QModelIndex &parent) Q_DECL_OVERRIDE;
+    bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) Q_DECL_OVERRIDE;
     QMimeData *mimeData(const QModelIndexList &indexes) const Q_DECL_OVERRIDE;
     QStringList mimeTypes() const Q_DECL_OVERRIDE;
     //@}
@@ -77,17 +73,12 @@ class KHotkeysModel : public QAbstractItemModel
      *
      * @return the index for the new group
      */
-    QModelIndex addGroup( const QModelIndex &parent );
+    QModelIndex addGroup(const QModelIndex &parent);
 
     /**
      * Export the input actions into @a config.
      */
-    void exportInputActions(
-            const QModelIndex &index,
-            KConfigBase &config,
-            const QString& id,
-            const KHotKeys::ActionState state,
-            bool allowMerging);
+    void exportInputActions(const QModelIndex &index, KConfigBase &config, const QString &id, const KHotKeys::ActionState state, bool allowMerging);
 
     /**
      *Import the input actions from @a config.
@@ -97,7 +88,7 @@ class KHotkeysModel : public QAbstractItemModel
     /**
      * Get the KHotKeys::ActionDataBase behind the index.
      */
-    KHotKeys::ActionDataBase *indexToActionDataBase( const QModelIndex &index ) const;
+    KHotKeys::ActionDataBase *indexToActionDataBase(const QModelIndex &index) const;
 
     /**
      * Get the KHotKeys::ActionDataBase behind the index or 0.
@@ -105,12 +96,12 @@ class KHotkeysModel : public QAbstractItemModel
      * Getting 0 doesn't mean the index is invalid. It means you provided a
      * action object.
      */
-    KHotKeys::ActionDataGroup *indexToActionDataGroup( const QModelIndex &index ) const;
+    KHotKeys::ActionDataGroup *indexToActionDataGroup(const QModelIndex &index) const;
 
     /**
      * Insert @a data as a child of @a parent.
      */
-    QModelIndex insertActionData( KHotKeys::ActionDataBase *data, const QModelIndex &parent );
+    QModelIndex insertActionData(KHotKeys::ActionDataBase *data, const QModelIndex &parent);
 
     /**
      * Load the settings from the file
@@ -126,15 +117,12 @@ class KHotkeysModel : public QAbstractItemModel
      *
      * @return @c true if moved, @c false if not.
      */
-    bool moveElement(
-            KHotKeys::ActionDataBase *element
-            ,KHotKeys::ActionDataGroup *newGroup
-            ,int position = -1);
+    bool moveElement(KHotKeys::ActionDataBase *element, KHotKeys::ActionDataGroup *newGroup, int position = -1);
 
     /**
      * Remove @a count rows starting with @a row under @a parent.
      */
-    bool removeRows( int row, int count, const QModelIndex &parent ) Q_DECL_OVERRIDE;
+    bool removeRows(int row, int count, const QModelIndex &parent) Q_DECL_OVERRIDE;
 
     /**
      * Save the settings to the file
@@ -146,13 +134,11 @@ class KHotkeysModel : public QAbstractItemModel
      */
     KHotKeys::Settings *settings();
 
-    void emitChanged( KHotKeys::ActionDataBase *item );
+    void emitChanged(KHotKeys::ActionDataBase *item);
 
-  private:
-
+private:
     KHotKeys::Settings _settings;
     KHotKeys::ActionDataGroup *_actions;
-
 };
 
 #endif /* #ifndef KHOTKEYSMODEL_HPP */

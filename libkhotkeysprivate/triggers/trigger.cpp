@@ -11,41 +11,35 @@
 #include <QDebug>
 
 namespace KHotKeys
-    {
-
+{
 TriggerVisitor::~TriggerVisitor()
-    {}
+{
+}
 
-
-Trigger::Trigger( ActionData* data_P )
-    : data( data_P )
-    {
-    }
-
+Trigger::Trigger(ActionData *data_P)
+    : data(data_P)
+{
+}
 
 Trigger::~Trigger()
-    {
-    }
-
+{
+}
 
 void Trigger::aboutToBeErased()
-    {}
+{
+}
 
-
-void Trigger::cfg_write( KConfigGroup& cfg_P ) const
-    {
-    cfg_P.writeEntry( "Type", "ERROR" );
-    }
-
-
+void Trigger::cfg_write(KConfigGroup &cfg_P) const
+{
+    cfg_P.writeEntry("Type", "ERROR");
+}
 
 void Trigger::enable()
-    {}
-
+{
+}
 
 void Trigger::disable()
-    {}
-
+{
+}
 
 } // namespace KHotKeys
-

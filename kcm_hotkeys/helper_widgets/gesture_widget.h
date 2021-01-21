@@ -5,7 +5,6 @@
    SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-
 #include "ui_gesture_widget.h"
 
 #include <QWidget>
@@ -17,11 +16,10 @@
  * This widget contains the GestureDrawer and the edit button.
  */
 class GestureWidget : public QWidget
-    {
+{
     Q_OBJECT
 
 public:
-
     /**
      * Default constructor
      */
@@ -44,10 +42,7 @@ Q_SIGNALS:
     void changed();
 
 private:
-
     Ui::GestureWidget ui;
-
-    };
-
+};
 
 #endif /* #ifndef GESTURE_WIDGET_H */

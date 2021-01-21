@@ -23,28 +23,26 @@ class QMouseEvent;
  */
 
 class GestureRecorder : public QFrame
-    {
+{
     Q_OBJECT
 
-    public:
+public:
+    GestureRecorder(QWidget *parent, const char *name = "FIXXXXXMMEEEEEEEEEEEEE");
+    ~GestureRecorder();
 
-        GestureRecorder(QWidget *parent, const char *name="FIXXXXXMMEEEEEEEEEEEEE");
-        ~GestureRecorder();
+protected:
+    void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+    void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+    void mouseMoveEvent(QMouseEvent *) Q_DECL_OVERRIDE;
+    void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
 
-    protected:
+Q_SIGNALS:
 
-        void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-        void mouseReleaseEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-        void mouseMoveEvent(QMouseEvent *) Q_DECL_OVERRIDE;
-        void paintEvent(QPaintEvent *) Q_DECL_OVERRIDE;
+    void recorded(const KHotKeys::StrokePoints &data);
 
-    Q_SIGNALS:
-
-        void recorded(const KHotKeys::StrokePoints &data);
-
-    private:
-        bool _mouseButtonDown;
-        KHotKeys::Stroke stroke;
-    };
+private:
+    bool _mouseButtonDown;
+    KHotKeys::Stroke stroke;
+};
 
 #endif

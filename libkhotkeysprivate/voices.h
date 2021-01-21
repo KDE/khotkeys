@@ -15,63 +15,60 @@ class KAction;
 
 namespace KHotKeys
 {
-
 class Voice;
 class SoundRecorder;
 
 class Voice_trigger;
 class VoiceSignature;
 
-
-class Q_DECL_EXPORT Voice  : public QObject
-    {
+class Q_DECL_EXPORT Voice : public QObject
+{
     Q_OBJECT
-    public:
-        Voice( bool enabled_P, QObject* parent_P );
-        virtual ~Voice();
-        void enable( bool enable_P );
+public:
+    Voice(bool enabled_P, QObject *parent_P);
+    virtual ~Voice();
+    void enable(bool enable_P);
 
-		void register_handler( Voice_trigger* );
-		void unregister_handler( Voice_trigger* );
-//		bool x11Event( XEvent* e );
-		
-		void set_shortcut( const QKeySequence &k);
-		
-		/**
-		 * return QString() is a new signature is far enough from others signature
-		 * otherwise, return the stringn which match.
-		 */
-		QString isNewSoundFarEnough(const VoiceSignature& s, const QString& currentTrigger);
-		
-		bool doesVoiceCodeExists(const QString &s);
+    void register_handler(Voice_trigger *);
+    void unregister_handler(Voice_trigger *);
+    //		bool x11Event( XEvent* e );
 
-    public Q_SLOTS:
-         void record_start();
-         void record_stop();
+    void set_shortcut(const QKeySequence &k);
 
-    private Q_SLOTS:
-		void slot_sound_recorded( const Sound & );
-		void slot_key_pressed();
-		void slot_timeout();
+    /**
+     * return QString() is a new signature is far enough from others signature
+     * otherwise, return the stringn which match.
+     */
+    QString isNewSoundFarEnough(const VoiceSignature &s, const QString &currentTrigger);
 
-    Q_SIGNALS:
-        void handle_voice( const QString &voice );
-    private:
+    bool doesVoiceCodeExists(const QString &s);
 
-        bool _enabled;
-        bool _recording;
+public Q_SLOTS:
+    void record_start();
+    void record_stop();
 
-		QList<Voice_trigger *> _references;
-		SoundRecorder *_recorder;
-		
-		QKeySequence _shortcut;
-		KAction *_kga;
-		
-		QTimer *_timer;
-    };
+private Q_SLOTS:
+    void slot_sound_recorded(const Sound &);
+    void slot_key_pressed();
+    void slot_timeout();
 
-	
-Q_DECL_EXPORT extern Voice* voice_handler;
+Q_SIGNALS:
+    void handle_voice(const QString &voice);
+
+private:
+    bool _enabled;
+    bool _recording;
+
+    QList<Voice_trigger *> _references;
+    SoundRecorder *_recorder;
+
+    QKeySequence _shortcut;
+    KAction *_kga;
+
+    QTimer *_timer;
+};
+
+Q_DECL_EXPORT extern Voice *voice_handler;
 
 } // namespace KHotKeys
 
