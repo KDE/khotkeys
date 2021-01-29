@@ -103,7 +103,7 @@ target_link_libraries(
 
 install(
     TARGETS kcm_hotkeys
-    DESTINATION ${PLUGIN_INSTALL_DIR}
+    DESTINATION ${KDE_INSTALL_PLUGINDIR}
     )
 
 install(

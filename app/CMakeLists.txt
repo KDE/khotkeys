@@ -36,7 +36,7 @@ ecm_configure_package_config_file(KHotKeysDBusInterfaceConfig.cmake.in
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/KHotKeysDBusInterfaceConfig.cmake
     DESTINATION ${CMAKECONFIG_INSTALL_DIR})
 
-install(TARGETS kded_khotkeys DESTINATION ${PLUGIN_INSTALL_DIR}/kf5/kded)
+install(TARGETS kded_khotkeys DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/kded)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.khotkeys.xml
         DESTINATION ${KDE_INSTALL_DBUSINTERFACEDIR})
