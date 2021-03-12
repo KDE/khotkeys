@@ -17,10 +17,10 @@ include_directories(
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} )
 
+include(CMakePackageConfigHelpers)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
-include(ECMPackageConfigHelpers)
 include(ECMOptionalAddSubdirectory)
 include(KDEClangFormat)
 if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)

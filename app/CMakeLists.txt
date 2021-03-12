@@ -27,7 +27,7 @@ endif()
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KHotKeysDBusInterface")
 
-ecm_configure_package_config_file(KHotKeysDBusInterfaceConfig.cmake.in
+configure_package_config_file(KHotKeysDBusInterfaceConfig.cmake.in
     ${CMAKE_CURRENT_BINARY_DIR}/KHotKeysDBusInterfaceConfig.cmake
     PATH_VARS KDE_INSTALL_DBUSINTERFACEDIR
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR})
