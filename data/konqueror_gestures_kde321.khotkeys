@@ -452,6 +452,7 @@ Title[sl]=file:/ - Konqueror
 Title[sv]=file:/ - Konqueror
 Title[uk]=file:/ – Konqueror
 Title[x-test]=xxfile:/ - Konquerorxx
+Title[zh_CN]=file:/ - Konqueror
 TitleType=0
 Type=SIMPLE
 WindowTypes=1
