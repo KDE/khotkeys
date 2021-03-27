@@ -429,6 +429,7 @@ Role=konqueror-mainwindow#1
 RoleType=0
 Title=file:/ - Konqueror
 Title[ca]=fitxer:/ - Konqueror
+Title[cs]=file:/ - Konqueror
 Title[da]=file:/ - Konqueror
 Title[de]=file:/ - Konqueror
 Title[el]=file:/ - Konqueror
