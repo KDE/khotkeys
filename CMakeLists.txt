@@ -23,9 +23,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMOptionalAddSubdirectory)
 include(KDEClangFormat)
-if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)
-    include(KDEGitCommitHooks)
-endif()
+include(KDEGitCommitHooks)
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     GlobalAccel
@@ -66,8 +64,6 @@ add_subdirectory( doc )
 # add clang-format target for all our real source files
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
-if(ECM_VERSION VERSION_GREATER_EQUAL 5.79)
-    kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
-endif()
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
