@@ -71,7 +71,7 @@ kde4_add_ui_files(
     hotkeys_widget_base.ui
     )
 
-qt5_add_dbus_interface(
+qt_add_dbus_interface(
     kcm_hotkeys_PART_SRCS
     ${CMAKE_CURRENT_BINARY_DIR}/../app/org.kde.khotkeys.xml
     khotkeys_interface)
