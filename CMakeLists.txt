@@ -26,13 +26,17 @@ include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
+    DBusAddons
+    DocTools
     GlobalAccel
     I18n
-    KIO
-    XmlGui
-    KDELibs4Support
-    DBusAddons
     KCMUtils
+    KIO
+    TextWidgets
+    XmlGui
+    
+    # TODO: remove kdelibs4support uses
+    KDELibs4Support
 )
 
 find_package(X11 REQUIRED OPTIONAL_COMPONENTS Xtst)
