@@ -41,9 +41,7 @@ set(
     simple_action_data_widget.cpp
     )
 
-kde4_add_ui_files(
-    kcm_hotkeys_PART_SRCS
-
+ki18n_wrap_ui(kcm_hotkeys_PART_SRCS
     global_settings_widget.ui
     hotkeys_export_widget.ui
     kcm_hotkeys.ui
@@ -96,7 +94,6 @@ target_link_libraries(
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::TextWidgets
-    KF5::KDELibs4Support
     Qt::Gui
     ${X11_X11_LIB}
     )
