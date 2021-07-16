@@ -5,17 +5,16 @@
 
 #include "gestures.h"
 
-#if 0
-#include <stdlib.h>
-#endif
 #include <math.h>
 
 #include "khotkeysglobal.h"
 
 #include "action_data/action_data.h"
 #include "input.h"
+
+#include <QApplication>
 #include <QDebug>
-#include <kapplication.h>
+
 #include <kkeyserver.h>
 #include <kxerrorhandler.h>
 
@@ -24,9 +23,6 @@
 // only necessary for circumventing bug #173606, see below
 #include <QX11Info>
 #include <X11/Xlib.h>
-//#include <fixx11h.h>
-
-// #include "voices.h"
 
 namespace KHotKeys
 {
@@ -82,13 +78,13 @@ void Gesture::update_grab()
     }
 
     if (_enabled && handlers.count() > 0 && (exclude == nullptr || !exclude->match(Window_data(windows_handler->active_window())))) {
-        kapp->removeNativeEventFilter(this); // avoid being installed twice
-        kapp->installNativeEventFilter(this);
+        qApp->removeNativeEventFilter(this); // avoid being installed twice
+        qApp->installNativeEventFilter(this);
         // CHECKME grab only when there's at least one gesture?
         grab_mouse(true);
     } else {
         grab_mouse(false);
-        kapp->removeNativeEventFilter(this);
+        qApp->removeNativeEventFilter(this);
     }
 }
 
