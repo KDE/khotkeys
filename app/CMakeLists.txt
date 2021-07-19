@@ -1,7 +1,7 @@
 ########### next target ###############
 
 set(dbus_interface_name org.kde.khotkeys.xml)
-set(kded_khotkeys_PART_SRCS 
+set(kded_khotkeys_PART_SRCS
         kded.cpp
         ${CMAKE_CURRENT_BINARY_DIR}/${dbus_interface_name})
 
@@ -17,13 +17,7 @@ kcoreaddons_desktop_to_json(kded_khotkeys khotkeys.desktop)
 target_link_libraries(kded_khotkeys
     khotkeysprivate
     PW::KWorkspace
-    KF5::DBusAddons
-    KF5::KDELibs4Support)
-
-# I'm not sure if this is needed anymore. Check it
-if(X11_XTest_FOUND)
-    target_link_libraries(kded_khotkeys ${X11_XTest_LIB})
-endif()
+    KF5::DBusAddons)
 
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KHotKeysDBusInterface")
 
