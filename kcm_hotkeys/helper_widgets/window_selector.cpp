@@ -3,16 +3,13 @@
     SPDX-FileCopyrightText: 2003 Lubos Lunak <l.lunak@kde.org>
  */
 
-#define WINDOWSELECTOR_CPP
-
 #include "helper_widgets/window_selector.h"
 
+#include <QApplication>
 #include <QDebug>
-#include <kapplication.h>
-
 #include <QDesktopWidget>
-
 #include <QX11Info>
+
 #include <X11/Xlib.h>
 #include <fixx11h.h>
 #include <xcb/xcb.h>
@@ -26,13 +23,13 @@ WindowSelector::WindowSelector(QObject *receiver_P, const char *slot_P)
 
 WindowSelector::~WindowSelector()
 {
-    kapp->desktop()->releaseMouse();
+    qApp->desktop()->releaseMouse();
     QApplication::instance()->removeNativeEventFilter(this);
 }
 
 void WindowSelector::select()
 {
-    kapp->desktop()->grabMouse(QCursor(Qt::CrossCursor));
+    qApp->desktop()->grabMouse(QCursor(Qt::CrossCursor));
     QApplication::instance()->installNativeEventFilter(this);
 }
 
@@ -85,5 +82,3 @@ WId WindowSelector::findRealWindow(WId w, int depth)
 }
 
 } // namespace KHotKeys
-
-#include "window_selector.moc"
