@@ -12,14 +12,6 @@ add_dependencies(khotkeys_standalone kded_khotkeys)
 target_link_libraries(khotkeys_standalone
     khotkeysprivate
     PW::KWorkspace
-    KF5::DBusAddons
-    KF5::KDELibs4Support)
-
-# I'm not sure if this is needed anymore. Check it
-if(X11_XTest_FOUND)
-    target_link_libraries(khotkeys_standalone ${X11_XTest_LIB})
-endif()
-
+    KF5::DBusAddons)
 
 # Don't install anything, this is just for debugging
-
