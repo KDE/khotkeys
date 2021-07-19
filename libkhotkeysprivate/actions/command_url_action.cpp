@@ -95,7 +95,7 @@ void CommandUrlAction::execute()
         break;
     }
     case KUriFilterData::Executable: {
-        if (!KAuthorized::authorizeKAction("shell_access"))
+        if (!KAuthorized::authorizeAction("shell_access"))
             return;
         if (!uri.hasArgsAndOptions()) {
             KService::Ptr service = KService::serviceByDesktopName(cmd);
@@ -109,7 +109,7 @@ void CommandUrlAction::execute()
         // fall though
     }
     case KUriFilterData::Shell: {
-        if (!KAuthorized::authorizeKAction("shell_access"))
+        if (!KAuthorized::authorizeAction("shell_access"))
             return;
         const QString exec = cmd + (uri.hasArgsAndOptions() ? uri.argsAndOptions() : QString());
         auto *job = new KIO::CommandLauncherJob(exec);
