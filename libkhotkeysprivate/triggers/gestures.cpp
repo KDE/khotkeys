@@ -35,6 +35,7 @@ Gesture::Gesture(bool enabled_P, QObject *parent_P)
     , button(0)
     , exclude(nullptr)
 {
+    Q_UNUSED(enabled_P);
     // qDebug() << enabled_P;
     nostroke_timer.setSingleShot(true);
     connect(&nostroke_timer, SIGNAL(timeout()), SLOT(stroke_timeout()));
@@ -265,6 +266,7 @@ void Gesture::grab_mouse(bool grab_P)
                         None,
                         None);
         bool err = handler.error(true);
+        Q_UNUSED(err);
         // qDebug() << "Gesture grab:" << err;
     } else {
         // qDebug() << "Gesture ungrab";

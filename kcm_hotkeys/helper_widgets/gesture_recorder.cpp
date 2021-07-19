@@ -59,7 +59,7 @@ void GestureRecorder::mouseMoveEvent(QMouseEvent *ev)
     }
 }
 
-void GestureRecorder::paintEvent(QPaintEvent *ev)
+void GestureRecorder::paintEvent(QPaintEvent *)
 {
 }
 

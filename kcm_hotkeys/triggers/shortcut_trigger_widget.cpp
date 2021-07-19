@@ -67,6 +67,7 @@ bool ShortcutTriggerWidget::isChanged() const
 
 void ShortcutTriggerWidget::_k_globalShortcutChanged(QAction *action, const QKeySequence &seq)
 {
+    Q_UNUSED(action);
     shortcut_trigger_ui.shortcut->setKeySequence(seq);
 }
 
