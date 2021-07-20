@@ -19,6 +19,8 @@
 #include <QFileDialog>
 #include <QSignalMapper>
 
+#include <KConfig>
+
 HotkeysTreeViewContextMenu::HotkeysTreeViewContextMenu(const QModelIndex &index, HotkeysTreeView *parent)
     : QMenu(parent)
     , _index(index)

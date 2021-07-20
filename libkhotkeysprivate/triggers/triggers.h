@@ -15,13 +15,13 @@
 #include <QKeySequence>
 
 #include "khotkeysglobal.h"
-#include "voicesignature.h"
 
 #include "input.h"
 #include "triggers/gestures.h"
 #include "windows_handler.h"
 
 class QKeySequence;
+class KConfigGroup;
 
 namespace KHotKeys
 {
@@ -322,48 +322,6 @@ private:
     StrokePoints _pointdata;
 };
 
-// FIXME: SOUND
-#if 0
-class Q_DECL_EXPORT Voice_trigger
-    : public QObject, public Trigger
-    {
-    Q_OBJECT
-    typedef Trigger base;
-    public:
-        Voice_trigger( ActionData* data_P, const QString& Voice_P, const VoiceSignature & signature1_P, const VoiceSignature & signature2_P );
-        Voice_trigger( KConfigGroup& cfg_P, ActionData* data_P );
-        virtual ~Voice_trigger();
-        virtual void cfg_write( KConfigGroup& cfg_P ) const;
-        virtual Trigger* copy( ActionData* data_P ) const;
-        virtual const QString description() const;
-        const QString& voicecode() const;
-        virtual void activate( bool activate_P );
-        VoiceSignature voicesignature( int ech ) const;
-
-        virtual TriggerType type() const { return SoundTrigger; }
-    public slots:
-        void handle_Voice(  );
-    private:
-        QString _voicecode;
-        VoiceSignature _voicesignature[2];
-    };
-#endif
-
-// FIXME: SOUND
-#if 0
-// Voice_trigger
-inline
-const QString& Voice_trigger::voicecode() const
-    {
-    return _voicecode;
-    }
-
-inline
-VoiceSignature Voice_trigger::voicesignature(int ech) const
-    {
-    return _voicesignature[ech-1];
-    }
-#endif
 } // namespace KHotKeys
 
 #endif

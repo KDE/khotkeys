@@ -11,6 +11,7 @@
 #include <kshortcut.h>
 
 class KConfig;
+class KConfigBase;
 
 namespace KHotKeys
 {

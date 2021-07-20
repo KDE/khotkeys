@@ -7,6 +7,7 @@
 
 #include "triggers.h"
 
+#include <KConfig>
 #include <KConfigGroup>
 
 namespace KHotKeys

@@ -15,11 +15,7 @@
 #include "shortcuts_handler.h"
 #include "triggers/gestures.h"
 #include "triggers/triggers.h"
-#include "voices.h"
 #include "windows_handler.h"
-
-// FIXME: SOUND
-// #include "soundrecorder.h"
 
 namespace KHotKeys
 {
@@ -30,7 +26,6 @@ static bool _khotkeys_active = false;
 
 void init_global_data(bool active_P, QObject *owner_P)
 {
-    // FIXME: get rid of that static_cast<>s. Don't know why they are there.
     // Make these singletons.
     if (!keyboard_handler) {
         keyboard_handler = new ShortcutsHandler(active_P ? ShortcutsHandler::Active : ShortcutsHandler::Configuration, owner_P);
@@ -41,8 +36,6 @@ void init_global_data(bool active_P, QObject *owner_P)
     if (!gesture_handler) {
         gesture_handler = new Gesture(active_P, owner_P);
     }
-    // FIXME: SOUND
-    //    static_cast< void >( new Voice( active_P, owner_P ));
     khotkeys_set_active(false);
 }
 
