@@ -43,7 +43,6 @@ set(khotkeysprivate_SRCS
     triggers/trigger.cpp
     triggers/trigger_list.cpp
     triggers/triggers.cpp
-    # triggers/voice_trigger.cpp
     triggers/window_trigger.cpp
 
     # WINDOWS_HELPER
@@ -62,11 +61,6 @@ set(khotkeysprivate_SRCS
     settings_writer.cpp
     shortcuts_handler.cpp
     windows_handler.cpp
-    # search for FIXME: SOUND
-    # sound.cpp
-    # soundrecorder.cpp
-    # voices.cpp
-    # voicesignature.cpp
 )
 
 add_library(khotkeysprivate SHARED ${khotkeysprivate_SRCS})
