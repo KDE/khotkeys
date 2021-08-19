@@ -29,7 +29,6 @@
 
 #include <KAboutData>
 #include <KMessageBox>
-#include <KPluginLoader>
 #include <QDebug>
 
 K_PLUGIN_FACTORY(KCMHotkeysFactory, registerPlugin<KCMHotkeys>();)
