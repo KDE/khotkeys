@@ -10,7 +10,6 @@
 
 #include "ui_window_trigger_widget.h"
 
-class QKeySequence;
 class WindowDefinitionListWidget;
 
 /**

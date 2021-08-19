@@ -12,7 +12,6 @@
 
 #include "QList"
 
-class KHotkeysModel;
 
 namespace KHotKeys
 {
