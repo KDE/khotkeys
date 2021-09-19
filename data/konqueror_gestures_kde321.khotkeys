@@ -3863,7 +3863,7 @@ Name[uz@cyrillic]=Қайтадан юклаш
 Name[vi]=Nạp lại
 Name[wa]=Ritcherdjî
 Name[x-test]=xxReloadxx
-Name[zh_CN]=重新载入
+Name[zh_CN]=重新加载
 Name[zh_TW]=重新載入
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
