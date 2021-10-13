@@ -32,6 +32,9 @@ public:
      */
     void setActionData(KHotKeys::SimpleActionData *action);
 
+    /// Throws away the held widgets and state.
+    void unsetActionData();
+
     KHotKeys::SimpleActionData *data()
     {
         return static_cast<KHotKeys::SimpleActionData *>(_data);

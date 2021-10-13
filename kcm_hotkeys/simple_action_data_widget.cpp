@@ -60,13 +60,21 @@ void SimpleActionDataWidget::doCopyToObject()
     }
 }
 
-void SimpleActionDataWidget::setActionData(KHotKeys::SimpleActionData *pData)
+void SimpleActionDataWidget::unsetActionData()
 {
-    _data = pData;
+    _data = nullptr;
 
-    // Now go and work on the trigger
     delete currentTrigger;
     currentTrigger = nullptr;
+
+    delete currentAction;
+    currentAction = nullptr;
+}
+
+void SimpleActionDataWidget::setActionData(KHotKeys::SimpleActionData *pData)
+{
+    unsetActionData();
+    _data = pData;
 
     if (KHotKeys::Trigger *trg = data()->trigger()) {
         switch (trg->type()) {
@@ -94,10 +102,6 @@ void SimpleActionDataWidget::setActionData(KHotKeys::SimpleActionData *pData)
         connect(currentTrigger, SIGNAL(changed(bool)), this, SLOT(slotChanged()));
         extend(currentTrigger, i18n("Trigger"));
     }
-
-    // Now go and work on the action
-    delete currentAction;
-    currentAction = nullptr;
 
     if (KHotKeys::Action *act = data()->action()) {
         switch (act->type()) {
