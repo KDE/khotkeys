@@ -120,6 +120,9 @@ void KCMHotkeys::currentChanged(const QModelIndex &pCurrent, const QModelIndex &
     }
 
     if (!current.isValid()) {
+        if (previous.isValid()) { // throw away old widget and stuff lest we have dangling pointers https://bugs.kde.org/show_bug.cgi?id=443656
+            d->simple_action->unsetActionData();
+        }
         return showGlobalSettings();
     }
 
