@@ -39,7 +39,7 @@ public:
     /**
      * Destructor
      */
-    ~ShortcutsHandler();
+    ~ShortcutsHandler() override;
 
     /**
      * Create a action.

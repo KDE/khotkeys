@@ -29,7 +29,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~MenuentryActionWidget();
+    ~MenuentryActionWidget() override;
 
     KHotKeys::MenuEntryAction *action() Q_DECL_OVERRIDE;
     const KHotKeys::MenuEntryAction *action() const Q_DECL_OVERRIDE;

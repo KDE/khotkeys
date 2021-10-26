@@ -31,7 +31,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ShortcutTriggerWidget();
+    ~ShortcutTriggerWidget() override;
 
     KHotKeys::ShortcutTrigger *trigger() Q_DECL_OVERRIDE;
     const KHotKeys::ShortcutTrigger *trigger() const Q_DECL_OVERRIDE;

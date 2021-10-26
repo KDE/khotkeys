@@ -30,7 +30,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~WindowTriggerWidget();
+    ~WindowTriggerWidget() override;
 
     KHotKeys::WindowTrigger *trigger() Q_DECL_OVERRIDE;
     const KHotKeys::WindowTrigger *trigger() const Q_DECL_OVERRIDE;

@@ -30,7 +30,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~EditGestureDialog();
+    ~EditGestureDialog() override;
 
     KHotKeys::StrokePoints pointData() const;
 

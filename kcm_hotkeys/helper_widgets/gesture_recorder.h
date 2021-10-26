@@ -28,7 +28,7 @@ class GestureRecorder : public QFrame
 
 public:
     GestureRecorder(QWidget *parent, const char *name = "FIXXXXXMMEEEEEEEEEEEEE");
-    ~GestureRecorder();
+    ~GestureRecorder() override;
 
 protected:
     void mousePressEvent(QMouseEvent *) Q_DECL_OVERRIDE;

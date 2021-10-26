@@ -28,7 +28,7 @@ class GestureDrawer : public QFrame
 
 public:
     GestureDrawer(QWidget *parent, const char *name = nullptr);
-    ~GestureDrawer();
+    ~GestureDrawer() override;
 
     void setPointData(const KHotKeys::StrokePoints &data);
     KHotKeys::StrokePoints pointData() const;

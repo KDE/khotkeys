@@ -26,7 +26,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~KeyboardInputActionWidget();
+    ~KeyboardInputActionWidget() override;
 
     KHotKeys::KeyboardInputAction *action() Q_DECL_OVERRIDE;
     const KHotKeys::KeyboardInputAction *action() const Q_DECL_OVERRIDE;

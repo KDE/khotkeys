@@ -69,7 +69,7 @@ private Q_SLOTS:
 
 public:
     KHotKeysModule(QObject *parent, const QList<QVariant> &);
-    virtual ~KHotKeysModule();
+    ~KHotKeysModule() override;
 
 private:
     //! The action list from _settings for convenience

@@ -30,7 +30,7 @@ public:
 
     Condition_list_base(KConfigGroup &cfg_P, Condition_list_base *parent_P);
 
-    virtual ~Condition_list_base();
+    ~Condition_list_base() override;
 
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     virtual bool accepts_children() const;

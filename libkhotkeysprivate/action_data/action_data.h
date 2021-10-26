@@ -29,7 +29,7 @@ public:
                Condition_list *conditions_P,
                ActionList *actions_P);
 
-    virtual ~ActionData();
+    ~ActionData() override;
 
     /**
      * Visitor pattern

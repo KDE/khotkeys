@@ -27,7 +27,7 @@ public:
     HotkeysTreeViewContextMenu(const QModelIndex &index, HotkeysTreeView *parent = nullptr);
     HotkeysTreeViewContextMenu(HotkeysTreeView *parent = nullptr);
 
-    virtual ~HotkeysTreeViewContextMenu();
+    ~HotkeysTreeViewContextMenu() override;
 
     //! Create a submenu per allowed trigger type
     void createTriggerMenus(KHotKeys::Trigger::TriggerTypes triggerTypes, KHotKeys::Action::ActionTypes actionTypes);

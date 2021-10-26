@@ -29,7 +29,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~HotkeysWidgetBase();
+    ~HotkeysWidgetBase() override;
 
     void apply() Q_DECL_OVERRIDE;
 

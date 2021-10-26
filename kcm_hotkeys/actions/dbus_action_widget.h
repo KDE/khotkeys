@@ -28,7 +28,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~DbusActionWidget();
+    ~DbusActionWidget() override;
 
     KHotKeys::DBusAction *action() Q_DECL_OVERRIDE;
     const KHotKeys::DBusAction *action() const Q_DECL_OVERRIDE;

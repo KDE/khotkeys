@@ -43,7 +43,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~KHotkeysModel();
+    ~KHotkeysModel() override;
 
     /**
      * \group Qt Model/View Framework methods

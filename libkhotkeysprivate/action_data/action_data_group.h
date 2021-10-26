@@ -50,7 +50,7 @@ public:
                     Condition_list *conditions_P = nullptr,
                     system_group_t system_group_P = SYSTEM_NONE);
 
-    virtual ~ActionDataGroup();
+    ~ActionDataGroup() override;
 
     /**
      * Visitor pattern

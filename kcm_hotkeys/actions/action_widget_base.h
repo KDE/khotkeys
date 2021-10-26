@@ -22,7 +22,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ActionWidgetBase();
+    ~ActionWidgetBase() override;
 
     virtual KHotKeys::Action *action()
     {

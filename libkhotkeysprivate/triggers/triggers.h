@@ -132,7 +132,7 @@ class Q_DECL_EXPORT ShortcutTrigger : public QObject, public Trigger
 public:
     ShortcutTrigger(ActionData *data, const QKeySequence &shortcut = QKeySequence(), const QUuid &uuid = QUuid::createUuid());
 
-    virtual ~ShortcutTrigger();
+    ~ShortcutTrigger() override;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     ShortcutTrigger *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
     const QString description() const Q_DECL_OVERRIDE;
@@ -218,7 +218,7 @@ public:
 
     void setOnWindowEvents(WindowEvents events);
 
-    virtual ~WindowTrigger();
+    ~WindowTrigger() override;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     WindowTrigger *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
     const QString description() const Q_DECL_OVERRIDE;
@@ -287,7 +287,7 @@ class Q_DECL_EXPORT GestureTrigger : public QObject, public Trigger
 public:
     GestureTrigger(ActionData *data, const StrokePoints &pointdata_P = StrokePoints());
 
-    virtual ~GestureTrigger();
+    ~GestureTrigger() override;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     Trigger *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
     const QString description() const Q_DECL_OVERRIDE;

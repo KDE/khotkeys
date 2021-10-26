@@ -24,7 +24,7 @@ public:
                         Condition_list *conditions_P = nullptr,
                         ActionList *actions_P = nullptr);
 
-    ~Generic_action_data();
+    ~Generic_action_data() override;
 
     /**
      * Visitor pattern

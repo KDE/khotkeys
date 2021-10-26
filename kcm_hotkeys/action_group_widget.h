@@ -28,7 +28,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ActionGroupWidget();
+    ~ActionGroupWidget() override;
 
     /**
      * The associated action.

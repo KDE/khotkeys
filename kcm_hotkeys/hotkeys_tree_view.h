@@ -32,7 +32,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~HotkeysTreeView();
+    ~HotkeysTreeView() override;
 
     /**
      * The user requested a context menu

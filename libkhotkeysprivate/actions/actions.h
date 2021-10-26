@@ -281,7 +281,7 @@ public:
 
     KeyboardInputAction(ActionData *data_P, const QString &input_P = QString(), Windowdef_list *dest_window_P = nullptr, bool active_window_P = true);
 
-    virtual ~KeyboardInputAction();
+    ~KeyboardInputAction() override;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     void execute() Q_DECL_OVERRIDE;
 
@@ -336,7 +336,7 @@ class Q_DECL_EXPORT ActivateWindowAction : public Action
 public:
     ActivateWindowAction(ActionData *data_P, const Windowdef_list *window = nullptr);
 
-    virtual ~ActivateWindowAction();
+    ~ActivateWindowAction() override;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     void execute() Q_DECL_OVERRIDE;
 

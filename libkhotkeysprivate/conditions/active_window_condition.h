@@ -30,7 +30,7 @@ class Q_DECL_EXPORT Active_window_condition : public QObject, public Condition
 public:
     Active_window_condition(Windowdef_list *window_P, Condition_list_base *parent_P = nullptr);
     Active_window_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
-    virtual ~Active_window_condition();
+    ~Active_window_condition() override;
     bool match() const Q_DECL_OVERRIDE;
     void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
     const Windowdef_list *window() const;

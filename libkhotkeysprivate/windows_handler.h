@@ -23,7 +23,7 @@ class Q_DECL_EXPORT WindowsHandler : public QObject
     Q_OBJECT
 public:
     WindowsHandler(bool enable_signals_P, QObject *parent_P);
-    virtual ~WindowsHandler();
+    ~WindowsHandler() override;
     QString get_window_class(WId id_P);
     QString get_window_role(WId id_P);
     WId active_window();

@@ -42,7 +42,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ActionDataBase();
+    ~ActionDataBase() override;
 
     /**
      * Visitor pattern

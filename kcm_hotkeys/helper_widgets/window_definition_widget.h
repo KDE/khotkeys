@@ -39,7 +39,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~WindowDefinitionWidget();
+    ~WindowDefinitionWidget() override;
 
     bool isChanged() const Q_DECL_OVERRIDE;
 
@@ -86,7 +86,7 @@ public:
         connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
     }
 
-    ~WindowDefinitionDialog()
+    ~WindowDefinitionDialog() override
     {
         def = nullptr;
     }

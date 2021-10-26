@@ -30,7 +30,7 @@ public:
     /**
      * Destructor
      */
-    ~GlobalSettingsWidget();
+    ~GlobalSettingsWidget() override;
 
     /**
      * Set the model we configure

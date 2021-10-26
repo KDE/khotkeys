@@ -90,7 +90,7 @@ class Q_DECL_EXPORT Gesture : public QObject, public QAbstractNativeEventFilter
     Q_OBJECT
 public:
     Gesture(bool enabled_P, QObject *parent_P);
-    virtual ~Gesture();
+    ~Gesture() override;
     void enable(bool enable_P);
     void set_mouse_button(unsigned int button_P);
     void set_timeout(int time_P);

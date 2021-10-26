@@ -29,7 +29,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~KHotkeysProxyModel();
+    ~KHotkeysProxyModel() override;
 
     /**
      * Returns true if the item in column @a column should be included in

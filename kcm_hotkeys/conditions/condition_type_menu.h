@@ -23,7 +23,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ConditionTypeMenu();
+    ~ConditionTypeMenu() override;
 
     enum ConditionType {
         ACTIVE_WINDOW,

@@ -28,7 +28,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~GestureWidget();
+    ~GestureWidget() override;
 
     void setPointData(const KHotKeys::StrokePoints &data, bool emitSignal);
     KHotKeys::StrokePoints pointData() const;

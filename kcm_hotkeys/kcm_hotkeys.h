@@ -38,7 +38,7 @@ public:
     /**
      * Destroy the module
      */
-    virtual ~KCMHotkeys();
+    ~KCMHotkeys() override;
 
     /**
      * Set all settings back to defaults.

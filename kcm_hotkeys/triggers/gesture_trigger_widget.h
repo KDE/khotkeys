@@ -31,7 +31,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~GestureTriggerWidget();
+    ~GestureTriggerWidget() override;
 
     KHotKeys::GestureTrigger *trigger() Q_DECL_OVERRIDE;
     const KHotKeys::GestureTrigger *trigger() const Q_DECL_OVERRIDE;

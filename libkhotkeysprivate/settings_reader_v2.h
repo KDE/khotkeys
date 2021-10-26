@@ -45,7 +45,7 @@ public:
                      KHotKeys::ActionState _stateStrategy = KHotKeys::Disabled,
                      const QString &importId = QString());
 
-    virtual ~SettingsReaderV2();
+    ~SettingsReaderV2() override;
 
     void read(const KConfigBase &config, KHotKeys::ActionDataGroup *parent);
 

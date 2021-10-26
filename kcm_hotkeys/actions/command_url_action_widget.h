@@ -26,7 +26,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~CommandUrlActionWidget();
+    ~CommandUrlActionWidget() override;
 
     KHotKeys::CommandUrlAction *action() Q_DECL_OVERRIDE;
     const KHotKeys::CommandUrlAction *action() const Q_DECL_OVERRIDE;

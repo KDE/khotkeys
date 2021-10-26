@@ -27,7 +27,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~HotkeysWidgetIFace();
+    ~HotkeysWidgetIFace() override;
 
     virtual bool isChanged() const = 0;
     void copyFromObject();

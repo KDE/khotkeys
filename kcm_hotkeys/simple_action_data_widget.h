@@ -45,7 +45,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~SimpleActionDataWidget();
+    ~SimpleActionDataWidget() override;
 
     bool isChanged() const Q_DECL_OVERRIDE;
 

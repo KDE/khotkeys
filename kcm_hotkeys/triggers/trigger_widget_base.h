@@ -26,7 +26,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~TriggerWidgetBase();
+    ~TriggerWidgetBase() override;
 
     virtual KHotKeys::Trigger *trigger()
     {

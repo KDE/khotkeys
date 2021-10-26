@@ -35,7 +35,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~ConditionsWidget();
+    ~ConditionsWidget() override;
 
     void copyFromObject();
     void copyToObject();

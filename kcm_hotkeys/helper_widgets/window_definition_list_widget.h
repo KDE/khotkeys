@@ -31,7 +31,7 @@ public:
     /**
      * Destructor
      */
-    virtual ~WindowDefinitionListWidget();
+    ~WindowDefinitionListWidget() override;
 
     void setWindowDefinitions(KHotKeys::Windowdef_list *windowdef_list);
 
@@ -87,7 +87,7 @@ public:
         connect(buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
     }
 
-    ~WindowDefinitionListDialog()
+    ~WindowDefinitionListDialog() override
     {
         def = nullptr;
     }

@@ -17,7 +17,7 @@ class WindowSelector : public QWidget, public QAbstractNativeEventFilter
 
 public:
     WindowSelector(QObject *receiver, const char *slot);
-    virtual ~WindowSelector();
+    ~WindowSelector() override;
     void select();
 
     virtual bool nativeEventFilter(const QByteArray &eventType, void *message, long *result) override;

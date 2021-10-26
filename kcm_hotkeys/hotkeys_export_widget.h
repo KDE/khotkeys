@@ -22,7 +22,7 @@ class KHotkeysExportWidget : public QWidget
 
 public:
     KHotkeysExportWidget(QWidget *parent);
-    virtual ~KHotkeysExportWidget();
+    ~KHotkeysExportWidget() override;
 
     // The layout
     Ui::KHotkeysExportWidget ui;
@@ -36,7 +36,7 @@ class KHotkeysExportDialog : public QDialog
 {
 public:
     KHotkeysExportDialog(QWidget *);
-    virtual ~KHotkeysExportDialog();
+    ~KHotkeysExportDialog() override;
 
     QString importId() const;
 
