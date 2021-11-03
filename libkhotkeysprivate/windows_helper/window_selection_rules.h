@@ -61,12 +61,12 @@ public:
     /**
      * Match against window @p window_P
      */
-    bool match(const Window_data &window_P) Q_DECL_OVERRIDE;
+    bool match(const Window_data &window_P) override;
 
     /**
      * Write to configuration file @p cfg_P
      */
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
 
     /**
      * The string to compare with the window title
@@ -122,14 +122,14 @@ public:
     /**
      * Create a copy
      */
-    Windowdef_simple *copy(/*ActionDataBase* data_P*/) const Q_DECL_OVERRIDE;
+    Windowdef_simple *copy(/*ActionDataBase* data_P*/) const override;
 
     /**
      * The description of this rule.
      *
      * @todo: Move to base class?
      */
-    const QString description() const Q_DECL_OVERRIDE;
+    const QString description() const override;
 
 protected:
     /**

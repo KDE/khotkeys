@@ -26,8 +26,8 @@ public:
      * Visitor pattern
      * @reimp
      */
-    void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
-    void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
+    void accept(ActionDataVisitor *visitor) override;
+    void accept(ActionDataConstVisitor *visitor) const override;
 };
 
 } // namespace KHotKeys

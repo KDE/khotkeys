@@ -30,17 +30,17 @@ public:
 
     void writeTo(KConfigBase &cfg);
 
-    void visitActionDataBase(const ActionDataBase *base) Q_DECL_OVERRIDE;
+    void visitActionDataBase(const ActionDataBase *base) override;
 
-    void visitActionData(const ActionData *group) Q_DECL_OVERRIDE;
+    void visitActionData(const ActionData *group) override;
 
-    void visitActionDataGroup(const ActionDataGroup *group) Q_DECL_OVERRIDE;
+    void visitActionDataGroup(const ActionDataGroup *group) override;
 
-    void visitGenericActionData(const Generic_action_data *data) Q_DECL_OVERRIDE;
+    void visitGenericActionData(const Generic_action_data *data) override;
 
-    void visitMenuentryShortcutActionData(const MenuEntryShortcutActionData *data) Q_DECL_OVERRIDE;
+    void visitMenuentryShortcutActionData(const MenuEntryShortcutActionData *data) override;
 
-    void visitSimpleActionData(const SimpleActionData *data) Q_DECL_OVERRIDE;
+    void visitSimpleActionData(const SimpleActionData *data) override;
 
 private:
     const Settings *_settings;

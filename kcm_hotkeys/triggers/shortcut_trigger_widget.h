@@ -33,10 +33,10 @@ public:
      */
     ~ShortcutTriggerWidget() override;
 
-    KHotKeys::ShortcutTrigger *trigger() Q_DECL_OVERRIDE;
-    const KHotKeys::ShortcutTrigger *trigger() const Q_DECL_OVERRIDE;
+    KHotKeys::ShortcutTrigger *trigger() override;
+    const KHotKeys::ShortcutTrigger *trigger() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 private Q_SLOTS:
 
@@ -45,8 +45,8 @@ private Q_SLOTS:
     void _k_globalShortcutChanged(QAction *action, const QKeySequence &seq);
 
 private:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::ShortcutTriggerWidget shortcut_trigger_ui;
 };

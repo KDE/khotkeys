@@ -57,27 +57,27 @@ public:
 
     KHotKeys::ActionList *readActionList(const KConfigGroup &config, KHotKeys::ActionData *parent);
 
-    void visitActionDataBase(KHotKeys::ActionDataBase *base) Q_DECL_OVERRIDE;
+    void visitActionDataBase(KHotKeys::ActionDataBase *base) override;
 
-    void visitActionData(KHotKeys::ActionData *group) Q_DECL_OVERRIDE;
+    void visitActionData(KHotKeys::ActionData *group) override;
 
-    void visitActionDataGroup(KHotKeys::ActionDataGroup *group) Q_DECL_OVERRIDE;
+    void visitActionDataGroup(KHotKeys::ActionDataGroup *group) override;
 
-    void visitGenericActionData(KHotKeys::Generic_action_data *data) Q_DECL_OVERRIDE;
+    void visitGenericActionData(KHotKeys::Generic_action_data *data) override;
 
-    void visitMenuentryShortcutActionData(KHotKeys::MenuEntryShortcutActionData *data) Q_DECL_OVERRIDE;
+    void visitMenuentryShortcutActionData(KHotKeys::MenuEntryShortcutActionData *data) override;
 
-    void visitSimpleActionData(KHotKeys::SimpleActionData *data) Q_DECL_OVERRIDE;
+    void visitSimpleActionData(KHotKeys::SimpleActionData *data) override;
 
-    void visit(KHotKeys::ActivateWindowAction &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::CommandUrlAction &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::DBusAction &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::KeyboardInputAction &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::MenuEntryAction &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::ActivateWindowAction &) override;
+    void visit(KHotKeys::CommandUrlAction &) override;
+    void visit(KHotKeys::DBusAction &) override;
+    void visit(KHotKeys::KeyboardInputAction &) override;
+    void visit(KHotKeys::MenuEntryAction &) override;
 
-    void visit(KHotKeys::GestureTrigger &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::ShortcutTrigger &) Q_DECL_OVERRIDE;
-    void visit(KHotKeys::WindowTrigger &) Q_DECL_OVERRIDE;
+    void visit(KHotKeys::GestureTrigger &) override;
+    void visit(KHotKeys::ShortcutTrigger &) override;
+    void visit(KHotKeys::WindowTrigger &) override;
 
 private:
     const KConfigGroup *_config;

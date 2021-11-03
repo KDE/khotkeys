@@ -31,18 +31,18 @@ public:
      */
     ~MenuentryActionWidget() override;
 
-    KHotKeys::MenuEntryAction *action() Q_DECL_OVERRIDE;
-    const KHotKeys::MenuEntryAction *action() const Q_DECL_OVERRIDE;
+    KHotKeys::MenuEntryAction *action() override;
+    const KHotKeys::MenuEntryAction *action() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 public Q_SLOTS:
 
     void selectApplicationClicked();
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     QString storage_id;
 

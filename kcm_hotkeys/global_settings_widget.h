@@ -39,11 +39,11 @@ public:
 
 private Q_SLOTS:
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
 private:
     KSharedConfigPtr _config;

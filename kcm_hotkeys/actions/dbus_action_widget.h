@@ -30,10 +30,10 @@ public:
      */
     ~DbusActionWidget() override;
 
-    KHotKeys::DBusAction *action() Q_DECL_OVERRIDE;
-    const KHotKeys::DBusAction *action() const Q_DECL_OVERRIDE;
+    KHotKeys::DBusAction *action() override;
+    const KHotKeys::DBusAction *action() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 public Q_SLOTS:
 
@@ -41,8 +41,8 @@ public Q_SLOTS:
     void execCommand() const;
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::DbusActionWidget ui;
 };

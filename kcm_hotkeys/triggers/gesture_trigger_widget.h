@@ -33,14 +33,14 @@ public:
      */
     ~GestureTriggerWidget() override;
 
-    KHotKeys::GestureTrigger *trigger() Q_DECL_OVERRIDE;
-    const KHotKeys::GestureTrigger *trigger() const Q_DECL_OVERRIDE;
+    KHotKeys::GestureTrigger *trigger() override;
+    const KHotKeys::GestureTrigger *trigger() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 private:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::GestureTriggerWidget ui;
 

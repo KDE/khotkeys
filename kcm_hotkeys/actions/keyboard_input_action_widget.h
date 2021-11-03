@@ -28,14 +28,14 @@ public:
      */
     ~KeyboardInputActionWidget() override;
 
-    KHotKeys::KeyboardInputAction *action() Q_DECL_OVERRIDE;
-    const KHotKeys::KeyboardInputAction *action() const Q_DECL_OVERRIDE;
+    KHotKeys::KeyboardInputAction *action() override;
+    const KHotKeys::KeyboardInputAction *action() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::KeyboardInputActionWidget ui;
 };

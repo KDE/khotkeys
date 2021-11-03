@@ -26,15 +26,15 @@ class Q_DECL_EXPORT Condition_list : public Condition_list_base
 public:
     Condition_list(const QString &comment_P, ActionDataBase *parent = nullptr);
     Condition_list(KConfigGroup &cfg_P, ActionDataBase *data_P);
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    Condition_list *copy() const Q_DECL_OVERRIDE;
-    bool match() const Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    Condition_list *copy() const override;
+    bool match() const override;
     const QString &comment() const;
     void set_data(ActionDataBase *data_P);
-    void updated() const Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    void updated() const override;
+    const QString description() const override;
 
-    void visit(ConditionsVisitor *visitor) Q_DECL_OVERRIDE;
+    void visit(ConditionsVisitor *visitor) override;
 
 private:
     QString _comment;

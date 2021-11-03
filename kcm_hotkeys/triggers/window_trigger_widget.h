@@ -32,18 +32,18 @@ public:
      */
     ~WindowTriggerWidget() override;
 
-    KHotKeys::WindowTrigger *trigger() Q_DECL_OVERRIDE;
-    const KHotKeys::WindowTrigger *trigger() const Q_DECL_OVERRIDE;
+    KHotKeys::WindowTrigger *trigger() override;
+    const KHotKeys::WindowTrigger *trigger() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 private Q_SLOTS:
 
     void slotWindowSelectionChanged(bool) const;
 
 private:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::WindowTriggerWidget window_trigger_ui;
 

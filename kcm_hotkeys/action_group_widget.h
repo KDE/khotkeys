@@ -44,13 +44,13 @@ public:
     }
 
     //! Are there uncommitted changes?
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
     void setActionData(KHotKeys::ActionDataGroup *group);
 
 private:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     //! Widget to change the conditions
     ConditionsWidget *_conditions;

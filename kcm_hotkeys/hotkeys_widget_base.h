@@ -31,7 +31,7 @@ public:
      */
     ~HotkeysWidgetBase() override;
 
-    void apply() Q_DECL_OVERRIDE;
+    void apply() override;
 
     /**
      * The associated action.
@@ -46,7 +46,7 @@ public:
         return _data;
     }
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
     using HotkeysWidgetIFace::changed;
 
@@ -65,8 +65,8 @@ protected:
 protected:
     void extend(QWidget *, const QString &);
 
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::HotkeysWidgetBase ui;
 

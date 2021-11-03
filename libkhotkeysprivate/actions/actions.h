@@ -147,24 +147,24 @@ class Q_DECL_EXPORT CommandUrlAction : public Action
 
 public:
     CommandUrlAction(ActionData *data_P, const QString &command_url_P = QString());
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    void execute() Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    void execute() override;
+    const QString description() const override;
 
     //! The command url to trigger
     void set_command_url(const QString &command_url);
     QString command_url() const;
 
-    ActionType type() Q_DECL_OVERRIDE
+    ActionType type() override
     {
         return CommandUrlActionType;
     }
-    Action *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
+    Action *copy(ActionData *data_P) const override;
 
     /**
      * Acyclic visitor pattern
      */
-    void accept(ActionVisitor &) Q_DECL_OVERRIDE;
+    void accept(ActionVisitor &) override;
 
 private:
     QString _command_url;
@@ -184,16 +184,16 @@ class Q_DECL_EXPORT MenuEntryAction : public CommandUrlAction
 
 public:
     MenuEntryAction(ActionData *data_P, const QString &menuentry_P = QString());
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    void execute() Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    void execute() override;
 
     // The service we trigger
     KService::Ptr service() const;
     void set_service(KService::Ptr);
 
-    const QString description() const Q_DECL_OVERRIDE;
-    Action *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
-    ActionType type() Q_DECL_OVERRIDE
+    const QString description() const override;
+    Action *copy(ActionData *data_P) const override;
+    ActionType type() override
     {
         return Action::MenuEntryActionType;
     }
@@ -201,7 +201,7 @@ public:
     /**
      * Acyclic visitor pattern
      */
-    void accept(ActionVisitor &) Q_DECL_OVERRIDE;
+    void accept(ActionVisitor &) override;
 
 private:
     KService::Ptr _service;
@@ -226,8 +226,8 @@ public:
                const QString &call_P = QString(),
                const QString &args_P = QString());
 
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    void execute() Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    void execute() override;
     const QString remote_application() const;
     const QString remote_object() const;
     const QString called_function() const;
@@ -238,9 +238,9 @@ public:
     void set_called_function(const QString &function);
     void set_arguments(const QString &args);
 
-    const QString description() const Q_DECL_OVERRIDE;
-    Action *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
-    ActionType type() Q_DECL_OVERRIDE
+    const QString description() const override;
+    Action *copy(ActionData *data_P) const override;
+    ActionType type() override
     {
         return DBusActionType;
     }
@@ -248,7 +248,7 @@ public:
     /**
      * Acyclic visitor pattern
      */
-    void accept(ActionVisitor &) Q_DECL_OVERRIDE;
+    void accept(ActionVisitor &) override;
 
 private:
     QString _application; // CHECKME QCString ?
@@ -282,8 +282,8 @@ public:
     KeyboardInputAction(ActionData *data_P, const QString &input_P = QString(), Windowdef_list *dest_window_P = nullptr, bool active_window_P = true);
 
     ~KeyboardInputAction() override;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    void execute() Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    void execute() override;
 
     const QString &input() const;
     void setInput(const QString &input);
@@ -301,9 +301,9 @@ public:
     void setDestinationWindowRules(Windowdef_list *list);
 
     bool activeWindow() const;
-    const QString description() const Q_DECL_OVERRIDE;
-    Action *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
-    ActionType type() Q_DECL_OVERRIDE
+    const QString description() const override;
+    Action *copy(ActionData *data_P) const override;
+    ActionType type() override
     {
         return KeyboardInputActionType;
     }
@@ -311,7 +311,7 @@ public:
     /**
      * Acyclic visitor pattern
      */
-    void accept(ActionVisitor &) Q_DECL_OVERRIDE;
+    void accept(ActionVisitor &) override;
 
 private:
     QString _input;
@@ -337,15 +337,15 @@ public:
     ActivateWindowAction(ActionData *data_P, const Windowdef_list *window = nullptr);
 
     ~ActivateWindowAction() override;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    void execute() Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    void execute() override;
 
     const Windowdef_list *window() const;
     void set_window_list(Windowdef_list *list);
 
-    const QString description() const Q_DECL_OVERRIDE;
-    Action *copy(ActionData *data_P) const Q_DECL_OVERRIDE;
-    ActionType type() Q_DECL_OVERRIDE
+    const QString description() const override;
+    Action *copy(ActionData *data_P) const override;
+    ActionType type() override
     {
         return ActivateWindowActionType;
     }
@@ -353,7 +353,7 @@ public:
     /**
      * Acyclic visitor pattern
      */
-    void accept(ActionVisitor &) Q_DECL_OVERRIDE;
+    void accept(ActionVisitor &) override;
 
 private:
     const Windowdef_list *_window;

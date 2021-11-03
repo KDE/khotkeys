@@ -40,12 +40,12 @@ public:
     Existing_window_condition(Windowdef_list *window_P, Condition_list_base *parent = nullptr);
     Existing_window_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
     ~Existing_window_condition() override;
-    bool match() const Q_DECL_OVERRIDE;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
+    bool match() const override;
+    void cfg_write(KConfigGroup &cfg_P) const override;
     const Windowdef_list *window() const;
     Windowdef_list *window();
-    Existing_window_condition *copy() const Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    Existing_window_condition *copy() const override;
+    const QString description() const override;
 public Q_SLOTS:
     void window_added(WId w_P);
     void window_removed(WId w_P);

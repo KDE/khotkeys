@@ -41,11 +41,11 @@ public:
      */
     ~WindowDefinitionWidget() override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
 private Q_SLOTS:
 
@@ -91,7 +91,7 @@ public:
         def = nullptr;
     }
 
-    void accept() Q_DECL_OVERRIDE
+    void accept() override
     {
         def->copyToObject();
         QDialog::accept();

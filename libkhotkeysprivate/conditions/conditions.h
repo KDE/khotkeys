@@ -24,12 +24,12 @@ class Q_DECL_EXPORT Not_condition : public Condition_list_base
 public:
     Not_condition(Condition_list_base *parent = nullptr);
     Not_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
-    bool match() const Q_DECL_OVERRIDE;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    Not_condition *copy() const Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    bool match() const override;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    Not_condition *copy() const override;
+    const QString description() const override;
     const Condition *condition() const;
-    bool accepts_children() const Q_DECL_OVERRIDE;
+    bool accepts_children() const override;
 };
 
 class Q_DECL_EXPORT And_condition : public Condition_list_base
@@ -39,10 +39,10 @@ class Q_DECL_EXPORT And_condition : public Condition_list_base
 public:
     And_condition(Condition_list_base *parent = nullptr);
     And_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
-    bool match() const Q_DECL_OVERRIDE;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    And_condition *copy() const Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    bool match() const override;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    And_condition *copy() const override;
+    const QString description() const override;
 };
 
 class Q_DECL_EXPORT Or_condition : public Condition_list_base
@@ -52,10 +52,10 @@ class Q_DECL_EXPORT Or_condition : public Condition_list_base
 public:
     Or_condition(Condition_list_base *parent = nullptr);
     Or_condition(KConfigGroup &cfg_P, Condition_list_base *parent_P);
-    bool match() const Q_DECL_OVERRIDE;
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
-    Or_condition *copy() const Q_DECL_OVERRIDE;
-    const QString description() const Q_DECL_OVERRIDE;
+    bool match() const override;
+    void cfg_write(KConfigGroup &cfg_P) const override;
+    Or_condition *copy() const override;
+    const QString description() const override;
 };
 
 } // namespace KHotKeys

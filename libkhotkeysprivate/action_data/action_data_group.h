@@ -55,10 +55,10 @@ public:
     /**
      * Visitor pattern
      */
-    void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
-    void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
+    void accept(ActionDataVisitor *visitor) override;
+    void accept(ActionDataConstVisitor *visitor) const override;
 
-    void update_triggers() Q_DECL_OVERRIDE;
+    void update_triggers() override;
 
     /**
      * What kind of actions are allowed for this group?
@@ -83,7 +83,7 @@ public:
     /**
      * @reimp
      */
-    void aboutToBeErased() Q_DECL_OVERRIDE;
+    void aboutToBeErased() override;
 
     /**
      * Is this a system group?
@@ -118,9 +118,9 @@ protected:
     //! System group type
     system_group_t _system_group; // e.g. menuedit entries, can't be deleted or renamed
 
-    void doEnable() Q_DECL_OVERRIDE;
+    void doEnable() override;
 
-    void doDisable() Q_DECL_OVERRIDE;
+    void doDisable() override;
 };
 
 } // namespace KHotKeys

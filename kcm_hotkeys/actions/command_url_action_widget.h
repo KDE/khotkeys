@@ -28,14 +28,14 @@ public:
      */
     ~CommandUrlActionWidget() override;
 
-    KHotKeys::CommandUrlAction *action() Q_DECL_OVERRIDE;
-    const KHotKeys::CommandUrlAction *action() const Q_DECL_OVERRIDE;
+    KHotKeys::CommandUrlAction *action() override;
+    const KHotKeys::CommandUrlAction *action() const override;
 
-    bool isChanged() const Q_DECL_OVERRIDE;
+    bool isChanged() const override;
 
 protected:
-    void doCopyFromObject() Q_DECL_OVERRIDE;
-    void doCopyToObject() Q_DECL_OVERRIDE;
+    void doCopyFromObject() override;
+    void doCopyToObject() override;
 
     Ui::CommandUrlActionWidget ui;
 };

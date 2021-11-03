@@ -35,17 +35,17 @@ public:
      * Visitor pattern
      * @reimp
      */
-    void accept(ActionDataVisitor *visitor) Q_DECL_OVERRIDE;
-    void accept(ActionDataConstVisitor *visitor) const Q_DECL_OVERRIDE;
+    void accept(ActionDataVisitor *visitor) override;
+    void accept(ActionDataConstVisitor *visitor) const override;
 
-    void update_triggers() Q_DECL_OVERRIDE;
+    void update_triggers() override;
 
     virtual void execute();
 
     /**
      * @reimp
      */
-    void aboutToBeErased() Q_DECL_OVERRIDE;
+    void aboutToBeErased() override;
 
     const Trigger_list *triggers() const;
     Trigger_list *triggers();
@@ -70,8 +70,8 @@ private:
     Trigger_list *_triggers;
     ActionList *_actions;
 
-    void doEnable() Q_DECL_OVERRIDE;
-    void doDisable() Q_DECL_OVERRIDE;
+    void doEnable() override;
+    void doDisable() override;
 };
 
 } // namespace KHotKeys

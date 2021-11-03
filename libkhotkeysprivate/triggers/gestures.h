@@ -99,7 +99,7 @@ public:
     void unregister_handler(QObject *receiver_P, const char *slot_P);
 
 protected:
-    bool nativeEventFilter(const QByteArray &eventType, void *message, long *) Q_DECL_OVERRIDE;
+    bool nativeEventFilter(const QByteArray &eventType, void *message, long *) override;
 
 private Q_SLOTS:
     void stroke_timeout();

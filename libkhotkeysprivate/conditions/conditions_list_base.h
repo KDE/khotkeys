@@ -32,7 +32,7 @@ public:
 
     ~Condition_list_base() override;
 
-    void cfg_write(KConfigGroup &cfg_P) const Q_DECL_OVERRIDE;
+    void cfg_write(KConfigGroup &cfg_P) const override;
     virtual bool accepts_children() const;
 
     typedef QList<Condition *>::iterator Iterator;
@@ -55,7 +55,7 @@ public:
 
     void clear();
 
-    void visit(ConditionsVisitor *visitor) Q_DECL_OVERRIDE;
+    void visit(ConditionsVisitor *visitor) override;
 
 protected:
     int removeAll(Condition *const &);

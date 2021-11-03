@@ -33,13 +33,13 @@ public:
     void setPointData(const KHotKeys::StrokePoints &data);
     KHotKeys::StrokePoints pointData() const;
 
-    QSize sizeHint() const Q_DECL_OVERRIDE
+    QSize sizeHint() const override
     {
         return QSize(30, 30);
     }
 
 protected:
-    void paintEvent(QPaintEvent *ev) Q_DECL_OVERRIDE;
+    void paintEvent(QPaintEvent *ev) override;
 
 private:
     KHotKeys::StrokePoints _data;

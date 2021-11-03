@@ -29,9 +29,9 @@ public:
 
     void build();
 
-    void visitConditionsListBase(KHotKeys::Condition_list_base *list) Q_DECL_OVERRIDE;
-    void visitConditionsList(KHotKeys::Condition_list *list) Q_DECL_OVERRIDE;
-    void visitCondition(KHotKeys::Condition *condition) Q_DECL_OVERRIDE;
+    void visitConditionsListBase(KHotKeys::Condition_list_base *list) override;
+    void visitConditionsList(KHotKeys::Condition_list *list) override;
+    void visitCondition(KHotKeys::Condition *condition) override;
 
     QMap<QTreeWidgetItem *, KHotKeys::Condition *> _items;
 

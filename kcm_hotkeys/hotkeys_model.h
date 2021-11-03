@@ -49,23 +49,23 @@ public:
      * \group Qt Model/View Framework methods
      */
     //@{
-    QModelIndex index(int, int, const QModelIndex &parent = QModelIndex()) const Q_DECL_OVERRIDE;
-    QModelIndex parent(const QModelIndex &index) const Q_DECL_OVERRIDE;
-    int rowCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
-    int columnCount(const QModelIndex &index) const Q_DECL_OVERRIDE;
-    QVariant headerData(int section, Qt::Orientation, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const Q_DECL_OVERRIDE;
-    bool setData(const QModelIndex &index, const QVariant &value, int role) Q_DECL_OVERRIDE;
-    Qt::ItemFlags flags(const QModelIndex &index) const Q_DECL_OVERRIDE;
+    QModelIndex index(int, int, const QModelIndex &parent = QModelIndex()) const override;
+    QModelIndex parent(const QModelIndex &index) const override;
+    int rowCount(const QModelIndex &index) const override;
+    int columnCount(const QModelIndex &index) const override;
+    QVariant headerData(int section, Qt::Orientation, int role = Qt::DisplayRole) const override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    bool setData(const QModelIndex &index, const QVariant &value, int role) override;
+    Qt::ItemFlags flags(const QModelIndex &index) const override;
     //@}
 
     /**
      * \group Drag and Drop Support
      */
     //@{
-    bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) Q_DECL_OVERRIDE;
-    QMimeData *mimeData(const QModelIndexList &indexes) const Q_DECL_OVERRIDE;
-    QStringList mimeTypes() const Q_DECL_OVERRIDE;
+    bool dropMimeData(const QMimeData *data, Qt::DropAction action, int row, int column, const QModelIndex &parent) override;
+    QMimeData *mimeData(const QModelIndexList &indexes) const override;
+    QStringList mimeTypes() const override;
     //@}
 
     /**
@@ -122,7 +122,7 @@ public:
     /**
      * Remove @a count rows starting with @a row under @a parent.
      */
-    bool removeRows(int row, int count, const QModelIndex &parent) Q_DECL_OVERRIDE;
+    bool removeRows(int row, int count, const QModelIndex &parent) override;
 
     /**
      * Save the settings to the file

@@ -43,17 +43,17 @@ public:
     /**
      * Set all settings back to defaults.
      */
-    void defaults() Q_DECL_OVERRIDE;
+    void defaults() override;
 
     /**
      * Load all settings.
      */
-    void load() Q_DECL_OVERRIDE;
+    void load() override;
 
     /**
      * Save the settings
      */
-    void save() Q_DECL_OVERRIDE;
+    void save() override;
 
 public Q_SLOTS:
 
