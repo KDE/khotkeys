@@ -726,12 +726,10 @@ gesture will be monitored and recognized by the system, in milliseconds.
 <varlistentry id="settings-gestures-mouse-button">
 <term><guilabel>Mouse button:</guilabel></term>
 <listitem><para>This specifies the mouse button to be used for mouse gestures.
-Usually, <userinput>1</userinput> is the &LMB;, <userinput>2</userinput> is the
-&RMB;, and <userinput>3</userinput> is the middle or wheel button.  If your
-mouse has more buttons, you can also use those instead.</para>
+If your mouse has more buttons, you can also use those instead.</para>
 
 <note>
-<para>Button 1 is unavailable, so mouse gestures do not interfere with the
+<para>Left button is unavailable, so mouse gestures do not interfere with the
 normal operation of your system.</para>
 </note>
 </listitem>

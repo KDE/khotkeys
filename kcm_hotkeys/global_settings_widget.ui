@@ -117,16 +117,47 @@
        </spacer>
       </item>
       <item row="1" column="1">
-       <widget class="QSpinBox" name="gestures_button">
-        <property name="minimum">
-         <number>2</number>
-        </property>
-        <property name="maximum">
-         <number>10</number>
-        </property>
-        <property name="value">
-         <number>2</number>
-        </property>
+       <widget class="QComboBox" name="gestures_button">
+        <item>
+         <property name="text">
+          <string>Middle button</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Right button</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Button 9</string>
+         </property>
+        </item>
        </widget>
       </item>
      </layout>
