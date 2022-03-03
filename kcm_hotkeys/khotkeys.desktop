@@ -8,6 +8,7 @@ X-DocPath=kcontrol/khotkeys/index.html
 
 X-KDE-System-Settings-Parent-Category=shortcuts
 x-KDE-Weight=60
+X-KDE-OnlyShowOnQtPlatforms=xcb;
 
 Name=Custom Shortcuts
 Name[ar]=اختصارات مخصّصة
