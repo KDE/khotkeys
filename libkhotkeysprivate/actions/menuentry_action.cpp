@@ -61,12 +61,12 @@ void MenuEntryAction::set_service(KService::Ptr service)
 void MenuEntryAction::execute()
 {
     if (!service()) {
-        KMessageBox::sorry(nullptr, i18n("No service configured."), i18n("Input Action: %1", data->comment()));
+        KMessageBox::error(nullptr, i18n("No service configured."), i18n("Input Action: %1", data->comment()));
         return;
     }
 
     if (!KRun::run(*service(), {}, nullptr)) {
-        KMessageBox::sorry(nullptr, i18n("Failed to start service '%1'.", service()->name()), i18n("Input Action: %1", data->comment()));
+        KMessageBox::error(nullptr, i18n("Failed to start service '%1'.", service()->name()), i18n("Input Action: %1", data->comment()));
         return;
     }
 }
