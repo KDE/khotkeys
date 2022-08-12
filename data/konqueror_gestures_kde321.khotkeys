@@ -429,6 +429,7 @@ Comment[zh_TW]=Konqueror
 Role=konqueror-mainwindow#1
 RoleType=0
 Title=file:/ - Konqueror
+Title[bg]=file:/ - Konqueror
 Title[ca]=fitxer:/ - Konqueror
 Title[ca@valencia]=fitxer:/ - Konqueror
 Title[cs]=file:/ - Konqueror
