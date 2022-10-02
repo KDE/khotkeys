@@ -431,6 +431,7 @@ Comment[zh_TW]=Konqueror
 Role=konqueror-mainwindow#1
 RoleType=0
 Title=file:/ - Konqueror
+Title[ar]=file:/ - كنكر
 Title[bg]=file:/ - Konqueror
 Title[ca]=fitxer:/ - Konqueror
 Title[ca@valencia]=fitxer:/ - Konqueror
@@ -808,6 +809,7 @@ ConditionsCount=0
 
 [Data_1_10Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -885,6 +887,7 @@ Type=GESTURE
 
 [Data_1_11]
 Comment=Going up in URL/directory structure.\nMozilla-style: Press, move up, move left, move up, release.
+Comment[ar]=انتقل إلى الأعلى في بنية المجلد أو الرابط.\nأسلوب موزيلا: اضغط, تحرك إلى الأعلى, تحرك إلى اليسار, أفلت.
 Comment[bg]=Едно ниво нагоре в URL или папка..\nСтил на Мозила: натискане, движение нагоре, движение наляво, движение нагоре, пускане.
 Comment[bs]=Pomeranje nagore u strukturi URL‑a ili fascikle.\nU stilu Mozile: pritisni, gore, lijevo, gore, otpusti.
 Comment[ca]=Anar cap amunt per l'URL/estructura de directoris.\nEstil Mozilla: premeu, moveu amunt, moveu a l'esquerra, moveu amunt, deixeu anar.
@@ -1056,6 +1059,7 @@ ConditionsCount=0
 
 [Data_1_11Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -1133,6 +1137,7 @@ Type=GESTURE
 
 [Data_1_12]
 Comment=Going up in URL/directory structure.\nOpera-style: Press, move up, move left, move up, release.\nNOTE: Conflicts with  "Activate Previous Tab", and as such is disabled by default.
+Comment[ar]=انتقل إلى الأعلى في بنية المجلد أو الرابط.\nأسلوب أوبرا: اضغط, تحرك إلى الأعلى, تحرك إلى اليسار, أفلت.\nلاحظ تتعارض مع تفعيل اللسان السابق, لذا فهذا الإيماء معطل مبدئياً.
 Comment[bg]=Едно ниво нагоре.\nСтил на Opera: натискане, движение нагоре, движение наляво, движение нагоре, пускане.\nЗАБЕЛЕЖКА:Има конфликт с "Активиране на предишен подпрозорец" и затова е изключено по подразбиране.
 Comment[bs]=Pomeranje nagore u strukturi URL‑a ili fascikle.\nU stilu Opere: pritisni, gore, lijevo, gore, otpusti.\nNapomena: U sukobu sa „Aktiviraj prethodni jezičak“, pa zato podrazumijevano isključeno.
 Comment[ca]=Anar cap amunt per l'URL/estructura de directoris.\nEstil Opera: premeu, moveu amunt, moveu a l'esquerra, moveu amunt, deixeu anar.\nNota: els conflictes amb «Pestanya nova», i similars s'han desactivat per omissió.
@@ -1290,6 +1295,7 @@ ConditionsCount=0
 
 [Data_1_12Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -1543,6 +1549,7 @@ ConditionsCount=0
 
 [Data_1_13Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -1795,6 +1802,7 @@ ConditionsCount=0
 
 [Data_1_14Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -1884,6 +1892,7 @@ ConditionsCount=0
 
 [Data_1_1Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -2133,6 +2142,7 @@ ConditionsCount=0
 
 [Data_1_2Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -2382,6 +2392,7 @@ ConditionsCount=0
 
 [Data_1_3Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -2638,6 +2649,7 @@ ConditionsCount=0
 
 [Data_1_4Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -2893,6 +2905,7 @@ ConditionsCount=0
 
 [Data_1_5Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -3145,6 +3158,7 @@ ConditionsCount=0
 
 [Data_1_6Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -3396,6 +3410,7 @@ ConditionsCount=0
 
 [Data_1_7Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -3654,6 +3669,7 @@ ConditionsCount=0
 
 [Data_1_8Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
@@ -3909,6 +3925,7 @@ ConditionsCount=0
 
 [Data_1_9Triggers]
 Comment=Gesture_triggers
+Comment[ar]=مطلقات_الإيماءات
 Comment[bg]=Жестове
 Comment[bs]=Okidači_gesta
 Comment[ca]=Activadors dels gestos
