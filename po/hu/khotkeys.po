@@ -1,0 +1,965 @@
+#
+# Tamas Szanto <tszanto@interware.hu>, 2000.
+# Laszlo Papp <djszapi@archlinux.us>, 2010.
+# Kiszel Kristóf <ulysses@kubuntu.org>, 2010, 2017.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2011, 2019, 2020.
+# Balázs Úr <urbalazs@gmail.com>, 2012.
+# Kristof Kiszel <ulysses@fsf.hu>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.2\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2021-12-31 15:34+0100\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.12.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kiszel Kristóf,Szántó Tamás"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ulysses@fsf.hu,tszanto@interware.hu"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "Feltételek"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, kde-format
+msgid "Command/URL:"
+msgstr "Parancs/URL:"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, kde-format
+msgid "Remote application:"
+msgstr "Távoli alkalmazás:"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, kde-format
+msgid "Remote object:"
+msgstr "Távoli objektum:"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, kde-format
+msgid "Function:"
+msgstr "Függvény:"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "Argumentumok:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr "Függvényhívás"
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr "D-Bus-böngésző indítása"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "Ablak"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, kde-format
+msgid "Active window"
+msgstr "Aktív ablak:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, kde-format
+msgid "Specific window"
+msgstr "Specifikus ablak"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, kde-format
+msgid "Action window"
+msgstr "Művelet ablak"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, kde-format
+msgid "Application:"
+msgstr "&Alkalmazás:"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, kde-format
+msgid "Select Application ..."
+msgstr "Alkalmazás..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, kde-format
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "Aktív ablak: ..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, kde-format
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "Létező ablak ..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, kde-format
+msgctxt "Condition type"
+msgid "And"
+msgstr "És"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, kde-format
+msgctxt "Condition type"
+msgid "Or"
+msgstr "Vagy"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, kde-format
+msgctxt "Condition type"
+msgid "Not"
+msgstr "Nem"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, kde-format
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "És"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr "1"
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, kde-format
+msgctxt "new condition"
+msgid "New"
+msgstr "Új"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, kde-format
+msgid "Edit..."
+msgstr "Szerkesztés..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, kde-format
+msgid "Delete"
+msgstr "Törlés"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr "Beviteli művelet démon"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr "A beviteli művelet démon elindítása bejelentkezéskor"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "Gesztusok"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr "Időtúllépés:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, kde-format
+msgid "Mouse button:"
+msgstr "Egér gomb:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, kde-format
+msgid "Middle button"
+msgstr "Középső gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr "Jobb gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr "4. gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr "5. gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr "6. gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr "7. gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr "8. gomb"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr "9. gomb"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, kde-format
+msgid "Edit Gesture"
+msgstr "Gesztus szerkesztése"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+"Rajzolja meg azt a gesztust, amelyet lent rögzíteni szeretne. Rajzolás "
+"közben nyomja le és tartsa nyomva az egér bal gombját és akkor engedje el, "
+"amikor végzett."
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, kde-format
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, kde-format
+msgid "Comment:"
+msgstr "Megjegyzés:"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, kde-format
+msgid "&Edit..."
+msgstr "&Szerkesztés..."
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, kde-format
+msgid "&New..."
+msgstr "&Új..."
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr "&Duplikálás..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, kde-format
+msgid "&Delete"
+msgstr "&Törlés..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, kde-format
+msgid "Window Data"
+msgstr "Ablak adat"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, kde-format
+msgid "Window title:"
+msgstr "Ablak cím:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, kde-format
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "Nem fontos"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "Tartalmazza"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "Van"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "Reguláris kifejezések egyezése"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "Nem tartalmazza"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "Nem"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "A reguláris kifejezések nem egyeznek"
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, kde-format
+msgid "Window class:"
+msgstr "Ablak osztály:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, kde-format
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "Nem fontos"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, kde-format
+msgid "Window role:"
+msgstr "Ablak szabály:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, kde-format
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "Nem fontos"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&Automatikus detektálás"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "Ablak típus:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "Normális"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "Asztal"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "Párbeszéd ablak"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "Dokk"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, kde-format
+msgid "Test"
+msgstr "Próba"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, kde-format
+msgid "New Group"
+msgstr "Új csoport"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, kde-format
+msgid "Export Group..."
+msgstr "Csoport exportálása..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, kde-format
+msgid "Import..."
+msgstr "Importálás..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, kde-format
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "Új"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, kde-format
+msgid "Global Shortcut"
+msgstr "Globális gyorsbillentyű"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, kde-format
+msgid "Window Action"
+msgstr "Ablak művelet"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, kde-format
+msgid "Mouse Gesture Action"
+msgstr "Egér gesztus művelet"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, kde-format
+msgid "Command/URL"
+msgstr "Parancs/URL"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, kde-format
+msgid "D-Bus Command"
+msgstr "D-Bus-parancs"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, kde-format
+msgid "K-Menu Entry"
+msgstr "KDE-s menübejegyzés"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, kde-format
+msgid "Send Keyboard Input"
+msgstr "Billentyűleütések küldése "
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, kde-format
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "Új művelet"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, kde-format
+msgid "Export Group"
+msgstr "Csoport exportálása"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr "A műveletek export helyzetének megváltoztatása."
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, kde-format
+msgid "Export Actions"
+msgstr "Export Műveletek"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Konfigurálás, hogy melyik "
+"a műveleteket melyik állapotba kellene exportálni..</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Aktuális állapot</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A műveletek jelenlegi "
+"állapotukba exportálja.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Tiltva</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Engedélyezve</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">A műveletek exportolása "
+"egy engedélyezett állapotba.</p></body></html>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr "Aktuális helyzet"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, kde-format
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, kde-format
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "Tiltva"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr "KHotkeys fájl azonosító."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+"A khotkeys fájl azonosító arra használható, hogy biztosítsa, hogy a fájlok "
+"ne legyenek egynél többször importálva. Legtöbbször automatikus "
+"frissítésekhez használják a KDE fejlesztőitől."
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr "Id"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr "Import id beállítása a fájlra, vagy üresen hagyása"
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr "Fájlnév"
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr "Mergelés engedélyezése"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr "Létező könyvtárakba mergelés importkor?"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+"A tartalom egyesítésének lehetővé tétele, ha importáláskor létezik hasonló "
+"nevű könyvtár. Ha az egyesítés nem engedélyezett, két könyvtár lesz "
+"ugyanazzal a névvel."
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr "Név"
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, kde-format
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr "Típus"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr "KDE billentyűparancs-beállító modul"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr "(c) Michael Jansen, 2008."
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr "Michael Jansen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "Karbantartó"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"A jelenlegi művelet beállításai nincsenek elmentve.\n"
+"Alkalmazza a változtatásokat, vagy eldobja azokat?"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr "A módosítások mentése"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+"Nem sikerült elérni a KHotKeys szolgáltatást. A módosításokat sikerült "
+"elmenteni, de aktiválni nem sikerült őket."
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, kde-format
+msgid "Settings"
+msgstr "Beállítások"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, kde-format
+msgid "Trigger"
+msgstr "Eseménykezelők"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, kde-format
+msgid "Action"
+msgstr "Művelet"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, kde-format
+msgid "&Shortcut:"
+msgstr "Billentyű&parancs:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "Előidézés, mikor"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, kde-format
+msgid "Window appears"
+msgstr "Ablak megjelenés"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, kde-format
+msgid "Window disappears"
+msgstr "Ablak eltűnés"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, kde-format
+msgid "Window gets focus"
+msgstr "Ablakra fókuszálás"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, kde-format
+msgid "Window loses focus"
+msgstr "Az ablak elvesztette a fókuszt"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, kde-format
+msgid "Activate window: "
+msgstr "Ablak aktiválása: "
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, kde-format
+msgid "Command/URL : "
+msgstr "Parancs/URL: "
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, kde-format
+msgid "D-Bus: "
+msgstr "D-Bus: "
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, kde-format
+msgid "Keyboard input: "
+msgstr "Billentyűleütések: "
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr "Nincs beállítva szolgáltatás."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr "Beviteli művelet: %1"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr "Nem sikerült elindítani ezt a szolgáltatást: \"%1\"."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, kde-format
+msgid "Menu entry: "
+msgstr "Menübejegyzés: "
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "Aktív ablak: "
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "ÉS"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, kde-format
+msgid "Existing window: "
+msgstr "Létező ablak: "
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "NEM"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "VAGY"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "Menübejegyzések"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr ""
+"Ezt a műveletfájlt egyszer már beimportálta. Biztos benne, hogy még egyszer "
+"importálni kell?"
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+"Ennek a műveletfájlnak nincs ImportId mezője, ezért nem lehet megállapítani, "
+"hogy korábban be lett-e már importálva. Biztosan importálni szeretné a fájlt?"
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr "Egyéni gyorsbillentyűk szolgáltatás"
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, kde-format
+msgid "Gesture trigger"
+msgstr "Gesztus előidéző"
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, kde-format
+msgid "Shortcut trigger: "
+msgstr "Billentyűparancs-kezelő: "
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, kde-format
+msgid "Window trigger: "
+msgstr "Ablakesemény-kezelő: "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, kde-format
+msgid "Window simple: "
+msgstr "Egyszerű ablak: "
+
+#~ msgid "Voice trigger: "
+#~ msgstr "Hanglejátszás: "
+
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "Nem sikerült futtatni a qdbusviewer nevű programot"
+
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "KHotKeys szolgáltatás"
+
+#~ msgid "General"
+#~ msgstr "Általános"
+
+#~ msgid "Add comment here"
+#~ msgstr "Megjegyzés hozzáadása"
+
+#~ msgid "&Enabled"
+#~ msgstr "&Bekapcsolva"
+
+#~ msgid "Parent group is disabled"
+#~ msgstr "A szülőcsoport le van tiltva"
+
+#~ msgid "Started server <em>org.kde.khotkeys</em>."
+#~ msgstr "Elindult az <em>org.kde.khotkeys</em> szolgáltatás."
+
+#~ msgid "Unable to start server <em>org.kde.khotkeys</em>."
+#~ msgstr "Nem sikerült elindítani az <em>org.kde.khotkeys</em> szolgáltatást."
+
+#~ msgid ""
+#~ "Unable to start service <em>org.kde.khotkeys</em>.<br /><br /><i>Error: "
+#~ "%1</i>"
+#~ msgstr ""
+#~ "Nem sikerült elindítani az <em>org.kde.khotkeys</em> szolgáltatást.<br /"
+#~ "><br /><i>Hiba történt: %1</i>"
+
+#~ msgid "KHotKeys Update"
+#~ msgstr "KHotKeys frissítés"
+
+#~ msgid "KHotKeys update utility"
+#~ msgstr "KHotKeys frissítőprogram"
+
+#~ msgid "Id of the script to add to %1"
+#~ msgstr "A hozzáadandó szkript azonosítója (modul: %1)"
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "Ezeket a bejegyzéseket a menüszerkesztővel hozták létre."

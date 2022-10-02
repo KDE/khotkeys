@@ -1,0 +1,1317 @@
+# Finnish messages for khotkeys.
+# Copyright © 2003, 2005, 2006, 2008, 2010, 2011, 2012 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kde-workspace package.
+# Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2008.
+# Ilpo Kantonen <ilpo@iki.fi>, 2005.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 2006.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2011, 2012, 2013, 2014.
+# Tommi Nieminen <translator@legisign.org>, 2017, 2018, 2020, 2022.
+#
+# KDE Finnish translation sprint participants:
+# Author: Lliehu
+msgid ""
+msgstr ""
+"Project-Id-Version: khotkeys\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2022-01-11 22:53+0200\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:22:26+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+"Teemu Rytilahti, Ilpo Kantonen, Kim Enkovaara, Jorma Karvonen, Tommi Nieminen"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+"teemu.rytilahti@kde-fi.org, ilpo@iki.fi, kim.enkovaara@iki.fi, karvonen."
+"jorma@gmail.com, translator@legisign.org"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "Ehdot"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, kde-format
+msgid "Command/URL:"
+msgstr "Komento/verkko-osoite:"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, kde-format
+msgid "Remote application:"
+msgstr "Etäsovellus:"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, kde-format
+msgid "Remote object:"
+msgstr "Etäobjekti:"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, kde-format
+msgid "Function:"
+msgstr "Toiminto:"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "Argumentit:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr "Kutsu"
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr "Käynnistä D-Bus-selain"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "Ikkuna"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, kde-format
+msgid "Active window"
+msgstr "Aktiivinen ikkuna"
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, kde-format
+msgid "Specific window"
+msgstr "Tietty ikkuna"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, kde-format
+msgid "Action window"
+msgstr "Toimintoikkuna"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, kde-format
+msgid "Application:"
+msgstr "Sovellus:"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, kde-format
+msgid "Select Application ..."
+msgstr "Valitse sovellus …"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, kde-format
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "Aktiivinen ikkuna …"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, kde-format
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "Olemassa oleva ikkuna …"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, kde-format
+msgctxt "Condition type"
+msgid "And"
+msgstr "Ja"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, kde-format
+msgctxt "Condition type"
+msgid "Or"
+msgstr "Tai"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, kde-format
+msgctxt "Condition type"
+msgid "Not"
+msgstr "Ei"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, kde-format
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "Ja"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr "1"
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, kde-format
+msgctxt "new condition"
+msgid "New"
+msgstr "Uusi"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, kde-format
+msgid "Edit..."
+msgstr "Muokkaa…"
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, kde-format
+msgid "Delete"
+msgstr "Poista"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr "Syöttötoimintojen taustaprosessi"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr "Käynnistä syöttötoimintojen taustaprosessi kirjautumisen yhteydessä"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "Hiirieleet"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr "Aikakatkaisu:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, kde-format
+msgid "Mouse button:"
+msgstr "Hiiren painike:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, kde-format
+msgid "Middle button"
+msgstr "Keskipainike"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr "Oikea painike"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr "Painike 4"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr "Painike 5"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr "Painike 6"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr "Painike 7"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr "Painike 8"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr "Painike 9"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, kde-format
+msgid "Edit Gesture"
+msgstr "Muokkaa hiirieleitä"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+"Piirrä alla ne hiirieleet, jotka haluat tallentaa. Paina ja pidä hiiren "
+"vasen painike piirtämisen aikana ja vapauta se kun lopetat."
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, kde-format
+msgid "Edit"
+msgstr "Muokkaa"
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, kde-format
+msgid "Comment:"
+msgstr "Kommentti:"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, kde-format
+msgid "&Edit..."
+msgstr "&Muokkaa…"
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, kde-format
+msgid "&New..."
+msgstr "&Uusi…"
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr "&Monista…"
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, kde-format
+msgid "&Delete"
+msgstr "P&oista"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, kde-format
+msgid "Window Data"
+msgstr "Ikkunatiedot"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, kde-format
+msgid "Window title:"
+msgstr "Ikkunan otsikko:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, kde-format
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "Ei ole tärkeä"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "Sisältää"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "On"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "Täsmää säännölliseen lausekkeeseen"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "Ei sisällä"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "Ei ole"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "Ei täsmää säännölliseen lausekkeeseen"
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, kde-format
+msgid "Window class:"
+msgstr "Ikkunaluokka:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, kde-format
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "Ei ole tärkeä"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, kde-format
+msgid "Window role:"
+msgstr "Ikkunan rooli:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, kde-format
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "Ei ole tärkeä"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&Tunnista automaattisesti"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "Ikkunatyypit"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "Normaali"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "Työpöytä"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "Valintaikkuna"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "Ankkuroitu"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, kde-format
+msgid "Test"
+msgstr "Testi"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, kde-format
+msgid "New Group"
+msgstr "Uusi ryhmä"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, kde-format
+msgid "Export Group..."
+msgstr "Vie ryhmä…"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, kde-format
+msgid "Import..."
+msgstr "Tuo…"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, kde-format
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "Uusi"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, kde-format
+msgid "Global Shortcut"
+msgstr "Työpöydänlaajuinen pikanäppäin"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, kde-format
+msgid "Window Action"
+msgstr "Uusi toiminto"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, kde-format
+msgid "Mouse Gesture Action"
+msgstr "Hiirieletoiminto"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, kde-format
+msgid "Command/URL"
+msgstr "Komento/verkko-osoite"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, kde-format
+msgid "D-Bus Command"
+msgstr "D-Bus-komento"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, kde-format
+msgid "K-Menu Entry"
+msgstr "K-valikon tietue"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, kde-format
+msgid "Send Keyboard Input"
+msgstr "Lähetä näppäimistösyöte"
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, kde-format
+msgid "Comment"
+msgstr "Kommentti"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "Uusi toiminto"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, kde-format
+msgid "Export Group"
+msgstr "Vie ryhmä"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr "Vaihda toimintojen vientitila."
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, kde-format
+msgid "Export Actions"
+msgstr "Vientitoiminnot"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Muokkaa, missä tilassa "
+"toiminnot pitäisi viedä.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Todellinen tila</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Vie toiminnot niiden "
+"nykyisessä tilassa.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Pois käytöstä</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Vie toiminnot tilassa, "
+"jossa ne ovat pois käytöstä.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Käytössä</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Vie toiminnot tilassa, "
+"jossa ne ovat käytössä.</p></body></html>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr "Todellinen tila"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, kde-format
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "Käytössä"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, kde-format
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "Poissa käytöstä"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr "KHotkeys-tiedoston tunniste."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+"Khotkeys-tiedostotunnistetta käytetään varmistamaan, että tiedostot tuodaan "
+"vain kerran. Niitä käytetään enimmäkseen automaattisiin päivityksiin KDE-"
+"kehittäjiltä."
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr "Tunniste"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr "Aseta tuontitunniste tiedostolle tai jätä tyhjäksi"
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr "Salli yhdistäminen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr "Yhdistetäänkö tuonti olemassa olevaan hakemistoon?"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+"Salli sisällön yhdistäminen, jos tuonnin yhteydessä on jo olemassa saman "
+"niminen hakemisto. Ellei yhdistämistä sallita, syntyy kaksi saman nimistä "
+"hakemistoa."
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr "Nimi"
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, kde-format
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr "Tyyppi"
+
+# pmap: =/elat=KDE Hotkeys-asetusosiosta/
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr "KDE:n Hotkeys-asetusosio"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr "Tekijänoikeudet 2008 © Michael Jansen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr "Michael Jansen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "Ylläpitäjä"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Toimintoa on muutettu tallentamatta.\n"
+"Haluatko ottaa muutokset käyttöön vai hylätä ne?"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr "Tallenna muutokset"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+"khotkeys-palveluun ei saada yhteyttä. Muutokset tallennetaan, mutta niitä ei "
+"voitu aktivoida."
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, kde-format
+msgid "Settings"
+msgstr "Asetukset"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, kde-format
+msgid "Trigger"
+msgstr "Laukaisin"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, kde-format
+msgid "Action"
+msgstr "Toiminto"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, kde-format
+msgid "&Shortcut:"
+msgstr "Pika&näppäin:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "Laukaise, kun"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, kde-format
+msgid "Window appears"
+msgstr "ikkuna ilmestyy"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, kde-format
+msgid "Window disappears"
+msgstr "ikkuna katoaa"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, kde-format
+msgid "Window gets focus"
+msgstr "ikkuna saa kohdistuksen"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, kde-format
+msgid "Window loses focus"
+msgstr "ikkuna menettää kohdistuksen"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, kde-format
+msgid "Activate window: "
+msgstr "Aktivoi ikkuna: "
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, kde-format
+msgid "Command/URL : "
+msgstr "Komento/verkko-osoite: "
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, kde-format
+msgid "D-Bus: "
+msgstr "D-Bus: "
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, kde-format
+msgid "Keyboard input: "
+msgstr "Näppäimistösyöte: "
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr "Palvelua ei ole asetettu."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr "Syötetoiminto: %1"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr "Palvelun ”%1” käynnistäminen epäonnistui."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, kde-format
+msgid "Menu entry: "
+msgstr "Valikkotietue: "
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "Aktiivinen ikkuna: "
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "Ja"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, kde-format
+msgid "Existing window: "
+msgstr "Olemassa oleva ikkuna: "
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "Ei"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "Tai"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "Valikkomuokkaimen tietueet"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr ""
+"Tämä ”toiminnot” -tiedosto on tuotu jo aiemmin. Haluatko varmasti tuoda sen "
+"uudelleen?"
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+"Tässä ”toiminnot” -tiedostossa ei ole ImportId-tuontitunnistekenttiä ja "
+"siksi ei tiedetä, onko sitä tuotu aiemmin vai ei. Haluatko varmasti tuoda "
+"sen?"
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr "Mukautettu pikanäppäinpalvelu"
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, kde-format
+msgid "Gesture trigger"
+msgstr "Hiirielelaukaisin"
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, kde-format
+msgid "Shortcut trigger: "
+msgstr "Pikanäppäinlaukaisin: "
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, kde-format
+msgid "Window trigger: "
+msgstr "Ikkunalaukaisin: "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, kde-format
+msgid "Window simple: "
+msgstr "Yksinkertainen ikkuna: "
+
+#~ msgid "Voice trigger: "
+#~ msgstr "Puhelaukaisin: "
+
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "Ohjelman qdbusviewer suorittaminen epäonnistui"
+
+#~ msgid "Form"
+#~ msgstr "Muoto"
+
+#~ msgid "&Edit"
+#~ msgstr "&Muokkaa..."
+
+#~ msgid "Active Window"
+#~ msgstr "Aktiivinen ikkuna"
+
+#~ msgid "KHotKeys Update Helper"
+#~ msgstr "KHotKeys-päivitysopastaja"
+
+#~ msgid "(C) 2003-2009 Lubos Lunak"
+#~ msgstr "© 2003-2009 Lubos Lunak"
+
+#~ msgid "Id of the script to add to %1"
+#~ msgstr "Kohteeseen %1 lisättävän skriptin tunniste"
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "Nämä tietueet luotiin käyttämällä valikkomuokkainta."
+
+#~ msgid "Enable Gestures"
+#~ msgstr "Ota käyttöön hiirieleet"
+
+#~ msgid "KHotKeys update utility"
+#~ msgstr "KHotKeys-päivitystyökalu"
+
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "KHotKeys-taustaprosessi"
+
+#~ msgid "Menu"
+#~ msgstr "Valikko"
+
+#~ msgid "&Enabled"
+#~ msgstr "&Käytössä"
+
+#~ msgid "Parent group is disabled"
+#~ msgstr "Yläryhmä on poissa käytöstä"
+
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#~ msgid "KDE Hotkeys:"
+#~ msgstr "KDE HotKeys:"
+
+#~ msgid "&Modify..."
+#~ msgstr "&Muokkaa..."
+
+#~ msgid "&Copy"
+#~ msgstr "&Kopioi"
+
+#~ msgid "&New Action"
+#~ msgstr "&Uusi toiminto"
+
+#~ msgid "Global &Settings"
+#~ msgstr "Yle&iset asetukset"
+
+#~ msgid "Command/URL to execute:"
+#~ msgstr "Suoritettava komento/verkko-osoite:"
+
+#~ msgid "Window activates"
+#~ msgstr "Ikkuna aktivoidaan"
+
+#~ msgid "Window deactivates"
+#~ msgstr "Ikkuna deaktivoituu"
+
+#~ msgid "Menu entry to execute:"
+#~ msgstr "Suoritettava valikkotietue:"
+
+#~ msgid "&Browse..."
+#~ msgstr "&Selaa..."
+
+#~ msgid "&Play"
+#~ msgstr "&Soita"
+
+#~ msgid "&Record"
+#~ msgstr "&Äänitä"
+
+#~ msgid "&Stop"
+#~ msgstr "&Pysäytä"
+
+#~ msgid "Gestures:"
+#~ msgstr "Hiirieleet:"
+
+#~ msgid "Action group &name:"
+#~ msgstr "Toimintory&hmän nimi:"
+
+#~ msgid "&Disable:"
+#~ msgstr "&Poista käytöstä:"
+
+#~ msgid "Info_tab_ui"
+#~ msgstr "Info_tab_ui"
+
+#~ msgid ""
+#~ "<p>This module allows configuration of input actions, such as mouse "
+#~ "gestures, keyboard shortcuts for performing commands, launching "
+#~ "applications or D-Bus calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "when modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>Tässä moduulissa voit muokata syötetoimintoja, kuten hiirieleitä tai "
+#~ "näppäinyhdistelmiä toimintojen suorittamiseen, sovellusten "
+#~ "käynnistämiseen tai D-Bus-kutsujen suorittamiseen ja sekä muuhun "
+#~ "vastaavaan.</p>\n"
+#~ "<p><b>Huomautus:</b>Jos et ole kokenut käyttäjä, sinun kannattaa olla "
+#~ "varovainen näitä toimintoja muokattaessa, ja rajoittaa muutokset "
+#~ "pääasiassa toimintojen pois- ja käyttöönottamiseen, ja laukaisijoiden "
+#~ "muuttamisiin.</p>"
+
+#~ msgid "Disable mouse gestures globally"
+#~ msgstr "Poista hiirieleet käytöstä yleisesti"
+
+#~ msgid "Gesture timeout (ms):"
+#~ msgstr "Hiirieleen aikakatkaisu (ms):"
+
+#~ msgid "Disable KHotKeys daemon"
+#~ msgstr "Poista KHotKeys-taustaprosessi käytöstä"
+
+#~ msgid "Keyboard_input_widget_ui"
+#~ msgstr "Keyboard_input_widget_ui"
+
+#~ msgid "Keyboard input:"
+#~ msgstr "Näppäimistösyöte:"
+
+#~ msgid "Modify..."
+#~ msgstr "Muokkaa..."
+
+#~ msgid "Send Input To"
+#~ msgstr "Lähetä suote kohteeseen"
+
+#~ msgid ""
+#~ "Specify the window where the keyboard input should be sent to:<ul>\n"
+#~ "<li><em>Action window:</em> The window where the triggering action "
+#~ "happened; this is usually the currently active window, except for mouse "
+#~ "gesture triggers - where it is the window under mouse - and window "
+#~ "triggers -where it is the window triggering the action.</li>\n"
+#~ "<li><em>Active window:</em> The currently active window.</li>\n"
+#~ "<li><em>Specific window:</em> Any window matching the given criteria.</"
+#~ "li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "Määrittele ikkuna, jonne näppäimistön näppäilyt lähetetään:<ul>\n"
+#~ "<li><em>Toimintoikkuna:</em> Ikkuna, jossa liipaistut toiminnot "
+#~ "tapahtuvat. Tämä on tavallisesti aktiivinen ikkuna, paitsi "
+#~ "hiirieleliipaisimissa, jolloin se on ikkuna hiiren alla - ja "
+#~ "ikkunaliipaisimet - joissa se on ikkunanliipaisutoiminto.</li>\n"
+#~ "<li><em>Aktiivinen ikkuna:</em> Tällä hetkellä aktiivinen ikkuna.</li>\n"
+#~ "<li><em>Määritelty ikkuna:</em> Mikä tahansa kriteerinmukainen ikkuna.</"
+#~ "li>\n"
+#~ "</ul>"
+
+#~ msgid "Called &function:"
+#~ msgstr "&Kutsuttu funktio:"
+
+#~ msgid "&Try"
+#~ msgstr "&Kokeile"
+
+#~ msgid "Action &type:"
+#~ msgstr "Toiminnon tyy&ppi:"
+
+#~ msgid "Action &name:"
+#~ msgstr "&Toiminnon nimi:"
+
+#~ msgid ""
+#~ "In order to trigger a spoken action, you have to press the key (or "
+#~ "combination of keys) configured below, speak the command and then press "
+#~ "the same key again once you have finished speaking."
+#~ msgstr ""
+#~ "Aloittaaksesi puhetoiminnon, sinun tulee painaa allamääriteltyä näppäintä "
+#~ "(tai näppäinyhdistelmää). Puhu ja paina uudelleen samaa näppäintä (tai "
+#~ "yhdistelmää) kun olet lopettanut puhekomentosi."
+
+#~ msgid ""
+#~ "<b>Note:</b> To get voice recognition working correctly and in full "
+#~ "duplex mode: \n"
+#~ "make sure <i>Full duplex</i> is checked in your <i>Sound System</i> "
+#~ "options."
+#~ msgstr ""
+#~ "<b>Huom:</b> Saadaksesi puheentunnistuksen toimimaan oikein full duplex -"
+#~ "tilassa : \n"
+#~ "Varmista, että <i>full duplex</i> valinta on asetettu <i>äänipalvelimen</"
+#~ "i> asetuksissa."
+
+#~ msgctxt "to try"
+#~ msgid "&Try"
+#~ msgstr "&Kokeile"
+
+#~ msgid "Simple Window..."
+#~ msgstr "Yksinkertainen ikkuna..."
+
+#~ msgid ""
+#~ "Draw the gesture you would like to record below. Press and hold the left "
+#~ "mouse button while drawing, and release when you have finished.\n"
+#~ "\n"
+#~ "You will be required to draw the gesture 3 times. After each drawing, if "
+#~ "they match, the indicators below will change to represent which step you "
+#~ "are on.\n"
+#~ "\n"
+#~ "If at any point they do not match, you will be required to restart. If "
+#~ "you want to force a restart, use the reset button below.\n"
+#~ "\n"
+#~ "Draw here:"
+#~ msgstr ""
+#~ "Piirrä haluamasi hiiriele alapuolelle. Paina ja pidä vasempaa hiiren "
+#~ "painiketta alhaalla piirtäessäsi, ja päästä irti kun olet valmis.\n"
+#~ "\n"
+#~ "Sinun täytyy piirtää hiiriele 3 kertaa. Jokaisen piirtämisen jälkeen, jos "
+#~ "ne täsmäävät, alapuolella olevat ilmaiset näyttävät missä vaiheessa olet "
+#~ "menossa.\n"
+#~ "\n"
+#~ "Jos jotkut kohdat eivät täsmää, joudut aloittamaan uudestaan. Jos haluat "
+#~ "pakottaa uudelleen aloituksen,\n"
+#~ "käytä \"Nollaa\"-painiketta alapuolella.\n"
+#~ "\n"
+#~ "Piirrä tässä:"
+
+#~ msgid "Your gestures did not match."
+#~ msgstr "Hiirieleesi eivät täsmänneet."
+
+#~ msgid ""
+#~ "You have already completed the three required drawings. Either press 'Ok' "
+#~ "to save or 'Reset' to try again."
+#~ msgstr ""
+#~ "Olet jo valmiiksi suorittanut kolme tarvittavaa piirrosta. Paina joko \"OK"
+#~ "\"-painiketta tallentaaksesi hiirieleen tai \"Nollaa\"-painiketta "
+#~ "yrittääksesi uudelleen."
+
+#~ msgid "Button 2 (middle)"
+#~ msgstr "Painike 2 (keski)"
+
+#~ msgid "Button 3 (secondary)"
+#~ msgstr "Painike 3 (toissijainen)"
+
+#~ msgid "Button 4 (often wheel up)"
+#~ msgstr "Painike 4 (usein rullaus ylös)"
+
+#~ msgid "Button 5 (often wheel down)"
+#~ msgstr "Painike 5 (usein rullaus alas)"
+
+#~ msgid "Button 6 (if available)"
+#~ msgstr "Painike 6 (jos saatavilla)"
+
+#~ msgid "Button 7 (if available)"
+#~ msgstr "Painike 7 (jos saatavilla)"
+
+#~ msgid "Button 8 (if available)"
+#~ msgstr "Painike 8 (jos saatavilla)"
+
+#~ msgid "Button 9 (if available)"
+#~ msgstr "Painike 9 (jos saatavilla)"
+
+#~ msgid "Info"
+#~ msgstr "Tietoja"
+
+#~ msgid "General Settings"
+#~ msgstr "Yleiset asetukset"
+
+#~ msgid "Gestures Settings"
+#~ msgstr "Hiirieleiden asetukset"
+
+#~ msgid "Command/URL Settings"
+#~ msgstr "Komento/verkko-osoite -asetukset"
+
+#~ msgid "Menu Entry Settings"
+#~ msgstr "Valikkotietueasetukset"
+
+#~ msgid "D-Bus Call Settings"
+#~ msgstr "D-Bus-kutsujen asetukset"
+
+#~ msgid "Keyboard Input Settings"
+#~ msgstr "Näppäimistösyötteen asetukset"
+
+#~ msgid ""
+#~ "A group is selected.\n"
+#~ "Add the new condition in this selected group?"
+#~ msgstr ""
+#~ "Ryhmä on valittuna.\n"
+#~ "Haluatko lisätä uuden ehdon tälle ryhmälle?"
+
+#~ msgid "Add in Group"
+#~ msgstr "Lisää ryhmään"
+
+#~ msgid "Recording..."
+#~ msgstr "Äänittää..."
+
+#~ msgid ""
+#~ "The word you recorded is too close to the existing reference '%1'. Please "
+#~ "record another word."
+#~ msgstr ""
+#~ "Äänittämäsi sana on liian samanlainen olemassaolevan '%1' sanan kanssa. "
+#~ "Äänitä toinen sana."
+
+#~ msgid ""
+#~ "Unable to extract voice information from noise.\n"
+#~ "If this error occurs repeatedly, it suggests that there is either too "
+#~ "much background noise, or the quality of your microphone is too poor."
+#~ msgstr ""
+#~ "Ei voida erottaa ääntä hälystä.\n"
+#~ "Jos tämä tapahtuu usein, se merkitsee, että äänityksessä on liikaa "
+#~ "taustahälyä, tai mikrofonisi ei ole tarpeeksi hyvä."
+
+#~ msgid "Lubos Lunak"
+#~ msgstr "Lubos Lunak"
+
+#~ msgid "New Action Group"
+#~ msgstr "Uusi toimintoryhmä"
+
+#~ msgid "Select File with Actions to Be Imported"
+#~ msgstr "Valitse tiedosto, josta toiminnot tuodaan"
+
+#~ msgid ""
+#~ "Import of the specified file failed. Most probably the file is not a "
+#~ "valid file with actions."
+#~ msgstr ""
+#~ "Määritellyn tiedoston tuominen epäonnistui. Luultavasti tiedosto ei ole "
+#~ "oikeanmuotoinen tiedosto."
+
+#~ msgid "Command/URL..."
+#~ msgstr "Komento/verkko-osoite..."
+
+#~ msgid "Activate Window..."
+#~ msgstr "Aktivoi ikkuna..."
+
+#~ msgid ""
+#~ "Enter a code for the sound (e.g. the word you are saying) and record the "
+#~ "same word twice."
+#~ msgstr ""
+#~ "Anna äänen koodi (ts: sana, jonka sanot) ja äänitä kahdesti sama sana."
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>The sound code already exists</font></qt>"
+#~ msgstr "<qt>%1<br /><font color='red'>Äänikoodi on jo olemassa</font></qt>"
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>One of the sound references is not correct</"
+#~ "font></qt>"
+#~ msgstr ""
+#~ "<qt>%1<br /><font color='red'>Yksi ääniviitteistä ei ole hyvä</font></qt>"
+
+#~ msgid "Generic"
+#~ msgstr "Yleiset"
+
+#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
+#~ msgstr "Näppäinyhdistelmä -> Komento/URL-komento (yksinkertainen)"
+
+#~ msgid "K-Menu Entry (simple)"
+#~ msgstr "K-valikon tietue (yksinkertainen)"
+
+#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
+#~ msgstr "Näppäinyhdistelmä -> D-Bus-kutsu (yksinkertainen)"
+
+#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
+#~ msgstr "Näppäinyhdistelmä -> Näppäimistösyöte (yksinkertainen)"
+
+#~ msgid "Gesture -> Keyboard Input (simple)"
+#~ msgstr "Hiiriele -> Näppäimistösyöte (yksinkertainen)"
+
+#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
+#~ msgstr "Näppäinyhdistelmä -> Aktivoi ikkuna (yksinkertainen)"
+
+#~ msgid "Shortcut Trigger..."
+#~ msgstr "Näppäinyhdistelmälaukaisin..."
+
+#~ msgid "Gesture Trigger..."
+#~ msgstr "Hiirielelaukaisin..."
+
+#~ msgid "Window Trigger..."
+#~ msgstr "Ikkunalaukaisin..."
+
+#~ msgid "Voice Trigger..."
+#~ msgstr "Äänilaukaisin..."
+
+#~ msgid "TODO: Correct Behavior"
+#~ msgstr "TODO: Korjaa käyttäytyminen"
+
+#~ msgid "Select keyboard shortcut:"
+#~ msgstr "Valitse näppäinyhdistelmä:"
+
+#~ msgid "Copy of "
+#~ msgstr "Kopio"

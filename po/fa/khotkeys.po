@@ -1,0 +1,1381 @@
+# translation of khotkeys.po to Persian
+# Nazanin Kazemi <kazemi@itland.ir>, 2006, 2007.
+# Tahereh Dadkhahfar <dadkhahfar@itland.ir>, 2006.
+# MaryamSadat Razavi <razavi@itland.ir>, 2006.
+# Nasim Daniarzadeh <daniarzadeh@itland.ir>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: khotkeys\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2007-09-02 15:21+0330\n"
+"Last-Translator: Nazanin Kazemi <kazemi@itland.ir>\n"
+"Language-Team: Persian <kde-i18n-fa@kde.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "نازنین کاظمی"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "Kazemi@itland.ir"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "شرایط"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, fuzzy, kde-format
+msgid "Command/URL:"
+msgstr "فرمان/نشانی وب : "
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, fuzzy, kde-format
+#| msgid "Remote &application:"
+msgid "Remote application:"
+msgstr "&کاربرد دور:‌"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, fuzzy, kde-format
+#| msgid "Remote &object:"
+msgid "Remote object:"
+msgstr "&شئ دور:‌"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Function:"
+msgstr "کنشها"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "نشانوندها:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "پنجره"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, fuzzy, kde-format
+#| msgid "Active window: "
+msgid "Active window"
+msgstr "پنجره فعال: "
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, fuzzy, kde-format
+#| msgid "Specific window"
+msgid "Specific window"
+msgstr "پنجره مشخص"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, fuzzy, kde-format
+#| msgid "Action window"
+msgid "Action window"
+msgstr "پنجره کنش"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Application:"
+msgstr "کنشها"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "Delete Action"
+msgid "Select Application ..."
+msgstr "حذف کنش"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, fuzzy, kde-format
+#| msgid "Active Window..."
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "پنجره فعال..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, fuzzy, kde-format
+#| msgid "Existing Window..."
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "پنجره موجود..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Condition type"
+msgid "And"
+msgstr "و"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, fuzzy, kde-format
+#| msgctxt "Or_condition"
+#| msgid "Or"
+msgctxt "Condition type"
+msgid "Or"
+msgstr "یا"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, fuzzy, kde-format
+#| msgctxt "Not_condition"
+#| msgid "Not"
+msgctxt "Condition type"
+msgid "Not"
+msgstr "نه"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "و"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "new condition"
+msgid "New"
+msgstr "&جدید‌"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit..."
+msgstr "ویرایش..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, kde-format
+msgid "Delete"
+msgstr "حذف"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "حرکات"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse button:"
+msgstr "دکمه موشی:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Middle button"
+msgstr "دکمه موشی:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr ""
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, fuzzy, kde-format
+#| msgid "Gestures"
+msgid "Edit Gesture"
+msgstr "حرکات"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit"
+msgstr "ویرایش..."
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, fuzzy, kde-format
+#| msgid "&Comment:"
+msgid "Comment:"
+msgstr "&توضیح:‌"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "&Edit..."
+msgstr "ویرایش..."
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "&New"
+msgid "&New..."
+msgstr "&جدید‌"
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgid "&Delete"
+msgstr "حذف"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window Data"
+msgstr "جزئیات پنجره"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, fuzzy, kde-format
+#| msgid "Window &title:"
+msgid "Window title:"
+msgstr "&عنوان پنجره:‌"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "مهم نیست"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "محتویات"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "هست"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "عبارت منظم تطبیق می‌کند"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "شامل نمی‌شود"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "نیست"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "عبارت منظم تطبیق نمی‌کند"
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, fuzzy, kde-format
+#| msgid "Window c&lass:"
+msgid "Window class:"
+msgstr "&رده پنجره:‌"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "مهم نیست"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Window &role:"
+msgid "Window role:"
+msgstr "&نقش پنجره:‌"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "مهم نیست"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&آشکارسازی خودکار‌"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "انواع پنجره"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "عادی"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "رومیزی"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "محاوره"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "پیوند زدن"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, fuzzy, kde-format
+#| msgid "&Reset"
+msgid "Test"
+msgstr "&بازنشانی‌"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, fuzzy, kde-format
+#| msgid "New &Group"
+msgid "New Group"
+msgstr "&گروه جدید‌"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Export Group..."
+msgstr "ویرایش..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, fuzzy, kde-format
+#| msgid "Import New Actions..."
+msgid "Import..."
+msgstr "واردات کنشهای جدید..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "&جدید‌"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, fuzzy, kde-format
+#| msgid "Keyboard Shortcut"
+msgid "Global Shortcut"
+msgstr "میان‌بر صفحه کلید"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, fuzzy, kde-format
+#| msgid "New Action"
+msgid "Window Action"
+msgstr "کنش جدید"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse Gesture Action"
+msgstr "دکمه موشی:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, fuzzy, kde-format
+msgid "Command/URL"
+msgstr "فرمان/نشانی وب : "
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, fuzzy, kde-format
+msgid "D-Bus Command"
+msgstr "فراخوانی DCOP..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, fuzzy, kde-format
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "مدخل K-Menu..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, fuzzy, kde-format
+#| msgid "Keyboard Input..."
+msgid "Send Keyboard Input"
+msgstr "ورودی صفحه کلید..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, fuzzy, kde-format
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "توضیح:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "کنش جدید"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, fuzzy, kde-format
+#| msgid "Ignore Group"
+msgid "Export Group"
+msgstr "چشم‌پوشی از گروه"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Export Actions"
+msgstr "کنشها"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, fuzzy, kde-format
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "&غیرفعال‌سازی‌"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "&غیرفعال‌سازی‌"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, fuzzy, kde-format
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "&غیرفعال‌سازی‌"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "نگه‌دارنده"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, fuzzy, kde-format
+#| msgid "Voices Settings"
+msgid "Settings"
+msgstr "تنظیمات صداها"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, fuzzy, kde-format
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "راه‌اندازها"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Action"
+msgstr "کنشها"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, fuzzy, kde-format
+#| msgid "Shortcut:"
+msgid "&Shortcut:"
+msgstr "میان‌بر:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "راه‌اندازی هنگامی که"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, fuzzy, kde-format
+#| msgid "Window appears"
+msgid "Window appears"
+msgstr "پنجره ظاهر می‌شود"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, fuzzy, kde-format
+#| msgid "Window disappears"
+msgid "Window disappears"
+msgstr "پنجره ناپدید می‌شود"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window gets focus"
+msgstr "جزئیات پنجره"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, fuzzy, kde-format
+#| msgid "Windows to Exclude"
+msgid "Window loses focus"
+msgstr "خارج کردن پنجره‌ها"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, fuzzy, kde-format
+msgid "Activate window: "
+msgstr "فعال کردن پنجره : "
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, kde-format
+msgid "Command/URL : "
+msgstr "فرمان/نشانی وب : "
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, fuzzy, kde-format
+msgid "D-Bus: "
+msgstr "فراخوانی DCOP..."
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, fuzzy, kde-format
+msgid "Keyboard input: "
+msgstr "ورودی صفحه کلید : "
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, fuzzy, kde-format
+msgid "Menu entry: "
+msgstr "مدخل گزینگان : "
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "پنجره فعال: "
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "و"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, kde-format
+msgid "Existing window: "
+msgstr "پنجره موجود: "
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "نه"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "یا"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "مدخلهای ویرایشگر گزینگان"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr ""
+"این پرونده »کنشها« قبلاً وارد شده است. مطمئن هستید که می‌خواهید دوباره آن را "
+"وارد کنید؟"
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+"این پرونده »کنشها« دارای حوزه شناسه واردات نیست، و بنابراین نمی‌توان تعیین "
+"کرد که آیا قبلاً وارد شده یا نه. مطمئن هستید که می‌خواهید آن را وارد کنید؟"
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr ""
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, fuzzy, kde-format
+#| msgid "Gesture trigger: "
+msgid "Gesture trigger"
+msgstr "راه‌اندازی حرکت: "
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, kde-format
+msgid "Shortcut trigger: "
+msgstr "راه‌اندازی میان‌بر: "
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, kde-format
+msgid "Window trigger: "
+msgstr "راه‌اندازی پنجره: "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, kde-format
+msgid "Window simple: "
+msgstr "ساده کردن پنجره: "
+
+#~ msgid "Voice trigger: "
+#~ msgstr "راه‌اندازی صدا: "
+
+#, fuzzy
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "خرابی در اجرای KDCOP"
+
+#, fuzzy
+#~| msgid "Normal"
+#~ msgid "Form"
+#~ msgstr "عادی"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit"
+#~ msgstr "ویرایش..."
+
+#, fuzzy
+#~| msgid "Active window"
+#~ msgid "Active Window"
+#~ msgstr "پنجره فعال"
+
+#, fuzzy
+#~ msgid "KHotKeys Update Helper"
+#~ msgstr "شبح KHotKeys"
+
+#, fuzzy
+#~| msgid "(c) 1999-2005 Lubos Lunak"
+#~ msgid "(C) 2003-2009 Lubos Lunak"
+#~ msgstr "(ح) ۲۰۰۵-۱۹۹۹ Lubos Lunak"
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "این مدخلها با استفاده از ویرایشگر گزینگان ایجاد شده‌اند."
+
+#, fuzzy
+#~| msgid "Gestures"
+#~ msgid "Enable Gestures"
+#~ msgstr "حرکات"
+
+#, fuzzy
+#~ msgid "KHotKeys update utility"
+#~ msgstr "شبح KHotKeys"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "شبح KHotKeys"
+
+#, fuzzy
+#~| msgid "K Menu - "
+#~ msgid "Menu"
+#~ msgstr "گزینگان K - "
+
+#, fuzzy
+#~ msgid "&Enabled"
+#~ msgstr "&غیرفعال‌سازی‌"
+
+#, fuzzy
+#~| msgid "&Disable (group is disabled)"
+#~ msgid "Parent group is disabled"
+#~ msgstr "&غیرفعال‌سازی )گروه غیرفعال می‌شود(‌"
+
+#~ msgid "General"
+#~ msgstr "عمومی"
+
+#, fuzzy
+#~| msgid "KHotKeys"
+#~ msgid "KDE Hotkeys:"
+#~ msgstr "KHotKeys"
+
+#~ msgid "&Modify..."
+#~ msgstr "&تغییر...‌"
+
+#~ msgid "&Copy"
+#~ msgstr "&رونوشت‌"
+
+#~ msgid "&New Action"
+#~ msgstr "کنش &جدید‌"
+
+#~ msgid "Global &Settings"
+#~ msgstr "&تنظیمات سراسری‌"
+
+#~ msgid "Command/URL to execute:"
+#~ msgstr "فرمان/نشانی وب برای اجرا:"
+
+#~ msgid "Window activates"
+#~ msgstr "پنجره فعال می‌شود"
+
+#~ msgid "Window deactivates"
+#~ msgstr "پنجره غیرفعال می‌شود"
+
+#~ msgid "Menu entry to execute:"
+#~ msgstr "مدخل گزینگان برای اجرا:"
+
+#~ msgid "&Browse..."
+#~ msgstr "&مرور...‌"
+
+#~ msgid "&Play"
+#~ msgstr "&پخش‌"
+
+#~ msgid "&Record"
+#~ msgstr "&ضبط‌"
+
+#~ msgid "&Stop"
+#~ msgstr "&ایست‌"
+
+#~ msgid "Gestures:"
+#~ msgstr "حرکات:"
+
+#~ msgid "Action group &name:"
+#~ msgstr "&نام گروه کنش:‌"
+
+#, fuzzy
+#~ msgid "&Disable:"
+#~ msgstr "&غیرفعال‌سازی‌"
+
+#~ msgid "Info_tab_ui"
+#~ msgstr "Info_tab_ui"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>This module allows configuration of input actions, such as mouse "
+#~ "gestures, keyboard shortcuts for performing commands, launching "
+#~ "applications or D-Bus calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "when modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>این پیمانه اجازه پیکربندی کنشهای ورودی مانند، حرکات موشی، میان‌برهای "
+#~ "صفحه کلید برای اجرای فرمانها، راه‌اندازی کاربردها یا فراخوانیهای DCOP، و "
+#~ "مانند آنها را می‌دهد.</p>\n"
+#~ "<p><b>نکته: </b>اگر کاربر ماهری نیستید، باید مراقب تغییر کنشها باشید، و "
+#~ "تغییرات خود را به فعال/غیرفعال‌سازی کنشها و راه‌اندازها محدود کنید.</p>"
+
+#~ msgid "Disable mouse gestures globally"
+#~ msgstr "غیرفعال‌سازی حرکات موشی به طور سراسری"
+
+#~ msgid "Gesture timeout (ms):"
+#~ msgstr "اتمام وقت حرکت )میلی‌ثانیه(:"
+
+#~ msgid "Disable KHotKeys daemon"
+#~ msgstr "غیرفعال‌سازی شبح KHotKeys"
+
+#~ msgid "Keyboard_input_widget_ui"
+#~ msgstr "Keyboard_input_widget_ui"
+
+#~ msgid "Keyboard input:"
+#~ msgstr "ورودی صفحه کلید:"
+
+#~ msgid "Modify..."
+#~ msgstr "تغییر..."
+
+#~ msgid "Send Input To"
+#~ msgstr "ارسال ورودی به"
+
+#~ msgid ""
+#~ "Specify the window where the keyboard input should be sent to:<ul>\n"
+#~ "<li><em>Action window:</em> The window where the triggering action "
+#~ "happened; this is usually the currently active window, except for mouse "
+#~ "gesture triggers - where it is the window under mouse - and window "
+#~ "triggers -where it is the window triggering the action.</li>\n"
+#~ "<li><em>Active window:</em> The currently active window.</li>\n"
+#~ "<li><em>Specific window:</em> Any window matching the given criteria.</"
+#~ "li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "پنجره‌ای که ورودی صفحه کلید باید به آنجا ارسال شود را مشخص کنید:<ul>\n"
+#~ "<li><em>:پنجره کنش</em> پنجره‌ای که راه‌اندازی کنشها در آنجا اتفاق می‌افتد. "
+#~ "معمولاً پنجره فعال جاری می‌باشد، به استثنای راه‌انداز حرکت موشی- که پنجره‌ای "
+#~ "زیر موشی است-  و راه‌اندازهای پنجره - که محل راه‌اندازی پنجره کنش است.</"
+#~ "li>\n"
+#~ "<li><em>پنجره فعال:</em> پنجره فعال جاری.</li>\n"
+#~ "<li><em>پنجره مشخص:</em>هر پنجره مطابق با معیارهای داده‌شده .</li>\n"
+#~ "</ul>"
+
+#~ msgid "Called &function:"
+#~ msgstr "&تابع فراخوانی‌شده:‌"
+
+#~ msgid "&Try"
+#~ msgstr "&سعی‌"
+
+#~ msgid "Action &type:"
+#~ msgstr "&نوع کنش:‌"
+
+#~ msgid "Action &name:"
+#~ msgstr "&نام کنش:‌"
+
+#~ msgid ""
+#~ "In order to trigger a spoken action, you have to press the key (or "
+#~ "combination of keys) configured below, speak the command and then press "
+#~ "the same key again once you have finished speaking."
+#~ msgstr ""
+#~ "به منظور راه‌اندازی کنش گفته‌شده، باید کلید )یا ترکیبی از "
+#~ "کلیدهای( پیکربندی‌شده زیر را فشار دهید، صحبت کنید، و دوباره همان میان‌بر را "
+#~ "هنگام پایان فرمان گفته‌شده فشار دهید."
+
+#~ msgid ""
+#~ "<b>Note:</b> To get voice recognition working correctly and in full "
+#~ "duplex mode: \n"
+#~ "make sure <i>Full duplex</i> is checked in your <i>Sound System</i> "
+#~ "options."
+#~ msgstr ""
+#~ "<b>نکته:</b> برای این که بازشناخت صدا درست و در حالت تمام دوسویه کار "
+#~ "کند:\n"
+#~ "مطمئن شوید که <i>تمام دوسویه</i> در گزینه‌های <i>کارساز صوت</i> شما "
+#~ "علامت‌زده باشد."
+
+#~ msgctxt "to try"
+#~ msgid "&Try"
+#~ msgstr "&سعی‌"
+
+#~ msgid "Simple Window..."
+#~ msgstr "پنجره ساده..."
+
+#~ msgid ""
+#~ "Draw the gesture you would like to record below. Press and hold the left "
+#~ "mouse button while drawing, and release when you have finished.\n"
+#~ "\n"
+#~ "You will be required to draw the gesture 3 times. After each drawing, if "
+#~ "they match, the indicators below will change to represent which step you "
+#~ "are on.\n"
+#~ "\n"
+#~ "If at any point they do not match, you will be required to restart. If "
+#~ "you want to force a restart, use the reset button below.\n"
+#~ "\n"
+#~ "Draw here:"
+#~ msgstr ""
+#~ "حرکتی که تمایل دارید ضبط کنید را در زیر ترسیم نمایید. دکمه چپ موشی را "
+#~ "فشار داده و در حین ترسیم نگه دارید، و هنگامی که تمام کردید رها کنید.\n"
+#~ "\n"
+#~ "نیاز دارید که حرکت را ۳ بار ترسیم کنید. بعد از هر ترسیم، در صورت تطبیق، "
+#~ "شاخصهای زیر برای بازنمایی مرحله‌ای که در آن هستید تغییر می‌کنند.\n"
+#~ "\n"
+#~ "اگر در هر نقطه تطبیق نکنند، نیاز به بازآغازی دارید. اگر می‌خواهید به اجبار "
+#~ "بازآغاز کنید، از دکمه بازنشانی زیر استفاده نمایید.\n"
+#~ "\n"
+#~ "اینجا ترسیم کنید:"
+
+#~ msgid "Your gestures did not match."
+#~ msgstr "حرکات شما تطبیق نکرد."
+
+#~ msgid ""
+#~ "You have already completed the three required drawings. Either press 'Ok' "
+#~ "to save or 'Reset' to try again."
+#~ msgstr ""
+#~ "شما قبلاً سه ترسیم درخواست‌شده را تکمیل کرده‌اید. »تأیید« را برای ذخیره آن "
+#~ "یا »بازنشانی« را برای سعی مجدد فشار دهید."
+
+#~ msgid "Button 2 (middle)"
+#~ msgstr "دکمه ۲ )میانی("
+
+#~ msgid "Button 3 (secondary)"
+#~ msgstr "دکمه ۳ )دومی("
+
+#~ msgid "Button 4 (often wheel up)"
+#~ msgstr "دکمه ۴ )اغلب چرخ بالا("
+
+#~ msgid "Button 5 (often wheel down)"
+#~ msgstr "دکمه ۵ )اغلب چرخ پایین("
+
+#~ msgid "Button 6 (if available)"
+#~ msgstr "دکمه ۶ )در صورت وجود("
+
+#~ msgid "Button 7 (if available)"
+#~ msgstr "دکمه ۷ )در صورت وجود("
+
+#~ msgid "Button 8 (if available)"
+#~ msgstr "دکمه ۸ )در صورت وجود("
+
+#~ msgid "Button 9 (if available)"
+#~ msgstr "دکمه ۹ )در صورت وجود("
+
+#~ msgid "Info"
+#~ msgstr "اطلاعات"
+
+#~ msgid "General Settings"
+#~ msgstr "تنظیمات عمومی"
+
+#~ msgid "Gestures Settings"
+#~ msgstr "تنظیمات حرکات"
+
+#~ msgid "Command/URL Settings"
+#~ msgstr "فرمان/تنظیمات نشانی وب"
+
+#~ msgid "Menu Entry Settings"
+#~ msgstr "تنظیمات مدخل گزینگان"
+
+#, fuzzy
+#~ msgid "D-Bus Call Settings"
+#~ msgstr "تنظیمات فراخوانی DCOP"
+
+#~ msgid "Keyboard Input Settings"
+#~ msgstr "تنظیمات ورودی صفحه کلید"
+
+#~ msgid ""
+#~ "A group is selected.\n"
+#~ "Add the new condition in this selected group?"
+#~ msgstr ""
+#~ "گروه انتخاب می‌شود.\n"
+#~ "شرط جدید به این گروه برگزیده افزوده شود؟"
+
+#~ msgid "Add in Group"
+#~ msgstr "افزودن به گروه"
+
+#~ msgid "Recording..."
+#~ msgstr "در حال ضبط..."
+
+#~ msgid ""
+#~ "The word you recorded is too close to the existing reference '%1'. Please "
+#~ "record another word."
+#~ msgstr ""
+#~ "واژه‌ای که ضبط کردید به مرجع موجود »%1« بسیار نزدیک است، لطفاً، واژه دیگری "
+#~ "را ضبط کنید."
+
+#~ msgid ""
+#~ "Unable to extract voice information from noise.\n"
+#~ "If this error occurs repeatedly, it suggests that there is either too "
+#~ "much background noise, or the quality of your microphone is too poor."
+#~ msgstr ""
+#~ "قادر به استخراج اطلاعات صدا از نوفه نیست.\n"
+#~ "اگر این پیام مکرر رخ دهد، به این معناست که نوفه زیادی وجود دارد، یا "
+#~ "بلندگوی شما خیلی خوب نیست."
+
+#~ msgid "Lubos Lunak"
+#~ msgstr "Lubos Lunak"
+
+#~ msgid "New Action Group"
+#~ msgstr "گروه کنش جدید"
+
+#~ msgid "Select File with Actions to Be Imported"
+#~ msgstr "برگزیدن پرونده همراه با کنشهایی که وارد می‌شوند"
+
+#~ msgid ""
+#~ "Import of the specified file failed. Most probably the file is not a "
+#~ "valid file with actions."
+#~ msgstr ""
+#~ "خرابی در واردات پرونده مشخص‌شده. به احتمال زیاد پرونده، پرونده معتبری "
+#~ "همراه با کنشها نیست."
+
+#~ msgid "Command/URL..."
+#~ msgstr "فرمان/نشانی وب..."
+
+#~ msgid "Activate Window..."
+#~ msgstr "فعال‌سازی پنجره..."
+
+#~ msgid ""
+#~ "Enter a code for the sound (e.g. the word you are saying) and record the "
+#~ "same word twice."
+#~ msgstr ""
+#~ "برای صوت، کد را وارد کنید )مثلاً، واژه‌ای که بیان می‌کنید( و همان واژه را دو "
+#~ "بار ضبط کنید."
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>The sound code already exists</font></qt>"
+#~ msgstr "<qt>%1<br /><font color='red'>کد صوتی از قبل وجود دارد</font></qt>"
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>One of the sound references is not correct</"
+#~ "font></qt>"
+#~ msgstr ""
+#~ "<qt>%1 <br /><font color='red'>یکی از مراجع صوتی صحیح نیست </font></qt>"
+
+#~ msgid "Generic"
+#~ msgstr "عمومی"
+
+#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
+#~ msgstr "میان‌بر صفحه کلید -< فرمان/نشانی وب )ساده("
+
+#~ msgid "K-Menu Entry (simple)"
+#~ msgstr "مدخل K-Menu )ساده("
+
+#, fuzzy
+#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
+#~ msgstr "میان‌بر صفحه کلید -< فراخوانی DCOP )ساده("
+
+#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
+#~ msgstr "میان‌بر صفحه کلید -< ورودی صفحه کلید )ساده("
+
+#~ msgid "Gesture -> Keyboard Input (simple)"
+#~ msgstr "حرکت -< ورود صفحه کلید )ساده("
+
+#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
+#~ msgstr "میان‌بر صفحه کلید -< فعال‌سازی پنجره )ساده("
+
+#~ msgid "Shortcut Trigger..."
+#~ msgstr "راه‌اندازی میان‌بر..."
+
+#~ msgid "Gesture Trigger..."
+#~ msgstr "راه‌اندازی حرکت..."
+
+#~ msgid "Window Trigger..."
+#~ msgstr "راه‌اندازی پنجره..."
+
+#~ msgid "Voice Trigger..."
+#~ msgstr "راه‌اندازی صدا..."
+
+#~ msgid "Select keyboard shortcut:"
+#~ msgstr "برگزیدن میان‌بر صفحه کلید:"
+
+#, fuzzy
+#~ msgid "Copy of "
+#~ msgstr "&رونوشت‌"
+
+#~ msgid ""
+#~ "<p>This module allows configuring input actions, like mouse gestures, "
+#~ "keyboard shortcuts for performing commands, launching applications or "
+#~ "DCOP calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "with modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>این پیمانه اجازه پیکربندی کنشهای ورودی مانند، حرکات موشی، میان‌برهای "
+#~ "صفحه کلید برای اجرای فرمانها، راه‌اندازی کاربردها یا فراخوانیهای DCOP، و "
+#~ "مانند آنها را می‌دهد.</p>\n"
+#~ "<p><b>نکته: </b>اگر کاربر ماهری نیستید، باید مراقب تغییر کنشها باشید، و "
+#~ "تغییرات خود را به فعال/غیرفعال‌سازی کنشها و راه‌اندازها محدود کنید.</p>"
+
+#~ msgid "Menuentry : "
+#~ msgstr "مدخل گزینگان : "
+
+#~ msgid "DCOP : "
+#~ msgstr "DCOP : "
+
+#~ msgid "Keyboard input : "
+#~ msgstr "ورودی صفحه کلید : "
+
+#~ msgid "Activate window : "
+#~ msgstr "فعال کردن پنجره : "
+
+#~ msgid "DCOP Call..."
+#~ msgstr "فراخوانی DCOP..."
+
+#~ msgid "Failed to run KDCOP"
+#~ msgstr "خرابی در اجرای KDCOP"
+
+#~ msgid "Keyboard Shortcut -> DCOP Call (simple)"
+#~ msgstr "میان‌بر صفحه کلید -< فراخوانی DCOP )ساده("
+
+#~ msgid "DCOP Call Settings"
+#~ msgstr "تنظیمات فراخوانی DCOP"
+
+#~ msgid "Run &KDCOP"
+#~ msgstr "اجرای &KDCOP‌"

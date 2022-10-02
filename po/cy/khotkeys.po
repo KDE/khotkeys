@@ -1,0 +1,1275 @@
+# translation of khotkeys.po to Cymraeg
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: khotkeys\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2003-12-28 11:04+0000\n"
+"Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
+"Language-Team: Cymraeg <cy@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KD wrth KGyfieithu"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kyfieithu@dotmon.com"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "Amodau"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL:"
+msgstr "Gorchymyn/URL:"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, fuzzy, kde-format
+#| msgid "Remote &application:"
+msgid "Remote application:"
+msgstr "C&ymhwysiad pell:"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, fuzzy, kde-format
+#| msgid "Remote &object:"
+msgid "Remote object:"
+msgstr "Gwrthrych pe&ll:"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Function:"
+msgstr "Gweithredoedd"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "Ymresymiadau:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "Ffenestr"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, fuzzy, kde-format
+#| msgid "Active window: "
+msgid "Active window"
+msgstr "Ffenestr weithredol : "
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, fuzzy, kde-format
+msgid "Specific window"
+msgstr "Anfon i ffenestr &benodol"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, fuzzy, kde-format
+msgid "Action window"
+msgstr "Ffenestr weithredol:"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Application:"
+msgstr "Gweithredoedd"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "Delete Action"
+msgid "Select Application ..."
+msgstr "Dileu Gweithred"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, fuzzy, kde-format
+#| msgid "Active Window..."
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "Ffenestr Weithredol..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, fuzzy, kde-format
+#| msgid "Existing Window..."
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "Ffenestr Gyfredol..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Condition type"
+msgid "And"
+msgstr "A"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, fuzzy, kde-format
+#| msgctxt "Or_condition"
+#| msgid "Or"
+msgctxt "Condition type"
+msgid "Or"
+msgstr "Neu"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, fuzzy, kde-format
+#| msgctxt "Not_condition"
+#| msgid "Not"
+msgctxt "Condition type"
+msgid "Not"
+msgstr "Dim"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "A"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "new condition"
+msgid "New"
+msgstr "&Newydd"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit..."
+msgstr "Golygu..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, fuzzy, kde-format
+msgid "Delete"
+msgstr "Dileu Gweithred"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "Ystumiau"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse button:"
+msgstr "Botwm llygoden:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Middle button"
+msgstr "Botwm llygoden:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr ""
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, fuzzy, kde-format
+#| msgid "Gestures"
+msgid "Edit Gesture"
+msgstr "Ystumiau"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit"
+msgstr "Golygu..."
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, fuzzy, kde-format
+#| msgid "&Comment:"
+msgid "Comment:"
+msgstr "&Sylwad:"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "&Edit..."
+msgstr "Golygu..."
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "&New"
+msgid "&New..."
+msgstr "&Newydd"
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, fuzzy, kde-format
+msgid "&Delete"
+msgstr "Dileu Gweithred"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window Data"
+msgstr "Manylion Ffenestr"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, fuzzy, kde-format
+#| msgid "Window &title:"
+msgid "Window title:"
+msgstr "&Teitl y ffenestr:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "Dim o Bwys"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "Cynhwysa"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "Yw"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "Yn Cydweddu â Mynegiad Rheolaidd"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "Ni Chynhwysa"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "Nid Yw"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "Nid Yw'n Cydweddu â Mynegiad Rheolaidd"
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, fuzzy, kde-format
+#| msgid "Window c&lass:"
+msgid "Window class:"
+msgstr "Do&sbarth y ffenestr:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "Dim o Bwys"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Window &role:"
+msgid "Window role:"
+msgstr "&Rôl y ffenestr:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "Dim o Bwys"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&Hunan-ganfod"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "Mathau Ffenestri"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "Arferol"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "Penbwrdd"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "Ymgom"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "Doc"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, fuzzy, kde-format
+#| msgid "&Reset"
+msgid "Test"
+msgstr "&Ailosod"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, fuzzy, kde-format
+#| msgid "New &Group"
+msgid "New Group"
+msgstr "G&rŵp Newydd"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Export Group..."
+msgstr "Golygu..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, fuzzy, kde-format
+#| msgid "Import New Actions..."
+msgid "Import..."
+msgstr "Mewnforio Gweithredoedd Newydd..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "&Newydd"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, fuzzy, kde-format
+#| msgid "Keyboard Shortcut"
+msgid "Global Shortcut"
+msgstr "Byrlwybr Allweddell"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, fuzzy, kde-format
+#| msgid "New Action"
+msgid "Window Action"
+msgstr "Gweithred Newydd"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse Gesture Action"
+msgstr "Botwm llygoden:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL"
+msgstr "Gorchymyn/URL:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, fuzzy, kde-format
+#| msgid "DCOP Call..."
+msgid "D-Bus Command"
+msgstr "Galwad DCOP..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, fuzzy, kde-format
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "Cofnod K-Dewislen..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, fuzzy, kde-format
+#| msgid "Keyboard Input..."
+msgid "Send Keyboard Input"
+msgstr "Mewnbwn Allweddell..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, fuzzy, kde-format
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "Sylwad:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "Gweithred Newydd"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, fuzzy, kde-format
+msgid "Export Group"
+msgstr "G&rŵp Newydd"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Export Actions"
+msgstr "Gweithredoedd"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "&Analluogi"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "&Analluogi"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "&Analluogi"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "Cynhaliwr"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, fuzzy, kde-format
+msgid "Settings"
+msgstr "Gosodiadau Ystumiau"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, fuzzy, kde-format
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "Cliciedau"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Action"
+msgstr "Gweithredoedd"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, fuzzy, kde-format
+#| msgid "Shortcut:"
+msgid "&Shortcut:"
+msgstr "Byrlwybr:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "Pryd i Danio:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, fuzzy, kde-format
+#| msgid "Window appears"
+msgid "Window appears"
+msgstr "Ffenestr yn ymddangos"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, fuzzy, kde-format
+#| msgid "Window disappears"
+msgid "Window disappears"
+msgstr "Ffenestr yn diflannu"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window gets focus"
+msgstr "Manylion Ffenestr"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, fuzzy, kde-format
+msgid "Window loses focus"
+msgstr "&Rôl y ffenestr:"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, fuzzy, kde-format
+#| msgid "Activate window : "
+msgid "Activate window: "
+msgstr "Gweithredu'r ffenestr:"
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL : "
+msgstr "Gorchymyn/URL:"
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, fuzzy, kde-format
+#| msgid "DCOP Call..."
+msgid "D-Bus: "
+msgstr "Galwad DCOP..."
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, fuzzy, kde-format
+#| msgid "Keyboard input : "
+msgid "Keyboard input: "
+msgstr "Mewnbwn allweddell:"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, fuzzy, kde-format
+#| msgid "Menuentry : "
+msgid "Menu entry: "
+msgstr "Cofnod y ddewislen:"
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "Ffenestr weithredol : "
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "A"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, fuzzy, kde-format
+msgid "Existing window: "
+msgstr "Ffenestr gyfredol:"
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "Dim"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "Neu"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "Cofnodion Golygydd Dewislenni"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr ""
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr ""
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, fuzzy, kde-format
+msgid "Gesture trigger"
+msgstr "Clicied ystum:"
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, fuzzy, kde-format
+msgid "Shortcut trigger: "
+msgstr "Clicied byrlwybr:"
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, fuzzy, kde-format
+msgid "Window trigger: "
+msgstr "Clicied ffenestr:"
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, fuzzy, kde-format
+msgid "Window simple: "
+msgstr "Ffenestr syml:"
+
+#, fuzzy
+#~ msgid "Voice trigger: "
+#~ msgstr "Clicied byrlwybr:"
+
+#, fuzzy
+#~| msgid "Failed to run KDCOP"
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "Methodd rhedeg KDCOP"
+
+#, fuzzy
+#~| msgid "Normal"
+#~ msgid "Form"
+#~ msgstr "Arferol"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit"
+#~ msgstr "Golygu..."
+
+#, fuzzy
+#~| msgid "Active window"
+#~ msgid "Active Window"
+#~ msgstr "Ffenestr weithredol"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys Update Helper"
+#~ msgstr "Ellyll KHotKeys"
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "Creuwyd y cofnodion yma gan ddefnyddio'r Golygydd Dewislenni."
+
+#, fuzzy
+#~| msgid "Gestures"
+#~ msgid "Enable Gestures"
+#~ msgstr "Ystumiau"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys update utility"
+#~ msgstr "Ellyll KHotKeys"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "Ellyll KHotKeys"
+
+#, fuzzy
+#~| msgid "K Menu - "
+#~ msgid "Menu"
+#~ msgstr "Dewislen K - "
+
+#, fuzzy
+#~| msgid "&Disable"
+#~ msgid "&Enabled"
+#~ msgstr "&Analluogi"
+
+#, fuzzy
+#~| msgid "&Disable (group is disabled)"
+#~ msgid "Parent group is disabled"
+#~ msgstr "&Analluogi (analluogir y grŵp)"
+
+#~ msgid "General"
+#~ msgstr "Cyffredinol"
+
+#, fuzzy
+#~| msgid "KHotKeys"
+#~ msgid "KDE Hotkeys:"
+#~ msgstr "KHotKeys"
+
+#~ msgid "&Modify..."
+#~ msgstr "&Addasu..."
+
+#, fuzzy
+#~ msgid "&Copy"
+#~ msgstr "&Aros"
+
+#~ msgid "&New Action"
+#~ msgstr "Gweithred &Newydd"
+
+#~ msgid "Global &Settings"
+#~ msgstr "Gos&odiadau Eang"
+
+#~ msgid "Command/URL to execute:"
+#~ msgstr "Gorchymyn/URL i weithredu:"
+
+#~ msgid "Window activates"
+#~ msgstr "Ffenestr yn ymweithredu"
+
+#~ msgid "Window deactivates"
+#~ msgstr "Ffenestr yn dad-weithredu"
+
+#~ msgid "Menu entry to execute:"
+#~ msgstr "Cofnod dewislen i weithredu:"
+
+#~ msgid "&Browse..."
+#~ msgstr "&Pori..."
+
+#~ msgid "&Play"
+#~ msgstr "&Chwarae"
+
+#~ msgid "&Stop"
+#~ msgstr "&Aros"
+
+#~ msgid "Gestures:"
+#~ msgstr "Ystumiau:"
+
+#~ msgid "Action group &name:"
+#~ msgstr "Enw'r grŵp &gweithredoedd:"
+
+#, fuzzy
+#~| msgid "&Disable"
+#~ msgid "&Disable:"
+#~ msgstr "&Analluogi"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>This module allows configuration of input actions, such as mouse "
+#~ "gestures, keyboard shortcuts for performing commands, launching "
+#~ "applications or D-Bus calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "when modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>Caniatâ'r modiwl yma ffurfweddu gweithredoedd mewnbwn, fel ystumiau "
+#~ "llygoden neu fyrlwybrau allweddell ar gyfer weithredu gorchmynion, "
+#~ "cychwyn cymwysiadau neu alwadau DCOP, ac ati.</p>\n"
+#~ "<p><b>NODER: </b>Os nid ydych yn ddefnyddiwr medrus, dylech fod yn ofalus "
+#~ "wrth addasu'r gweithredoedd, a dylech cyfyngu eich newidiadau am y rhan "
+#~ "fwyaf i alluogi/analluogi gweithredoedd, a newid cliciedau.</p>"
+
+#~ msgid "Disable mouse gestures globally"
+#~ msgstr "Analluogi ystumiau llygoden yn eang"
+
+#~ msgid "Gesture timeout (ms):"
+#~ msgstr "Goramser ystum (me):"
+
+#~ msgid "Disable KHotKeys daemon"
+#~ msgstr "Analluogi'r ellyll KHotKeys"
+
+#, fuzzy
+#~ msgid "Keyboard_input_widget_ui"
+#~ msgstr "Mewnbwn allweddell:"
+
+#~ msgid "Keyboard input:"
+#~ msgstr "Mewnbwn allweddell:"
+
+#~ msgid "Modify..."
+#~ msgstr "Addasu..."
+
+#~ msgid "Called &function:"
+#~ msgstr "Ffwythian&t a elwyd:"
+
+#~ msgid "&Try"
+#~ msgstr "&Ceisio"
+
+#~ msgid "Action &type:"
+#~ msgstr "Math y wei&thred:"
+
+#~ msgid "Action &name:"
+#~ msgstr "En&w'r weithred:"
+
+#~ msgctxt "to try"
+#~ msgid "&Try"
+#~ msgstr "&Ceisio"
+
+#~ msgid "Simple Window..."
+#~ msgstr "Ffenestr Syml..."
+
+#~ msgid ""
+#~ "Draw the gesture you would like to record below. Press and hold the left "
+#~ "mouse button while drawing, and release when you have finished.\n"
+#~ "\n"
+#~ "You will be required to draw the gesture 3 times. After each drawing, if "
+#~ "they match, the indicators below will change to represent which step you "
+#~ "are on.\n"
+#~ "\n"
+#~ "If at any point they do not match, you will be required to restart. If "
+#~ "you want to force a restart, use the reset button below.\n"
+#~ "\n"
+#~ "Draw here:"
+#~ msgstr ""
+#~ "Lluniwch yr ystum rydych eisiau ei recordio yn isod.  Gwasgwch a gafael "
+#~ "ym motwm chwith y llygoden wrth lunio, a'i ryddhau ar ôl i chi orffen.\n"
+#~ "\n"
+#~ "Bydd rhaid i chi lunio'r ystum tair gwaith.  Ar ôl pob luniad, os maent "
+#~ "yn cydweddu, bydd y dangosyddion isod yn newid i gynrychioli pa gam "
+#~ "rydych wedi cyrraedd.\n"
+#~ "\n"
+#~ "Os nid ydynt yn cydweddu unrhyw adeg, bydd rhaid i chi ailgychwyn.  Os "
+#~ "ydych eisiau gorfodi ailgychwyn, defnyddiwch y botwm ailosod isod.\n"
+#~ "\n"
+#~ "Lluniwch yma:"
+
+#, fuzzy
+#~ msgid "Your gestures did not match."
+#~ msgstr "Ni chydweddodd eich ystumiau."
+
+#~ msgid ""
+#~ "You have already completed the three required drawings. Either press 'Ok' "
+#~ "to save or 'Reset' to try again."
+#~ msgstr ""
+#~ "Rydych wedi cwblhau yn barod y tri lluniad sy'n ofynnol.  Un ai gwasgwch "
+#~ "'Iawn' i gadw, neu 'Ailosod' i geisio eto."
+
+#~ msgid "Button 2 (middle)"
+#~ msgstr "Botwm 2 (canol)"
+
+#, fuzzy
+#~ msgid "Button 3 (secondary)"
+#~ msgstr "Botwm 3 (dde)"
+
+#~ msgid "Button 4 (often wheel up)"
+#~ msgstr "Botwm 4 (yn aml, olwyn i fyny)"
+
+#~ msgid "Button 5 (often wheel down)"
+#~ msgstr "Botwm 5 (yn aml, olwyn i lawr)"
+
+#~ msgid "Button 6 (if available)"
+#~ msgstr "Botwm 6 (os ar gael)"
+
+#~ msgid "Button 7 (if available)"
+#~ msgstr "Botwm 7 (os ar gael)"
+
+#~ msgid "Button 8 (if available)"
+#~ msgstr "Botwm 8 (os ar gael)"
+
+#~ msgid "Button 9 (if available)"
+#~ msgstr "Botwm 9 (os ar gael)"
+
+#~ msgid "Info"
+#~ msgstr "Gwybo"
+
+#~ msgid "General Settings"
+#~ msgstr "Gosodiadau Cyffredinol"
+
+#~ msgid "Gestures Settings"
+#~ msgstr "Gosodiadau Ystumiau"
+
+#~ msgid "Command/URL Settings"
+#~ msgstr "Gosodiadau Gorchymyn/URL"
+
+#~ msgid "Menu Entry Settings"
+#~ msgstr "Gosodiadau Cofnod Dewislen"
+
+#, fuzzy
+#~| msgid "DCOP Call Settings"
+#~ msgid "D-Bus Call Settings"
+#~ msgstr "Gosodiadau Galwad DCOP"
+
+#~ msgid "Keyboard Input Settings"
+#~ msgstr "Gosodiadau Mewnbwn Allweddell"
+
+#~ msgid ""
+#~ "A group is selected.\n"
+#~ "Add the new condition in this selected group?"
+#~ msgstr ""
+#~ "Dewisir grŵp.\n"
+#~ "Ychwanegu'r grŵp newydd i'r grŵp dewisiedig yma?"
+
+#, fuzzy
+#~ msgid "Add in Group"
+#~ msgstr "Grŵp Newydd o Weithredoedd"
+
+#~ msgid "New Action Group"
+#~ msgstr "Grŵp Newydd o Weithredoedd"
+
+#, fuzzy
+#~ msgid "Select File with Actions to Be Imported"
+#~ msgstr "Dewis y ffeil sy'n cynnyws gweithredoedd i'w mewnforio"
+
+#~ msgid ""
+#~ "Import of the specified file failed. Most probably the file is not a "
+#~ "valid file with actions."
+#~ msgstr ""
+#~ "Methodd mewnforio'r ffeil penodol.  Yn eitha debyg, nid yw'r ffeil yn "
+#~ "ffeil dilys efo gweithredoedd."
+
+#~ msgid "Command/URL..."
+#~ msgstr "Gorchymyn/URL..."
+
+#~ msgid "Activate Window..."
+#~ msgstr "Gweithredu Ffenestr..."
+
+#~ msgid "Generic"
+#~ msgstr "Generig"
+
+#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
+#~ msgstr "Byrlwybr Allweddell -> Gorchymyn/URL (syml)"
+
+#~ msgid "K-Menu Entry (simple)"
+#~ msgstr "Cofnod K-Dewislen (syml)"
+
+#, fuzzy
+#~| msgid "Keyboard Shortcut -> DCOP Call (simple)"
+#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
+#~ msgstr "Byrlwybr Allweddell -> Galwad DCOP (syml)"
+
+#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
+#~ msgstr "Byrlwybr Allweddell -> Mewnbwn Allweddell (syml)"
+
+#~ msgid "Gesture -> Keyboard Input (simple)"
+#~ msgstr "Ystum -> Mewnbwn Allweddell (syml)"
+
+#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
+#~ msgstr "Byrlwybr Allweddell -> Gweithredu Ffenestr (syml)"
+
+#~ msgid "Shortcut Trigger..."
+#~ msgstr "Clicied Byrlwybr..."
+
+#~ msgid "Gesture Trigger..."
+#~ msgstr "Clicied Ystum..."
+
+#~ msgid "Window Trigger..."
+#~ msgstr "Clicied Ffenestr..."
+
+#, fuzzy
+#~ msgid "Voice Trigger..."
+#~ msgstr "Clicied Byrlwybr..."
+
+#~ msgid "Select keyboard shortcut:"
+#~ msgstr "Dewis byrlwybr allweddell:"
+
+#, fuzzy
+#~ msgid "Copy of "
+#~ msgstr "&Aros"
+
+#~ msgid "Run &KDCOP"
+#~ msgstr "Rhedeg &Kdcop"
+
+#~ msgid "DCOP : "
+#~ msgstr "DCOP:"
+
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#~ msgid "Voice"
+#~ msgstr "Llais"

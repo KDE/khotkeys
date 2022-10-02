@@ -1,0 +1,1334 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2005, 2006, 2007.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009, 2010.
+# Burkhard Lück <lueck@hube-lueck.de>, 2009, 2012, 2015, 2017, 2018, 2020.
+# Frederik Schwarzer <schwarzer@kde.org>, 2009, 2010, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: khotkeys\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2022-06-10 00:32+0200\n"
+"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Thomas Reitelbach, Thomas Diehl"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "tr@erdfunkstelle.de, thd@kde.org"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, kde-format
+msgid "Command/URL:"
+msgstr "Befehl/Adresse:"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, kde-format
+msgid "Remote application:"
+msgstr "Programm auf Fremdrechner:"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, kde-format
+msgid "Remote object:"
+msgstr "Objekt auf Fremdrechner:"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, kde-format
+msgid "Function:"
+msgstr "Funktion:"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "Argumente:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr "Aufrufen"
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr "D-Bus-Browser aufrufen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "Fenster"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, kde-format
+msgid "Active window"
+msgstr "Aktives Fenster"
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, kde-format
+msgid "Specific window"
+msgstr "Spezielles Fenster"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, kde-format
+msgid "Action window"
+msgstr "Aktionsfenster"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, kde-format
+msgid "Application:"
+msgstr "Anwendung:"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, kde-format
+msgid "Select Application ..."
+msgstr "Anwendung auswählen ..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, kde-format
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "Aktives Fenster ..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, kde-format
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "Bestehendes Fenster ..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, kde-format
+msgctxt "Condition type"
+msgid "And"
+msgstr "Und"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, kde-format
+msgctxt "Condition type"
+msgid "Or"
+msgstr "Oder"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, kde-format
+msgctxt "Condition type"
+msgid "Not"
+msgstr "Nicht"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, kde-format
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "Und"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr "1"
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, kde-format
+msgctxt "new condition"
+msgid "New"
+msgstr "Neu"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, kde-format
+msgid "Edit..."
+msgstr "Bearbeiten ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, kde-format
+msgid "Delete"
+msgstr "Löschen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr "Eingabeaktionen-Dienst"
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr "Dienst für Eingabeaktionen bei der Anmeldung starten"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "Gesten"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr "Zeitüberschreitung:"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr " ms"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, kde-format
+msgid "Mouse button:"
+msgstr "Maustaste:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, kde-format
+msgid "Middle button"
+msgstr "Mittlere Maustaste"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr "Rechte Maustaste"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr "Knopf 4"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr "Knopf 5"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr "Knopf 6"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr "Knopf 7"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr "Knopf 8"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr "Knopf 9"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, kde-format
+msgid "Edit Gesture"
+msgstr "Geste bearbeiten"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+"Zeichnen Sie die gewünschte Geste im unteren Bereich. Dazu drücken und "
+"halten Sie die linke Maustaste, während Sie die Geste mit der Maus "
+"nachziehen. Lassen Sie die Maustaste los, wenn Sie fertig sind."
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, kde-format
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, kde-format
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, kde-format
+msgid "&Edit..."
+msgstr "&Bearbeiten ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, kde-format
+msgid "&New..."
+msgstr "&Neu ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr "&Duplizieren ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, kde-format
+msgid "&Delete"
+msgstr "&Löschen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, kde-format
+msgid "Window Data"
+msgstr "Fensterdaten"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, kde-format
+msgid "Window title:"
+msgstr "Fenstertitel:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, kde-format
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "Ist unwichtig"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "Enthält"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "Ist gleich"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "Entspricht regulärem Ausdruck"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "Enthält nicht"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "Ist ungleich"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "Entspricht nicht dem regulären Ausdruck"
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, kde-format
+msgid "Window class:"
+msgstr "Fensterklasse:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, kde-format
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "Ist unwichtig"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, kde-format
+msgid "Window role:"
+msgstr "Rolle des Fensters:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, kde-format
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "Ist unwichtig"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&Automatisch feststellen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "Fenstertypen"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "Normal"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "Arbeitsfläche"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "Dialog"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "Andockfenster"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, kde-format
+msgid "Test"
+msgstr "Test"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, kde-format
+msgid "New Group"
+msgstr "Neue Gruppe"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, kde-format
+msgid "Export Group..."
+msgstr "Gruppe exportieren ..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, kde-format
+msgid "Import..."
+msgstr "Importieren ..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, kde-format
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "Neu"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, kde-format
+msgid "Global Shortcut"
+msgstr "Globaler Kurzbefehl"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, kde-format
+msgid "Window Action"
+msgstr "Fensteraktion"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, kde-format
+msgid "Mouse Gesture Action"
+msgstr "Mausgesten-Aktion"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, kde-format
+msgid "Command/URL"
+msgstr "Befehl/Adresse"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, kde-format
+msgid "D-Bus Command"
+msgstr "D-Bus-Aufruf"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, kde-format
+msgid "K-Menu Entry"
+msgstr "Anwendungsstarter-Eintrag"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, kde-format
+msgid "Send Keyboard Input"
+msgstr "Tastatureingabe senden"
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, kde-format
+msgid "Comment"
+msgstr "Kommentar"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "Neue Aktion"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, kde-format
+msgid "Export Group"
+msgstr "Gruppe exportieren"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr "Status der exportierten Aktionen ändern."
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, kde-format
+msgid "Export Actions"
+msgstr "Aktionen exportieren"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Einrichten, in welchem "
+"Status die Aktionen exportiert werden.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Aktueller Status</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Exportiert die Aktionen in "
+"ihrem aktuellen Status.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Deaktiviert</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Exportiert die Aktionen in "
+"deaktiviertem Status.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Aktiviert</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Exportiert die Aktionen in "
+"aktiviertem Status.</p></body></html>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr "Aktueller Status"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, kde-format
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, kde-format
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr "KHotkeys-Datei-ID."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+"Eine KHotkeys-Datei-ID stellt sicher, dass Dateien nicht mehrfach importiert "
+"werden. Dies wird hauptsächlich von KDE-Entwicklern bei automatischen "
+"Aktualisierungen verwendet."
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr "ID"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr "Import-ID für die Datei festlegen, oder leer lassen"
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr "Dateiname"
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr "Zusammenführung zulassen"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr "Beim Import in vorhandene Ordner zusammenführen?"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+"Zusammenführung der Inhalte zulassen, wenn beim Importieren ein Ordner "
+"gleichen Namens vorhanden ist. Wenn das Zusammenführen nicht zugelassen "
+"wird, werden in einem solchen Fall zwei Ordner mit gleichem Namen existieren."
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr "Name"
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, kde-format
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr "Typ"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr "KDE-Einrichtungsmodul für Tastenkombinationen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr "Copyright 2008 © Michael Jansen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr "Michael Jansen"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "Betreuer"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+"Die aktuelle Aktion enthält ungespeicherte Änderungen.\n"
+"Möchten Sie diese Änderungen übernehmen oder verwerfen?"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr "Änderungen Speichern"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+"Es ist keine Verbindung mit KHotKeys möglich. Ihre Änderungen wurden "
+"gespeichert, können aber nicht aktiviert werden."
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, kde-format
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, kde-format
+msgid "Trigger"
+msgstr "Auslöser"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, kde-format
+msgid "Action"
+msgstr "Aktion"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, kde-format
+msgid "&Shortcut:"
+msgstr "&Kurzbefehl:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "Auslösen, sobald"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, kde-format
+msgid "Window appears"
+msgstr "Fenster erscheint"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, kde-format
+msgid "Window disappears"
+msgstr "Fenster verschwindet"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, kde-format
+msgid "Window gets focus"
+msgstr "Fenster den Fokus erhält"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, kde-format
+msgid "Window loses focus"
+msgstr "Fenster den Fokus verliert"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, kde-format
+msgid "Activate window: "
+msgstr "Fenster aktivieren: "
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, kde-format
+msgid "Command/URL : "
+msgstr "Befehl/Adresse: "
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, kde-format
+msgid "D-Bus: "
+msgstr "D-Bus:"
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, kde-format
+msgid "Keyboard input: "
+msgstr "Tastatureingabe: "
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr "Kein Dienst eingerichtet."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr "Eingabeaktion: %1"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr "Der Dienst „%1“ lässt sich nicht starten."
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, kde-format
+msgid "Menu entry: "
+msgstr "Menü-Eintrag: "
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "Aktives Fenster: "
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "Und"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, kde-format
+msgid "Existing window: "
+msgstr "Bestehendes Fenster: "
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "Nicht"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "Oder"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "Einträge des Menü-Editors"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr ""
+"Diese „actions“-Datei wurde bereits zuvor importiert. Möchten Sie den "
+"Vorgang wiederholen?"
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+"Diese „actions“-Datei enthält kein Feld namens „ImportId“. Es kann nicht "
+"festgestellt werden, ob sie nicht schon einmal importiert wurde. Vorgang "
+"dennoch fortsetzen?"
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr "Dienst für eigene Kurzbefehle"
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, kde-format
+msgid "Gesture trigger"
+msgstr "Auslöser für Geste"
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, kde-format
+msgid "Shortcut trigger: "
+msgstr "Auslöser für Kurzbefehl: "
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, kde-format
+msgid "Window trigger: "
+msgstr "Auslöser für Fensteraktion: "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, kde-format
+msgid "Window simple: "
+msgstr "Fenster: "
+
+#~ msgid "Voice trigger: "
+#~ msgstr "Auslöser für Stimmeingabe: "
+
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "Ausführung von qdbusviewer fehlgeschlagen"
+
+#, fuzzy
+#~| msgid "Normal"
+#~ msgid "Form"
+#~ msgstr "Normal"
+
+#~ msgid "&Edit"
+#~ msgstr "&Bearbeiten"
+
+#, fuzzy
+#~| msgid "Active window"
+#~ msgid "Active Window"
+#~ msgstr "Aktives Fenster"
+
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "KHotKeys-Dienst"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Add comment here"
+#~ msgstr "Hier einen Kommentar hinzufügen"
+
+#~ msgid "&Enabled"
+#~ msgstr "&Aktiviert"
+
+#~ msgid "Parent group is disabled"
+#~ msgstr "Hauptgruppe ist deaktiviert"
+
+#~ msgid "Started server <em>org.kde.khotkeys</em>."
+#~ msgstr "Der Dienst <em>org.kde.khotkeys</em> wurde gestartet."
+
+#~ msgid "Unable to start server <em>org.kde.khotkeys</em>."
+#~ msgstr "Der Dienst <em>org.kde.khotkeys</em> lässt sich nicht starten."
+
+#~ msgid ""
+#~ "Unable to start service <em>org.kde.khotkeys</em>.<br /><br /><i>Error: "
+#~ "%1</i>"
+#~ msgstr ""
+#~ "Der Dienst <em>org.kde.khotkeys</em> lässt sich nicht starten.<br /><br /"
+#~ "><i>Fehler: %1</i>"
+
+#~ msgid "KHotKeys Update"
+#~ msgstr "KHotKeys-Aktualisierung"
+
+#~ msgid "KHotKeys update utility"
+#~ msgstr "KHotKeys-Aktualisierungs-Dienst"
+
+#~ msgid "Id of the script to add to %1"
+#~ msgstr "Kennung des Skripts, das zu %1 hinzugefügt werden soll."
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "Diese Einträge wurden über den Menü-Editor erstellt."
+
+#~ msgid "KDE Hotkeys:"
+#~ msgstr "KDE-Kurzbefehle:"
+
+#~ msgid "&Modify..."
+#~ msgstr "Ä&ndern ..."
+
+#~ msgid "&Copy"
+#~ msgstr "&Kopieren"
+
+#~ msgid "&New Action"
+#~ msgstr "&Neue Aktion"
+
+#~ msgid "Global &Settings"
+#~ msgstr "&Globale Einstellungen"
+
+#~ msgid "Command/URL to execute:"
+#~ msgstr "Aufzurufende(r) Befehl/Adresse:"
+
+#~ msgid "Window activates"
+#~ msgstr "Fenster wird aktiviert"
+
+#~ msgid "Window deactivates"
+#~ msgstr "Fenster wird deaktiviert"
+
+#~ msgid "Menu entry to execute:"
+#~ msgstr "Auszuführender Menü-Eintrag:"
+
+#~ msgid "&Browse..."
+#~ msgstr "&Auswählen ..."
+
+#~ msgid "&Play"
+#~ msgstr "&Wiedergabe"
+
+#~ msgid "&Record"
+#~ msgstr "&Aufnahme"
+
+#~ msgid "&Stop"
+#~ msgstr "&Stopp"
+
+#~ msgid "Gestures:"
+#~ msgstr "Gesten:"
+
+#~ msgid "Action group &name:"
+#~ msgstr "Name der Aktions&gruppe:"
+
+#~ msgid "&Disable:"
+#~ msgstr "&Deaktivieren:"
+
+#~ msgid "Info_tab_ui"
+#~ msgstr "Info_tab_ui"
+
+#~ msgid ""
+#~ "<p>This module allows configuration of input actions, such as mouse "
+#~ "gestures, keyboard shortcuts for performing commands, launching "
+#~ "applications or D-Bus calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "when modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>Dieses Modul ermöglicht die Festlegung von Eingabeaktionen wie "
+#~ "gestischen Mausbewegungen, Kurzbefehlen über die Tastatur, "
+#~ "Programmstarts, D-Bus-Aufrufen und dergleichen mehr.</p>\n"
+#~ "<p><b>Bitte beachten Sie:</b> Falls Sie kein erfahrener Benutzer sind, "
+#~ "sollten Sie mit der Veränderung von Aktionen vorsichtig sein und sich auf "
+#~ "ihre Aktivierung oder Deaktivierung bzw. die Anpassung von auslösenden "
+#~ "Vorgängen beschränken.</p>"
+
+#~ msgid "Disable mouse gestures globally"
+#~ msgstr "Mausgesten global deaktivieren"
+
+#~ msgid "Gesture timeout (ms):"
+#~ msgstr "Zeitüberschreitung für Geste (ms):"
+
+#~ msgid "Disable KHotKeys daemon"
+#~ msgstr "KHotKeys-Dienst deaktivieren"
+
+#~ msgid "Keyboard_input_widget_ui"
+#~ msgstr "Keyboard_input_widget_ui"
+
+#~ msgid "Keyboard input:"
+#~ msgstr "Tastatureingabe:"
+
+#~ msgid "Modify..."
+#~ msgstr "Ändern ..."
+
+#~ msgid "Send Input To"
+#~ msgstr "Eingabe übergeben an"
+
+#~ msgid ""
+#~ "Specify the window where the keyboard input should be sent to:<ul>\n"
+#~ "<li><em>Action window:</em> The window where the triggering action "
+#~ "happened; this is usually the currently active window, except for mouse "
+#~ "gesture triggers - where it is the window under mouse - and window "
+#~ "triggers -where it is the window triggering the action.</li>\n"
+#~ "<li><em>Active window:</em> The currently active window.</li>\n"
+#~ "<li><em>Specific window:</em> Any window matching the given criteria.</"
+#~ "li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "Geben Sie das Fenster an, wohin die Tastatureingaben geschickt werden "
+#~ "sollen:<ul>\n"
+#~ "<li><em>Aktionsfenster:</em> Das Fenster, in dem die auslösende Funktion "
+#~ "stattfindet. Normalerweise ist dies ein aktives Fenster. Ausnahmen: Wenn "
+#~ "es sich beim Auslöser um eine Mausgeste handelt (dann ist es das Fenster "
+#~ "unter der Maus) oder bei Fensterauslösern (dann ist es das auslösende "
+#~ "Fenster).</li>\n"
+#~ "<li><em>Aktives Fenster:</em> Das gerade ausgewählte Fenster</li>\n"
+#~ "<li><em>Spezielles Fenster:</em> Jedes Fenster, das die angegebenen "
+#~ "Voraussetzungen erfüllt</li>\n"
+#~ "</ul>"
+
+#~ msgid "Called &function:"
+#~ msgstr "Aufgerufene &Funktion:"
+
+#~ msgid "&Try"
+#~ msgstr "&Testen"
+
+#~ msgid "Action &type:"
+#~ msgstr "Aktions&typ:"
+
+#~ msgid "Action &name:"
+#~ msgstr "Aktions&name:"
+
+#~ msgid ""
+#~ "In order to trigger a spoken action, you have to press the key (or "
+#~ "combination of keys) configured below, speak the command and then press "
+#~ "the same key again once you have finished speaking."
+#~ msgstr ""
+#~ "Um einen gesprochenen Befehl zu aktivieren, muss die unten eingestellte "
+#~ "Taste (oder Tastenkombination) gedrückt werden. Dann sprechen Sie den "
+#~ "Befehl aus, und wenn Sie fertig sind, drücken Sie die Taste erneut."
+
+#~ msgid ""
+#~ "<b>Note:</b> To get voice recognition working correctly and in full "
+#~ "duplex mode: \n"
+#~ "make sure <i>Full duplex</i> is checked in your <i>Sound System</i> "
+#~ "options."
+#~ msgstr ""
+#~ "<b>Hinweis:</b> Damit die Spracherkennung korrekt und in Vollduplex "
+#~ "funktioniert, aktivieren Sie bitte in den Systemeinstellungen unter "
+#~ "„Sound-System“ auf der Seite „Hardware“ die Option <i>Vollduplex</i>."
+
+#~ msgctxt "to try"
+#~ msgid "&Try"
+#~ msgstr "&Testen"
+
+#~ msgid "Simple Window..."
+#~ msgstr "Einfaches Fenster ..."
+
+#~ msgid ""
+#~ "Draw the gesture you would like to record below. Press and hold the left "
+#~ "mouse button while drawing, and release when you have finished.\n"
+#~ "\n"
+#~ "You will be required to draw the gesture 3 times. After each drawing, if "
+#~ "they match, the indicators below will change to represent which step you "
+#~ "are on.\n"
+#~ "\n"
+#~ "If at any point they do not match, you will be required to restart. If "
+#~ "you want to force a restart, use the reset button below.\n"
+#~ "\n"
+#~ "Draw here:"
+#~ msgstr ""
+#~ "Zeichnen Sie die Geste, die Sie speichern möchten, unten auf. Halten Sie "
+#~ "die linke Maustaste beim Zeichnen gedrückt und lassen Sie sie erst los, "
+#~ "wenn Sie den Vorgang abgeschlossen haben.\n"
+#~ "\n"
+#~ "Es ist erforderlich, dass die Geste dreimal wiederholt wird. Bei Erfolg "
+#~ "ändert sich die Statusanzeige unten und zeigt an, an welcher Stelle des "
+#~ "Gesamtablaufs Sie sich befinden.\n"
+#~ "\n"
+#~ "Falls keine ausreichende Übereinstimmung feststellbar ist, werden Sie "
+#~ "gebeten, nochmals zu beginnen. Sollten Sie von sich aus einen neuen "
+#~ "Versuch unternehmen möchten, drücken Sie bitte auf „Zurücksetzen“.\n"
+#~ "\n"
+#~ "Beginnen Sie hier mit Ihrer Zeichnung:"
+
+#~ msgid "Your gestures did not match."
+#~ msgstr "Ihre Gesten stimmen nicht überein."
+
+#~ msgid ""
+#~ "You have already completed the three required drawings. Either press 'Ok' "
+#~ "to save or 'Reset' to try again."
+#~ msgstr ""
+#~ "Sie haben bereits drei übereinstimmende Gesten gezeichnet. Klicken Sie "
+#~ "bitte entweder auf „OK“ oder „Zurücksetzen“, um einen weiteren Versuch zu "
+#~ "starten."
+
+#~ msgid "Button 2 (middle)"
+#~ msgstr "Taste 2 (mittlere)"
+
+#~ msgid "Button 3 (secondary)"
+#~ msgstr "Taste 3 (rechts, sekundär)"
+
+#~ msgid "Button 4 (often wheel up)"
+#~ msgstr "Taste 4 (bzw. Rad aufwärts)"
+
+#~ msgid "Button 5 (often wheel down)"
+#~ msgstr "Taste 5 (bzw. Rad abwärts)"
+
+#~ msgid "Button 6 (if available)"
+#~ msgstr "Taste 6 (falls verfügbar)"
+
+#~ msgid "Button 7 (if available)"
+#~ msgstr "Taste 7 (falls verfügbar)"
+
+#~ msgid "Button 8 (if available)"
+#~ msgstr "Taste 8 (falls verfügbar)"
+
+#~ msgid "Button 9 (if available)"
+#~ msgstr "Taste 9 (falls verfügbar)"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "General Settings"
+#~ msgstr "Allgemeine Einstellungen"
+
+#~ msgid "Gestures Settings"
+#~ msgstr "Gesten-Einstellungen"
+
+#~ msgid "Command/URL Settings"
+#~ msgstr "Befehls/Adress-Einstellungen"
+
+#~ msgid "Menu Entry Settings"
+#~ msgstr "Einstellungen zu Menü-Einträgen"
+
+#~ msgid "D-Bus Call Settings"
+#~ msgstr "Einstellungen zu D-Bus-Aufrufen"
+
+#~ msgid "Keyboard Input Settings"
+#~ msgstr "Einstellungen zu Tastatureingaben"
+
+#~ msgid ""
+#~ "A group is selected.\n"
+#~ "Add the new condition in this selected group?"
+#~ msgstr ""
+#~ "Es ist eine Gruppe ausgewählt.\n"
+#~ "Soll die neue Bedingung für die gesamte Gruppe hinzugefügt werden?"
+
+#~ msgid "Add in Group"
+#~ msgstr "Zur Gruppe hinzufügen"
+
+#~ msgid "Recording..."
+#~ msgstr "Aufnahme läuft ..."
+
+#~ msgid ""
+#~ "The word you recorded is too close to the existing reference '%1'. Please "
+#~ "record another word."
+#~ msgstr ""
+#~ "Das aufgenommene Wort ist der Referenz „%1“ zu ähnlich, bitte nehmen Sie "
+#~ "ein weiteres Wort auf."
+
+#~ msgid ""
+#~ "Unable to extract voice information from noise.\n"
+#~ "If this error occurs repeatedly, it suggests that there is either too "
+#~ "much background noise, or the quality of your microphone is too poor."
+#~ msgstr ""
+#~ "Die Sprache lässt sich nicht sauber vom Grundrauschen unterscheiden.\n"
+#~ "Wenn diese Meldung recht häufig erscheint, existiert bei der Aufnahme zu "
+#~ "viel Grundrauschen oder Ihr Mikrofon ist nicht in Ordnung."
+
+#~ msgid "(c) 1999-2005 Lubos Lunak"
+#~ msgstr "(c) 1999-2005 Lubos Lunak"
+
+#~ msgid "Lubos Lunak"
+#~ msgstr "Lubos Lunak"
+
+#~ msgid "New Action Group"
+#~ msgstr "Neue Aktionsgruppe"
+
+#~ msgid "Select File with Actions to Be Imported"
+#~ msgstr "Wählen Sie die Datei mit Aktionen, die importiert werden sollen."
+
+#~ msgid ""
+#~ "Import of the specified file failed. Most probably the file is not a "
+#~ "valid file with actions."
+#~ msgstr ""
+#~ "Import der angegebenen Datei fehlgeschlagen. Wahrscheinlich handelt es "
+#~ "sich um keine Datei, die entsprechende Aktionen enthält."
+
+#~ msgid "K Menu - "
+#~ msgstr "K-Menü - "
+
+#~ msgid "Command/URL..."
+#~ msgstr "Befehl/Adresse ..."
+
+#~ msgid "Activate Window..."
+#~ msgstr "Fenster aktivieren ..."
+
+#~ msgid ""
+#~ "Enter a code for the sound (e.g. the word you are saying) and record the "
+#~ "same word twice."
+#~ msgstr ""
+#~ "Geben Sie eine Bezeichnung für die Aufnahme ein (z. B. das gesprochene "
+#~ "Wort) und nehmen Sie es dann zweimal auf."
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>The sound code already exists</font></qt>"
+#~ msgstr ""
+#~ "<qt>%1<br /><font color='red'>Der Sound-Code existiert bereits.</font></"
+#~ "qt>"
+
+#~ msgid ""
+#~ "<qt>%1<br /><font color='red'>One of the sound references is not correct</"
+#~ "font></qt>"
+#~ msgstr ""
+#~ "<qt>%1<br /><font color='red'>Eine der Aufnahme-Referenzen ist nicht in "
+#~ "Ordnung.</font></qt>"
+
+#~ msgid "Generic"
+#~ msgstr "Generisch"
+
+#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
+#~ msgstr "Tastenkürzel -> Befehl/Adresse (einfach)"
+
+#~ msgid "K-Menu Entry (simple)"
+#~ msgstr "K-Menü-Eintrag (einfach)"
+
+#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
+#~ msgstr "Tastenkürzel -> D-Bus-Aufruf (einfach)"
+
+#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
+#~ msgstr "Tastenkürzel -> Tastatureingabe (einfach)"
+
+#~ msgid "Gesture -> Keyboard Input (simple)"
+#~ msgstr "Geste -> Tastatureingabe (einfach)"
+
+#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
+#~ msgstr "Tastenkürzel -> Fenster aktivieren (einfach)"
+
+#~ msgid "Shortcut Trigger..."
+#~ msgstr "Kurzbefehl-Auslöser ..."
+
+#~ msgid "Gesture Trigger..."
+#~ msgstr "Gestischer Auslöser ..."
+
+#~ msgid "Window Trigger..."
+#~ msgstr "Fenster-Auslöser ..."
+
+#~ msgid "Voice Trigger..."
+#~ msgstr "Sprach-Auslöser ..."
+
+#~ msgid "TODO: Correct Behavior"
+#~ msgstr "Zu erledigen: Korrektes Verhalten"
+
+#~ msgid "Select keyboard shortcut:"
+#~ msgstr "Tastenkürzel auswählen:"
+
+#~ msgid "Copy of "
+#~ msgstr "Kopie von1"
+
+#~ msgid "Run &KDCOP"
+#~ msgstr "&KDCOP starten"
+
+#~ msgid "DCOP : "
+#~ msgstr "DCOP: "

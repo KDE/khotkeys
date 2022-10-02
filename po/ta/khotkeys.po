@@ -1,0 +1,1296 @@
+# translation of khotkeys.po to 
+# translation of khotkeys.po to Tamil
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Vasee Vaseeharan <vasee@ieee.org>, 2004.
+# root <root@localhost.localdomain>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: khotkeys\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"PO-Revision-Date: 2005-03-15 00:20-0800\n"
+"Last-Translator: Tamil PC <tamilpc@ambalam.com>\n"
+"Language-Team:  <ta@li.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "tamilpcteam"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "jayalakshmibalaji@hotmail.com"
+
+#: kcm_hotkeys/action_group_widget.cpp:17
+#, kde-format
+msgid "Conditions"
+msgstr "நிபந்தனைகள்"
+
+#. i18n: ectx: property (text), widget (QLabel, commandLabel)
+#: kcm_hotkeys/actions/command_url_action_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL:"
+msgstr "கட்டளை/வலைமனை :"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:19
+#, fuzzy, kde-format
+#| msgid "Remote &application:"
+msgid "Remote application:"
+msgstr "தொலைநிலை &பயன்பாடு :"
+
+#. i18n: ectx: property (text), widget (QLabel, objectLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:32
+#, fuzzy, kde-format
+#| msgid "Remote &object:"
+msgid "Remote object:"
+msgstr "தொலைதூரப் பொருள்:"
+
+#. i18n: ectx: property (text), widget (QLabel, functionLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Function:"
+msgstr "செயல்கள்"
+
+#. i18n: ectx: property (text), widget (QLabel, argumentsLabel)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:58
+#, kde-format
+msgid "Arguments:"
+msgstr "விவாதங்கள்:"
+
+#. i18n: ectx: property (text), widget (QPushButton, execButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:85
+#, kde-format
+msgid "Call"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, launchButton)
+#: kcm_hotkeys/actions/dbus_action_widget.ui:92
+#, kde-format
+msgid "Launch D-Bus Browser"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:53
+#, kde-format
+msgid "Window"
+msgstr "சாளரம்"
+
+#. i18n: ectx: property (text), widget (QRadioButton, active_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:27
+#, fuzzy, kde-format
+#| msgid "Active window: "
+msgid "Active window"
+msgstr "நடப்பு சாளரம்:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, specific_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:34
+#, fuzzy, kde-format
+#| msgid "Specific window"
+msgid "Specific window"
+msgstr "குறிப்பிட்ட சாளரம்"
+
+#. i18n: ectx: property (text), widget (QRadioButton, action_radio)
+#: kcm_hotkeys/actions/keyboard_input_action_widget.ui:41
+#, fuzzy, kde-format
+#| msgid "Action window"
+msgid "Action window"
+msgstr "நடப்பு சாளரம்"
+
+#. i18n: ectx: property (text), widget (QLabel, applicationLabel)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Application:"
+msgstr "செயல்கள்"
+
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
+#: kcm_hotkeys/actions/menuentry_action_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "Delete Action"
+msgid "Select Application ..."
+msgstr "செயலை நீக்கு"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
+#, fuzzy, kde-format
+#| msgid "Active Window..."
+msgctxt "Condition type"
+msgid "Active Window ..."
+msgstr "நடப்பு சாளரம்...."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
+#, fuzzy, kde-format
+#| msgid "Existing Window..."
+msgctxt "Condition type"
+msgid "Existing Window ..."
+msgstr "ஏற்கெனவே இருக்கும் சாளரம்..."
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Condition type"
+msgid "And"
+msgstr "மற்றும்"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
+#, fuzzy, kde-format
+#| msgctxt "Or_condition"
+#| msgid "Or"
+msgctxt "Condition type"
+msgid "Or"
+msgstr "அல்லது"
+
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
+#, fuzzy, kde-format
+#| msgctxt "Not_condition"
+#| msgid "Not"
+msgctxt "Condition type"
+msgid "Not"
+msgstr "இல்லை"
+
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
+#, fuzzy, kde-format
+#| msgctxt "And_condition"
+#| msgid "And"
+msgctxt "Add a new condition"
+msgid "And"
+msgstr "மற்றும்"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, tree)
+#: kcm_hotkeys/conditions/conditions_widget.ui:20
+#, kde-format
+msgid "1"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:30
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "new condition"
+msgid "New"
+msgstr "&புதிய"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:37
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit..."
+msgstr "திருத்து..."
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/conditions/conditions_widget.ui:44
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
+#, fuzzy, kde-format
+msgid "Delete"
+msgstr "செயலை நீக்கு"
+
+#. i18n: ectx: property (title), widget (QGroupBox, global_group)
+#: kcm_hotkeys/global_settings_widget.ui:32
+#, kde-format
+msgid "Input Actions Daemon"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, enabled)
+#: kcm_hotkeys/global_settings_widget.ui:38
+#, kde-format
+msgid "Start the Input Actions daemon on login"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
+#: kcm_hotkeys/global_settings_widget.ui:48
+#, kde-format
+msgid "Gestures"
+msgstr "குறிப்புகள்"
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
+#: kcm_hotkeys/global_settings_widget.ui:57
+#, kde-format
+msgid "Timeout:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
+#: kcm_hotkeys/global_settings_widget.ui:70
+#, kde-format
+msgid " ms"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
+#: kcm_hotkeys/global_settings_widget.ui:99
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse button:"
+msgstr "சுட்டி விசை பொத்தான்:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Middle button"
+msgstr "சுட்டி விசை பொத்தான்:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr ""
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
+#, fuzzy, kde-format
+#| msgid "Gestures"
+msgid "Edit Gesture"
+msgstr "குறிப்புகள்"
+
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
+#, kde-format
+msgid ""
+"Draw the gesture you would like to record below. Press and hold the left "
+"mouse button while drawing, and release when you have finished."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
+#: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
+#: kcm_hotkeys/kcm_hotkeys.ui:29
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Edit"
+msgstr "திருத்து..."
+
+#. i18n: ectx: property (text), widget (QLabel, comment_label)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:19
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:24
+#, fuzzy, kde-format
+#| msgid "&Comment:"
+msgid "Comment:"
+msgstr "&குறிப்பு:"
+
+#. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "&Edit..."
+msgstr "திருத்து..."
+
+#. i18n: ectx: property (text), widget (QPushButton, new_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
+#, fuzzy, kde-format
+#| msgid "&New"
+msgid "&New..."
+msgstr "&புதிய"
+
+#. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
+#, kde-format
+msgid "&Duplicate..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, delete_button)
+#: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
+#, fuzzy, kde-format
+msgid "&Delete"
+msgstr "செயலை நீக்கு"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window Data"
+msgstr "சாளரத்தின் விவரங்கள்"
+
+#. i18n: ectx: property (text), widget (QLabel, window_title_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:31
+#, fuzzy, kde-format
+#| msgid "Window &title:"
+msgid "Window title:"
+msgstr "சாளரத்தின் &தலைப்பு:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:39
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window title is not important"
+msgid "Is Not Important"
+msgstr "இது முக்கியம் இல்லை"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:44
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:90
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:136
+#, kde-format
+msgid "Contains"
+msgstr "உள்ளடக்கியது"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:49
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:95
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:141
+#, kde-format
+msgid "Is"
+msgstr "Is"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:54
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:100
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
+#, kde-format
+msgid "Matches Regular Expression"
+msgstr "வழக்கமான தொடர் பொருந்துகிறது"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:59
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:105
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:151
+#, kde-format
+msgid "Does Not Contain"
+msgstr "இதில் எதுவும் இல்லை"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:64
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:110
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:156
+#, kde-format
+msgid "Is Not"
+msgstr "இல்லை"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:69
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:115
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
+#, kde-format
+msgid "Does Not Match Regular Expression"
+msgstr "இந்த தொடர் எப்போதும் உள்ள தொடரைப்போல் இல்லை."
+
+#. i18n: ectx: property (text), widget (QLabel, window_class_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
+#, fuzzy, kde-format
+#| msgid "Window c&lass:"
+msgid "Window class:"
+msgstr "சாளரத்தின் வகை:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:85
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window class is not important"
+msgid "Is Not Important"
+msgstr "இது முக்கியம் இல்லை"
+
+#. i18n: ectx: property (text), widget (QLabel, window_role_label)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Window &role:"
+msgid "Window role:"
+msgstr "சாளரத்தின் பங்கு:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, window_role_combo)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:131
+#, fuzzy, kde-format
+#| msgid "Is Not Important"
+msgctxt "window role is not important"
+msgid "Is Not Important"
+msgstr "இது முக்கியம் இல்லை"
+
+#. i18n: ectx: property (text), widget (QPushButton, autodetect)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
+#, kde-format
+msgid "&Autodetect"
+msgstr "&தானியங்கு கண்டுபிடிப்பான்"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
+#, kde-format
+msgid "Window Types"
+msgstr "சாளரத்தின் வகைகள்:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_normal)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:211
+#, kde-format
+msgid "Normal"
+msgstr "இயல்பான"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_desktop)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:218
+#, kde-format
+msgid "Desktop"
+msgstr "மேல்மேசை"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dialog)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
+#, kde-format
+msgid "Dialog"
+msgstr "உரையாடல்"
+
+#. i18n: ectx: property (text), widget (QRadioButton, type_dock)
+#: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
+#, kde-format
+msgid "Dock"
+msgstr "ஓதுக்கு"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
+#, fuzzy, kde-format
+#| msgid "&Reset"
+msgid "Test"
+msgstr "&மீட்டமை "
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
+#, fuzzy, kde-format
+#| msgid "New &Group"
+msgid "New Group"
+msgstr "புதிய &குழு"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
+#, fuzzy, kde-format
+#| msgid "Edit..."
+msgid "Export Group..."
+msgstr "திருத்து..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
+#, fuzzy, kde-format
+#| msgid "Import New Actions..."
+msgid "Import..."
+msgstr "புதிய செயல்களை இறக்கு..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
+#, fuzzy, kde-format
+#| msgid "&New"
+msgctxt "@title:menu create various trigger types"
+msgid "New"
+msgstr "&புதிய"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
+#, fuzzy, kde-format
+#| msgid "Keyboard Shortcut"
+msgid "Global Shortcut"
+msgstr "விசைப்பலகை குறுக்குவழி"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#, fuzzy, kde-format
+#| msgid "New Action"
+msgid "Window Action"
+msgstr "புதிய செயல்"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Mouse Gesture Action"
+msgstr "சுட்டி விசை பொத்தான்:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL"
+msgstr "கட்டளை/வலைமனை :"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
+#, fuzzy, kde-format
+#| msgid "DCOP Call..."
+msgid "D-Bus Command"
+msgstr "DCOP அழைப்பு..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
+#, fuzzy, kde-format
+#| msgid "K-Menu Entry..."
+msgid "K-Menu Entry"
+msgstr "கே-பட்டியல் உள்ளிடு..."
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
+#, fuzzy, kde-format
+#| msgid "Keyboard Input..."
+msgid "Send Keyboard Input"
+msgstr "விசைப்பலகை உள்ளீடு..."
+
+#. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
+#: kcm_hotkeys/hotkeys_widget_base.ui:23
+#, fuzzy, kde-format
+#| msgid "Comment:"
+msgid "Comment"
+msgstr "குறிப்பு:"
+
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
+#, kde-format
+msgid "New Action"
+msgstr "புதிய செயல்"
+
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
+#, fuzzy, kde-format
+msgid "Export Group"
+msgstr "புதிய &குழு"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:17
+#, kde-format
+msgid "Change the exported state for the actions."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, stateLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:20
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Export Actions"
+msgstr "செயல்கள்"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:40
+#, kde-format
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Configure in which state "
+"the actions should be exported.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Actual State</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in "
+"their current state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Disabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in a "
+"disabled state.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Enabled</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
+"enabled state.</p></body></html>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:44
+#, kde-format
+msgctxt "Don't change the state of exported hotkey actions."
+msgid "Actual State"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:49
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "Export hotkey actions in enabled state."
+msgid "Enabled"
+msgstr "&செயல் நீக்கு"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, state)
+#: kcm_hotkeys/hotkeys_export_widget.ui:54
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "Export hotkey actions into disabled  state"
+msgid "Disabled"
+msgstr "&செயல் நீக்கு"
+
+#. i18n: ectx: property (statusTip), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:62
+#, kde-format
+msgid "KHotkeys file id."
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:65
+#, kde-format
+msgid ""
+"A khotkeys file id is used to ensure files are not imported more than once. "
+"They are mostly used for automatic updates from the KDE developers."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, idLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:68
+#, kde-format
+msgid "Id"
+msgstr ""
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
+#: kcm_hotkeys/hotkeys_export_widget.ui:78
+#, kde-format
+msgid "Set import id for file, or leave empty"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, filenameLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:85
+#, kde-format
+msgid "Filename"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, allowMergingLabel)
+#: kcm_hotkeys/hotkeys_export_widget.ui:124
+#, kde-format
+msgid "Allow Merging"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:134
+#, kde-format
+msgid "Merge into existing directories on import?"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMerging)
+#: kcm_hotkeys/hotkeys_export_widget.ui:137
+#, kde-format
+msgid ""
+"Allow merging of content if a directory with the same name exists on "
+"importing. If merging is not allowed, there will be two directories with the "
+"same name."
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:321
+#, kde-format
+msgctxt "action name"
+msgid "Name"
+msgstr ""
+
+#: kcm_hotkeys/hotkeys_model.cpp:325
+#, fuzzy, kde-format
+#| msgid "&Disable"
+msgctxt "action enabled"
+msgid "Enabled"
+msgstr "&செயல் நீக்கு"
+
+#: kcm_hotkeys/hotkeys_model.cpp:328
+#, kde-format
+msgid "Type"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
+#, kde-format
+msgid "KDE Hotkeys Configuration Module"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
+#, kde-format
+msgid "Copyright 2008 (c) Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Michael Jansen"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
+#, kde-format
+msgid "Maintainer"
+msgstr "மேம்பாட்டாளர்"
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
+#, kde-format
+msgid ""
+"The current action has unsaved changes.\n"
+"Do you want to apply the changes or discard them?"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
+#, kde-format
+msgid "Save changes"
+msgstr ""
+
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
+#, kde-format
+msgid ""
+"Unable to contact khotkeys. Your changes are saved, but they could not be "
+"activated."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, settings_button)
+#: kcm_hotkeys/kcm_hotkeys.ui:36
+#, fuzzy, kde-format
+msgid "Settings"
+msgstr "குறிப்பு அமைப்புகள் "
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
+#, fuzzy, kde-format
+#| msgid "Triggers"
+msgid "Trigger"
+msgstr "விசைகள்"
+
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
+#, fuzzy, kde-format
+#| msgid "Actions"
+msgid "Action"
+msgstr "செயல்கள்"
+
+#. i18n: ectx: property (text), widget (QLabel, shortcut_label)
+#: kcm_hotkeys/triggers/shortcut_trigger_widget.ui:17
+#, fuzzy, kde-format
+msgid "&Shortcut:"
+msgstr "குறுக்குவழி விசையில்... "
+
+#. i18n: ectx: property (title), widget (QGroupBox, when_group)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:16
+#, kde-format
+msgid "Trigger When"
+msgstr "எப்போது ஆரம்பிக்கவேண்டும்"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_appears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:22
+#, fuzzy, kde-format
+#| msgid "Window appears"
+msgid "Window appears"
+msgstr "சாளரத்தின் தோன்றுகிறது"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:29
+#, fuzzy, kde-format
+#| msgid "Window disappears"
+msgid "Window disappears"
+msgstr "சாளரம் மறைகிறது"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:36
+#, fuzzy, kde-format
+#| msgid "Window Details"
+msgid "Window gets focus"
+msgstr "சாளரத்தின் விவரங்கள்"
+
+#. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
+#: kcm_hotkeys/triggers/window_trigger_widget.ui:43
+#, fuzzy, kde-format
+#| msgid "Windows to Exclude"
+msgid "Window loses focus"
+msgstr "நீக்கவேண்டிய சாளரங்கள்"
+
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
+#, fuzzy, kde-format
+#| msgid "Activate window : "
+msgid "Activate window: "
+msgstr "சாளரத்தை செயல்படுத்து: "
+
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
+#, fuzzy, kde-format
+#| msgid "Command/URL : "
+msgid "Command/URL : "
+msgstr "கட்டளை/வலைமனை :"
+
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
+#, fuzzy, kde-format
+#| msgid "DCOP Call..."
+msgid "D-Bus: "
+msgstr "DCOP அழைப்பு..."
+
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
+#, fuzzy, kde-format
+#| msgid "Keyboard input : "
+msgid "Keyboard input: "
+msgstr "விசைப்பலகை உள்ளீடல்:"
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#, kde-format
+msgid "No service configured."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Input Action: %1"
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
+#, kde-format
+msgid "Failed to start service '%1'."
+msgstr ""
+
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
+#, fuzzy, kde-format
+#| msgid "Menuentry : "
+msgid "Menu entry: "
+msgstr "பட்டியல் நுழைவு :"
+
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
+#, kde-format
+msgid "Active window: "
+msgstr "நடப்பு சாளரம்:"
+
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
+#, kde-format
+msgctxt "And_condition"
+msgid "And"
+msgstr "மற்றும்"
+
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
+#, kde-format
+msgid "Existing window: "
+msgstr "இருக்கும் சாளரம்:"
+
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
+#, kde-format
+msgctxt "Not_condition"
+msgid "Not"
+msgstr "இல்லை"
+
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
+#, kde-format
+msgctxt "Or_condition"
+msgid "Or"
+msgstr "அல்லது"
+
+#: libkhotkeysprivate/khotkeysglobal.h:33
+#, kde-format
+msgid "Menu Editor entries"
+msgstr "பட்டியல் திருத்தி உள்ளிடுகள்"
+
+#: libkhotkeysprivate/settings.cpp:259
+#, kde-format
+msgid ""
+"This \"actions\" file has already been imported before. Are you sure you "
+"want to import it again?"
+msgstr "\"செயல்கள்\" கோப்பு ஏற்கெனவே இறக்கப்பட்டது. மறுபடியும் அதை இறக்கவேண்டுமா?"
+
+#: libkhotkeysprivate/settings.cpp:281
+#, kde-format
+msgid ""
+"This \"actions\" file has no ImportId field and therefore it cannot be "
+"determined whether or not it has been imported already. Are you sure you "
+"want to import it?"
+msgstr ""
+"இந்த \"செயல்கள்\" கோப்புக்கு இம்போர்ட் ஐடி புலம் இல்லாததால் அது ஏற்கெனவே ஏற்றப்பட்டதா "
+"இல்லையா என்பதை வரையறுக்க இயலாது. அதை உறுதியாக ஏற்ற வேண்டுமா?"
+
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr ""
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
+#, fuzzy, kde-format
+#| msgid "Gesture trigger: "
+msgid "Gesture trigger"
+msgstr "குறிப்பு விசையில்... "
+
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
+#, kde-format
+msgid "Shortcut trigger: "
+msgstr "குறுக்குவழி விசையில்... "
+
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
+#, kde-format
+msgid "Window trigger: "
+msgstr "சாளரம் விசையில்... "
+
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
+#, kde-format
+msgid "Window simple: "
+msgstr "எளிதான சாளரம்:"
+
+#, fuzzy
+#~ msgid "Voice trigger: "
+#~ msgstr "குறுக்குவழி விசையில்... "
+
+#, fuzzy
+#~| msgid "Failed to run KDCOP"
+#~ msgid "Failed to run qdbusviewer"
+#~ msgstr "KDCOP கோப்பினை இயக்க முடியவில்லை"
+
+#, fuzzy
+#~| msgid "Normal"
+#~ msgid "Form"
+#~ msgstr "இயல்பான"
+
+#, fuzzy
+#~| msgid "Edit..."
+#~ msgid "&Edit"
+#~ msgstr "திருத்து..."
+
+#, fuzzy
+#~| msgid "Active window"
+#~ msgid "Active Window"
+#~ msgstr "செயலில் உள்ள சாளரம்:"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys Update Helper"
+#~ msgstr "KHotKeys டெமான்"
+
+#, fuzzy
+#~| msgid "(c) 1999-2005 Lubos Lunak"
+#~ msgid "(C) 2003-2009 Lubos Lunak"
+#~ msgstr "(c) 1999-2005 லுபாஸ் லுனாக்"
+
+#~ msgid "These entries were created using Menu Editor."
+#~ msgstr "இந்த பதிவுகள் பட்டியல் திருத்தியை பயன்படுத்தி உருவாக்கப்பட்டது."
+
+#, fuzzy
+#~| msgid "Gestures"
+#~ msgid "Enable Gestures"
+#~ msgstr "குறிப்புகள்"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys update utility"
+#~ msgstr "KHotKeys டெமான்"
+
+#, fuzzy
+#~| msgid "KHotKeys daemon"
+#~ msgid "KHotKeys Daemon"
+#~ msgstr "KHotKeys டெமான்"
+
+#, fuzzy
+#~| msgid "K Menu - "
+#~ msgid "Menu"
+#~ msgstr "கே பட்டி - "
+
+#, fuzzy
+#~| msgid "&Disable"
+#~ msgid "&Enabled"
+#~ msgstr "&செயல் நீக்கு"
+
+#, fuzzy
+#~| msgid "&Disable (group is disabled)"
+#~ msgid "Parent group is disabled"
+#~ msgstr "&செயல் நீக்கு (குழு முடக்கபட்டுள்ளது"
+
+#~ msgid "General"
+#~ msgstr "பொது"
+
+#, fuzzy
+#~| msgid "KHotKeys"
+#~ msgid "KDE Hotkeys:"
+#~ msgstr "KHotKeys"
+
+#~ msgid "&Modify..."
+#~ msgstr "&மாற்று..."
+
+#~ msgid "&New Action"
+#~ msgstr "&புதிய செயல்"
+
+#~ msgid "Global &Settings"
+#~ msgstr "உலகலவிய &அமைப்புகள்:"
+
+#~ msgid "Command/URL to execute:"
+#~ msgstr "கட்டளை/செயல்படுத்தவேண்டிய வலைமனை:"
+
+#~ msgid "Window activates"
+#~ msgstr "சாளரம் செயல்படுத்துகிறது"
+
+#~ msgid "Window deactivates"
+#~ msgstr "சாளரம் செயல் நீக்குகிறது"
+
+#~ msgid "Menu entry to execute:"
+#~ msgstr "செயல்படுத்த வேண்டிய பட்டியல் உள்ளீடு:"
+
+#~ msgid "&Browse..."
+#~ msgstr "&உலாவு..."
+
+#~ msgid "Gestures:"
+#~ msgstr "குறிப்புகள்:"
+
+#~ msgid "Action group &name:"
+#~ msgstr "செயல் குழு பெயர்:"
+
+#, fuzzy
+#~| msgid "&Disable"
+#~ msgid "&Disable:"
+#~ msgstr "&செயல் நீக்கு"
+
+#~ msgid "Info_tab_ui"
+#~ msgstr "Info_tab_ui"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>This module allows configuring input actions, like mouse gestures, "
+#~| "keyboard shortcuts for performing commands, launching applications or "
+#~| "DCOP calls, and similar.</p>\n"
+#~| "<p><b>NOTE: </b>If you are not an experienced user, you should be "
+#~| "careful with modifying the actions, and should limit your changes mainly "
+#~| "to enabling/disabling actions, and changing triggers.</p>"
+#~ msgid ""
+#~ "<p>This module allows configuration of input actions, such as mouse "
+#~ "gestures, keyboard shortcuts for performing commands, launching "
+#~ "applications or D-Bus calls, and similar.</p>\n"
+#~ "<p><b>NOTE: </b>If you are not an experienced user, you should be careful "
+#~ "when modifying the actions, and should limit your changes mainly to "
+#~ "enabling/disabling actions, and changing triggers.</p>"
+#~ msgstr ""
+#~ "<p>சுட்டி குறிப்புகள், கட்டளைகளை செயல்படுத்த விசைப்பலகை குறுக்குவழிகள் பயன்பாடுகளை "
+#~ "இறக்குதல் அல்லது DCOP அழைப்புகள் போன்ற உள்ளிடு செயல்களுகளை வடிவமைப்பதற்கு இந்த பகுதி "
+#~ "அனுமதிக்கிறது.</p>\n"
+#~ "<p><b>குறிப்பு: </b>நீங்கள் அனுபவம் இல்லாத பயனர் என்றால், செயல்களை மாற்றும்போது கவனம் "
+#~ "தேவை. செயல்களை இயக்குவதற்கு அல்லது முடக்குவதற்கு ஒரு எல்லை வைத்துக்கொள்ளவேண்டும்.</p>"
+
+#~ msgid "Disable mouse gestures globally"
+#~ msgstr "சுட்டி விசையின் உலகலவிய பாவனைகளை முடக்கு."
+
+#~ msgid "Gesture timeout (ms):"
+#~ msgstr "குறிப்பு நேரம் முடிதது (ms):"
+
+#~ msgid "Disable KHotKeys daemon"
+#~ msgstr "KHotKeys டெமானை செயல் நீக்கு"
+
+#~ msgid "Keyboard_input_widget_ui"
+#~ msgstr "விசைப்பலகை_உள்ளீடு_சாளரம்_ui"
+
+#~ msgid "Keyboard input:"
+#~ msgstr "உள்ளீடல் விசைப்பலகை:"
+
+#~ msgid "Modify..."
+#~ msgstr "மாற்று..."
+
+#~ msgid "Send Input To"
+#~ msgstr "உள்ளீடை இதற்கு அனுப்பு"
+
+#~ msgid ""
+#~ "Specify the window where the keyboard input should be sent to:<ul>\n"
+#~ "<li><em>Action window:</em> The window where the triggering action "
+#~ "happened; this is usually the currently active window, except for mouse "
+#~ "gesture triggers - where it is the window under mouse - and window "
+#~ "triggers -where it is the window triggering the action.</li>\n"
+#~ "<li><em>Active window:</em> The currently active window.</li>\n"
+#~ "<li><em>Specific window:</em> Any window matching the given criteria.</"
+#~ "li>\n"
+#~ "</ul>"
+#~ msgstr ""
+#~ "விசைப்பலகை உள்ளீட்டை அனுப்பவேண்டிய சாளரத்தைக் குறிப்பிடவும்:<ul>\n"
+#~ "<li><em>செயல் சாளரம்:</em> விசைப்படுத்தும் செயல் நடக்கும் சாளரம்; இது நடப்பில் உள்ள "
+#~ "சாளரம், சுட்டி விசைகளைத் தவிர - சுட்டியின் கீழ் உள்ள சாளரமாக இருந்தால் - மற்றும் சாளர "
+#~ "விசைகள் - சாளரம் செயலை இயக்கும்போது.</li>\n"
+#~ "<li><em>நடப்பு சாளரம்:</em> தற்போது செயலில் இருக்கும் சாளரம்.</li>\n"
+#~ "<li><em>குறிப்பிட்ட சாளரம்:</em>கொடுக்கப்பட்ட நெறிமுறை பொருந்தும் எந்தவொரு சாளரமும்."
+#~ "</li>\n"
+#~ "</ul>"
+
+#~ msgid "Called &function:"
+#~ msgstr "அழைக்கப்பட்ட செயல்பாடு:"
+
+#~ msgid "&Try"
+#~ msgstr "&முயற்சிசெய்"
+
+#~ msgid "Action &type:"
+#~ msgstr "செயலின் வகை:"
+
+#~ msgid "Action &name:"
+#~ msgstr "செயலின் பெயர்: "
+
+#~ msgctxt "to try"
+#~ msgid "&Try"
+#~ msgstr "முயற்சி செய்"
+
+#~ msgid "Simple Window..."
+#~ msgstr "எளிய சாளரம்..."
+
+#~ msgid ""
+#~ "Draw the gesture you would like to record below. Press and hold the left "
+#~ "mouse button while drawing, and release when you have finished.\n"
+#~ "\n"
+#~ "You will be required to draw the gesture 3 times. After each drawing, if "
+#~ "they match, the indicators below will change to represent which step you "
+#~ "are on.\n"
+#~ "\n"
+#~ "If at any point they do not match, you will be required to restart. If "
+#~ "you want to force a restart, use the reset button below.\n"
+#~ "\n"
+#~ "Draw here:"
+#~ msgstr ""
+#~ "கீழே பதிவு செய்யவேண்டிய குறிப்பை வரையவும். வரையும்போது சுட்டியின் இடது விசையை "
+#~ "அழுத்தி பிடித்துக்கொள்ளவும். முடித்தவுடன் விட்டுவிடவும்.\n"
+#~ "\n"
+#~ "நீங்கள் குறிப்பை மூன்று முறை வரைய வேண்டும். வரைந்தவுடன், பொருந்தினால், நீங்கள் எதில் "
+#~ "இருக்கிறீர்கள் என்பதை சுட்டிக் காட்டும் கருவி காட்டிவிடும்.\n"
+#~ "\n"
+#~ "எதாவது பொருந்தவில்லை என்றால் கணினியை திரும்ப தொடங்கவேண்டும். திரும்ப "
+#~ "தொடங்கவேண்டுமென்றால் கீழே உள்ள திரும்ப அமை பட்டனை பயன்படுத்தவும்.\n"
+#~ "\n"
+#~ "இங்கே வரையவும்:"
+
+#~ msgid "Your gestures did not match."
+#~ msgstr "உங்கள் குறிப்புகள் பொருந்தாது."
+
+#~ msgid ""
+#~ "You have already completed the three required drawings. Either press 'Ok' "
+#~ "to save or 'Reset' to try again."
+#~ msgstr ""
+#~ "நீங்கள் ஏற்கெனவே தேவைப்பட்ட மூன்று சித்திரங்களை முடித்துவிட்டீர்கள். சேமிப்பதற்கு 'சரி' "
+#~ "பட்டனையும் திரும்ப முயற்சிப்பதற்கு 'திரும்ப அமை' பட்டனையும் அழுத்தவும்."
+
+#~ msgid "Button 2 (middle)"
+#~ msgstr "விசை 2 (இடைபட்ட)"
+
+#~ msgid "Button 3 (secondary)"
+#~ msgstr "விசை 3 ( இரண்டாவது)"
+
+#~ msgid "Button 4 (often wheel up)"
+#~ msgstr "விசை 4 (எப்போதும் சுழற்சியில்)"
+
+#~ msgid "Button 5 (often wheel down)"
+#~ msgstr "விசை 5 (எப்போதும் கீழாக)"
+
+#~ msgid "Button 6 (if available)"
+#~ msgstr "விசை 6  (இருந்தால்)"
+
+#~ msgid "Button 7 (if available)"
+#~ msgstr "விசை 7  (இருந்தால்)"
+
+#~ msgid "Button 8 (if available)"
+#~ msgstr "விசை 8  (இருந்தால்)"
+
+#~ msgid "Button 9 (if available)"
+#~ msgstr "விசை 9 (இருந்தால்)"
+
+#~ msgid "Info"
+#~ msgstr "தகவல் "
+
+#~ msgid "General Settings"
+#~ msgstr "பொது அமைப்புகள் "
+
+#~ msgid "Gestures Settings"
+#~ msgstr "குறிப்பு அமைப்புகள் "
+
+#~ msgid "Command/URL Settings"
+#~ msgstr "கட்டளை/வலைமனை அமைப்புகள் "
+
+#~ msgid "Menu Entry Settings"
+#~ msgstr "பட்டி பதிவு அமைப்புகள் "
+
+#, fuzzy
+#~| msgid "DCOP Call Settings"
+#~ msgid "D-Bus Call Settings"
+#~ msgstr "DCOP அழைப்பு அமைப்புகள் "
+
+#~ msgid "Keyboard Input Settings"
+#~ msgstr "விசைப்பலகை உள்ளீடு அமைப்புகள்"
+
+#~ msgid ""
+#~ "A group is selected.\n"
+#~ "Add the new condition in this selected group?"
+#~ msgstr ""
+#~ "ஒரு குழு தேர்ந்தெடுக்கப்பட்டது. \n"
+#~ "தேர்ந்தெடுக்கப்பட்ட குழுவில் புதிய நிபந்தனையைச் சேர்."
+
+#, fuzzy
+#~ msgid "Add in Group"
+#~ msgstr "புது செயல் குழு"
+
+#, fuzzy
+#~| msgid "(c) 1999-2005 Lubos Lunak"
+#~ msgid "Lubos Lunak"
+#~ msgstr "(c) 1999-2005 லுபாஸ் லுனாக்"
+
+#~ msgid "New Action Group"
+#~ msgstr "புது செயல் குழு"
+
+#~ msgid "Select File with Actions to Be Imported"
+#~ msgstr "ஏற்றப்பட வேண்டிய செயலில் உள்ள கோப்புகளைத் தேர்ந்தெடு"
+
+#~ msgid ""
+#~ "Import of the specified file failed. Most probably the file is not a "
+#~ "valid file with actions."
+#~ msgstr ""
+#~ "குறிப்பிட்ட கோப்பை இறக்க இயலவில்லை. கோப்பு சரியான செயல்கள் இல்லாதா கோப்பாக இருக்கலாம்."
+
+#~ msgid "Command/URL..."
+#~ msgstr "கட்டலை/வலைமனை..."
+
+#~ msgid "Activate Window..."
+#~ msgstr "சாளரத்தை இயக்கு..."
+
+#~ msgid "Generic"
+#~ msgstr "பொது விருப்பங்கள்"
+
+#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
+#~ msgstr "விசைப்பலகையின் குறுக்கு வழி->கட்டளை/வலைமனை (எளிதான)"
+
+#~ msgid "K-Menu Entry (simple)"
+#~ msgstr "கே-பட்டி உள்ளீடு (எளிதான)"
+
+#, fuzzy
+#~| msgid "Keyboard Shortcut -> DCOP Call (simple)"
+#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
+#~ msgstr "விசைப்பலகையின் குறுக்கு வழி->DCOP அழைப்பு (எளிதான)"
+
+#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
+#~ msgstr "விசைப்பலகையின் குறுக்கு வழி-> விசைப்பலகை உள்ளீடு (எளிதான)"
+
+#~ msgid "Gesture -> Keyboard Input (simple)"
+#~ msgstr "குறிப்பு -> விசைப்பலகை உள்ளிடு (எளிதான)"
+
+#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
+#~ msgstr "விசைப்பலகையின் குறுக்கு வழி->சாளரத்தை இயக்கு (எளிதான)"
+
+#~ msgid "Shortcut Trigger..."
+#~ msgstr "குறுக்குவழி விசை... "
+
+#~ msgid "Gesture Trigger..."
+#~ msgstr "குறிப்பு விசை... "
+
+#~ msgid "Window Trigger..."
+#~ msgstr "சாளரம் விசை.. "
+
+#, fuzzy
+#~ msgid "Voice Trigger..."
+#~ msgstr "குறுக்குவழி விசை... "
+
+#~ msgid "Select keyboard shortcut:"
+#~ msgstr "குறுக்குவழி விசைகள் தேர்வு செய்:"
+
+#~ msgid "Run &KDCOP"
+#~ msgstr "KDCOP ஐ செயல்படுத்து"
+
+#~ msgid "DCOP : "
+#~ msgstr "DCOP : "
