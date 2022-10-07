@@ -931,6 +931,3 @@ msgstr "ウィンドウトリガー: "
 #, kde-format
 msgid "Window simple: "
 msgstr "ウィンドウ簡素: "
-
-#~ msgid "Voice trigger: "
-#~ msgstr "音声トリガー: "
