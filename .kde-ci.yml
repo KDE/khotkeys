@@ -32,7 +32,7 @@ Dependencies:
     'frameworks/kxmlgui': '@latest'
     'frameworks/solid': '@latest'
     'frameworks/sonnet': '@latest'
-    'frameworks/unitconversion': '@latest'
+    'frameworks/kunitconversion': '@latest'
     'plasma/plasma-workspace': '@same'
 Options:
   require-passing-tests-on: [ 'Linux', 'FreeBSD']
