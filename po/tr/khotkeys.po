@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2022-12-16 21:50+0300\n"
+"PO-Revision-Date: 2022-12-17 18:53+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -474,7 +474,7 @@ msgstr "Yeni Grup"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:115
 #, kde-format
 msgid "Export Group..."
-msgstr "Grubu Dışarıya Aktar..."
+msgstr "Grubu Dışa Aktar..."
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:116
 #, kde-format
@@ -541,19 +541,19 @@ msgstr "Yeni Eylem"
 #: kcm_hotkeys/hotkeys_export_widget.cpp:24
 #, kde-format
 msgid "Export Group"
-msgstr "Grubu Dışarıya Aktar"
+msgstr "Grubu Dışa Aktar"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:17
 #, kde-format
 msgid "Change the exported state for the actions."
-msgstr "Eylemler için dışarıya aktarılmış durumunu değiştir."
+msgstr "Eylemler için dışa aktarılmış durumunu değiştir."
 
 #. i18n: ectx: property (text), widget (QLabel, stateLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:20
 #, kde-format
 msgid "Export Actions"
-msgstr "Eylemleri Dışarıya Aktar"
+msgstr "Eylemleri Dışa Aktar"
 
 #. i18n: ectx: property (whatsThis), widget (QComboBox, state)
 #: kcm_hotkeys/hotkeys_export_widget.ui:40
