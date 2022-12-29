@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2022-12-27 03:45+0100\n"
+"PO-Revision-Date: 2022-12-28 09:25+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -695,6 +695,8 @@ msgid ""
 "The current action has unsaved changes.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
+"მიმდინარე ქმედებას შეუნახავი ცვლილებები გააჩნია.\n"
+"გნებავთ ამ ცვლილებების გადატარება, თუ მოვაცილო ისინი?"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:261
 #, kde-format
