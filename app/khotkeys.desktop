@@ -85,6 +85,7 @@ Name[zh_CN]=输入操作
 Name[zh_TW]=輸入動作
 Comment=Input Actions service performing configured actions on key presses
 Comment[ar]=خدمة إجراءات الدّخل تنفّذ الإجراءات المضبوطة عند ضغط المفاتيح
+Comment[be]=Служба дзеянняў уводу, якая выконвае наладжаныя дзеянні пры націсканні клавіш
 Comment[bg]=Услугата за входни действия изпълнява зададени действия при натискане на клавиши комбинации
 Comment[bs]=Servis radnji unosa, izvršava podešene radnje na pritiske tastera
 Comment[ca]=Servei d'accions d'entrada que porta a terme accions configurades en prémer tecles

@@ -12,6 +12,7 @@ X-KDE-OnlyShowOnQtPlatforms=xcb;
 
 Name=Custom Shortcuts
 Name[ar]=اختصارات مخصّصة
+Name[be]=Адвольныя спалучэнні клавіш
 Name[bg]=Потребителски бързи клавиши
 Name[bn]=নিজস্ব শর্টকাট
 Name[bs]=Posebne prečice
@@ -76,6 +77,7 @@ Name[zh_TW]=自訂捷徑
 
 Comment=Configure Input Actions settings
 Comment[ar]=اضبط إعدادات إجراءات الدّخل
+Comment[be]=Наладжванне дзеянняў уводу
 Comment[bg]=Настройване на входящите действия
 Comment[bs]=Podešavanje postavki radnji unosa
 Comment[ca]=Configura l'arranjament de les accions d'entrada
@@ -146,6 +148,7 @@ Categories=Qt;KDE;X-KDE-settings-accessibility;
 
 X-KDE-Keywords=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch
 X-KDE-Keywords[ar]=عموميّ,اختصارات لوحة المفاتيح,المفاتيح السّريعة,المفاتيح السريعة,مفاتيحك السّريعة,إجراءات الدّخل,إيماءات الفأرة,إجراءات,تحفيزات,إطلاق
+X-KDE-Keywords[be]=глабальныя, спалучэнні клавіш, гарачыя клавішы, гарачыя клавішы, KHotKeys, дзеянні ўводу, жэсты мышы, дзеянні, трыгеры, запуск
 X-KDE-Keywords[bg]=глобални, клавишни комбинации, горещи клавиши, входни действия, жестове на мишката, действия, тригери, стартиране
 X-KDE-Keywords[bs]=globalni, prečice na tastaturi, učestale tipke, vreleTipke, kVreleTipke, ulazne akcije, kretnje miša, akcije, pokretanja, lansira
 X-KDE-Keywords[ca]=global,dreceres de teclat,dreceres de teclat,hotkeys,KHotKeys,accions d'entrada,gestos del ratolí,accions,activadors,llança
