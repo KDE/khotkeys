@@ -117,7 +117,7 @@ msgstr "Aplicació:"
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
-msgstr "Selecció d'aplicació..."
+msgstr "Seleccioneu una aplicació..."
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
@@ -542,7 +542,7 @@ msgstr "Acció nova"
 #: kcm_hotkeys/hotkeys_export_widget.cpp:24
 #, kde-format
 msgid "Export Group"
-msgstr "Exportació d'un grup"
+msgstr "Exporteu un grup"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, stateLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:17
