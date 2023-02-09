@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2023-01-19 22:40+0300\n"
+"PO-Revision-Date: 2023-02-08 19:41+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -191,7 +191,7 @@ msgstr "Giriş Eylemleri Hizmeti"
 #: kcm_hotkeys/global_settings_widget.ui:38
 #, kde-format
 msgid "Start the Input Actions daemon on login"
-msgstr "Giriş Eylemleri hizmetini oturum açılırken başlat"
+msgstr "Giriş Eylemleri ardalan sürecini oturum açılırken başlat"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
 #: kcm_hotkeys/global_settings_widget.ui:48
