@@ -51,9 +51,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->2017-01-22</date>
+>2021-12-21</date>
 <releaseinfo
->Plasma 5.8</releaseinfo>
+>Plasma 5.24</releaseinfo>
 
 <keywordset>
 <keyword
@@ -1101,17 +1101,11 @@
 ></term>
 <listitem
 ><para
->Hier wird die Nummer der Maustaste für die Geste eingestellt. Normalerweise hat die &LMB; die Nummer <userinput
->1</userinput
->, die &RMB; die Nummer <userinput
->2</userinput
-> und die &MMB; oder das Mausrad die Nummer <userinput
->3</userinput
->. Auch für Mäuse mit mehr als drei Tasten kann die Nummer eingestellt werden.</para>
+>Hier wird die Nummer der Maustaste für die Geste eingestellt. Auch für Mäuse mit mehr als drei Tasten kann die Nummer eingestellt werden.</para>
 
 <note>
 <para
->Taste 1, kann nicht eingestellt werden, damit Mausgesten nicht die normale Funktion der &LMBn; beeinträchtigen.</para>
+>Linke Taste, kann nicht eingestellt werden, damit Mausgesten nicht die normale Funktion Ihres Systems beeinträchtigen.</para>
 </note>
 </listitem>
 </varlistentry>
