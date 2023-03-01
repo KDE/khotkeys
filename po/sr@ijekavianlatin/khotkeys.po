@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-24 03:58+0200\n"
+"POT-Creation-Date: 2021-12-21 00:44+0000\n"
 "PO-Revision-Date: 2017-10-30 23:08+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -31,7 +31,7 @@ msgid "Your emails"
 msgstr "caslav.ilic@gmx.net"
 
 # >> @title:tab
-#: kcm_hotkeys/action_group_widget.cpp:30
+#: kcm_hotkeys/action_group_widget.cpp:17
 #, kde-format
 msgid "Conditions"
 msgstr "Uslovi"
@@ -78,8 +78,8 @@ msgstr "Poziv"
 msgid "Launch D-Bus Browser"
 msgstr "Pokreni D‑Bus pregledač"
 
-#. i18n: ectx: property (title), widget (QGroupBox, window_group)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, window_group)
 #: kcm_hotkeys/actions/keyboard_input_action_widget.ui:19
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:53
 #, kde-format
@@ -113,43 +113,43 @@ msgstr "prozor radnje"
 msgid "Application:"
 msgstr "Program:"
 
-#. i18n: ectx: property (text), widget (KPushButton, applicationButton)
+#. i18n: ectx: property (text), widget (QPushButton, applicationButton)
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
 msgstr "Izaberi program..."
 
-#: kcm_hotkeys/conditions/condition_type_menu.cpp:27
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
 msgctxt "Condition type"
 msgid "Active Window ..."
 msgstr "aktivni prozor ..."
 
-#: kcm_hotkeys/conditions/condition_type_menu.cpp:29
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:14
 #, kde-format
 msgctxt "Condition type"
 msgid "Existing Window ..."
 msgstr "postojeći prozor ..."
 
-#: kcm_hotkeys/conditions/condition_type_menu.cpp:31
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:15
 #, kde-format
 msgctxt "Condition type"
 msgid "And"
 msgstr "i"
 
-#: kcm_hotkeys/conditions/condition_type_menu.cpp:33
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:16
 #, kde-format
 msgctxt "Condition type"
 msgid "Or"
 msgstr "ili"
 
-#: kcm_hotkeys/conditions/condition_type_menu.cpp:35
+#: kcm_hotkeys/conditions/condition_type_menu.cpp:17
 #, kde-format
 msgctxt "Condition type"
 msgid "Not"
 msgstr "ne"
 
-#: kcm_hotkeys/conditions/conditions_widget.cpp:80
+#: kcm_hotkeys/conditions/conditions_widget.cpp:63
 #, kde-format
 msgctxt "Add a new condition"
 msgid "And"
@@ -176,7 +176,7 @@ msgstr "Uredi..."
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/conditions/conditions_widget.ui:44
-#: kcm_hotkeys/hotkeys_context_menu.cpp:136
+#: kcm_hotkeys/hotkeys_context_menu.cpp:107
 #, kde-format
 msgid "Delete"
 msgstr "Obriši"
@@ -206,7 +206,7 @@ msgstr "Gestovi"
 msgid "Timeout:"
 msgstr "Prekovrijeme:"
 
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, gestures_timeout)
+#. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
 #: kcm_hotkeys/global_settings_widget.ui:70
 #, kde-format
 msgid " ms"
@@ -218,13 +218,62 @@ msgstr " ms"
 msgid "Mouse button:"
 msgstr "Dugme miša:"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:123
+#, fuzzy, kde-format
+#| msgid "Mouse button:"
+msgid "Middle button"
+msgstr "Dugme miša:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:128
+#, kde-format
+msgid "Right button"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:133
+#, kde-format
+msgid "Button 4"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:138
+#, kde-format
+msgid "Button 5"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:143
+#, kde-format
+msgid "Button 6"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:148
+#, kde-format
+msgid "Button 7"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:153
+#, kde-format
+msgid "Button 8"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
+#: kcm_hotkeys/global_settings_widget.ui:158
+#, kde-format
+msgid "Button 9"
+msgstr ""
+
 # >> @title:window
-#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:32
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
 #, kde-format
 msgid "Edit Gesture"
 msgstr "Uređivanje gesta"
 
-#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:36
+#: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
 #, kde-format
 msgid ""
 "Draw the gesture you would like to record below. Press and hold the left "
@@ -233,8 +282,8 @@ msgstr ""
 "Iscrtajte ispod gest koji želite da snimite. Pritisnite i držite lijevo "
 "dugme miša dok crtate, otpustite ga kad završite."
 
-#. i18n: ectx: property (text), widget (QPushButton, menu_button)
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
+#. i18n: ectx: property (text), widget (QPushButton, menu_button)
 #: kcm_hotkeys/helper_widgets/gesture_widget.ui:19
 #: kcm_hotkeys/kcm_hotkeys.ui:29
 #, kde-format
@@ -427,87 +476,87 @@ msgstr "dijalog"
 msgid "Dock"
 msgstr "sidrište"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:43
-#: kcm_hotkeys/hotkeys_context_menu.cpp:55
+#: kcm_hotkeys/hotkeys_context_menu.cpp:29
+#: kcm_hotkeys/hotkeys_context_menu.cpp:39
 #, kde-format
 msgid "Test"
 msgstr "Proba"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:129
-#: kcm_hotkeys/hotkeys_context_menu.cpp:142 kcm_hotkeys/hotkeys_model.cpp:91
+#: kcm_hotkeys/hotkeys_context_menu.cpp:101
+#: kcm_hotkeys/hotkeys_context_menu.cpp:111 kcm_hotkeys/hotkeys_model.cpp:69
 #, kde-format
 msgid "New Group"
 msgstr "Nova grupa"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:146
+#: kcm_hotkeys/hotkeys_context_menu.cpp:115
 #, kde-format
 msgid "Export Group..."
 msgstr "Izvezi grupu..."
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:147
+#: kcm_hotkeys/hotkeys_context_menu.cpp:116
 #, kde-format
 msgid "Import..."
 msgstr "Uvezi..."
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:155
+#: kcm_hotkeys/hotkeys_context_menu.cpp:121
 #, kde-format
 msgctxt "@title:menu create various trigger types"
 msgid "New"
 msgstr "Novo"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:161
+#: kcm_hotkeys/hotkeys_context_menu.cpp:126
 #, kde-format
 msgid "Global Shortcut"
 msgstr "Globalna prečica"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:174
+#: kcm_hotkeys/hotkeys_context_menu.cpp:136
 #, kde-format
 msgid "Window Action"
 msgstr "Radnja prozora"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:187
+#: kcm_hotkeys/hotkeys_context_menu.cpp:146
 #, kde-format
 msgid "Mouse Gesture Action"
 msgstr "Radnja gesta mišem"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:268
+#: kcm_hotkeys/hotkeys_context_menu.cpp:213
 #, kde-format
 msgid "Command/URL"
 msgstr "Naredba/URL"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:275
+#: kcm_hotkeys/hotkeys_context_menu.cpp:217
 #, kde-format
 msgid "D-Bus Command"
 msgstr "D‑Bus naredba"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:282
+#: kcm_hotkeys/hotkeys_context_menu.cpp:221
 #, kde-format
 msgid "K-Menu Entry"
 msgstr "Stavka K‑menija"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:289
+#: kcm_hotkeys/hotkeys_context_menu.cpp:225
 #, kde-format
 msgid "Send Keyboard Input"
 msgstr "Pošalji unos s tastature"
 
 #. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
-#: kcm_hotkeys/hotkeys_context_menu.cpp:311
-#: kcm_hotkeys/hotkeys_context_menu.cpp:340
-#: kcm_hotkeys/hotkeys_context_menu.cpp:369 kcm_hotkeys/hotkeys_model.cpp:91
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286 kcm_hotkeys/hotkeys_model.cpp:69
 #: kcm_hotkeys/hotkeys_widget_base.ui:23
 #, kde-format
 msgid "Comment"
 msgstr "Komentar"
 
-#: kcm_hotkeys/hotkeys_context_menu.cpp:311
-#: kcm_hotkeys/hotkeys_context_menu.cpp:340
-#: kcm_hotkeys/hotkeys_context_menu.cpp:369
+#: kcm_hotkeys/hotkeys_context_menu.cpp:240
+#: kcm_hotkeys/hotkeys_context_menu.cpp:263
+#: kcm_hotkeys/hotkeys_context_menu.cpp:286
 #, kde-format
 msgid "New Action"
 msgstr "Nova radnja"
 
 # >> @title:window
-#: kcm_hotkeys/hotkeys_export_widget.cpp:37
+#: kcm_hotkeys/hotkeys_export_widget.cpp:24
 #, kde-format
 msgid "Export Group"
 msgstr "Izvoz grupe"
@@ -606,7 +655,7 @@ msgstr ""
 msgid "Id"
 msgstr "ID:"
 
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, id)
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, id)
 #: kcm_hotkeys/hotkeys_export_widget.ui:78
 #, kde-format
 msgid "Set import id for file, or leave empty"
@@ -644,47 +693,47 @@ msgstr ""
 "Ako stapanje se stapanje ne dozvoli, dobiće se dve fascikle sa istim imenom."
 
 # >> @title:column
-#: kcm_hotkeys/hotkeys_model.cpp:402
+#: kcm_hotkeys/hotkeys_model.cpp:321
 #, kde-format
 msgctxt "action name"
 msgid "Name"
 msgstr "ime"
 
 # >> @title:column
-#: kcm_hotkeys/hotkeys_model.cpp:406
+#: kcm_hotkeys/hotkeys_model.cpp:325
 #, kde-format
 msgctxt "action enabled"
 msgid "Enabled"
 msgstr "uključena"
 
 # >> @title:column
-#: kcm_hotkeys/hotkeys_model.cpp:409
+#: kcm_hotkeys/hotkeys_model.cpp:328
 #, kde-format
 msgid "Type"
 msgstr "tip"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:97
+#: kcm_hotkeys/kcm_hotkeys.cpp:78
 #, kde-format
 msgid "KDE Hotkeys Configuration Module"
 msgstr ""
 "Postavni modul K‑prečica|/|$[svojstva dat 'Postavnom modulu K‑prečica']"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:101
+#: kcm_hotkeys/kcm_hotkeys.cpp:82
 #, kde-format
 msgid "Copyright 2008 (c) Michael Jansen"
 msgstr "© 2008, Mihael Jansen"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:104
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
 #, kde-format
 msgid "Michael Jansen"
 msgstr "Mihael Jansen"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:105
+#: kcm_hotkeys/kcm_hotkeys.cpp:83
 #, kde-format
 msgid "Maintainer"
 msgstr "održavalac"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:333
+#: kcm_hotkeys/kcm_hotkeys.cpp:259
 #, fuzzy, kde-format
 #| msgid ""
 #| "The current action has unsaved changes. If you continue these changes "
@@ -695,12 +744,12 @@ msgid ""
 msgstr ""
 "Tekuća radnja ima nesačuvane izmjene. Ako nastavite, one će biti izgubljene."
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:335
+#: kcm_hotkeys/kcm_hotkeys.cpp:261
 #, kde-format
 msgid "Save changes"
 msgstr "Sačuvaj izmjene"
 
-#: kcm_hotkeys/kcm_hotkeys.cpp:381 kcm_hotkeys/kcm_hotkeys.cpp:428
+#: kcm_hotkeys/kcm_hotkeys.cpp:298 kcm_hotkeys/kcm_hotkeys.cpp:336
 #, kde-format
 msgid ""
 "Unable to contact khotkeys. Your changes are saved, but they could not be "
@@ -716,12 +765,12 @@ msgid "Settings"
 msgstr "Postavke"
 
 # >> @title:tab
-#: kcm_hotkeys/simple_action_data_widget.cpp:124
+#: kcm_hotkeys/simple_action_data_widget.cpp:103
 #, kde-format
 msgid "Trigger"
 msgstr "Okidač"
 
-#: kcm_hotkeys/simple_action_data_widget.cpp:160
+#: kcm_hotkeys/simple_action_data_widget.cpp:131
 #, kde-format
 msgid "Action"
 msgstr "Radnja"
@@ -767,81 +816,81 @@ msgstr "prozor dobije fokus"
 msgid "Window loses focus"
 msgstr "prozor izgubi fokus"
 
-#: libkhotkeysprivate/actions/activate_window_action.cpp:87
+#: libkhotkeysprivate/actions/activate_window_action.cpp:65
 #, kde-format
 msgid "Activate window: "
 msgstr "Aktiviraj prozor: "
 
-#: libkhotkeysprivate/actions/command_url_action.cpp:83
+#: libkhotkeysprivate/actions/command_url_action.cpp:64
 #, kde-format
 msgid "Command/URL : "
 msgstr "Naredba/URL: "
 
-#: libkhotkeysprivate/actions/dbus_action.cpp:143
+#: libkhotkeysprivate/actions/dbus_action.cpp:115
 #, kde-format
 msgid "D-Bus: "
 msgstr "D‑Bus: "
 
-#: libkhotkeysprivate/actions/keyboard_input_action.cpp:193
+#: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
 #, kde-format
 msgid "Keyboard input: "
 msgstr "Unos sa tastature: "
 
-#: libkhotkeysprivate/actions/menuentry_action.cpp:91
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
 #, kde-format
 msgid "No service configured."
 msgstr "Nije podešen nijedan servis."
 
-#: libkhotkeysprivate/actions/menuentry_action.cpp:92
-#: libkhotkeysprivate/actions/menuentry_action.cpp:101
+#: libkhotkeysprivate/actions/menuentry_action.cpp:64
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Input Action: %1"
 msgstr "Radnja unosa: %1"
 
-#: libkhotkeysprivate/actions/menuentry_action.cpp:100
+#: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Failed to start service '%1'."
 msgstr "Ne mogu da pokrenem servis „%1“."
 
-#: libkhotkeysprivate/actions/menuentry_action.cpp:115
+#: libkhotkeysprivate/actions/menuentry_action.cpp:81
 #, kde-format
 msgid "Menu entry: "
 msgstr "Stavka menija: "
 
-#: libkhotkeysprivate/conditions/active_window_condition.cpp:82
+#: libkhotkeysprivate/conditions/active_window_condition.cpp:64
 #, kde-format
 msgid "Active window: "
 msgstr "Aktivni prozor: "
 
-#: libkhotkeysprivate/conditions/and_condition.cpp:61
+#: libkhotkeysprivate/conditions/and_condition.cpp:44
 #, kde-format
 msgctxt "And_condition"
 msgid "And"
 msgstr "i"
 
-#: libkhotkeysprivate/conditions/existing_window_condition.cpp:72
+#: libkhotkeysprivate/conditions/existing_window_condition.cpp:55
 #, kde-format
 msgid "Existing window: "
 msgstr "Postojeći prozor: "
 
-#: libkhotkeysprivate/conditions/not_condition.cpp:63
+#: libkhotkeysprivate/conditions/not_condition.cpp:47
 #, kde-format
 msgctxt "Not_condition"
 msgid "Not"
 msgstr "ne"
 
-#: libkhotkeysprivate/conditions/or_condition.cpp:69
+#: libkhotkeysprivate/conditions/or_condition.cpp:50
 #, kde-format
 msgctxt "Or_condition"
 msgid "Or"
 msgstr "ili"
 
-#: libkhotkeysprivate/khotkeysglobal.h:39
+#: libkhotkeysprivate/khotkeysglobal.h:33
 #, kde-format
 msgid "Menu Editor entries"
 msgstr "Stavke uređivača menija"
 
-#: libkhotkeysprivate/settings.cpp:320
+#: libkhotkeysprivate/settings.cpp:259
 #, kde-format
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
@@ -850,7 +899,7 @@ msgstr ""
 "Ovaj fajl sa radnjama je već uvožen ranije. Želite li zaista ponovo da ga "
 "uvezete?"
 
-#: libkhotkeysprivate/settings.cpp:348
+#: libkhotkeysprivate/settings.cpp:281
 #, kde-format
 msgid ""
 "This \"actions\" file has no ImportId field and therefore it cannot be "
@@ -860,27 +909,30 @@ msgstr ""
 "Ovaj fajl sa radnjama nema polje „ImportId“ i zato se ne zna da li je već "
 "bio uvožen. Želite li zaista da ga uvezete?"
 
-#: libkhotkeysprivate/triggers/gesture_trigger.cpp:126
+#: libkhotkeysprivate/shortcuts_handler.cpp:33
+#, kde-format
+msgid "Custom Shortcuts Service"
+msgstr ""
+
+#: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
 #, kde-format
 msgid "Gesture trigger"
 msgstr "Okidač gestom"
 
-#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:152
+#: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
 #, kde-format
 msgid "Shortcut trigger: "
 msgstr "Okidač prečicom: "
 
-#: libkhotkeysprivate/triggers/voice_trigger.cpp:67
-#, kde-format
-msgid "Voice trigger: "
-msgstr "Okidač glasom: "
-
-#: libkhotkeysprivate/triggers/window_trigger.cpp:151
+#: libkhotkeysprivate/triggers/window_trigger.cpp:118
 #, kde-format
 msgid "Window trigger: "
 msgstr "Okidač prozorom: "
 
-#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:81
+#: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
 #, kde-format
 msgid "Window simple: "
 msgstr "Jednostavno na prozoru: "
+
+#~ msgid "Voice trigger: "
+#~ msgstr "Okidač glasom: "
