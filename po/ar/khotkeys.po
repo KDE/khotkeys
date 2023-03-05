@@ -516,7 +516,7 @@ msgstr "أمر D-Bus"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:221
 #, kde-format
 msgid "K-Menu Entry"
-msgstr "مدخلة قائمة كدي"
+msgstr "مدخلة قائمة كِيدِي"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:225
 #, kde-format
@@ -647,7 +647,7 @@ msgid ""
 "They are mostly used for automatic updates from the KDE developers."
 msgstr ""
 "يستخدم معرف ملف khotkeys لضمان عدم استيراد الملفات أكثر من مرة. يتم "
-"استخدامها في الغالب للتحديثات التلقائية من مطوري كدي."
+"استخدامها في الغالب للتحديثات التلقائية من مطوري كِيدِي."
 
 #. i18n: ectx: property (text), widget (QLabel, idLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:68
@@ -710,7 +710,7 @@ msgstr "النوع"
 #: kcm_hotkeys/kcm_hotkeys.cpp:78
 #, kde-format
 msgid "KDE Hotkeys Configuration Module"
-msgstr "وحدة ضبط مفاتيح الاختصار Hotkeys لكدي"
+msgstr "وحدة ضبط مفاتيح الاختصار Hotkeys لكِيدِي"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:82
 #, kde-format
