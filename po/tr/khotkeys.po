@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2023-02-08 19:41+0300\n"
+"PO-Revision-Date: 2023-03-07 20:49+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -43,7 +43,7 @@ msgstr "Koşullar"
 #: kcm_hotkeys/actions/command_url_action_widget.ui:16
 #, kde-format
 msgid "Command/URL:"
-msgstr "Komut/Adres:"
+msgstr "Komut/URL:"
 
 #. i18n: ectx: property (text), widget (QLabel, applicationLabel)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:19
@@ -505,7 +505,7 @@ msgstr "Fare Hareketi Eylemi"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:213
 #, kde-format
 msgid "Command/URL"
-msgstr "Komut/Adres"
+msgstr "Komut/URL"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:217
 #, kde-format
@@ -520,7 +520,7 @@ msgstr "K-Menü Girdisi"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:225
 #, kde-format
 msgid "Send Keyboard Input"
-msgstr "Klavye Girdisi Gönder"
+msgstr "Klavye Girişi Gönder"
 
 #. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
 #: kcm_hotkeys/hotkeys_context_menu.cpp:240
@@ -811,7 +811,7 @@ msgstr "Pencereyi etkinleştir: "
 #: libkhotkeysprivate/actions/command_url_action.cpp:64
 #, kde-format
 msgid "Command/URL : "
-msgstr "Komut/Adres :"
+msgstr "Komut/URL :"
 
 #: libkhotkeysprivate/actions/dbus_action.cpp:115
 #, kde-format
@@ -821,7 +821,7 @@ msgstr "D-Bus:"
 #: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
 #, kde-format
 msgid "Keyboard input: "
-msgstr "Klavye girdisi:"
+msgstr "Klavye girişi:"
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:64
 #, kde-format
@@ -832,7 +832,7 @@ msgstr "Servis yapılandırılmamış."
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Input Action: %1"
-msgstr "Girdi Eylemi : %1"
+msgstr "Giriş Eylemi : %1"
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
