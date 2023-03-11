@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2023-03-09 14:57+0300\n"
+"PO-Revision-Date: 2023-03-10 13:33+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -203,7 +203,7 @@ msgstr "Hareketler"
 #: kcm_hotkeys/global_settings_widget.ui:57
 #, kde-format
 msgid "Timeout:"
-msgstr "Zamanaşımı:"
+msgstr "Zaman aşımı:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
 #: kcm_hotkeys/global_settings_widget.ui:70
@@ -365,7 +365,7 @@ msgstr "Eşit"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:146
 #, kde-format
 msgid "Matches Regular Expression"
-msgstr "Düzenli İfade Eşleşir"
+msgstr "Düzenli İfadeyle Eşleşir"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, window_title_combo)
 #. i18n: ectx: property (text), item, widget (QComboBox, window_class_combo)
@@ -395,7 +395,7 @@ msgstr "Değil"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:161
 #, kde-format
 msgid "Does Not Match Regular Expression"
-msgstr "Düzenli İfade Eşleşmez"
+msgstr "Düzenli İfadeyle Eşleşmez"
 
 #. i18n: ectx: property (text), widget (QLabel, window_class_label)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:77
@@ -427,7 +427,7 @@ msgstr "Önemli Değil"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
 #, kde-format
 msgid "&Autodetect"
-msgstr "&Otomatik algıla"
+msgstr "&Otomatik Algıla"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
@@ -451,13 +451,13 @@ msgstr "Masaüstü"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:225
 #, kde-format
 msgid "Dialog"
-msgstr "Pencere"
+msgstr "İletişim Kutusu"
 
 #. i18n: ectx: property (text), widget (QRadioButton, type_dock)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:232
 #, kde-format
 msgid "Dock"
-msgstr "Yerleştir"
+msgstr "Rıhtım"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:29
 #: kcm_hotkeys/hotkeys_context_menu.cpp:39
