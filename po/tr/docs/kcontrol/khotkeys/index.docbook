@@ -771,7 +771,7 @@
 >C</keycap
 ></keycombo
 > için <userinput
->Ctrl+C</userinput
+>Kontrol+C</userinput
 > yazın.</para>
 
 <tip>
@@ -779,12 +779,12 @@
 >Unutmayın, düğme vuruşlarını klavyede nasıl girerseniz öyle girmelisiniz. Harfleri büyük yapmak için &Shift; düğmesini kullanmalısınız. Örneğin, <quote
 >Selam</quote
 > yazmak için <userinput
->Shift+S:E:L:A:M</userinput
+>Üst Karakter+S:E:L:A:M</userinput
 > girin.</para>
 
 <para
 >Bu, aynı zamanda özel karakterler için de geçerlidir. ABD klavye diziliminde @ simgesini girmek için <userinput
->Shift+2</userinput
+>Üst Karakter+2</userinput
 > girin. </para>
 </tip>
 
