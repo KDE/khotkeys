@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2023-04-16 12:22+0100\n"
+"PO-Revision-Date: 2023-04-25 19:44+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -45,13 +45,13 @@ msgstr "Komando/URL:"
 #: kcm_hotkeys/actions/dbus_action_widget.ui:19
 #, kde-format
 msgid "Remote application:"
-msgstr "Fora &aplikaĵo:"
+msgstr "Fora aplikaĵo:"
 
 #. i18n: ectx: property (text), widget (QLabel, objectLabel)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:32
 #, kde-format
 msgid "Remote object:"
-msgstr "Fora &objekto:"
+msgstr "Fora objekto:"
 
 #. i18n: ectx: property (text), widget (QLabel, functionLabel)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:45
