@@ -1,12 +1,6 @@
 # translation of khotkeys.po to galician
 # Galician translation of khotkeys.
 # Copyright (C) 2000 Jesús Bravo Álvarez.
-#
-# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
-# colaborar connosco, podes atopar máis información en http://trasno.gpul.org
-#
-# First Version: 2000-09-25 22:57+0200
-#
 # Jesús Bravo Álvarez <jba@pobox.com>, 2000.
 # Xabi García <xabigf@gmx.net>, 2004.
 # Xabi G. Feal <xabigf@gmx.net>, 2006.
@@ -15,13 +9,19 @@
 # Marce Villarino <mvillarino@kde-espana.es>, 2009, 2011, 2012.
 # Marce Villarino <mvillarino@kde-espana.es>, 2011.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
+#
+# Proxecto Trasno - Adaptación do software libre á lingua galega:  Se desexas
+# colaborar connosco, podes atopar máis información en http://trasno.gpul.org
+#
+# First Version: 2000-09-25 22:57+0200
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2019-10-08 14:20+0200\n"
+"PO-Revision-Date: 2023-04-30 11:29+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.07.70\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,52 +226,51 @@ msgstr "Botón do rato:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:123
-#, fuzzy, kde-format
-#| msgid "Mouse button:"
+#, kde-format
 msgid "Middle button"
-msgstr "Botón do rato:"
+msgstr "Botón central"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:128
 #, kde-format
 msgid "Right button"
-msgstr ""
+msgstr "Botón dereito"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:133
 #, kde-format
 msgid "Button 4"
-msgstr ""
+msgstr "Botón 4"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:138
 #, kde-format
 msgid "Button 5"
-msgstr ""
+msgstr "Botón 5"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:143
 #, kde-format
 msgid "Button 6"
-msgstr ""
+msgstr "Botón 6"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:148
 #, kde-format
 msgid "Button 7"
-msgstr ""
+msgstr "Botón 7"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:153
 #, kde-format
 msgid "Button 8"
-msgstr ""
+msgstr "Botón 8"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:158
 #, kde-format
 msgid "Button 9"
-msgstr ""
+msgstr "Botón 9"
 
 #: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
 #, kde-format
@@ -768,7 +767,7 @@ msgstr "Configuración"
 #: kcm_hotkeys/simple_action_data_widget.cpp:103
 #, kde-format
 msgid "Trigger"
-msgstr "Desencadeante"
+msgstr "Disparador"
 
 #: kcm_hotkeys/simple_action_data_widget.cpp:131
 #, kde-format
@@ -803,7 +802,7 @@ msgstr "Desaparece a xanela"
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:36
 #, kde-format
 msgid "Window gets focus"
-msgstr "A xanela é focada"
+msgstr "Enfócase a xanela"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:43
@@ -907,22 +906,22 @@ msgstr ""
 #: libkhotkeysprivate/shortcuts_handler.cpp:33
 #, kde-format
 msgid "Custom Shortcuts Service"
-msgstr ""
+msgstr "Servizo de atallos personalizados"
 
 #: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
 #, kde-format
 msgid "Gesture trigger"
-msgstr "Aceno desencadeante"
+msgstr "Disparador de aceno"
 
 #: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
 #, kde-format
 msgid "Shortcut trigger: "
-msgstr "Atallo desencadeante: "
+msgstr "Disparador de atallo: "
 
 #: libkhotkeysprivate/triggers/window_trigger.cpp:118
 #, kde-format
 msgid "Window trigger: "
-msgstr "Xanela desencadeante: "
+msgstr "Disparador de xanela: "
 
 #: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
 #, kde-format
