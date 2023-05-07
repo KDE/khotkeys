@@ -1,7 +1,0 @@
-/.clang-format
-cmake-build-debug*
-.idea
-/build*/
-/compile_commands.json
-.clangd
-.cache
