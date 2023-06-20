@@ -652,8 +652,8 @@ msgid ""
 "A khotkeys file id is used to ensure files are not imported more than once. "
 "They are mostly used for automatic updates from the KDE developers."
 msgstr ""
-"O id do ficheiro de khotkeys emprégase para garantir que os ficheiros só se "
-"importen unha vez. Empréganse principalmente durante as actualizacións "
+"O id do ficheiro de khotkeys úsase para garantir que os ficheiros só se "
+"importen unha vez. Úsanse principalmente durante as actualizacións "
 "automáticas procedentes dos desenvolvedores de KDE."
 
 #. i18n: ectx: property (text), widget (QLabel, idLabel)
@@ -666,7 +666,7 @@ msgstr "Id"
 #: kcm_hotkeys/hotkeys_export_widget.ui:78
 #, kde-format
 msgid "Set import id for file, or leave empty"
-msgstr "Estabeleza o id do ficheiro que se vai importar ou déixeo baleiro"
+msgstr "Defina o id do ficheiro que se vai importar ou déixeo baleiro"
 
 #. i18n: ectx: property (text), widget (QLabel, filenameLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:85
