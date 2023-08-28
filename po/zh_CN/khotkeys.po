@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2023-08-02 12:43\n"
+"PO-Revision-Date: 2023-08-27 03:43\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -214,7 +214,7 @@ msgstr "鼠标按键："
 #: kcm_hotkeys/global_settings_widget.ui:123
 #, kde-format
 msgid "Middle button"
-msgstr "中间键"
+msgstr "中键"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:128
