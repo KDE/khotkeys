@@ -755,8 +755,8 @@ msgid ""
 "Unable to contact khotkeys. Your changes are saved, but they could not be "
 "activated."
 msgstr ""
-"Non se puido contactar con khotkeys. Os cambios gardáronse pero non puideron "
-"activarse."
+"Non foi posíbel contactar con khotkeys. Os cambios gardáronse pero non "
+"puideron activarse."
 
 #. i18n: ectx: property (text), widget (QPushButton, settings_button)
 #: kcm_hotkeys/kcm_hotkeys.ui:36
@@ -844,7 +844,7 @@ msgstr "Accións de entrada: %1"
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Failed to start service '%1'."
-msgstr "Non se puido iniciar o servizo «%1»."
+msgstr "Non foi posíbel iniciar o servizo «%1»."
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:81
 #, kde-format
