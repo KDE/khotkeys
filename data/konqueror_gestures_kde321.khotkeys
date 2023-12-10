@@ -1557,7 +1557,7 @@ Name[uz@cyrillic]=Кейинги табни активлаштириш
 Name[vi]=Kích hoạt thẻ sau
 Name[wa]=Mete en alaedje li linwete shuvante
 Name[x-test]=xxActivate Next Tabxx
-Name[zh_CN]=激活下一标签页
+Name[zh_CN]=激活下一个标签页
 Name[zh_TW]=跳到下一個分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -1815,7 +1815,7 @@ Name[uk]=Активувати попередню вкладку
 Name[vi]=Kích hoạt thẻ trước
 Name[wa]=Mete en alaedje li linwete di dvant
 Name[x-test]=xxActivate Previous Tabxx
-Name[zh_CN]=激活上一标签页
+Name[zh_CN]=激活上一个标签页
 Name[zh_TW]=跳到前一個分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
@@ -2163,7 +2163,7 @@ Name[uz@cyrillic]=Табнинг нусхасини яратиш
 Name[vi]=Nhân đôi thẻ
 Name[wa]=Dobler l' linwete
 Name[x-test]=xxDuplicate Tabxx
-Name[zh_CN]=复制标签
+Name[zh_CN]=复制标签页
 Name[zh_TW]=複製分頁
 Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 
