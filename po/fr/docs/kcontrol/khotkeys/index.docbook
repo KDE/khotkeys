@@ -6,7 +6,7 @@
 ]>
 <article id="khotkeys" lang="&language;">
 <title
->Raccourcis clavier personnalisés</title>
+>Raccourcis personnalisés de clavier</title>
 
 <articleinfo>
 <authorgroup>
@@ -53,7 +53,7 @@
 <keyword
 >Raccourcis clavier personnalisés</keyword>
 <keyword
->khotkeys</keyword>
+>KHotkeys</keyword>
 </keywordset>
 </articleinfo>
 
@@ -166,7 +166,7 @@
 <listitem
 ><para
 >Cette action appellera une méthode &DBus; dans une application en cours d'exécution ou dans un démon du système. Pour plus d'informations, veuillez consulter <ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/"
->l'introduction à &DBus; dans la plateforme des développeurs de &kde;</ulink
+>l'introduction à &DBus; dans la plate-forme des développeurs de &kde;</ulink
 >.</para
 ></listitem>
 </varlistentry>
@@ -717,7 +717,7 @@
 
 <para
 >Pour plus d'informations, veuillez consulter <ulink url="http://techbase.kde.org/Development/Tutorials/D-Bus/Introduction"
->l'introduction à &DBus; dans la plateforme des développeurs de &kde;</ulink
+>l'introduction à &DBus; dans la plate-forme des développeurs de &kde;</ulink
 >.</para>
 
 </listitem>
