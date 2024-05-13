@@ -117,19 +117,19 @@ msgstr "Aplicació:"
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
-msgstr "Seleccioneu una aplicació..."
+msgstr "Seleccioneu una aplicació…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
 msgctxt "Condition type"
 msgid "Active Window ..."
-msgstr "Finestra activa..."
+msgstr "Finestra activa…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:14
 #, kde-format
 msgctxt "Condition type"
 msgid "Existing Window ..."
-msgstr "Finestra existent..."
+msgstr "Finestra existent…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:15
 #, kde-format
@@ -172,7 +172,7 @@ msgstr "Nova"
 #: kcm_hotkeys/conditions/conditions_widget.ui:37
 #, kde-format
 msgid "Edit..."
-msgstr "Edita..."
+msgstr "Edita…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/conditions/conditions_widget.ui:44
@@ -298,19 +298,19 @@ msgstr "Comentari:"
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
 #, kde-format
 msgid "&Edit..."
-msgstr "&Edita..."
+msgstr "&Edita…"
 
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
 #, kde-format
 msgid "&New..."
-msgstr "&Nova..."
+msgstr "&Nova…"
 
 #. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
 #, kde-format
 msgid "&Duplicate..."
-msgstr "&Duplica..."
+msgstr "&Duplica…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
@@ -475,12 +475,12 @@ msgstr "Grup nou"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:115
 #, kde-format
 msgid "Export Group..."
-msgstr "Exporta un grup..."
+msgstr "Exporta un grup…"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:116
 #, kde-format
 msgid "Import..."
-msgstr "Importa..."
+msgstr "Importa…"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:121
 #, kde-format
