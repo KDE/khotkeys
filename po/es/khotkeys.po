@@ -1,24 +1,21 @@
-# Translation of khotkeys to Spanish
-# translation of khotkeys.po to Spanish
-# traducción de khotkeys.po a Español
-# Translation to spanish
-# Copyright (C) 2001-2002.
+# Spanish translations for khotkeys.po package.
+# Copyright (C) 2001-2025 This file is copyright:
+# This file is distributed under the same license as the khotkeys package.
 #
-# Pablo de Vicente <vicente@oan.es>, 2001-2002.
-# Pablo de Vicente <vicnte@oan.es>, 2003.
-# Miguel Revilla Rodríguez <yo@miguelrevilla.com>, 2003, 2004.
-# Pablo de Vicente <p.devicente@wanadoo.es>, 2004, 2005.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2005, 2010, 2012, 2014, 2017, 2018, 2020, 2021.
-# Pablo de Vicente <pablo.devicente@gmail.com>, 2005.
-# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
-# Jaime Robles <jaime@kde.org>, 2007, 2008, 2009.
-# Javier Vinal <fjvinal@gmail.com>, 2011.
+# SPDX-FileCopyrightText: 2001-2003 Pablo de Vicente <vicente@oan.es>
+# SPDX-FileCopyrightText: 2003, 2004 Miguel Revilla Rodríguez <yo@miguelrevilla.com>
+# SPDX-FileCopyrightText: 2004, 2005 Pablo de Vicente <p.devicente@wanadoo.es>
+# SPDX-FileCopyrightText: 2005, 2010, 2012, 2014, 2017, 2018, 2020, 2021, 2025 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2005 Pablo de Vicente <pablo.devicente@gmail.com>
+# SPDX-FileCopyrightText: 2007 Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>
+# SPDX-FileCopyrightText: 2007, 2008, 2009 Jaime Robles <jaime@kde.org>
+# SPDX-FileCopyrightText: 2011 Javier Vinal <fjvinal@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2021-12-21 20:39+0100\n"
+"PO-Revision-Date: 2025-06-10 00:52+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -122,19 +119,19 @@ msgstr "Aplicación:"
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
-msgstr "Seleccionar aplicación..."
+msgstr "Seleccionar aplicación…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
 msgctxt "Condition type"
 msgid "Active Window ..."
-msgstr "Ventana activa ..."
+msgstr "Ventana activa …"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:14
 #, kde-format
 msgctxt "Condition type"
 msgid "Existing Window ..."
-msgstr "Ventana existente ..."
+msgstr "Ventana existente …"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:15
 #, kde-format
@@ -177,7 +174,7 @@ msgstr "Nueva"
 #: kcm_hotkeys/conditions/conditions_widget.ui:37
 #, kde-format
 msgid "Edit..."
-msgstr "Editar..."
+msgstr "Editar…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/conditions/conditions_widget.ui:44
@@ -303,19 +300,19 @@ msgstr "Comentario:"
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
 #, kde-format
 msgid "&Edit..."
-msgstr "&Editar..."
+msgstr "&Editar…"
 
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
 #, kde-format
 msgid "&New..."
-msgstr "&Nuevo..."
+msgstr "&Nuevo…"
 
 #. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
 #, kde-format
 msgid "&Duplicate..."
-msgstr "&Duplicar..."
+msgstr "&Duplicar…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
@@ -479,12 +476,12 @@ msgstr "Nuevo grupo"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:115
 #, kde-format
 msgid "Export Group..."
-msgstr "Exportar grupo..."
+msgstr "Exportar grupo…"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:116
 #, kde-format
 msgid "Import..."
-msgstr "Importar..."
+msgstr "Importar…"
 
 #: kcm_hotkeys/hotkeys_context_menu.cpp:121
 #, kde-format
@@ -926,9 +923,3 @@ msgstr "Disparador de ventana: "
 #, kde-format
 msgid "Window simple: "
 msgstr "Sencillo de ventana: "
-
-#~ msgid "Voice trigger: "
-#~ msgstr "Disparador de voz: "
-
-#~ msgid "Failed to run qdbusviewer"
-#~ msgstr "Ejecución de qdbusviewer fallida"
