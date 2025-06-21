@@ -13,19 +13,20 @@
 # tahmar1900 <tahmar1900@gmail.com>, 2008.
 # Elkana Bardugo <ttv200@gmail.com>, 2016.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2017-05-16 06:53-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-06-19 12:45+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 25.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #, kde-format
@@ -59,7 +60,7 @@ msgstr "יישום מרוחק:"
 #: kcm_hotkeys/actions/dbus_action_widget.ui:32
 #, kde-format
 msgid "Remote object:"
-msgstr "אובייקט מרוחק:"
+msgstr "פריט מרוחק:"
 
 #. i18n: ectx: property (text), widget (QLabel, functionLabel)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:45
@@ -81,10 +82,9 @@ msgstr "קריאה"
 
 #. i18n: ectx: property (text), widget (QPushButton, launchButton)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:92
-#, fuzzy, kde-format
-#| msgid "Launch  D-Bus Browser"
+#, kde-format
 msgid "Launch D-Bus Browser"
-msgstr "הפעל את דפדפן D-Bus"
+msgstr "הפעלת דפדפן D-Bus"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, window_group)
@@ -122,19 +122,19 @@ msgstr "יישום:"
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
-msgstr "בחר יישום..."
+msgstr "בחירת יישום…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
 msgctxt "Condition type"
 msgid "Active Window ..."
-msgstr "חלון פעיל..."
+msgstr "חלון פעיל…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:14
 #, kde-format
 msgctxt "Condition type"
 msgid "Existing Window ..."
-msgstr "חלון קיים..."
+msgstr "חלון קיים…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:15
 #, kde-format
@@ -177,105 +177,103 @@ msgstr "חדש"
 #: kcm_hotkeys/conditions/conditions_widget.ui:37
 #, kde-format
 msgid "Edit..."
-msgstr "ערוך..."
+msgstr "עריכה…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/conditions/conditions_widget.ui:44
 #: kcm_hotkeys/hotkeys_context_menu.cpp:107
 #, kde-format
 msgid "Delete"
-msgstr "מחק"
+msgstr "מחיקה"
 
 #. i18n: ectx: property (title), widget (QGroupBox, global_group)
 #: kcm_hotkeys/global_settings_widget.ui:32
 #, kde-format
 msgid "Input Actions Daemon"
-msgstr "שירותית פעולות קלט"
+msgstr "סוכן פעולות קלט"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enabled)
 #: kcm_hotkeys/global_settings_widget.ui:38
 #, kde-format
 msgid "Start the Input Actions daemon on login"
-msgstr "הפעל את השירותית של khotkeys בהתחברות למערכת"
+msgstr "הפעלת הסוכן של פעולות הקלט בכניסה למערכת"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
 #: kcm_hotkeys/global_settings_widget.ui:48
 #, kde-format
 msgid "Gestures"
-msgstr "מחוות"
+msgstr "תנועות"
 
 #. i18n: ectx: property (text), widget (QLabel, gestures_timeout_label)
 #: kcm_hotkeys/global_settings_widget.ui:57
 #, kde-format
 msgid "Timeout:"
-msgstr "זמן תפוגה:"
+msgstr "תום זמן המתנה:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
 #: kcm_hotkeys/global_settings_widget.ui:70
-#, fuzzy, kde-format
-#| msgid "ms"
+#, kde-format
 msgid " ms"
-msgstr "אלפיות השניה"
+msgstr " אלפיות השניה"
 
 #. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
 #: kcm_hotkeys/global_settings_widget.ui:99
 #, kde-format
 msgid "Mouse button:"
-msgstr "כפתור של עכבר:"
+msgstr "כפתור עכבר:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:123
-#, fuzzy, kde-format
-#| msgid "Mouse button:"
+#, kde-format
 msgid "Middle button"
-msgstr "כפתור של עכבר:"
+msgstr "לחצן אמצעי"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:128
 #, kde-format
 msgid "Right button"
-msgstr ""
+msgstr "כפתור ימני"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:133
 #, kde-format
 msgid "Button 4"
-msgstr ""
+msgstr "כפתור 4"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:138
 #, kde-format
 msgid "Button 5"
-msgstr ""
+msgstr "כפתור 5"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:143
 #, kde-format
 msgid "Button 6"
-msgstr ""
+msgstr "כפתור 6"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:148
 #, kde-format
 msgid "Button 7"
-msgstr ""
+msgstr "כפתור 7"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:153
 #, kde-format
 msgid "Button 8"
-msgstr ""
+msgstr "כפתור 8"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:158
 #, kde-format
 msgid "Button 9"
-msgstr ""
+msgstr "כפתור 9"
 
 #: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
 #, kde-format
 msgid "Edit Gesture"
-msgstr "ערוך מחווה"
+msgstr "עריכת תנועה"
 
 #: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:22
 #, kde-format
@@ -283,8 +281,8 @@ msgid ""
 "Draw the gesture you would like to record below. Press and hold the left "
 "mouse button while drawing, and release when you have finished."
 msgstr ""
-"ערוך את המחווה שאתה רוצה להקליט מתחת. לחץ והחזק את הכפתור השמאלי של העכבר "
-"בעת הציור, ושחרר כשסיימת."
+"נא לצייר את התנועה שברצונך להקליט להלן. יש ללחוץ ולהחזיק את כפתור העכבר "
+"השמאלי בזמן הציור ולשחרר מכשסיימת."
 
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
@@ -305,25 +303,25 @@ msgstr "הערה:"
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:38
 #, kde-format
 msgid "&Edit..."
-msgstr "&ערוך..."
+msgstr "&עריכה…"
 
 #. i18n: ectx: property (text), widget (QPushButton, new_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:45
 #, kde-format
 msgid "&New..."
-msgstr "&חדש..."
+msgstr "&חדש…"
 
 #. i18n: ectx: property (text), widget (QPushButton, duplicate_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:52
 #, kde-format
 msgid "&Duplicate..."
-msgstr "&העתק..."
+msgstr "ה&עתקה…"
 
 #. i18n: ectx: property (text), widget (QPushButton, delete_button)
 #: kcm_hotkeys/helper_widgets/window_definition_list_widget.ui:59
 #, kde-format
 msgid "&Delete"
-msgstr "&מחק"
+msgstr "&מחיקה"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:16
@@ -434,7 +432,7 @@ msgstr "לא חשוב"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
 #, kde-format
 msgid "&Autodetect"
-msgstr "&זהה אוטומטית"
+msgstr "&זיהוי אוטומטית"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
@@ -592,6 +590,31 @@ msgid ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Export the actions in an "
 "enabled state.</p></body></html>"
 msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">הגדרה באיזה מצב הפעולות "
+"תיוצאנה.</p>\n"
+"<p style=\" margin-top:8px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">מצב בפועל</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">ייצוא הפעולות במצבן הנוכחי."
+"</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">מושבת</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">ייצוא הפעולות במצב מושבת.</"
+"p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">פעיל</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:8px; margin-left:30px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">ייצוא כל הפעולות במצב פעיל."
+"</p></body></html>"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, state)
 #: kcm_hotkeys/hotkeys_export_widget.ui:44
@@ -709,15 +732,13 @@ msgid "Maintainer"
 msgstr "מתחזק"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:259
-#, fuzzy, kde-format
-#| msgid ""
-#| "The current action has unsaved changes. If you continue these changes "
-#| "will be lost."
+#, kde-format
 msgid ""
 "The current action has unsaved changes.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
-"הפעולה הנוכחית כוללת שינויים בלתי שמורים. אם תמשיך השינויים הללו יאבדו."
+"הפעולה הנוכחית כוללת שינויים שלא נשמרו.\n"
+"להחיל את השינויים או להתעלם מהם?"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:261
 #, kde-format
@@ -758,36 +779,36 @@ msgstr "&קיצור דרך:"
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:16
 #, kde-format
 msgid "Trigger When"
-msgstr "הפעל בעת..."
+msgstr "הפעלה כאשר…"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_appears)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:22
 #, kde-format
 msgid "Window appears"
-msgstr "שחלון מופיע"
+msgstr "חלון מופיע"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:29
 #, kde-format
 msgid "Window disappears"
-msgstr "שחלון נעלם"
+msgstr "חלון נעלם"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:36
 #, kde-format
 msgid "Window gets focus"
-msgstr "שחלון מקבל פוקוס"
+msgstr "חלון מקבל פוקוס"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_lost_focus)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:43
 #, kde-format
 msgid "Window loses focus"
-msgstr "שחלון מאבד פוקוס"
+msgstr "חלון מאבד פוקוס"
 
 #: libkhotkeysprivate/actions/activate_window_action.cpp:65
 #, kde-format
 msgid "Activate window: "
-msgstr "הפעל חלון:"
+msgstr "הפעלת חלון:"
 
 #: libkhotkeysprivate/actions/command_url_action.cpp:64
 #, kde-format
@@ -802,7 +823,7 @@ msgstr "D-Bus: "
 #: libkhotkeysprivate/actions/keyboard_input_action.cpp:165
 #, kde-format
 msgid "Keyboard input: "
-msgstr "קלט מהמקלדת: "
+msgstr "קלט מקלדת: "
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:64
 #, kde-format
@@ -818,7 +839,7 @@ msgstr "פעולת קלט: %1"
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Failed to start service '%1'."
-msgstr "ההפעלה של שירות \"%1\" נכשלה."
+msgstr "ההפעלה של שירות „%1” נכשלה."
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:81
 #, kde-format
@@ -856,15 +877,14 @@ msgstr "או"
 #: libkhotkeysprivate/khotkeysglobal.h:33
 #, kde-format
 msgid "Menu Editor entries"
-msgstr "ערכי Menu Editor"
+msgstr "רשמות עורך תפריטים"
 
 #: libkhotkeysprivate/settings.cpp:259
 #, kde-format
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
-msgstr ""
-"קובץ \"פעולות\" זה כבר ייבוא בעבר. האם אתה בטוח שברצונך לייבא אותו שוב?"
+msgstr "קובץ „פעולות” זה כבר יובא בעבר. לייבא אותו שוב?"
 
 #: libkhotkeysprivate/settings.cpp:281
 #, kde-format
@@ -873,28 +893,28 @@ msgid ""
 "determined whether or not it has been imported already. Are you sure you "
 "want to import it?"
 msgstr ""
-"קובץ \"פעולות\" זה לא מכיל שדה ייבוא (ImportId) ולכן אין אפשרות לוודא האם "
-"הוא כבר יובא בעבר. האם אתה בטוח כי ברצונך לייבא אותו?"
+"קובץ „פעולות” זה לא מכיל שדה מזהה ייבוא (ImportId) ולכן אי אפשר לוודא האם "
+"הוא כבר יובא בעבר. לייבא אותו?"
 
 #: libkhotkeysprivate/shortcuts_handler.cpp:33
 #, kde-format
 msgid "Custom Shortcuts Service"
-msgstr ""
+msgstr "שירותי קיצורי מקשים מותאמים"
 
 #: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
 #, kde-format
 msgid "Gesture trigger"
-msgstr "מפעיל מחווה"
+msgstr "מזניק תנועה"
 
 #: libkhotkeysprivate/triggers/shortcut_trigger.cpp:120
 #, kde-format
 msgid "Shortcut trigger: "
-msgstr "מפעיל קיצור דרך: "
+msgstr "מזניק קיצור מקשים: "
 
 #: libkhotkeysprivate/triggers/window_trigger.cpp:118
 #, kde-format
 msgid "Window trigger: "
-msgstr "מפעיל חלון: "
+msgstr "מזניק חלון: "
 
 #: libkhotkeysprivate/windows_helper/window_selection_rules.cpp:65
 #, kde-format
