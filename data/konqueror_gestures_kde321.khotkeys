@@ -650,7 +650,7 @@ Type=KEYBOARD_INPUT_GESTURE_ACTION_DATA
 [Data_1_10]
 Comment=Opera-style: Press, move up, release.\nNOTE: Conflicts with 'New Tab', and as such is disabled by default.
 Comment[af]=Opera-styl: Kliek, skuif op, los.\nLet wel: konflik met 'Nuwe oortjie', en word daarom by verstek afgeskakel.
-Comment[ar]=نمط أوبرا: اضغط، تحرّك إلى أعلى. أطلق.\nملاحظة: يتعارض مع 'لسان جديد'، وهو معطّل افتراضيًّا.
+Comment[ar]=نمط أوبرا: اضغط، تحرّك إلى أعلى. أطلق.\nملاحظة: يتعارض مع 'لسان جديد'، وهو معطّل مبدئيًّا.
 Comment[be]=У стылі Opera: націснуць, перамясціць уверх, адпусціць.\nУВАГА: канфліктуе з "Новая ўкладка", таму прадвызначана адключана.
 Comment[bg]=Стил на Opera: натискане, движение нагоре, пускане.\nЗАБЕЛЕЖКА: Има конфликт с "Нов подпрозорец" и затова е изключено по подразбиране.
 Comment[bs]=U stilu Opere: pritisni, gore, otpusti.\nNapomena: U sukobu sa „Novi jezičak“, pa zato podrazumijevano isključeno.
@@ -3299,7 +3299,7 @@ Type=GESTURE
 
 [Data_1_7]
 Comment=Press, move up, release.\nConflicts with Opera-style 'Up #2', which is disabled by default.
-Comment[ar]=اضغط، تحرّك إلى أعلى. أطلق.\nيتعارض مع نمط أوبرا 'للأعلى #2'، وهو معطّل افتراضيًّا.
+Comment[ar]=اضغط، تحرّك إلى أعلى. أطلق.\nيتعارض مع نمط أوبرا 'للأعلى #2'، وهو معطّل مبدئيًّا.
 Comment[be]=Націснуць, перамясціць уверх, адпусціць.\nКанфліктуе з "Назад #2" у стылі Opera, прадвызначана адключаны.
 Comment[bg]=Натискане, движение нагоре, пускане.\nИма конфликт със стила на Opera "Нагоре 2", който е по подразбиране.
 Comment[bs]=Pritisni, gore, otpusti.\nU sukobu sa „Gore #2“ u stilu Opere, pa zato podrazumijevano isključeno.

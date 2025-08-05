@@ -3,7 +3,7 @@ DataCount=1
 
 [Data_1]
 Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
-Comment[ar]=هذه المجموعة تحوي مختلف الأمثلة ممثلّلة أغلب ميزات «مفاتيحك السّريعة». (لاحظ أنّ هذه المجموعة وكلّ إجراءاتها معطّلة افتراضيًّا.)
+Comment[ar]=هذه المجموعة تحوي مختلف الأمثلة ممثلّلة أغلب ميزات «مفاتيحك السّريعة». (لاحظ أنّ هذه المجموعة وكلّ إجراءاتها معطّلة مبدئيًّا.)
 Comment[be]=Гэтая група змяшчае розныя прыклады, якія дэманструюць большасць функцый KHotkeys. (Звярніце ўвагу, што гэтая група і ўсе яе дзеянні прадвызначана адключаныя.)
 Comment[be@latin]=Hety hurt źmiaščaje roznyja ŭzory, jakija vyjaŭlajuć balšyniu mahčymaściaŭ modula „KHotkeys”. Hety hurt dy ŭsie jahonyja aperacyi zmoŭčana vyklučanyja.
 Comment[bg]=Тази група съдържа различни примери, демонстриращи повечето от функциите на горещите клавиши. (Имайте предвид, че групата по подразбиране е изключена.)
