@@ -427,7 +427,7 @@ msgstr "ليس مهم"
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:195
 #, kde-format
 msgid "&Autodetect"
-msgstr "&تعرف آلي"
+msgstr "&تعرف آليّ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: kcm_hotkeys/helper_widgets/window_definition_widget.ui:205
@@ -646,7 +646,7 @@ msgid ""
 "They are mostly used for automatic updates from the KDE developers."
 msgstr ""
 "يستخدم معرف ملف khotkeys لضمان عدم استيراد الملفات أكثر من مرة. يتم "
-"استخدامها في الغالب للتحديثات التلقائية من مطوري كِيدِي."
+"استخدامها في الغالب للتحديثات الآليّة من مطوري كِيدِي."
 
 #. i18n: ectx: property (text), widget (QLabel, idLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:68
