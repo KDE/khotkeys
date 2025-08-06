@@ -8,21 +8,22 @@
 # محمد سعد  Mohamed SAAD <metehyi@free.fr>, 2006.
 # AbdulAziz AlSharif <a.a-a.s@hotmail.com>, 2007.
 # Youssef Chahibi <chahibi@gmail.com>, 2007.
-# zayed <zayed.alsaidi@gmail.com>, 2008, 2021, 2022.
+# SPDX-FileCopyrightText: 2008, 2021, 2022, 2025 zayed <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2022-08-16 22:25+0400\n"
+"PO-Revision-Date: 2025-08-05 20:10+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
-"Language-Team: Arabic <kde-l10n-ar@kde.org>\n"
+"Language-Team: ar\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -185,13 +186,13 @@ msgstr "احذف"
 #: kcm_hotkeys/global_settings_widget.ui:32
 #, kde-format
 msgid "Input Actions Daemon"
-msgstr "مراقب إجراءات الادخال"
+msgstr "مراقب إجراءات الإدخال"
 
 #. i18n: ectx: property (text), widget (QCheckBox, enabled)
 #: kcm_hotkeys/global_settings_widget.ui:38
 #, kde-format
 msgid "Start the Input Actions daemon on login"
-msgstr "ابدأ مراقب إجراءات الادخال عند الولوج"
+msgstr "ابدأ مراقب إجراءات الإدخال عند الولوج"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gestures_group)
 #: kcm_hotkeys/global_settings_widget.ui:48
@@ -276,7 +277,7 @@ msgid ""
 "Draw the gesture you would like to record below. Press and hold the left "
 "mouse button while drawing, and release when you have finished."
 msgstr ""
-"ارسم الإيماة التي تحب أن تسجلها في الأسفل ، اضغط و امسط زر الأيسر للفأرة "
+"ارسم الإيماءة التي تحب أن تسجلها في الأسفل ، اضغط و امسك زر الأيسر للفأرة "
 "عندما ترسم ، و عندما تنتهي من الرسم اطلق زر الفأرة."
 
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
@@ -520,7 +521,7 @@ msgstr "مدخلة قائمة كِيدِي"
 #: kcm_hotkeys/hotkeys_context_menu.cpp:225
 #, kde-format
 msgid "Send Keyboard Input"
-msgstr "أرسل مدخلات لوحة المفايتح"
+msgstr "أرسل مدخلات لوحة المفاتيح"
 
 #. i18n: ectx: attribute (title), widget (QWidget, comment_tab)
 #: kcm_hotkeys/hotkeys_context_menu.cpp:240
@@ -645,8 +646,8 @@ msgid ""
 "A khotkeys file id is used to ensure files are not imported more than once. "
 "They are mostly used for automatic updates from the KDE developers."
 msgstr ""
-"يستخدم معرف ملف khotkeys لضمان عدم استيراد الملفات أكثر من مرة. يتم "
-"استخدامها في الغالب للتحديثات الآليّة من مطوري كِيدِي."
+"يستخدم معرف ملف khotkeys لضمان عدم استيراد الملفات أكثر من مرة. تُستخدم في "
+"الغالب للتحديثات الآليّة من مطوري كِيدِي."
 
 #. i18n: ectx: property (text), widget (QLabel, idLabel)
 #: kcm_hotkeys/hotkeys_export_widget.ui:68
@@ -828,7 +829,7 @@ msgstr "لم تضبط أي خدمة."
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Input Action: %1"
-msgstr "إجراء الادخال: %1"
+msgstr "إجراء الإدخال: %1"
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
@@ -878,8 +879,7 @@ msgstr "خانات محرّر القوائم"
 msgid ""
 "This \"actions\" file has already been imported before. Are you sure you "
 "want to import it again?"
-msgstr ""
-"ملف \"إجراءات\" هذا تم استيراده من قبل. هل أنت متأكد من استيراده مرة أخرى؟"
+msgstr "ملف \"إجراءات\" هذا مستورد من قبل. هل أنت متأكد من استيراده مرة أخرى؟"
 
 #: libkhotkeysprivate/settings.cpp:281
 #, kde-format
