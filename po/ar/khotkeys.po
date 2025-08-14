@@ -277,8 +277,8 @@ msgid ""
 "Draw the gesture you would like to record below. Press and hold the left "
 "mouse button while drawing, and release when you have finished."
 msgstr ""
-"ارسم الإيماءة التي تحب أن تسجلها في الأسفل ، اضغط و امسك زر الأيسر للفأرة "
-"عندما ترسم ، و عندما تنتهي من الرسم اطلق زر الفأرة."
+"ارسم الإيماءة التي تحب أن تسجلها في الأسفل، اضغط و امسك زر الأيسر للفأرة "
+"عندما ترسم، و عندما تنتهي من الرسم اطلق زر الفأرة."
 
 #. i18n: ectx: property (text), widget (QPushButton, edit_button)
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
@@ -688,7 +688,7 @@ msgid ""
 "same name."
 msgstr ""
 "السماح بدمج المحتوى في حالة وجود دليل بنفس الاسم عند الاستيراد. إذا كان "
-"الدمج غير مسموح به ، فسيكون هناك دليلين بنفس الاسم."
+"الدمج غير مسموح به، فسيكون هناك دليلين بنفس الاسم."
 
 #: kcm_hotkeys/hotkeys_model.cpp:321
 #, kde-format
