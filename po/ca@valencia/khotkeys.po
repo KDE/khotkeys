@@ -117,7 +117,7 @@ msgstr "Aplicació:"
 #: kcm_hotkeys/actions/menuentry_action_widget.ui:30
 #, kde-format
 msgid "Select Application ..."
-msgstr "Seleccioneu una aplicació…"
+msgstr "Trieu una aplicació…"
 
 #: kcm_hotkeys/conditions/condition_type_menu.cpp:13
 #, kde-format
