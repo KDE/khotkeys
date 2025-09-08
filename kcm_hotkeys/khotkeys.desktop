@@ -71,7 +71,6 @@ Name[ug]=ئىختىيارى تېزلەتمە
 Name[uk]=Нетипові скорочення
 Name[vi]=Phím tắt tự chọn
 Name[wa]=Rascourtis da vosse
-Name[x-test]=xxCustom Shortcutsxx
 Name[zh_CN]=自定义快捷键
 Name[zh_TW]=自訂捷徑
 
@@ -141,7 +140,6 @@ Comment[ug]=كىرگۈزۈش مەشغۇلات تەڭشەك سەپلىمىسى
 Comment[uk]=Налаштування параметрів дій з вводу
 Comment[vi]=Cấu hình các thiết lập cho Hành động nhập
 Comment[wa]=Apontyî les tchuzes des Faitindjes èn intrêye
-Comment[x-test]=xxConfigure Input Actions settingsxx
 Comment[zh_CN]=配置输入操作设置
 Comment[zh_TW]=設定輸入動作
 Categories=Qt;KDE;X-KDE-settings-accessibility;
@@ -193,7 +191,6 @@ X-KDE-Keywords[sv]=global,tangentbordsgenvägar,KHotKeys,indataåtgärder,musges
 X-KDE-Keywords[tr]=genel,sistem geneli,klavye kısayolları,KHotKeys,giriş eylemleri,fare hareketleri,eylemler,tetikleyiciler,çalıştır,başlat
 X-KDE-Keywords[uk]=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch,загальні,глобальні,клавіатура,клавіатурні скорочення,введення,жести,жести мишею,дії,вмикання,запуск
 X-KDE-Keywords[vi]=toàn cục,phím tắt,phím nóng,hành động nhập,động tác chuột,hành động,kích hoạt,khởi chạy
-X-KDE-Keywords[x-test]=xxglobalxx,xxkeyboard shortcutsxx,xxhot keysxx,xxhotkeysxx,xxKHotKeysxx,xxinput actionsxx,xxmouse gesturesxx,xxactionsxx,xxtriggersxx,xxlaunchxx
 X-KDE-Keywords[zh_CN]=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch,全局,键盘快捷键,快捷键,热键,输入操作,鼠标手势,操作,触发,启动,quanju,jianpan,jianpankuaijiejian,rejian,shurucaozuo,shubiaoshoushi,caozuo,chufa,qidong
 X-KDE-Keywords[zh_TW]=global,keyboard shortcuts,hot keys,hotkeys,KHotKeys,input actions,mouse gestures,actions,triggers,launch
 
