@@ -5,21 +5,22 @@
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007, 2008.
 # Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009, 2012.
 # pan93412 <pan93412@gmail.com>, 2018.
+# SPDX-FileCopyrightText: 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-12-21 00:44+0000\n"
-"PO-Revision-Date: 2018-05-27 14:41+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2025-09-22 06:20+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "dot tw>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 25.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -216,52 +217,51 @@ msgstr "滑鼠按鍵"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:123
-#, fuzzy, kde-format
-#| msgid "Mouse button:"
+#, kde-format
 msgid "Middle button"
-msgstr "滑鼠按鍵"
+msgstr "滑鼠中鍵"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:128
 #, kde-format
 msgid "Right button"
-msgstr ""
+msgstr "滑鼠右鍵"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:133
 #, kde-format
 msgid "Button 4"
-msgstr ""
+msgstr "按鈕 4"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:138
 #, kde-format
 msgid "Button 5"
-msgstr ""
+msgstr "按鈕 5"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:143
 #, kde-format
 msgid "Button 6"
-msgstr ""
+msgstr "按鈕 6"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:148
 #, kde-format
 msgid "Button 7"
-msgstr ""
+msgstr "按鈕 7"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:153
 #, kde-format
 msgid "Button 8"
-msgstr ""
+msgstr "按鈕 8"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:158
 #, kde-format
 msgid "Button 9"
-msgstr ""
+msgstr "按鈕 9"
 
 #: kcm_hotkeys/helper_widgets/edit_gesture_dialog.cpp:19
 #, kde-format
@@ -889,7 +889,7 @@ msgstr ""
 #: libkhotkeysprivate/shortcuts_handler.cpp:33
 #, kde-format
 msgid "Custom Shortcuts Service"
-msgstr ""
+msgstr "自訂快捷鍵服務"
 
 #: libkhotkeysprivate/triggers/gesture_trigger.cpp:101
 #, kde-format
