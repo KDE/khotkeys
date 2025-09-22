@@ -467,6 +467,7 @@ Title[tr]=dosya:/ - Konqueror
 Title[uk]=file:/ – Konqueror
 Title[vi]=file:/ - Konqueror
 Title[zh_CN]=file:/ - Konqueror
+Title[zh_TW]=file:/ - Konqueror
 TitleType=0
 Type=SIMPLE
 WindowTypes=1
