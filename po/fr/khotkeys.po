@@ -796,13 +796,13 @@ msgstr "Déclencher lorsque"
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:22
 #, kde-format
 msgid "Window appears"
-msgstr "La fenêtre apparaît"
+msgstr "La fenêtre apparait"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_disappears)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:29
 #, kde-format
 msgid "Window disappears"
-msgstr "La fenêtre disparaît"
+msgstr "La fenêtre disparait"
 
 #. i18n: ectx: property (text), widget (QRadioButton, window_gets_focus)
 #: kcm_hotkeys/triggers/window_trigger_widget.ui:36
