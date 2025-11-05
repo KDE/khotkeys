@@ -268,7 +268,7 @@
 ><imageobject
 ><imagedata fileref="document-open.png" format="PNG"/></imageobject
 ></inlinemediaobject
-> à la droite de la boîte de texte pour ouvrir la boîte de dialogue « Fichier » et sélectionner un fichier là. </para>
+> à la droite de la boite de texte pour ouvrir la boite de dialogue « Fichier » et sélectionner un fichier là. </para>
 
 <tip
 ><para
@@ -289,7 +289,7 @@
 ><imagedata fileref="manage-export.png" format="PNG"/></imageobject>
 <textobject
 ><phrase
->La boîte de dialogue Exporter un groupe.</phrase
+>La boite de dialogue Exporter un groupe.</phrase
 ></textobject>
 <caption
 ><para
@@ -309,7 +309,7 @@
 >Modification</guibutton
 > sous le panneau de gauche et choisissez <guilabel
 >Importer...</guilabel
->. Une boîte de dialogue de sélection de fichier s'ouvre, vous permettant de localiser un fichier précédemment créé avec la fonction « Exporter ».</para>
+>. Une boite de dialogue de sélection de fichier s'ouvre, vous permettant de localiser un fichier précédemment créé avec la fonction « Exporter ».</para>
 
 </sect2>
 
@@ -485,14 +485,14 @@
 <listitem
 ><para
 ><guilabel
->La fenêtre apparaît</guilabel
+>La fenêtre apparait</guilabel
 > - Déclenché quand une fenêtre est ouverte.</para
 ></listitem>
 
 <listitem
 ><para
 ><guilabel
->Une fenêtre disparaît</guilabel
+>Une fenêtre disparait</guilabel
 > - Déclenché quand une fenêtre est fermée.</para
 ></listitem>
 
@@ -582,11 +582,11 @@
 <listitem>
 
 <para
->Lorsque l'utilisation d'une commande ou d'une &URL; sert de déclencheur, une boîte de texte est proposée pour que vous puissiez saisir la commande à exécuter ou l'&URL; à ouvrir quand le raccourci est déclenché. Vous pouvez aussi cliquer sur le bouton <inlinemediaobject
+>Lorsque l'utilisation d'une commande ou d'une &URL; sert de déclencheur, une boite de texte est proposée pour que vous puissiez saisir la commande à exécuter ou l'&URL; à ouvrir quand le raccourci est déclenché. Vous pouvez aussi cliquer sur le bouton <inlinemediaobject
 ><imageobject
 ><imagedata fileref="document-open.png" format="PNG"/></imageobject
 ></inlinemediaobject
-> à droite de la boîte de texte pour ouvrir une boîte de dialogue de sélection de fichier, avec laquelle vous pouvez choisir un fichier sur votre système local ou distant.</para>
+> à droite de la boite de texte pour ouvrir une boite de dialogue de sélection de fichier, avec laquelle vous pouvez choisir un fichier sur votre système local ou distant.</para>
 
 <screenshot id="screenshot-shortcuts-action-command">
 <screeninfo
@@ -780,7 +780,7 @@
 </warning>
 
 <para
->Sous la boîte de texte où vous saisissez les touches à appuyer, vous pouvez choisir sur quelle fenêtre les touches appuyées seront dirigées. Vous pouvez choisir à partir des options suivantes :</para>
+>Sous la boite de texte où vous saisissez les touches à appuyer, vous pouvez choisir sur quelle fenêtre les touches appuyées seront dirigées. Vous pouvez choisir à partir des options suivantes :</para>
 
 <itemizedlist>
 
@@ -850,7 +850,7 @@
 ></term>
 <listitem
 ><para
->C'est simplement un boîte de texte d'informations que vous pouvez utiliser pour expliquer ce que le déclencheur applique ou enregistrer d'autres informations utiles. Ce n'est actuellement pas utilisé par le système pour quoi que ce soit.</para
+>C'est simplement un boite de texte d'informations que vous pouvez utiliser pour expliquer ce que le déclencheur applique ou enregistrer d'autres informations utiles. Ce n'est actuellement pas utilisé par le système pour quoi que ce soit.</para
 ></listitem>
 </varlistentry>
 
@@ -859,7 +859,7 @@
 >Liste des fenêtres</term>
 <listitem
 ><para
->Sous la boîte de <guilabel
+>Sous la boite de <guilabel
 >Commentaire</guilabel
 > à gauche se trouve la liste des toutes les définitions de fenêtres actuellement présentes dans le déclencheur. Cliquez simplement sur l'une d'entre elles pour réaliser une opération sur celle-ci.</para
 ></listitem>
@@ -923,7 +923,7 @@
 </itemizedlist>
 
 <para
->Chaque caractéristique de la fenêtre propose une liste déroulante et une boîte de texte juste en-dessous. Saisissez la valeur que vous souhaitez pour tester les fenêtres dans la boîte de texte. À partir de la liste déroulante, choisissez quel genre de test vous voulez appliquer. Vous pouvez utiliser <guilabel
+>Chaque caractéristique de la fenêtre propose une liste déroulante et une boite de texte juste en-dessous. Saisissez la valeur que vous souhaitez pour tester les fenêtres dans la boite de texte. À partir de la liste déroulante, choisissez quel genre de test vous voulez appliquer. Vous pouvez utiliser <guilabel
 >Est</guilabel
 > pour demander une correspondance exacte, <guilabel
 >Contient</guilabel
@@ -971,7 +971,7 @@
 ><para
 ><guilabel
 >Boîte de dialogue</guilabel
-> - une petite fenêtre qui fait partie d'une application normale, telle qu'une boîte de message ou un écran de configuration.</para
+> - une petite fenêtre qui fait partie d'une application normale, telle qu'une boite de message ou un écran de configuration.</para
 ></listitem>
 
 <listitem
@@ -998,7 +998,7 @@
 ></term>
 <listitem
 ><para
->Crée une nouvelle définition de fenêtre. Cela ouvre la boîte de dialogue de modification décrite ci-dessus.</para
+>Crée une nouvelle définition de fenêtre. Cela ouvre la boite de dialogue de modification décrite ci-dessus.</para
 ></listitem>
 </varlistentry>
 
@@ -1009,7 +1009,7 @@
 ></term>
 <listitem
 ><para
->Cela crée une nouvelle définition de fenêtre avec les mêmes spécifications que la définition de fenêtre actuellement choisie. Cela ouvrira la boîte dialogue de modification décrite ci-dessus, ainsi vous pouvez apporter d'autres changements.</para
+>Cela crée une nouvelle définition de fenêtre avec les mêmes spécifications que la définition de fenêtre actuellement choisie. Cela ouvrira la boite dialogue de modification décrite ci-dessus, ainsi vous pouvez apporter d'autres changements.</para
 ></listitem>
 </varlistentry>
 
