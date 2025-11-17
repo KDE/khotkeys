@@ -1,7 +1,7 @@
 # translation of khotkeys.po to Slovenian
 # Translation of khotkeys.po to Slovenian
 # KHOTKEYS translation to Slovenian language
-# $Id: khotkeys.po 1615671 2021-12-23 01:30:29Z scripty $
+# $Id: khotkeys.po 1723123 2025-11-17 16:34:17Z scripty $
 # $Source$
 #
 # Copyright (C) 2000, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: khotkeys\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-12-21 00:44+0000\n"
+"POT-Creation-Date: 2025-11-17 16:18+0000\n"
 "PO-Revision-Date: 2021-12-22 11:48+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
