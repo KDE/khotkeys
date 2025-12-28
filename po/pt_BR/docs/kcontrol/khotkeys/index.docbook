@@ -51,9 +51,9 @@
 >&FDLNotice;</legalnotice>
 
 <date
->08/04/2015</date>
+>21/12/2021</date>
 <releaseinfo
->Plasma 5.3</releaseinfo>
+>Plasma 5.24</releaseinfo>
 
 <keywordset>
 <keyword
@@ -164,7 +164,7 @@
 <varlistentry id="manage-add-shortcut-command">
 <term
 ><guimenuitem
->Comando/&URL;</guimenuitem
+>Comando/URL</guimenuitem
 ></term>
 <listitem
 ><para
@@ -175,12 +175,12 @@
 <varlistentry id="manage-add-shortcut-dbus">
 <term
 ><guimenuitem
->Comando de &DBus;</guimenuitem
+>Comando de D-Bus</guimenuitem
 ></term>
 <listitem
 ><para
->A ação irá invocar um método de &DBus; em um aplicativo em execução ou num serviço do sistema. Para mais informações sobre o &DBus;, veja a <ulink url="http://techbase.kde.org/Development/Tutorials/D-Bus/Introduction"
->Introdução ao &DBus; no &kde; TechBase</ulink
+>Esta ação chamará um método do &DBus; em um aplicativo ou daemon do sistema em execução. Para obter mais informações, consulte a <ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/"
+>Introdução ao &DBus; na plataforma de desenvolvimento do &kde;</ulink
 >.</para
 ></listitem>
 </varlistentry>
@@ -278,13 +278,15 @@
 ></term>
 <listitem
 ><para
->Aqui você poderá indicar o nome do arquivo para onde deseja exportar o atalho. Também poderá selecionar o botão <guibutton
->Navegar</guibutton
+>Aqui você poderá indicar o nome do arquivo para onde deseja exportar o atalho. Também poderá selecionar o botão <inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
 > à direita do campo de texto para abrir a janela Arquivo e selecionar um arquivo aí. </para>
 
 <tip
 ><para
->Os arquivos exportados usam a extensão <literal
+>Os arquivos exportados usam a extensão <literal role="extension"
 >.khotkeys</literal
 > por padrão.</para
 ></tip>
@@ -319,8 +321,8 @@
 <para
 >Para importar um grupo, clique no botão <guibutton
 >Editar</guibutton
-> abaixo da área esquerda e selecione a opção <guilabel
->Importar...</guilabel
+> abaixo da área esquerda e selecione a opção <guimenuitem
+>Importar...</guimenuitem
 >. Uma janela de seleção de arquivos será aberta, permitindo-lhe localizar um arquivo previamente criado com a função Exportar.</para>
 
 </sect2>
@@ -407,11 +409,17 @@
 >Na seção esquerda da janela, os atalhos padrão estarão classificados por grupos. Estes grupos poderão ser expandidos se clicar na seta ao lado deles para revelar os atalhos.</para>
 
 <para
->O grupo <guilabel
->Ações predefinidas</guilabel
->, quando for expandido, revela uma configuração de atalhos chamada <guilabel
->PrintScreen</guilabel
-> que, quando for selecionada, revela a seção do lado direito com três páginas:</para>
+>Por padrão, os grupos <guilabel
+>KMenuEdit</guilabel
+>, <guilabel
+>Gestos do Konqueror</guilabel
+> e <guilabel
+>Exemplos</guilabel
+> são instalados. Os aplicativos podem fornecer atalhos adicionais, &eg;, o &spectacle; adiciona um grupo <guilabel
+>Capturas de tela</guilabel
+>. Este grupo, quando expandido, revela várias configurações de atalho, como <guilabel
+>Iniciar ferramenta de captura de tela</guilabel
+>, que, quando selecionada, revela uma seção no lado direito, com três abas:</para>
 
 <sect2 id="shortcuts-comment">
 <title
@@ -436,7 +444,7 @@
 
 <varlistentry id="shortcuts-trigger-keyboard">
 <term
->Atalho Global (Teclado)</term>
+>Atalho global</term>
 <listitem>
 
 <para
@@ -588,8 +596,10 @@
 <listitem>
 
 <para
->Quando usar um Comando ou &URL; como evento, será apresentado um campo de texto onde poderá indicar o comando a executar ou a &URL; a abrir quando for acionado o atalho. Você poderá também clicar no botão <guibutton
->Navegar</guibutton
+>Quando usar um Comando ou &URL; como evento, será apresentado um campo de texto onde poderá indicar o comando a executar ou a &URL; a abrir quando for acionado o atalho. Você poderá também clicar no botão <inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
 > à direita do campo de texto, para abrir uma janela de seleção de arquivos na qual poderá selecionar um arquivo no seu sistema local ou remoto.</para>
 
 <screenshot id="screenshot-shortcuts-action-command">
@@ -617,6 +627,23 @@
 >Comando de &DBus;</term>
 <listitem>
 
+<screenshot id="screenshot-shortcuts-action-dbus">
+<screeninfo
+>Modificar uma ação &DBus;</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-action-dbus.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>A página da Ação de um comando &DBus;.</phrase
+></textobject>
+<caption
+><para
+>Modificando a ação de um comando &DBus;.</para
+></caption>
+</mediaobject>
+</screenshot>
+
 <para
 >São fornecidas as seguintes opções que lhe permitem definir um método de &DBus; a executar:</para>
 
@@ -625,47 +652,86 @@
 <varlistentry id="shortcuts-action-dbus-application">
 <term
 ><guilabel
->Aplicativo remoto</guilabel
+>Aplicativo remoto:</guilabel
 ></term>
 <listitem
 ><para
->O nome do serviço do aplicativo remoto sobre o qual o método será executado, como por exemplo <userinput
->org.kde.kate</userinput
->, caso deseje efetuá-lo sobre o Editor de Texto Avançado &kate;.</para
+>O nome do serviço do aplicativo remoto no qual o método deve ser executado, por exemplo, <userinput
+>org.kde.spectacle</userinput
+> se você quisesse executá-lo no utilitário de capturas de tela &spectacle;.</para
 ></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-object">
 <term
 ><guilabel
->Objeto remoto</guilabel
+>Objeto remoto:</guilabel
 ></term>
 <listitem
 ><para
->A localização do objeto remoto sobre o qual o método será aplicado, como por exemplo, <userinput
+>O caminho para o objeto remoto no qual o método deve ser executado, por exemplo, <userinput
+>/</userinput
+> para ações de captura de tela usando o &spectacle; ou <userinput
 >/Document/1</userinput
->, no caso de aplicá-lo sobre o primeiro documento aberto no &kate;.</para
+>, se você quiser executá-lo no primeiro documento aberto no &kate;.</para
 ></listitem>
 </varlistentry>
 
 <varlistentry id="shortcuts-action-dbus-function">
 <term
 ><guilabel
->Função</guilabel
+>Função:</guilabel
 ></term>
 <listitem
 ><para
->O nome do método de &DBus; a ser invocado, como por exemplo, <userinput
+>O nome do método &DBus; a ser chamado, por exemplo: <userinput
+>Fullscreen</userinput
+> se você quiser tirar uma captura de tela em tela cheia ou <userinput
 >print</userinput
->, caso deseje imprimir o documento.</para
+> se você quiser imprimir o documento.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-arguments">
+<term
+><guilabel
+>Argumentos:</guilabel
+></term>
+<listitem
+><para
+>Insira argumentos adicionais para o método &DBus; a ser chamado.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-call">
+<term
+><guilabel
+>Chamar</guilabel
+></term>
+<listitem
+><para
+>Use este botão para verificar se a ação funciona conforme o esperado.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-launch-dbus-browser">
+<term
+><guilabel
+>Iniciar o navegador D-Bus</guilabel
+></term>
+<listitem
+><para
+>Inicia o aplicativo <application
+>QDBusViewer</application
+> para navegar pelos métodos e argumentos do DBus para um aplicativo em execução.</para
 ></listitem>
 </varlistentry>
 
 </variablelist>
 
 <para
->Para mais informações sobre o &DBus;, veja a <ulink url="http://techbase.kde.org/Development/Tutorials/D-Bus/Introduction"
->Introdução ao &DBus; na Base Técnica do &kde;</ulink
+>Para obter mais informações, consulte a <ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/"
+>Introdução ao &DBus; na plataforma de desenvolvimento do &kde;</ulink
 >.</para>
 
 </listitem>
@@ -724,7 +790,7 @@
 
 <warning>
 <para
->A ação que será efetuada depende do leiaute de teclado selecionado. Se mudar de leiaute de teclado e ativar um atalho, poderá ter consequências indesejadas.</para>
+>A ação que será efetuada depende do layout de teclado selecionado. Se mudar de layout de teclado e ativar um atalho, poderá ter consequências indesejadas.</para>
 </warning>
 
 <para
@@ -794,7 +860,7 @@
 <varlistentry id="windows-comment">
 <term
 ><guilabel
->Comentário</guilabel
+>Comentário:</guilabel
 ></term>
 <listitem
 ><para
@@ -837,7 +903,7 @@
 
 <para
 >No topo, existe um campo <guilabel
->Comentário</guilabel
+>Comentário:</guilabel
 > que é informativo como o existente na página do <guilabel
 >Evento</guilabel
 >.</para>
@@ -850,21 +916,21 @@
 <listitem
 ><para
 ><guilabel
->Título da janela</guilabel
+>Título da janela:</guilabel
 > - O título que aparece no topo da janela.</para
 ></listitem>
 
 <listitem
 ><para
 ><guilabel
->Classe da janela</guilabel
+>Classe da janela:</guilabel
 > - Normalmente o nome do aplicativo.</para
 ></listitem>
 
 <listitem
 ><para
 ><guilabel
->Papel da janela</guilabel
+>Papel da janela:</guilabel
 > - Normalmente o nome da classe &Qt; que compõe a janela.</para
 ></listitem>
 
@@ -1016,7 +1082,7 @@
 <varlistentry id="settings-gestures-timeout">
 <term
 ><guilabel
->Tempo de espera</guilabel
+>Tempo de espera:</guilabel
 ></term>
 <listitem
 ><para
@@ -1027,21 +1093,15 @@
 <varlistentry id="settings-gestures-mouse-button">
 <term
 ><guilabel
->Botão do mouse</guilabel
+>Botão do mouse:</guilabel
 ></term>
 <listitem
 ><para
->Isto define o botão do mouse a usar para os gestos do mouse. Normalmente, o <userinput
->1</userinput
-> é o &LMB;, o <userinput
->2</userinput
-> é o &RMB; e o <userinput
->3</userinput
-> é o botão do meio ou a roda. Se o seu mouse tiver mais botões, poderá também usar estes em alternativa.</para>
+>Isso especifica o botão do mouse a ser usado para gestos do mouse. Se o seu mouse tiver mais botões, você também poderá usá-los.</para>
 
 <note>
 <para
->O botão 1 não está disponível, para que os gestos do mouse não interfiram com o funcionamento normal do seu sistema.</para>
+>O botão esquerdo não está disponível, para que os gestos do mouse não interfiram com o funcionamento normal do seu sistema.</para>
 </note>
 </listitem>
 </varlistentry>
@@ -1083,8 +1143,7 @@
 >Tradução de Marcus Gama <email
 >marcus.gama@gmail.com</email
 ></para
-> 
-&underFDL; &underGPL; </sect1>
+> &underFDL; &underGPL; </sect1>
 
 </article>
 
