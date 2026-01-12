@@ -27,7 +27,7 @@ msgstr ""
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "SPDX-FileCopyrightText: 2019 Empar Montoro Martín,Sebastià Pla i Sanz"
+msgstr "Empar Montoro Martín,Sebastià Pla i Sanz"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -838,7 +838,7 @@ msgstr "Acció d'entrada: %1"
 #: libkhotkeysprivate/actions/menuentry_action.cpp:69
 #, kde-format
 msgid "Failed to start service '%1'."
-msgstr "No s'ha pogut iniciar el servei «%1»."
+msgstr "Ha fallat mentre s'iniciava el servei «%1»."
 
 #: libkhotkeysprivate/actions/menuentry_action.cpp:81
 #, kde-format
