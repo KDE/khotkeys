@@ -70,10 +70,9 @@ msgstr "Glao"
 
 #. i18n: ectx: property (text), widget (QPushButton, launchButton)
 #: kcm_hotkeys/actions/dbus_action_widget.ui:92
-#, fuzzy, kde-format
-#| msgid "Launch  D-Bus Browser"
+#, kde-format
 msgid "Launch D-Bus Browser"
-msgstr "Tosaigh Brabhsálaí D-Bus"
+msgstr ""
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, window_group)
@@ -201,10 +200,9 @@ msgstr "Teorainn Ama:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, gestures_timeout)
 #: kcm_hotkeys/global_settings_widget.ui:70
-#, fuzzy, kde-format
-#| msgid "ms"
+#, kde-format
 msgid " ms"
-msgstr "ms"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, gestures_button_label)
 #: kcm_hotkeys/global_settings_widget.ui:99
@@ -214,10 +212,9 @@ msgstr "Cnaipe luiche:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:123
-#, fuzzy, kde-format
-#| msgid "Mouse button:"
+#, kde-format
 msgid "Middle button"
-msgstr "Cnaipe luiche:"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, gestures_button)
 #: kcm_hotkeys/global_settings_widget.ui:128
@@ -727,16 +724,11 @@ msgid "Maintainer"
 msgstr "Cothaitheoir"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:259
-#, fuzzy, kde-format
-#| msgid ""
-#| "The current action has unsaved changes. If you continue these changes "
-#| "will be lost."
+#, kde-format
 msgid ""
 "The current action has unsaved changes.\n"
 "Do you want to apply the changes or discard them?"
 msgstr ""
-"Tá athruithe gan sábháil sa ghníomh reatha. Caillfidh tú na hathruithe seo "
-"má leanann tú ar aghaidh!"
 
 #: kcm_hotkeys/kcm_hotkeys.cpp:261
 #, kde-format
@@ -922,277 +914,3 @@ msgstr "Truicear fuinneoige: "
 #, kde-format
 msgid "Window simple: "
 msgstr "Fuinneog shimplí: "
-
-#~ msgid "Voice trigger: "
-#~ msgstr "Truicear gutha: "
-
-#~ msgid "Failed to run qdbusviewer"
-#~ msgstr "Theip ar rith qdbusviewer"
-
-#~ msgid "Form"
-#~ msgstr "Foirm"
-
-#~ msgid "&Edit"
-#~ msgstr "&Eagar"
-
-#~ msgid "Active Window"
-#~ msgstr "Fuinneog Ghníomhach"
-
-#~ msgid "KHotKeys Update Helper"
-#~ msgstr "Cúntóir Nuashonraithe KHotKeys"
-
-#~ msgid "(C) 2003-2009 Lubos Lunak"
-#~ msgstr "© 2003-2009 Lubos Lunak"
-
-#~ msgid "Id of the script to add to %1"
-#~ msgstr "Aitheantas na scripte a chuirfear le %1"
-
-#~ msgid "These entries were created using Menu Editor."
-#~ msgstr "Cruthaíodh na hiontrálacha seo leis an Eagarthóir Roghchláir."
-
-#~ msgid ""
-#~ "Unable to contact khotkeys. Your changes are saved but i failed to "
-#~ "activate them"
-#~ msgstr ""
-#~ "Ní féidir dul i dteagmháil le khotkeys. Sábháladh do chuid athruithe ach "
-#~ "níorbh fhéidir iad a chur i bhfeidhm"
-
-#~ msgid "Enable Gestures"
-#~ msgstr "Cumasaigh Gothaí"
-
-#~ msgid "KHotKeys update utility"
-#~ msgstr "Uirlis nuashonraithe KHotKeys"
-
-#~ msgid "KHotKeys Daemon"
-#~ msgstr "Deamhan KHotKeys"
-
-#~ msgid "Menu"
-#~ msgstr "Roghchlár"
-
-#~ msgid "&Enabled"
-#~ msgstr "&Cumasaithe"
-
-#~ msgid "Add comment here"
-#~ msgstr "Cuir nóta anseo"
-
-#~ msgid "Parent group is disabled"
-#~ msgstr "Díchumasaíodh an máthairghrúpa"
-
-#~ msgid "General"
-#~ msgstr "Ginearálta"
-
-#~ msgid "&Modify..."
-#~ msgstr "&Athraigh..."
-
-#~ msgid "&Copy"
-#~ msgstr "&Cóipeáil"
-
-#~ msgid "&New Action"
-#~ msgstr "Gníomh &Nua"
-
-#~ msgid "Global &Settings"
-#~ msgstr "&Socruithe Comhchoiteanna"
-
-#~ msgid "Command/URL to execute:"
-#~ msgstr "Ordú/URL le rith:"
-
-#~ msgid "Window activates"
-#~ msgstr "ghníomhachtóidh fuinneog"
-
-#~ msgid "Window deactivates"
-#~ msgstr "dhíghníomhachtóidh fuinneog"
-
-#~ msgid "Menu entry to execute:"
-#~ msgstr "Iontráil Roghchláir le rith:"
-
-#~ msgid "&Browse..."
-#~ msgstr "&Brabhsáil..."
-
-#~ msgid "&Play"
-#~ msgstr "&Seinn"
-
-#~ msgid "&Record"
-#~ msgstr "&Taifead"
-
-#~ msgid "&Stop"
-#~ msgstr "&Stad"
-
-#~ msgid "Gestures:"
-#~ msgstr "Gothaí:"
-
-#~ msgid "Action group &name:"
-#~ msgstr "Ai&nm an ghrúpa gnímh:"
-
-#~ msgid "&Disable:"
-#~ msgstr "&Díchumasaigh:"
-
-#~ msgid "Info_tab_ui"
-#~ msgstr "Info_tab_ui"
-
-#~ msgid "Disable mouse gestures globally"
-#~ msgstr "Díchumasaigh gothaí luiche i ngach áit"
-
-#~ msgid "Gesture timeout (ms):"
-#~ msgstr "Teorainn ama gotha (ms):"
-
-#~ msgid "Disable KHotKeys daemon"
-#~ msgstr "Díchumasaigh an deamhan KHotKeys"
-
-#~ msgid "Keyboard_input_widget_ui"
-#~ msgstr "Keyboard_input_widget_ui"
-
-#~ msgid "Keyboard input:"
-#~ msgstr "Ionchur Méarchláir:"
-
-#~ msgid "Modify..."
-#~ msgstr "Athraigh..."
-
-#~ msgid "Send Input To"
-#~ msgstr "Seol Ionchur Go"
-
-#~ msgid "Called &function:"
-#~ msgstr "&Feidhm ghlaoite:"
-
-#~ msgid "&Try"
-#~ msgstr "&Trialaigh"
-
-#~ msgid "Action &type:"
-#~ msgstr "Cineál &gnímh:"
-
-#~ msgid "Action &name:"
-#~ msgstr "Ai&nm gnímh:"
-
-#~ msgctxt "to try"
-#~ msgid "&Try"
-#~ msgstr "Bain Triail As"
-
-#~ msgid "Simple Window..."
-#~ msgstr "Fuinneog Shimplí..."
-
-#~ msgid "Button 2 (middle)"
-#~ msgstr "Cnaipe 2 (lár)"
-
-#~ msgid "Button 3 (secondary)"
-#~ msgstr "Cnaipe 3 (tánaisteach)"
-
-#~ msgid "Button 4 (often wheel up)"
-#~ msgstr "Cnaipe 4 (roth aníos go minic)"
-
-#~ msgid "Button 5 (often wheel down)"
-#~ msgstr "Cnaipe 5 (roth anuas go minic)"
-
-#~ msgid "Button 6 (if available)"
-#~ msgstr "Cnaipe 6 (má tá sí ar fáil)"
-
-#~ msgid "Button 7 (if available)"
-#~ msgstr "Cnaipe 7 (má tá sí ar fáil)"
-
-#~ msgid "Button 8 (if available)"
-#~ msgstr "Cnaipe 8 (má tá sí ar fáil)"
-
-#~ msgid "Button 9 (if available)"
-#~ msgstr "Cnaipe 9 (má tá sí ar fáil)"
-
-#~ msgid "Info"
-#~ msgstr "Eolas"
-
-#~ msgid "General Settings"
-#~ msgstr "Socruithe Ginearálta"
-
-#~ msgid "Gestures Settings"
-#~ msgstr "Socruithe na nGothaí"
-
-#~ msgid "Command/URL Settings"
-#~ msgstr "Socruithe Ordaithe/URL"
-
-#~ msgid "Menu Entry Settings"
-#~ msgstr "Socruithe na hIontrála Roghchláir"
-
-#~ msgid "D-Bus Call Settings"
-#~ msgstr "Socruithe Glao D-Bus"
-
-#~ msgid "Keyboard Input Settings"
-#~ msgstr "Socruithe Ionchur Méarchláir"
-
-#~ msgid ""
-#~ "A group is selected.\n"
-#~ "Add the new condition in this selected group?"
-#~ msgstr ""
-#~ "Roghnaíodh grúpa.\n"
-#~ "Cuir an coinníoll nua leis an ngrúpa roghnaithe?"
-
-#~ msgid "Add in Group"
-#~ msgstr "Cuir leis an nGrúpa"
-
-#~ msgid "Recording..."
-#~ msgstr "Á Thaifeadh..."
-
-#~ msgid "Lubos Lunak"
-#~ msgstr "Lubos Lunak"
-
-#~ msgid "New Action Group"
-#~ msgstr "Grúpa Gnímh Nua"
-
-#~ msgid "Select File with Actions to Be Imported"
-#~ msgstr "Roghnaigh Comhad le Gníomhartha le hIompórtáil"
-
-#~ msgid ""
-#~ "Import of the specified file failed. Most probably the file is not a "
-#~ "valid file with actions."
-#~ msgstr ""
-#~ "Theip ar iompórtáil an chomhaid sainithe. Is dócha nach bhfuil an comhad "
-#~ "ina chomhad bailí le gníomhartha."
-
-#~ msgid "Command/URL..."
-#~ msgstr "Ordú/URL..."
-
-#~ msgid "D-Bus Call..."
-#~ msgstr "Glao D-Bus..."
-
-#~ msgid "Activate Window..."
-#~ msgstr "Gníomhachtaigh Fuinneog..."
-
-#~ msgid "Generic"
-#~ msgstr "Ginearálta"
-
-#~ msgid "Keyboard Shortcut -> Command/URL (simple)"
-#~ msgstr "Aicearra Méarchláir -> Ordú/URL (simplí)"
-
-#~ msgid "K-Menu Entry (simple)"
-#~ msgstr "Iontráil K-Menu (simplí)"
-
-#~ msgid "Keyboard Shortcut -> D-Bus Call (simple)"
-#~ msgstr "Aicearra Méarchláir -> Glao D-Bus (simplí)"
-
-#~ msgid "Keyboard Shortcut -> Keyboard Input (simple)"
-#~ msgstr "Aicearra Méarchláir -> Ionchur Méarchláir (simplí)"
-
-#~ msgid "Gesture -> Keyboard Input (simple)"
-#~ msgstr "Gotha -> Ionchur Méarchláir (simplí)"
-
-#~ msgid "Keyboard Shortcut -> Activate Window (simple)"
-#~ msgstr "Aicearra Méarchláir -> Gníomhachtaigh Fuinneog (simplí)"
-
-#~ msgid "Shortcut Trigger..."
-#~ msgstr "Truicear Aicearra..."
-
-#~ msgid "Window Trigger..."
-#~ msgstr "Truicear Fuinneoige..."
-
-#~ msgid "Voice Trigger..."
-#~ msgstr "Truicear Gutha..."
-
-#~ msgid "Select keyboard shortcut:"
-#~ msgstr "Roghnaigh aicearra méarchláir:"
-
-#~ msgid "Copy of "
-#~ msgstr "Cóip de "
-
-#~ msgid "Run &KDCOP"
-#~ msgstr "Rith &KDCOP"
-
-#~ msgid "DCOP : "
-#~ msgstr "DCOP : "
-
-#~ msgid "Voice"
-#~ msgstr "Guth"
