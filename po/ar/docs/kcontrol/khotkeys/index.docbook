@@ -1,0 +1,1157 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE">
+]>
+<article id="khotkeys" lang="&language;">
+<title
+>اختصارات مخصّصة</title>
+
+<articleinfo>
+<authorgroup>
+<author
+><firstname
+>Subhashish</firstname
+> <surname
+>Pradhan</surname
+></author>
+<author
+>&TC.Hollingsworth; &TC.Hollingsworth.mail;</author>
+<othercredit role="translator"
+><firstname
+>زايد</firstname
+><surname
+>السعيدي</surname
+><affiliation
+><address
+><email
+>zayed.alsaidi@gmail.com</email
+></address
+></affiliation
+><contrib
+>التّرجمة العربيّة</contrib
+></othercredit
+> 
+</authorgroup>
+
+<copyright>
+<year
+>2011</year>
+<holder
+>Subhashish Pradhan</holder>
+</copyright>
+<copyright>
+<year
+>2012</year>
+<holder
+>&TC.Hollingsworth;</holder>
+</copyright>
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2021-12-21</date>
+<releaseinfo
+>بلازما 5.24</releaseinfo>
+
+<keywordset>
+<keyword
+>كيدي</keyword>
+<keyword
+>إعدادات النظام</keyword>
+<keyword
+>اختصارات</keyword>
+<keyword
+>مفاتيح حارة</keyword>
+<keyword
+>اختصارات مخصّصة</keyword>
+<keyword
+>اختصارات كيدي</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="intro">
+<title
+>مقدمة</title>
+
+<para
+>تتيح لك وحدة <application
+>اختصارات مخصصة</application
+> في إعدادات النظام اضبط اختصارات لوحة المفاتيح وإيماءات الفأرة المخصصة. يمكنك استخدامها للتحكم في التطبيقات وتشغيل أوامر محددة والمزيد.</para>
+
+</sect1>
+
+
+<sect1 id="manage">
+<title
+>إدارة الاختصارات والمجموعات</title>
+
+<sect2 id="manage-add-group">
+<title
+>إضافة المجموعات</title>
+
+<para
+>تسمح لك الوحدة بفرز الاختصارات ذات الصلة في مجموعات. على سبيل المثال، إذا كان لديك بعض الاختصارات التي تتعلق بمشغل الموسيقى الخاص بك، فيمكنك إنشاء مجموعة لها تسمى <replaceable
+>مشغل الموسيقى</replaceable
+>. </para>
+
+<para
+>لإضافة مجموعة جديدة، انقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل الجزء الأيسر وحدد خيار <guimenuitem
+>مجموعة جديدة</guimenuitem
+>.</para>
+
+</sect2>
+
+<sect2 id="manage-add-shortcut">
+<title
+>إضافة الاختصارات</title>
+
+<para
+>لإضافة اختصار جديد، انقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل الجزء الأيسر وحدد خيار <guisubmenu
+>جديد</guisubmenu
+>.</para>
+
+<para
+>تتيح لك القائمة الأولى التي تظهر تحديد نوع المطلق. الخيارات التالية متاحة:</para>
+
+<variablelist>
+
+<varlistentry id="manage-add-shortcut-global">
+<term
+><guisubmenu
+>اختصار عام</guisubmenu
+></term>
+<listitem
+><para
+>هذه هي اختصارات لوحة المفاتيح القياسية التي سيتم التعرف عليها في أي مكان، طالما أن مساحة عمل كيدي بلازما تعمل.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-add-shortcut-window-action">
+<term
+><guisubmenu
+>إجراء النافذة</guisubmenu
+></term>
+<listitem
+><para
+>إجراءات النافذة هي مطلقات تحدث عندما يحدث شيء لنافذة معينة، مثل ظهورها أو حصولها على التركيز أو إغلاقها.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry id="manage-add-shortcut-mouse-gesture">
+<term
+><guisubmenu
+>إجراء إيماءة الفأرة</guisubmenu
+></term>
+<listitem
+><para
+>يُطلق إجراء إيماءة الفأرة عند تنفيذ حركة معينة للفأرة (أو لوحة اللمس أو شاشة اللمس).</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>بمجرد تحديد نوع المطلق، تظهر قائمة فرعية أخرى تتيح لك تحديد نوع الإجراء. تتوفر الأنواع التالية:</para>
+
+<variablelist>
+
+<varlistentry id="manage-add-shortcut-command">
+<term
+><guimenuitem
+>الأمر/الوصلة</guimenuitem
+></term>
+<listitem
+><para
+>سيطلق هذا الإجراء أمراً أو يفتح وصلة عند إطلاق الاختصار.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-add-shortcut-dbus">
+<term
+><guimenuitem
+>أمر D-Bus</guimenuitem
+></term>
+<listitem
+><para
+>سيستدعي هذا الإجراء طريقة D-Bus في تطبيق قيد التشغيل أو في عفريت نظام. لمزيد من المعلومات، راجع <ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/"
+>مقدمة إلى D-Bus على منصة تطوير كيدي</ulink
+>.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-add-shortcut-keyboard-input">
+<term
+><guimenuitem
+>أرسل مدخلات لوحة المفاتيح</guimenuitem
+></term>
+<listitem
+><para
+>سيرسل هذا الإجراء مدخلات لوحة المفاتيح إلى التطبيق قيد التشغيل حالياً، تماماً كما لو قمت بكتابتها بنفسك.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>بمجرد اختيار نوع الإجراء، يمكنك بعد ذلك تعديل الاختصار حسب رغبتك. راجع <xref linkend="shortcuts"/> لمزيد من المعلومات.</para>
+
+</sect2>
+
+<sect2 id="manage-delete">
+<title
+>حذف الاختصارات والمجموعات</title>
+
+<para
+>لحذف اختصار أو مجموعة، حددها، ثم انقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل الجزء الأيسر، وحدد خيار <guimenuitem
+>احذف</guimenuitem
+>.</para>
+
+</sect2>
+
+<sect2 id="manage-export">
+<title
+>تصدير المجموعات</title>
+
+<para
+>يمكنك تصدير مجموعة، لتمكين حفظ الاختصارات الموجودة بداخلها واستخدامها على حاسوب آخر أو الاحتفاظ بنسخة احتياطية.</para>
+
+<para
+>لتصدير مجموعة، حدد المجموعة المراد تصديرها، ثم انقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل الجزء الأيسر وحدد خيار <guimenuitem
+>صدر المجموعة...</guimenuitem
+>، مما يفتح نافذة جديدة تتيح لك تحديد بعض الخيارات حول المجموعة المصدرة. الخيارات التالية متاحة:</para>
+
+<variablelist>
+
+<varlistentry id="manage-export-actions">
+<term
+><guilabel
+>إجراءات التصدير</guilabel
+></term>
+<listitem
+><para
+>يتيح لك هذا تحديد الحالة التي ستكون عليها الاختصارات عند استيرادها لاحقاً. اختر <guilabel
+>الحالة الفعلية</guilabel
+> للحفاظ على حالتها الحالية، أو <guilabel
+>مُمكّن</guilabel
+> لضمان تمكينها جميعاً، أو <guilabel
+>مُعطّل</guilabel
+> لضمان تعطيلها جميعاً. </para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-id">
+<term
+><guilabel
+>المعرف</guilabel
+></term>
+<listitem
+><para
+>هنا يمكنك إدخال نص لتعريف المجموعة. إذا كانت المجموعة مدرجة بشكل مبدئي، فقد يُملأ هذا النص مبدئياً.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-merge">
+<term
+><guilabel
+>اسمح بالدمج</guilabel
+></term>
+<listitem
+><para
+>يحدد هذا ما يحدث إذا كانت المجموعة موجودة بالفعل على النظام الذي تم استيراد المجموعة المصدرة إليه. عند التمكين، ستُضاف أي إجراءات جديدة إلى المجموعة في النظام المستهدف، بينما ستُحدث الإجراءات التي لها نفس الاسم ولكن بتشكيلة مختلفة بالتشكيلة من الملف المستورد. عند التعطيل، سترفض الوحدة استيراد الملف. </para
+></listitem>
+</varlistentry>
+
+<varlistentry id="manage-filename">
+<term
+><guilabel
+>اسم الملفّ</guilabel
+></term>
+<listitem
+><para
+>هنا يمكنك إدخال اسم الملف الذي ترغب في تصدير الاختصار إليه. يمكنك أيضاً تحديد زر <inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+> الموجود على يمين مربع النص لفتح مربع حوار الملف واختيار ملف من هناك. </para>
+
+<tip
+><para
+>تستخدم الملفات المصدرة الامتداد <literal role="extension"
+>.khotkeys</literal
+> مبدئياً.</para
+></tip>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<screenshot id="screenshot-manage-export">
+<screeninfo
+>تصدير مجموعة</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="manage-export.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>مربع حوار تصدير المجموعة.</phrase
+></textobject>
+<caption
+><para
+>تصدير مجموعة من الاختصارات.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</sect2>
+
+<sect2 id="manage-import">
+<title
+>استيراد المجموعات</title>
+
+<para
+>لاستيراد مجموعة، انقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل الجزء الأيسر وحدد <guimenuitem
+>استيراد...</guimenuitem
+>. يفتح مربع حوار لاختيار ملف يتيح لك تحديد موقع ملف تم إنشاؤه مسبقاً باستخدام وظيفة التصدير.</para>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="groups">
+<title
+>تعديل المجموعات</title>
+
+<para
+>في القسم الأيسر من النافذة، تُصنف الاختصارات المبدئية في مجموعات. يمكن توسيع هذه المجموعات بالنقر فوق السهم الموجود بجانبها للكشف عن الاختصارات.</para>
+
+<para
+>عند النقر فوق مجموعة، تُعرض لك علامتا تبويب لاضبط المجموعة نفسها. يتيح لك <guilabel
+>التعليق</guilabel
+> تخزين ملاحظات حول المجموعة، ولا يستخدمها النظام فعلياً في أي شيء. تتيح لك علامة تبويب <guilabel
+>الشروط</guilabel
+> تقييد النوافذ التي تعمل معها مجموعة الاختصارات.</para>
+
+<screenshot id="screenshot-groups-comment">
+<screeninfo
+>علامة تبويب التعليق</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="groups-comment.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب التعليق في مجموعة.</phrase
+></textobject>
+<caption
+><para
+>تعديل تعليق المجموعة.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+<para
+>تُعرض الشروط في شجرة، المستوى الأعلى منها هو <guilabel
+>و</guilabel
+>. يجب استيفاء جميع الشروط الموجودة أسفل <guilabel
+>و</guilabel
+> ليتم إطلاق الاختصارات في المجموعة.</para>
+
+<para
+>يمكنك إضافة مجموعات إضافية من الشروط بالنقر فوق المربع المنسدل <guibutton
+>جديد</guibutton
+> الموجود على يمين شجرة الشروط. تشمل أنواع المجموعات ما ذكر آنفاً <guimenuitem
+>و</guimenuitem
+>، و<guimenuitem
+>أو</guimenuitem
+>، حيث يجب استيفاء عضو واحد فقط من المجموعة، أو <guimenuitem
+>ليس</guimenuitem
+>، حيث سيؤدي عكس جميع الأعضاء إلى إطلاق الاختصارات في المجموعة.</para>
+
+<para
+>لإضافة تعريف نافذة إلى القائمة، اضغط على زر <guibutton
+>جديد</guibutton
+>. يمكنك تحديد <guimenuitem
+>النافذة النشطة...</guimenuitem
+> إذا كنت تريد إطلاق الاختصار فقط إذا كانت النافذة المحددة لديها التركيز حالياً، أو يمكنك تحديد <guimenuitem
+>نافذة موجودة...</guimenuitem
+> إذا كنت تريد إطلاق الاختصار طالما أن تلك النافذة مفتوحة، بغض النظر عما إذا كنت تستخدمها أم لا. يؤدي اختيار أي من هذه الخيارات إلى فتح نافذة حيث يمكنك تعديل تعريفات النافذة.</para>
+
+<para
+>انقر فوق الزر <guibutton
+>حرّر...</guibutton
+> لتعديل مجموعة موجودة من تعريفات النوافذ. تفتح نافذة تحتوي على محرر تعريفات النوافذ. لمزيد من المعلومات، راجع <xref linkend="windows"/>.</para>
+
+<para
+>لإزالة تعريف نافذة من قائمة الشروط، انقر فوق الزر <guibutton
+>احذف</guibutton
+>.</para>
+
+</sect1>
+
+
+<sect1 id="shortcuts">
+<title
+>تعديل الاختصارات</title>
+
+<para
+>في القسم الأيسر من النافذة، تُصنف الاختصارات المبدئية في مجموعات. يمكن توسيع هذه المجموعات بالنقر فوق السهم الموجود بجانبها للكشف عن الاختصارات.</para>
+
+<para
+>تُثبّت المجموعات <guilabel
+>محرر قائمة كيدي</guilabel
+> و<guilabel
+>إيماءات كنكورر</guilabel
+> و<guilabel
+>أمثلة</guilabel
+> بشكل مبدئي. يمكن للتطبيقات توفير اختصارات إضافية، فمثلاً يضيف &spectacle; مجموعة <guilabel
+>لقطات الشاشة</guilabel
+>. تكشف هذه المجموعة، عند توسيعها، عن عدة تشكيلات للاختصارات مثل <guilabel
+>ابدأ أداة لقطة الشاشة</guilabel
+> والتي، عند تحديدها، تكشف عن قسم على الجانب الأيمن، بثلاث علامات تبويب:</para>
+
+<sect2 id="shortcuts-comment">
+<title
+>علامة تبويب التعليق</title>
+
+<para
+>تتيح لك علامة تبويب <guilabel
+>التعليق</guilabel
+> وصف كيفية استخدام الاختصار، أو ما يفعله، أو أي شيء آخر قد ترغب في تضمينه.</para>
+
+</sect2>
+
+<sect2 id="shortcuts-trigger">
+<title
+>علامة تبويب المطلق</title>
+<para
+>تحتوي علامة تبويب <guilabel
+>المطلق</guilabel
+> على تشكيلة المطلق، والتي تعتمد على نوع المطلق المحدد:</para>
+
+<variablelist>
+
+<varlistentry id="shortcuts-trigger-keyboard">
+<term
+>اختصار عام</term>
+<listitem>
+
+<para
+>لتعديل اختصار لوحة مفاتيح، انقر فوق الزر الذي يحتوي على مفتاح ربط، ثم أدخل اختصار لوحة المفاتيح المطلوب. لمسح الاختصار، انقر فوق الزر الذي يحتوي على أيقونة <inlinemediaobject
+><imageobject
+><imagedata fileref="oxygen-22x22-edit-clear-locationbar-rtl.png" format="PNG"/></imageobject
+></inlinemediaobject
+> الموجودة على يمين زر تغيير الاختصار.</para>
+
+<screenshot id="screenshot-shortcuts-trigger-keyboard">
+<screeninfo
+>تعديل مطلق لوحة المفاتيح</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-trigger-keyboard.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب المطلق لاختصار لوحة مفاتيح.</phrase
+></textobject>
+<caption
+><para
+>تعديل مطلق لاختصار لوحة مفاتيح.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-trigger-window">
+<term
+>إجراء النافذة</term>
+<listitem>
+
+<para
+>تحتوي إجراءات النافذة على خيارات عدة:</para>
+
+<variablelist>
+
+<varlistentry id="shortcuts-trigger-window-trigger">
+<term
+><guilabel
+>تطلق عند</guilabel
+></term>
+<listitem>
+
+<para
+>يضبط هذا إجراء النافذة المحدد الذي يجب أن يحدث ليتم إطلاق الاختصار. الخيارات التالية متاحة:</para>
+
+<itemizedlist>
+
+<listitem
+><para
+><guilabel
+>تظهر النافذة</guilabel
+> - يُطلق عند فتح نافذة.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>تختفي النافذة</guilabel
+> - يُطلق عند إغلاق نافذة.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>تحصل النافذة على التركيز</guilabel
+> - يُطلق عند التبديل إلى نافذة.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>تفقد النافذة التركيز</guilabel
+> - يُطلق عند التبديل بعيداً عن نافذة.</para
+></listitem>
+
+</itemizedlist>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-trigger-window-window">
+<term
+><guilabel
+>النافذة</guilabel
+></term>
+<listitem
+><para
+>هنا تحدد النافذة أو النوافذ الفعلية التي ينطبق عليها المطلق. لمزيد من المعلومات، راجع <xref linkend="windows"/></para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-trigger-mouse">
+<term
+>إيماءة الفأرة</term>
+<listitem>
+
+<para
+>يمكن تغيير إيماءة الفأرة بالنقر فوق الزر <guibutton
+>حرّر</guibutton
+> أسفل المنطقة التي تعرض إيماءة الفأرة، مما سيفتح نافذة. استمر في الضغط على زر الفأرة الأيسر وارسم إيماءة الفأرة المطلوبة في المنطقة الموفرة. ستُحفظ الإيماءة عند تحرير زر الفأرة الأيسر.</para>
+
+<screenshot id="screenshot-shortcuts-trigger-mouse">
+<screeninfo
+>تعديل مطلق إيماءة الفأرة</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-trigger-mouse.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب المطلق لاختصار إيماءة الفأرة.</phrase
+></textobject>
+<caption
+><para
+>تعديل مطلق لإيماءة الفأرة.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+
+<sect2 id="shortcuts-action">
+<title
+>علامة تبويب الإجراء</title>
+
+<para
+>علامة تبويب <guilabel
+>الإجراء</guilabel
+> هي حيث تضبط الإجراء الذي سيتم تنفيذه عند إطلاق الاختصار. هناك عدة أنواع من الإجراءات التي لها خيارات تشكيلة مختلفة:</para>
+
+<variablelist>
+
+<varlistentry id="shortcuts-action-command">
+<term
+>أمر/وصلة</term>
+<listitem>
+
+<para
+>عند استخدام أمر أو وصلة كمطلق، يتم توفير مربع نص حيث يمكنك إدخال الأمر المراد تشغيله أو الوصلة لفتحها عند إطلاق الاختصار. يمكنك أيضاً النقر فوق الزر <inlinemediaobject
+><imageobject
+><imagedata fileref="document-open.png" format="PNG"/></imageobject
+></inlinemediaobject
+> الموجود على يمين مربع النص لفتح مربع حوار اختيار الملف حيث يمكنك اختيار ملف على نظامك المحلي أو البعيد.</para>
+
+<screenshot id="screenshot-shortcuts-action-command">
+<screeninfo
+>تعديل إجراء الأمر</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-action-command.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب الإجراء لأمر.</phrase
+></textobject>
+<caption
+><para
+>تعديل إجراء أمر.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus">
+<term
+>أمر D-Bus</term>
+<listitem>
+
+<screenshot id="screenshot-shortcuts-action-dbus">
+<screeninfo
+>تعديل إجراء D-Bus</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-action-dbus.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب الإجراء لأمر D-Bus.</phrase
+></textobject>
+<caption
+><para
+>تعديل إجراء D-Bus.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+<para
+>يتم توفير الخيارات التالية التي تتيح لك تحديد طريقة D-Bus المراد تنفيذها:</para>
+
+<variablelist>
+
+<varlistentry id="shortcuts-action-dbus-application">
+<term
+><guilabel
+>التطبيق البعيد:</guilabel
+></term>
+<listitem
+><para
+>اسم الخدمة للتطبيق البعيد الذي سيتم تنفيذ الطريقة عليه، على سبيل المثال <userinput
+>org.kde.spectacle</userinput
+> إذا كنت تريد تنفيذها على أداة لقطات الشاشة &spectacle;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-object">
+<term
+><guilabel
+>الكائن البعيد:</guilabel
+></term>
+<listitem
+><para
+>المسار إلى الكائن البعيد الذي سيتم تنفيذ الطريقة عليه، على سبيل المثال <userinput
+>/</userinput
+> لإجراءات لقطة الشاشة باستخدام &spectacle; أو <userinput
+>/Document/1</userinput
+>، إذا كنت تريد تنفيذها على أول مستند مفتوح في &kate;.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-function">
+<term
+><guilabel
+>الدّالة:</guilabel
+></term>
+<listitem
+><para
+>اسم طريقة D-Bus المراد استدعاؤها، على سبيل المثال <userinput
+>Fullscreen</userinput
+> إذا كنت تريد أخذ لقطة شاشة بملء الشاشة أو <userinput
+>print</userinput
+> إذا كنت تريد طباعة المستند.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-arguments">
+<term
+><guilabel
+>المعاملات:</guilabel
+></term>
+<listitem
+><para
+>أدخل معاملات إضافية لطريقة D-Bus المراد استدعاؤها.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-call">
+<term
+><guilabel
+>اتصل</guilabel
+></term>
+<listitem
+><para
+>استخدم هذا الزر للتحقق من أن الإجراء يعمل كما هو متوقع.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-dbus-launch-dbus-browser">
+<term
+><guilabel
+>أطلق متصفح D-Bus</guilabel
+></term>
+<listitem
+><para
+>أطلق تطبيق <application
+>QDBusViewer</application
+> لتصفح طرق D-Bus ومعاملاتها لتطبيق قيد التشغيل.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+<para
+>لمزيد من المعلومات، راجع <ulink url="https://develop.kde.org/docs/d-bus/introduction_to_dbus/"
+>مقدمة إلى D-Bus على منصة تطوير كيدي</ulink
+>.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="shortcuts-action-keyboard">
+<term
+>أرسل مدخلات لوحة المفاتيح</term>
+<listitem>
+
+<para
+>في الجزء العلوي من علامة تبويب <guilabel
+>الإجراء</guilabel
+>، يوجد مدخل نصي كبير حيث يمكنك إدخال ضربات المفاتيح التي ترغب في إرسالها عند إطلاق الاختصار.</para>
+
+<para
+>تحتوي معظم المفاتيح على حرف واحد، ولإدخالها هنا ما عليك سوى إدخال هذا الحرف. على سبيل المثال، لكتابة <quote
+>A</quote
+>، ما عليك سوى إدخال <userinput
+>A</userinput
+>. بعض المفاتيح لها أسماء أطول، ويمكنك أيضاً استخدام تلك الأسماء. على سبيل المثال، للضغط على مفتاح Alt، ما عليك سوى إدخال <userinput
+>Alt</userinput
+>. </para>
+
+<para
+>يجب فصل ضربات المفاتيح الفردية بنقطتين رأسيين (<userinput
+>:</userinput
+>). على سبيل المثال، لكتابة <quote
+>foo</quote
+>، أدخل <userinput
+>F:O:O</userinput
+>.</para>
+
+<para
+>المفاتيح التي يجب الضغط عليها في نفس الوقت يجب أن تُفصل بعلامة زائد. على سبيل المثال، للضغط على Ctrl+C، أدخل <userinput
+>Ctrl+C</userinput
+>.</para>
+
+<tip>
+<para
+>تذكر، يجب عليك إدخال ضربات المفاتيح هنا تماماً كما تفعل على لوحة المفاتيح. لتكبير الحروف، يجب عليك إدخال مفتاح Shift. على سبيل المثال، لكتابة <quote
+>Hello</quote
+>، أدخل <userinput
+>Shift+H:E:L:L:O</userinput
+>.</para>
+
+<para
+>ينطبق هذا أيضاً على الأحرف الخاصة. على سبيل المثال، لكتابة علامة @ في تخطيط لوحة المفاتيح الإنجليزية الأمريكية، أدخل <userinput
+>Shift+2</userinput
+>. </para>
+</tip>
+
+<warning>
+<para
+>يعتمد الإجراء الذي يتم تنفيذه على تخطيط لوحة المفاتيح المحدد حالياً. إذا قمت بتغيير تخطيطات لوحة المفاتيح وأطلقت اختصاراً، فقد يؤدي ذلك إلى عواقب غير مرغوب فيها.</para>
+</warning>
+
+<para
+>أسفل مربع نص إدخال ضربة المفتاح، يمكنك تحديد النافذة التي سيتم توجيه ضربات المفاتيح إليها. يمكنك الاختيار من بين الخيارات التالية:</para>
+
+<itemizedlist>
+
+<listitem
+><para
+><guilabel
+>النافذة النشطة</guilabel
+> - النافذة المفتوحة حالياً.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>نافذة محددة</guilabel
+> - النافذة التي تصفها باستخدام النموذج أدناه. لمزيد من المعلومات حول وصف النوافذ، راجع <xref linkend="windows"/>.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>نافذة الإجراء</guilabel
+> - عند استخدام نوع مطلق إجراءات النافذة، أدخل ضربات المفاتيح في النافذة التي أطلقت الاختصار.</para
+></listitem>
+
+</itemizedlist>
+
+<screenshot id="screenshot-shortcuts-action-keyboard">
+<screeninfo
+>تعديل إجراء إدخال لوحة المفاتيح</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="shortcuts-action-keyboard.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>علامة تبويب الإجراء لإدخال لوحة المفاتيح.</phrase
+></textobject>
+<caption
+><para
+>تعديل إجراء إدخال لوحة المفاتيح لاختصار.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+
+<sect1 id="windows">
+<title
+>تعريف النوافذ</title>
+
+<para
+>تتيح لك عدة مناطق في الوحدة تعريف قائمة بالنوافذ. جميعها تستخدم نفس الواجهة، التي تحتوي على الخيارات التالية:</para>
+
+<variablelist>
+
+<varlistentry id="windows-comment">
+<term
+><guilabel
+>التعليق:</guilabel
+></term>
+<listitem
+><para
+>هذا مجرد مربع نص إعلامي يمكنك استخدامه لشرح ما ينطبق عليه المطلق أو حفظ معلومات مفيدة أخرى. لا يستخدمه النظام فعلياً في أي شيء.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="windows-list">
+<term
+>قائمة النّوافذ</term>
+<listitem
+><para
+>أسفل مربع <guilabel
+>التعليق</guilabel
+> على اليسار توجد قائمة بجميع تعريفات النوافذ الموجودة حالياً في المطلق. ببساطة انقر فوق أحدها لتنفيذ عملية عليه.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="windows-edit">
+<term
+><guibutton
+>حرّر...</guibutton
+></term>
+<listitem>
+
+<para
+>اضغط على هذا الزر لتعديل تعريف النافذة المحدد حالياً. تُفتح نافذة جديدة تتيح لك تعديله. تحتوي هذه النافذة على الخيارات التالية:</para>
+
+<variablelist>
+
+<varlistentry id="windows-edit-data">
+<term
+><guilabel
+>بيانات النافذة</guilabel
+></term>
+<listitem>
+
+<para
+>هنا تصف النافذة التي يجب أن ينطبق عليها المطلق.</para>
+
+<para
+>في الجزء العلوي، يوجد حقل <guilabel
+>التعليق:</guilabel
+>، وهو إعلامي تماماً مثل الحقل الموجود في علامة تبويب <guilabel
+>المطلق</guilabel
+> الرئيسية.</para>
+
+<para
+>تتوفر ثلاث خصائص للنافذة:</para>
+
+<itemizedlist>
+
+<listitem
+><para
+><guilabel
+>عنوان النافذة:</guilabel
+> - العنوان الذي يظهر في أعلى النافذة.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>فئة النافذة:</guilabel
+> - عادةً ما تكون اسم التطبيق.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>دور النافذة:</guilabel
+> - عادةً ما يكون اسم فئة Qt التي تشكل النافذة.</para
+></listitem>
+
+</itemizedlist>
+
+<para
+>توفر كل خاصية نافذة مربعاً منسدلاً، ومربع نص تحته. أدخل القيمة التي ترغب في اختبار النوافذ لها في مربع النص. من المربع المنسدل، حدد نوع الاختبار الذي ترغب في تطبيقه. يمكنك استخدام <guilabel
+>هو</guilabel
+> لطلب مطابقة تامة، أو <guilabel
+>يحتوي</guilabel
+> لطلب أن يكون النص المدخل موجوداً في مكان ما داخل القيمة الكاملة، أو <guilabel
+>يطابق تعبيراً نمطياً</guilabel
+> لاستخدام تعبير نمطي لتعريف المطابقة. يمكنك أيضاً إجراء عكس كل هذه العمليات. حدد <guilabel
+>غير مهم</guilabel
+> إذا كنت لا ترغب في فحص تلك الخاصية المحددة.</para>
+
+<para
+>أسهل طريقة لملء هذه المعلومات هي فتح النافذة المطلوبة، ثم النقر فوق زر <guibutton
+>كشف تلقائي</guibutton
+> في أسفل هذا القسم، وأخيراً النقر فوق نافذة المطلق المطلوبة. سيتم ملء جميع خصائص النافذة الثلاث بالمعلومات من تلك النافذة، ويمكنك بعد ذلك تعديل الإعدادات حسب الضرورة.</para>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="windows-edit-types">
+<term
+><guilabel
+>أنواع النافذة</guilabel
+></term>
+<listitem>
+
+<para
+>يتيح لك هذا تقييد المطابقة بنوع معين من النوافذ. الخيارات التالية متاحة:</para>
+
+<itemizedlist>
+
+<listitem
+><para
+><guilabel
+>عادية</guilabel
+> - نافذة تطبيق عادية.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>سطح المكتب</guilabel
+> - سطح المكتب الرئيسي هو في الواقع نافذة خاصة قائمة بذاتها.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>حوار</guilabel
+> - نافذة صغيرة تكون جزءاً من تطبيق عادي، مثل صندوق رسائل أو شاشة تشكيلة.</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>رصيف</guilabel
+> - نافذة صغيرة يمكن إلحاقها أو فصلها عن نافذة التطبيق الرئيسية. </para
+></listitem>
+
+</itemizedlist>
+
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</listitem>
+</varlistentry>
+
+<varlistentry id="windows-new">
+<term
+><guibutton
+>جديد...</guibutton
+></term>
+<listitem
+><para
+>أنشئ تعريفاً جديداً للنافذة. يفتح هذا مربع حوار التعديل الموصوف أعلاه.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="windows-duplicate">
+<term
+><guibutton
+>كرّر...</guibutton
+></term>
+<listitem
+><para
+>يؤدي هذا إلى إنشاء تعريف نافذة جديد بنفس المواصفات تماماً مثل تعريف النافذة المحدد حالياً. سيفتح مربع حوار التعديل الموصوف أعلاه حتى تتمكن من إجراء مزيد من التغييرات.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="windows-delete">
+<term
+><guibutton
+>احذف</guibutton
+></term>
+<listitem
+><para
+>يزيل تعريف النافذة المحدد حالياً.</para
+></listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+
+<sect1 id="settings">
+<title
+>إعدادات</title>
+
+<para
+>عند دخولك إلى الوحدة لأول مرة، أو عند النقر فوق زر <guibutton
+>إعدادات</guibutton
+> أسفل الجزء الأيسر، ستكون هناك عدة خيارات تشكيلة في الجزء الأيمن:</para>
+
+<variablelist>
+
+<varlistentry id="settings-start-daemon">
+<term
+><guilabel
+>ابدأ مراقب إجراءات الإدخال عند الولوج</guilabel
+></term>
+<listitem
+><para
+>يضبط هذا ما إذا كان سيتم تنشيط تطبيق الخلفية الذي يراقب اختصارات لوحة المفاتيح ويطلق الإجراءات المضبوطة أم لا. هو مُمكّن مبدئياً.</para
+></listitem>
+</varlistentry>
+
+<varlistentry id="settings-gestures">
+<term
+><guilabel
+>الإيماءات</guilabel
+></term>
+<listitem>
+<para
+>حدد مربع الاختيار هذا لتمكين إيماءات الفأرة.</para>
+
+<para
+>هناك خياران خاصان بإيماءات الفأرة:</para>
+
+<variablelist>
+
+<varlistentry id="settings-gestures-timeout">
+<term
+><guilabel
+>المهلة:</guilabel
+></term>
+<listitem
+><para
+>يحدد هذا الحد الأقصى للفاصل الزمني الذي سيتم خلاله مراقبة إيماءة الفأرة والتعرف عليها من قبل النظام، بالمللي ثانية. </para
+></listitem>
+</varlistentry>
+
+<varlistentry id="settings-gestures-mouse-button">
+<term
+><guilabel
+>زر الفأرة:</guilabel
+></term>
+<listitem
+><para
+>يحدد هذا زر الفأرة الذي سيتم استخدامه لإيماءات الفأرة. إذا كانت الفأرة لديك تحتوي على أزرار أكثر، فيمكنك أيضاً استخدامها بدلاً من ذلك.</para>
+
+<note>
+<para
+>الزر الأيسر غير متاح، لذا لا تتعارض إيماءات الفأرة مع التشغيل العادي لنظامك.</para>
+</note>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+<screenshot id="screenshot-settings">
+<screeninfo
+>إعدادات</screeninfo>
+<mediaobject>
+<imageobject
+><imagedata fileref="settings.png" format="PNG"/></imageobject>
+<textobject
+><phrase
+>شاشة الإعدادات.</phrase
+></textobject>
+<caption
+><para
+>تعديل إعدادات الاختصارات المخصصة.</para
+></caption>
+</mediaobject>
+</screenshot>
+
+</sect1>
+
+
+<sect1 id="credits">
+<title
+>الحقوق والترخيص</title>
+
+<para
+>شكر خاص للمشارك في Google Code-In 2011 Subhashish Pradhan لكتابة معظم هذا المقال.</para>
+
+<para
+>الترجمة: زايد السعيدي <email
+>zayed.alsaidi@gmail.com</email
+></para
+> &underFDL; &underGPL; </sect1>
+
+</article>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
