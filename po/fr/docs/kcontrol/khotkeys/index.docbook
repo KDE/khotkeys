@@ -404,7 +404,7 @@
 > sont installés. Les applications peuvent fournir des raccourcis supplémentaires, par exemple &spectacle; ajoute un groupe <guilabel
 >Copies d'écran</guilabel
 >. Ce groupe, lorsque développé, montre plusieurs configurations de raccourcis comme <guilabel
->Démarrer l'outil de copie d'écran</guilabel
+>Démarrer l'outil de capture d'écran</guilabel
 >, qui, lorsque sélectionné, montre une section sur le coté droit avec trois onglets :</para>
 
 <sect2 id="shortcuts-comment">
@@ -672,7 +672,7 @@
 ><para
 >Le nom de la méthode &DBus; à appeler, &pex; <userinput
 >Plein écran</userinput
->, si vous voulez faire une copie d'écran complète ou <userinput
+>, si vous voulez faire une capture d'écran complète ou <userinput
 >imprimer</userinput
 > si vous voulez imprimer le document.</para
 ></listitem>
